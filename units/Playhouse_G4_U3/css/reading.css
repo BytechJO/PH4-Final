@@ -1,0 +1,102 @@
+body {
+    /* background: linear-gradient(#f2a9b69e, #F6F8F9) !important; */
+    /* background-image: url("../images/pages/reading/ARC_4_SB_U2_P21.png"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.mainTitleIcon {
+    top: -15px;
+    right: 100px;
+}
+
+.blue_text {
+    color: rgb(0, 190, 255);
+}
+
+/* ///////////////////////////////////////// */
+
+.multible_boxes_container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 89%;
+    height: fit-content;
+}
+
+.word_with_image {
+    width: min-content;
+    margin: auto;
+}
+
+.word_with_image .audioIcon {
+    margin: auto;
+}
+
+.box_container {
+    width: 350px;
+}
+
+.box_image {
+    height: 150px;
+}
+.box_word {
+    height: 70px;
+}
+/* ///////////////////////////////////////// */
+
+.boxe_list_container {
+    width: 350px;
+    text-align: center;
+}
+
+.list_container {
+    position: relative;
+}
+
+.list_under_image {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.box_with_list_image {
+    height: 350px;
+}
+
+/* ////////////////////////////////// */
+
+/* .grid_columns_container {
+    position: relative;
+}
+
+.snap_group_all {
+    width: 100%;
+    position: absolute;
+}
+
+.ss_text {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.red_text {
+    color: red;
+} */
+
+/* ///////////////////////////////////// */
+
+
+/* //////////////////// G6 U1 ////////////////////////// */
+
+
+
+/* ///////////////////////////////tips///////////////////////////// */
+
+
+/* ///////////////////////////////tips///////////////////////////// */
+
+

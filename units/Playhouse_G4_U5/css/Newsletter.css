@@ -1,0 +1,271 @@
+.act_head_group {
+    width: 80% !important;
+}
+
+.activityHeading {
+    background-color: #0095da;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.act_head_group .audioIcon {
+    width: fit-content
+}
+
+.act_head_group .audioIcon .mainTitle {
+    /* width: 100%; */
+}
+
+.q-type-img-container {
+    margin: 0px !important;
+}
+
+.page_sub_title p {
+    font-size: 60px;
+    color: #fff;
+    font-family: Georgia;
+    text-shadow: 5px 5px 5px #3c3c3c;
+    ;
+}
+
+.activityHeading hr {
+    height: 3px;
+    background-color: #ffff;
+    width: 78%;
+    position: absolute;
+    /* margin-top: 112px; */
+    top: 68px;
+    left: 150px;
+}
+
+.image_container {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img_click_container {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    border-radius: 50px;
+    padding: 35px 0px;
+    box-shadow: 7px 7px 7px #ccc;
+}
+
+.img_click_container img {
+    transition: all 1.0s ease-in-out;
+}
+
+.img-1 {
+    background-color: #dfefde;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img-2 {
+    background-color: #eaeb7c;
+}
+
+.img-3 {
+    background-color: #fcecdb;
+}
+
+.img-4 {
+    background-color: #e9d03f;
+}
+
+.img_click {
+    height: 140px;
+    /* max-height:  140px; */
+    width: fit-content;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.img_click:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.readHilightsPanel_container .title {
+    /* height: 150px; */
+}
+
+.title_in_snap {
+    height: 80px;
+    /* position: absolute;
+    right: 15px; */
+}
+
+.modal-dialog {
+    width: 850px;
+}
+
+.readHilightsPanel_1 .title .second_image {
+    float: right;
+    width: 170px;
+    height: 90px;
+}
+
+.readHilightsPanel_1 .modal-content {
+    background-color: #dfefde;
+}
+
+.readHilightsPanel2_1 .modal-content {
+    background-color: #fcecdb;
+}
+
+.readHilightsPanel2_1 .title {
+    background-color: #a20152;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.readHilightsPanel2_1 .title .title_in_snap {
+    position: absolute;
+}
+
+.readHilightsPanel2_1 .title .top_image {
+    right: 20px;
+    top: 0;
+}
+
+.readHilightsPanel2_1 .title .second_image {
+    left: 20px;
+    top: 0;
+}
+
+.readHilightsPanel2_1 .title .title_text {
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+}
+
+.readHilightsPanel3_1 .modal-content {
+    background-color: #e6d05b;
+}
+
+.readHilightsPanel3_1 .title .top_image {
+    float: right;
+    margin-right: 30px;
+}
+
+.readHilightsPanel3_1 .title_in_snap {
+    height: 180px;
+}
+
+/* *** *** */
+.readHilightsPanel4_1 .readHilightsPanel_container{
+    background-color: #eaeb7c;
+}
+
+.readHilightsPanel4_1 .body_Panel {
+    border: 1px solid;
+    width: 410px;
+    /* height: 419px; */
+    margin: auto;
+    margin-top: -50px;
+    padding: 15px 10px;
+    background-color: #f5f6d2;
+    border: 2px solid #f5f6d2;
+    border-radius: 20px;
+}
+
+
+.readHilightsPanel4_1 .readHilightsPanel_container .title {
+    /* height: 115px; */
+}
+
+.readHilightsPanel4_1 .readHilightsPanel_container .title img{
+    height: 66px;
+    margin: 10px auto;
+    
+}
+
+.que_image {
+    /* position: absolute; */
+    width: 350px;
+    margin: 0px auto 10px;
+}
+
+.fillin_gr input {
+    width: 200px;
+    /* flex: 1; */
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #656565;
+    margin: 1px;
+    padding-left: 30px;
+    height: 35px;
+    /* margin: 0 30px; */
+}
+
+.fillin_gr input:focus {
+    outline: none;
+}
+
+.img_fillin_gr {
+    position: relative;
+    width: 440px;
+    background-color: transparent;
+    margin: 11px auto;
+}
+
+.fillin_set * {
+    display: inline-block;
+}
+
+.fillin_set .txt-audioIcon {
+    width: 184px;
+}
+
+.q_space,
+.fillin_set {
+    /* width: 100%; */
+}
+
+.tick,
+.cross {
+    width: 32px;
+    height: 32px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+}
+
+.icon_wrap_holder {
+    position: absolute;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *************************************** */
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 850px;
+        margin: 1.75rem auto;
+    }
+}

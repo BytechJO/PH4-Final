@@ -1,0 +1,73 @@
+body {
+    /* background: linear-gradient(#f2a9b69e, #F6F8F9) !important; */
+    /* background-image: url("../images/pages/reading/ARC_4_SB_U2_P21.png"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.mainTitleIcon {
+    top: -15px;
+    right: 100px;
+}
+
+.blue_text {
+    color: rgb(0, 190, 255);
+}
+
+.image_audio {
+    position: absolute;
+    transform: scale(0.6);
+}
+
+.main_image {
+    position: relative;
+    text-align: center;
+    height: calc(100vh - 350px);
+}
+
+.image_with_text{
+    /* margin-top: 150px; */
+}
+
+.main_image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.read_grammer .grammer_container {
+    transform: scale(0.8);
+    display: inline-block;
+    align-self: center;
+    position: relative;
+}
+
+.read_grammer .grammer_container img {
+    /* transform: scale(0.5); */
+    width: 100%;
+}
+
+.words_container {
+    position: absolute;
+    top: 0;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* center */
+    /* left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%); */
+    width: 100%;
+}
+
+.audioIcon {
+    /* all: unset; */
+}
+
+.audioIcon {
+    cursor: pointer;
+}
+
+.audioIcon:hover {
+    transform: scale(1.1);
+}

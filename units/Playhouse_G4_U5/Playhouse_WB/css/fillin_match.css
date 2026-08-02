@@ -1,0 +1,165 @@
+.w-85{
+    width: 85%;
+}
+
+.all_cont {
+    height: 100%;
+}
+
+.options  {
+    height: 500px;
+    width: 100%;
+}
+
+.audioIcon {
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.left-content{
+    flex-direction: column;
+    width: 20%;
+}
+
+.questions-container {
+    width: 80%;
+    display: flex;
+    font-size: 23px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.words-list li{
+    height: 110px;
+    font-weight: bolder;
+    color: black;
+    border: 1px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.right-content .p-0{
+    height: 110px;
+    border: 1px solid black;
+}
+
+.tips_content img {
+    height: 30px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.fill_in .que {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-container{
+    width: 15%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.que_img{
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 40px;
+    
+}
+.que_img img{
+    width:100%;
+    height: 20vh;
+    padding: 0px 100px;
+}
+
+.txtBox {
+    font-family: Arcon;
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+    color: black;
+    width: 500px;
+    display: flex;
+}
+
+.r-choice {
+    width: 54%;
+    font-size: 25px;
+    text-align: left; 
+}
+
+.r-choice b{
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.que_1_2 {
+    height: 100px;
+}
+
+.txtBox input {
+    width: 50px;
+    height: 25px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    padding-left: 5px;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.txtBox input:focus{
+    outline: none;
+}
+
+.fill_in .que .txt_wrap {
+    /* text-align: center; */
+    width: 100%;
+}
+
+.icon_wrap{
+    margin-top: -10px;
+}
+.tick,
+.cross {
+    width: 35px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+}
+
+.image_wrap {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .fill_in .que {
+        width: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fill_in .que {
+        width: 200px;
+    }
+}
+
+@media (max-width: 475.98px) {
+    /* .fill_in .que {
+        width: 200px;
+    } */
+}

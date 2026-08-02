@@ -1,0 +1,91 @@
+
+.image_audio {
+    position: absolute;
+    transform: scale(0.6);
+}
+
+.main_image {
+    position: relative;
+    text-align: center;
+    height: calc(100vh - 350px);
+}
+
+.image_with_text{
+    /* margin-top: 150px; */
+    height: 70px;
+}
+
+.main_image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.read_grammer .grammer_container {
+    transform: scale(0.8);
+    display: inline-block;
+    /* align-self: center; */
+    position: relative;
+}
+
+.read_grammer .grammer_container img {
+    /* transform: scale(0.5); */
+    width: 100%;
+}
+
+.read_grammer .words_container {
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+    /* center */
+    top: 20px;
+    /* left: 20%;
+    top: 40%;
+    transform: translate(-20%, -50%); */
+    color: red;
+    font-size: 40px;
+}
+
+.read_grammer {
+    margin-top: -399px;
+}
+
+.song_text {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.clue_word {
+    padding: 2px 46px;
+    font-size: 22px;
+}
+
+.word_options {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #dfefde;
+}
+
+.word_opt_sticky {
+    width: 75%;
+    height: 80px;
+    margin: 0px auto;
+    position: -webkit-sticky;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 5;
+    border: 2px solid var(--temp);
+    border-radius: 10px;
+}
+
+.words-list li{
+    height: 110px;
+    font-weight: bolder;
+    color: black;
+    border: 1px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

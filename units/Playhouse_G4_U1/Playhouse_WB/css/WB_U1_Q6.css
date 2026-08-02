@@ -1,0 +1,160 @@
+.table {
+    /* width: 90%;
+    border: 1px solid black;
+    border-top-right-radius: 65px;
+    border-bottom-left-radius: 65px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+.w-85{
+    width: 85%;
+}
+
+.options {
+    width: 85%;
+}
+
+.fillin_set  {
+    width: 100%;
+}
+
+.left-content{
+    flex-direction: column;
+    width: 20%;
+}
+
+.fillin_gr{
+    width: 100%;
+}
+.image_container{
+    position: absolute;
+    top: 365px;
+    left: 115px;
+}
+.image_container img{
+    width: 175px;
+}
+.words-list li{
+    height: 110px;
+    font-weight: bolder;
+    color: black;
+    border: 1px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.text_input_area{
+    border: none;
+    border-bottom: 1px solid black;
+    flex:1;
+}
+.right-content .p-0{
+    height: 110px;
+    border: 1px solid black;
+}
+
+.tips_content img {
+    height: 30px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.fill_in .que {
+    height: 65px;
+    width: 100%;
+}
+
+.que:nth-child(n + 4) {
+    margin-left: 200px;
+}
+
+.img-container{
+    width: 15%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 50%;
+     object-fit: cover;
+}
+
+.txtBox {
+    font-family: Arcon;
+    /* font-size: 30px; */
+    font-weight: bold;
+    color: black;
+    width: 100%;
+  /* display: flex */
+}
+
+.que_1_2 {
+    height: 100px;
+}
+
+.txtBox input {
+    width: 80px;
+    text-align: center;
+    /* font-size: 30px;  */
+    font-weight: 600;
+    padding-left: 5px;
+    /* border: 2px solid #20cdda; */
+    /* border-radius: 5px; */
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.all_cont {
+    /* margin-top: 20px; */
+}
+
+.fill_in .que .txt_wrap {
+    /* text-align: center; */
+    width: 100%;
+}
+
+.theIcons {
+    margin: 5px 0;
+}
+
+.icon_wrap {
+    display: none;
+}
+
+.tick,
+.cross {
+    width: 35px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+}
+
+.image_wrap {
+    display: none;
+}
+
+.word-width{
+width: 95px;
+}
+@media (max-width: 991.98px) {
+    .fill_in .que {
+        width: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fill_in .que {
+        width: 200px;
+    }
+}
+
+@media (max-width: 475.98px) {
+    /* .fill_in .que {
+        width: 200px;
+    } */
+}

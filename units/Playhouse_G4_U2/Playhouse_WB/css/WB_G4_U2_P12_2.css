@@ -1,0 +1,283 @@
+:root {
+  --temp: #8acbec;
+}
+
+.bg_image.mx-auto {
+  text-align: center;
+}
+
+.image img {
+  width: 250px;
+}
+
+img.bg_img {
+  width: 35%;
+}
+
+.options {
+  width: 83%;
+  height: 100%;
+  margin: auto;
+  font-size: 22px;
+}
+
+.clue_grp {
+  width: 90%;
+  margin: 8px 0px;
+  padding: 7px;
+  border-radius: 15px;
+  font-size: 20px;
+  border: 1px solid var(--temp);
+  background-color: var(--light);
+}
+
+.clue_grp .clueDirection {
+  text-align: center;
+  padding-top: 7px;
+  font-weight: bolder;
+}
+
+.clue_grp .clue {
+  height: 35px;
+}
+
+.clue_grp .clueText {
+  height: 35px;
+  margin: 0px !important;
+}
+
+.puzzleclues {
+  width: 650px !important;
+}
+
+.puzzle_container {
+  width: 100%;
+}
+
+.puzzlematrix {
+  position: relative;
+  width: 85%;
+  height: 100%;
+  margin: 5px;
+}
+
+.puzzlematrix .cell {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--temp);
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.image {
+  display: none;
+}
+
+.puzzlematrix .cell p {
+  font-weight: bold;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.puzzlematrix .cell input[type=text] {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: black;
+  border: none;
+  margin: auto;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%, -50%);
+}
+
+.puzzlematrix .cell input:focus {
+  outline: none;
+}
+
+.icon_wrap_holder {
+  width: 26px;
+  min-width: 26px;
+  margin-top: 2px;
+}
+
+.cluetext {
+  width: 400px;
+}
+
+.tick,
+.cross {
+  width: 26px;
+  height: 26px;
+  margin-top: 2px;
+}
+
+.clueDirection {
+  font-weight: bold;
+
+}
+.clue_word {
+  margin: 5px 15px;
+  font-size: 24px;
+}
+
+.word_options {
+  width: 80%;
+  border: 2px solid var(--temp);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: #e0f5ff7d;
+}
+
+.word_opt_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5;
+}
+
+/* ************************************** */
+@media (max-width: 1199.98px) {
+  .puzzlematrix {
+    width: 498px;
+  }
+
+  img.bg_img {
+
+    margin-top: 104px;
+  }
+
+}
+
+@media (max-width: 990.98px) {
+  /* .activity_area{ */
+  /* background-size: auto 30%; */
+  /* background-position: 100% -10%; */
+
+  /* } */
+  img.bg_img {
+    width: 35%;
+    margin-top: 104px;
+  }
+
+  .puzzleclues {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768.98px) {
+  /* .activity_area{ */
+
+  /* background-position: right;   */
+  /* background-size: auto 35%; */
+  /* background-attachment: scroll; */
+  /* } */
+
+  img.bg_img {
+    width: 50%;
+    margin-top: 104px;
+  }
+}
+
+@media (max-width: 640.98px) {
+
+  /* .activity_area{ */
+  /* background-size: auto 13%; */
+  /* background-position: bottom 10% center;  */
+  /* } */
+
+}
+
+@media (max-width: 575.98px) {
+  img.bg_img {
+    width: 60%;
+    margin-top: 104px;
+  }
+}
+
+@media(min-width:1024px) {
+  .puzzleclues {
+    width: 60%;
+    margin: auto;
+  }
+
+  img.bg_img {
+    margin-top: -521px;
+    width: 35%;
+    margin-left: 544px;
+  }
+}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+@media (max-width: 768.98px) {
+
+  /*.activity_area{
+   
+    background-position: top;  
+    background-size: auto 15%;
+    background-attachment: scroll;
+  }
+   .puzzleclues{
+    margin-top: 40%; 
+  } */
+  .word_options {
+    margin: 0 10px;
+  }
+
+  .clue_grp {
+    width: 500px;
+  }
+
+  .puzzleclues {
+    width: 100%;
+    margin: auto;
+  }
+
+  .word_options {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640.98px) {
+
+  /* .puzzleclues{
+    margin-top: 40%; 
+  }
+ .activity_area{
+    background-size: auto 10%;
+    background-position: top;  
+  }*/
+  .puzzlematrix {
+    width: 535px;
+  }
+
+  .clue_grp {
+    width: 500px;
+  }
+
+  .word_options {
+    overflow-y: auto;
+    height: 90px;
+  }
+}
+
+@media (max-width: 370.98px) {
+  /* .puzzleclues{
+    margin-top: 70%; 
+  } */
+
+}

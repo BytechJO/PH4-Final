@@ -1,0 +1,72 @@
+var snapshot_data = {
+  "snapshot": [{
+      "audio": ["../audios/page_12/pizza.mp3","../audios/page_12/dough.mp3","../audios/page_12/sauce.mp3","../audios/page_12/sprinkle.mp3","../audios/page_12/cheese.mp3","../audios/page_12/add.mp3","../audios/page_12/pepperoni.mp3","../audios/page_12/slice.mp3"],
+      "image": ["../images/pages/snapshots/ARC_2_1_SB_U1_P5_word1.png","../images/pages/snapshots/ARC_2_1_SB_U1_P5_word2.png","../images/pages/snapshots/ARC_2_1_SB_U1_P5_word3.png","../images/pages/snapshots/ARC_2_1_SB_U1_P5_word4.png","../images/pages/snapshots/ARC_2_1_SB_U1_P5_word5.png","../images/pages/snapshots/ARC_2_1_SB_U1_P5_word6.png","../images/pages/snapshots/ARC_2_1_SB_U1_P5_word7.png","../images/pages/snapshots/ARC_2_1_SB_U1_P5_word8.png"],
+      "word": ["<span>pizza</span>","<span>dough</span>","<span>sauce</span>","<span>sprinkle</span>","<span>cheese</span>","<span>add</span>","<span>pepperoni</span>","<span>slice</span>"],
+      "imagePlacePos":[[1,1,1],[1,1,1],[1,0,1]]
+        }
+  ],"popuptitle": "What I Want To Know:"
+}
+
+var snapshotPopup_data="<ul><li>What are the people doing?</li><li>Who are the pizzas for?</li><li>What toppings go on a pizza?</li></ul>";
+
+var Popups_data = {
+  "slides": [
+    {
+      'listen': {
+        "backgroundImage": "../images/pages/page-1/1-word-background.png",
+        "mainTitle": "../images/pages/page-1/1-title.png",
+        "titleTexts" : ["<span class='title-order'>2</span> Read."],
+        "titleIcons" : ["../images/pages/page-1/q-1-icon-3-new.png", "../images/pages/page-1/q-1-icon-1.png", "../images/pages/page-1/q-1-icon-3.png"],
+        "titlesAudio" : ["../audios/page_12/2_read.mp3"],
+        "image": ["../images/pages/snapshots/page-1/popup-3-elem-1.png","../images/pages/snapshots/page-1/popup-3-elem-2.png","../images/pages/snapshots/page-1/popup-3-elem-3.png","../images/pages/snapshots/page-1/popup-3-elem-1.png","../images/pages/snapshots/page-1/popup-3-elem-2.png","../images/pages/snapshots/page-1/popup-3-elem-3.png","../images/pages/snapshots/page-1/popup-3-elem-1.png","../images/pages/snapshots/page-1/popup-3-elem-2.png","../images/pages/snapshots/page-1/popup-3-elem-3.png","../images/pages/snapshots/page-1/popup-3-elem-3.png"],
+        "words": ["1 saw my grandparents","2 read a book", "3 rode a bike","4 went to the mall","5 cut my hair", "6 sat in the dentist chair","7 drank milk","8 had a party", "9 took a picture","10 ate ice cream"],
+        "audio": ["../audios/page_12/1_saw_my_grandparents.mp3","../audios/page_12/2_read_a_book.mp3","../audios/page_12/3_rode_a_bike.mp3",
+                  "../audios/page_12/4_went_to_the_mall.mp3","../audios/page_12/5_cut_my_hair.mp3","../audios/page_12/6_sat_in_the_dentist_chair.mp3",
+                  "../audios/page_12/7_drank_milk.mp3","../audios/page_12/8_had_a_party.mp3","../audios/page_12/9_took_a_picture.mp3",
+                  "../audios/page_12/10_ate_ice_cream.mp3"]},
+      'listen2': {
+        // "leftImage": "../images/pages/snapshots/page-2/popup-2-left-img.png",
+        "mainTitle": "../images/pages/page-1/1-title.png",
+        "titleTexts" : ["<span class='title-order'>3</span> Say it."],
+        "titleIcons" : ["../images/pages/page-1/popup-icon-2.png"],
+        "titleTextRight": "<span class='green_text'>Point and say.</span>",
+        "titlesAudio" : ["../audios/new/sayit.mp3"],
+        "image": ["../images/pages/page-1/2-img-1.png","../images/pages/page-1/2-img-2.png"],
+        "audio": ["../audios/page_12/d.mp3","../audios/page_12/d.mp3"]},
+    
+},
+  ],
+  "class_name":["","","","","","","","","","","",""], //flex-row (or) flex-reverse (or) flex-column-reverse for each image-container **optional**
+  "words"  : ["saw my grandparents","read a book", "rode a bike","went to the mall","cut my hair", "sat in the dentist chair","drank milk","had a party", "took a picture","ate ice cream"],
+  "points"  : ["../images/pages/page-1/intro-1.png",
+              "../images/pages/page-1/intro-2.png",
+              "../images/pages/page-1/intro-3.png",
+              "../images/pages/page-1/intro-4.png",
+              "../images/pages/page-1/intro-5.png",
+              "../images/pages/page-1/intro-6.png",
+              "../images/pages/page-1/intro-7.png",
+              "../images/pages/page-1/intro-8.png",
+              "../images/pages/page-1/intro-9.png",
+              "../images/pages/page-1/intro-10.png",
+              // "../images/pages/page-1/intro-11.png",
+              // "../images/pages/page-1/intro-12.png",
+            ],
+ "postions"  : ["left: 270px;top: 180px;",
+                "left: 380px;top: 250px;",
+                "left: 640px;top: 320px;",
+                "left: 820px;top: 110px;",
+                "left: 1120px;top: 320px;",
+                "left: 400px;top: 720px;",
+                "left: 50px;top: 680px;",
+                "left: 690px;top: 450px;",
+                "left: 770px;top: 550px;",
+                "left: 1010px;top: 723px;",
+                // "left:508px; top:475px;",
+                // "left:369px; top:569px;",
+              ],
+  "imagesAudio" :["../audios/page_12/1_Listen_and_say.mp3","../audios/page_12/2_read_a_book.mp3","../audios/page_12/3_rode_a_bike.mp3",
+                  "../audios/page_12/4_went_to_the_mall.mp3","../audios/page_12/5_cut_my_hair.mp3","../audios/page_12/6_sat_in_the_dentist_chair.mp3",
+                  "../audios/page_12/7_drank_milk.mp3","../audios/page_12/8_had_a_party.mp3","../audios/page_12/9_took_a_picture.mp3",
+                  "../audios/page_12/10_ate_ice_cream.mp3"]
+}

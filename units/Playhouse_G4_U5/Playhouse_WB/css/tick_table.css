@@ -1,0 +1,82 @@
+.all_cont {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.tickContent {
+  text-align: center;
+  /* height: 20px; */
+  font-size: 23px;
+  margin: 2px 15px;
+}
+
+.tick_field  {
+  width: 250px;
+}
+
+.func_ctrls {
+  display: none !important;
+}
+
+.tickBox {
+  height: 38px;
+  /* width: 70px; */
+  min-width: 38px;
+  padding: 0;
+  margin: 1px auto;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+td {
+  border: solid 1px #d0dae0;
+  position: relative;
+  height: 40px;
+  min-width: 119px !important;
+}
+
+.icon_wrap_holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.que_group {
+  position: relative;
+}
+#pick_1_1 {
+  background-color: #fff !important;
+}
+#pick_1_2,
+#pick_1_3,#pick_1_4,
+#pick_1_5,#pick_1_6,
+#pick_1_7,#pick_1_8 {
+  background-color: #e1f4fd !important;
+  border: 1px solid #fff;
+}
+#pick_1_1,
+#pick_1_9,#pick_1_17,
+#pick_1_25,#pick_1_33,
+#pick_1_41,#pick_1_49,
+#pick_1_57,#pick_1_65 {
+  width: 165px;
+  margin: 0;
+  background-color: #e1f4fd !important;
+  border: 1px solid #fff;
+}
+
+.icon_wrap {
+  position: absolute;
+  top: -45px;
+  right: 20px;
+}

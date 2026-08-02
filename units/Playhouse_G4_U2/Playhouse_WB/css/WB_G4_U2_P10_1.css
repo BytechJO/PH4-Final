@@ -1,0 +1,40 @@
+.all_cont {
+    width: 100%;
+    /* height: 100%; */
+}
+.screen_elements{
+    width: 80%;
+}
+
+.image-container{
+    position: absolute;
+    right: 95px;
+    bottom: 60px;
+}
+
+.image-container img{
+    width: 250px;
+}
+
+.func_ctrls{
+    display: none !important;
+}
+
+
+@media (max-width: 991.98px) {
+    .fill_in .que {
+        width: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fill_in .que {
+        width: 200px;
+    }
+}
+
+@media (max-width: 475.98px) {
+    /* .fill_in .que {
+        width: 200px;
+    } */
+}

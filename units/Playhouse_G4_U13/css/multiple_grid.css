@@ -1,0 +1,106 @@
+.boxes_container {
+    gap: 150px;
+}
+.main_text { 
+    width: 1128px;
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: left;
+    font-weight: bold;
+    color: deepskyblue;
+}
+.box_with_text {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.grammer_background {
+    height: 325px;
+    width: 300px;
+    /* margin-top: 115px; */
+}
+.snap_group_single {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    width: 85%;
+    text-align: left;
+    line-height: 50px;
+}
+.snap_group_single_images {
+    gap: 112px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box_title {
+    position: absolute;
+    top: 5px;
+    left: 95px;
+}
+
+.ss_image {
+    height: 75px;
+}
+
+/* Slide 9 ============================================================= */
+.multiple_boxes_under_text_process .snap_card {
+    display: flex;
+    justify-content: center;
+}
+
+.multiple_boxes_under_text_process .main_text {
+    margin: 0px !important;
+    margin-bottom: 100px !important;
+    font-size: 24px;
+}
+
+/* Slid 10 ============================================================= */
+.multiple_boxes_under_text .arrows_images_1_0 {
+    position: absolute;
+    height: 50px;
+    top: 375px;
+    left: 390px;
+}
+
+.multiple_boxes_under_text .arrows_images_1_1 {
+    position: absolute;
+    height: 50px;
+    top: 375px;
+    left: 840px;
+}
+
+
+/* Slid 11 ============================================================= */
+.boxes_beside_main_box .snap_group_single {
+    width: 95%;
+}
+
+.boxes_beside_main_box .grammer_background {
+    height: auto;
+    width: 820px;
+}
+
+.boxes_beside_main_box .box_title {
+    top: 15px;
+    left: 350px;
+}
+
+.boxes_beside_main_box .boxes_container {
+    gap: 30px;
+    position: relative;
+}
+
+.boxes_beside_main_box .arrows_images_1_0 { 
+    position: absolute;
+    height: 110px;
+    top: 85px;
+    left: 980px;
+}
+
+.boxes_beside_main_box .arrows_images_1_1 {
+    position: absolute;
+    height: 110px;
+    top: 270px;
+    left: 980px;
+}

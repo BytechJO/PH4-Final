@@ -1,0 +1,131 @@
+.w-85{
+    width: 85%;
+}
+
+.left-content{
+    flex-direction: column;
+    width: 20%;
+}
+
+.words-list li{
+    height: 110px;
+    font-weight: bolder;
+    color: black;
+    border: 1px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.right-content .p-0{
+    height: 110px;
+    border: 1px solid black;
+}
+
+.tips_content img {
+    height: 30px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.fill_in .que {
+    /* border: 2px solid #eae8e8;
+    background-color: white;
+    border-radius: 10px;
+    width: 200px; */
+    height: 100px;
+    width: 100%;
+}
+
+.img-container{
+    width: 15%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 50%;
+     object-fit: cover;
+}
+
+.txtBox {
+    font-family: Arcon;
+    /* font-size: 30px; */
+    font-weight: bold;
+    color: black;
+    width: 45%;
+    display: flex;
+}
+
+.r-choice {
+    /* width: 50%;*/
+    text-align: left; 
+  }
+
+.que_1_2 {
+    height: 100px;
+}
+
+.txtBox input {
+    width: 80px;
+    text-align: center;
+    /* font-size: 30px;  */
+    font-weight: 600;
+    padding-left: 5px;
+    /* border: 2px solid #20cdda; */
+    /* border-radius: 5px; */
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.all_cont {
+    margin-top: 10px;
+}
+
+.fill_in .que .txt_wrap {
+    /* text-align: center; */
+    width: 100%;
+}
+
+.theIcons {
+    margin: 5px 0;
+}
+
+.icon_wrap {
+    display: none;
+}
+
+.tick,
+.cross {
+    width: 35px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+}
+
+.image_wrap {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .fill_in .que {
+        width: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fill_in .que {
+        width: 200px;
+    }
+}
+
+@media (max-width: 475.98px) {
+    /* .fill_in .que {
+        width: 200px;
+    } */
+}
