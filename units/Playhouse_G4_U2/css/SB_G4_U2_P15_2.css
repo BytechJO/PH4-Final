@@ -14,23 +14,25 @@
   padding: 1px;
 }
 
-.screan_elements , .ss{
+.screan_elements,
+.ss {
   width: 100% !important;
   height: 100%;
 }
 
-.group_elm{
+.group_elm {
   height: 100%;
   width: 100% !important;
   padding: 30px 70px;
+  margin-top: 36px;
+  gap: 19px;
 }
 
-.activityHeading b{
-  
+.activityHeading b {
   font-weight: bold;
 }
 
-.orange-text{
+.orange-text {
   color: #fa9702;
 }
 
@@ -38,7 +40,7 @@
   width: 35px;
   font-weight: bolder;
 }
-.fillin_gr{
+.fillin_gr {
   width: 90%;
 }
 .fillin_gr input {
@@ -50,7 +52,7 @@
   /* text-align: center; */
   padding-left: 30px;
   height: 35px;
-  margin: 0px 0px 20px;
+  /* margin: 0px 0px 20px; */
 }
 
 .fillin_gr input:focus {
@@ -69,7 +71,8 @@
   display: inline-block;
 }
 
-.q_space ,.fillin_set{
+.q_space,
+.fillin_set {
   width: 100%;
 }
 
@@ -110,32 +113,33 @@
   left: 0;
 }
 
-.images{
+.images {
   height: 200px;
 }
 
-.image-container{
+.image-container {
   width: 325px;
   right: 120px;
   bottom: 20px;
 }
-.image-container img{
+.image-container img {
   width: 100%;
   margin: 4px;
   border-radius: 15px;
   object-fit: contain;
 }
 
-.icon_wrap_holder{
+.icon_wrap_holder {
   position: absolute;
   right: 10px;
 }
 
-.textEnd{
+.textEnd {
   text-align: start;
 }
 
-.red ,.blue {
+.red,
+.blue {
   font-weight: bold;
 }
 /**** popup window ***/
@@ -147,13 +151,15 @@
 /*              M Q max-width: 1799.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1800px) */
-@media (max-width: 1799.98px) {}
+@media (max-width: 1799.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1399.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1199.98px */
@@ -173,22 +179,26 @@
 /*              M Q max-width: 991.98px */
 /* ------------------------------------------------*/
 /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+}
 
 /* ------------------------------------------------ */
 /* M Q max-width: 767.98px */
 /* ------------------------------------------------*/
 /* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+}
 
 /* ------------------------------------------------ */
 /* M Q max-width: 575.98px */
 /* ------------------------------------------------*/
 /* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 475.98px             */
 /* ------------------------------------------------*/
 /* body working fine 320 to 475 */
-@media (max-width: 475.98px) {}
+@media (max-width: 475.98px) {
+}

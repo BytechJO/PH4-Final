@@ -24,7 +24,7 @@ var fillin_data = {
     "mainTitle": "../images/pages/sb-icons/gram_main_title.png",
     "mainTitleIcon": "../images/pages/sb-icons/gram_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "82px"},
-    "mainTitleAudio"        : "../audios/under.mp3",
+    "mainTitleAudio"        : "../audios/page_14/GRAMMAR.mp3",
     "subTitleTextLeft"      : "<span class='title-order'>3</span> <b>You do it!</b>",
     "subTitleTextRight"     : "Use the words you coloured in Exercise 2 to fill in the blanks.",
     "subTitleIcons"         : [""],
@@ -49,7 +49,7 @@ var fillin_data = {
         "audio": "",
         "audioenable": "default", // correct (or) default
         "image": "",
-        "answer": ["are"],
+        "answer": ["ate"],
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no  
         "strictorder": "yes", // yes (or) no              

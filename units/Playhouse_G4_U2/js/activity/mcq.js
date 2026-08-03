@@ -1,346 +1,572 @@
 //  ****************************************** //
 //  MCQ - Version no: 2
-//  Date updated - July 03, 2020 
+//  Date updated - July 03, 2020
 //  ****************************************** //
-window.MCQ = function(obj, dataObj){    
-    ob = obj[0].getElementsByClassName("options");    
-    this.settings = {        
-        'activity_area' : ob[0],
-        'data_obj'      : dataObj,
-        'parent_holder' : obj[0]
-    }    
-    this.init(this.settings);
-}
+window.MCQ = function (obj, dataObj) {
+  ob = obj[0].getElementsByClassName("options");
+  this.settings = {
+    activity_area: ob[0],
+    data_obj: dataObj,
+    parent_holder: obj[0],
+  };
+  this.init(this.settings);
+};
 MCQ.prototype = {
-    init:function(ob){       
-        this.ob = ob;
-        // this.reset();
-        this.listen(ob);
-    },
-    listen:function(ob){
-        var self = this;
-        var e = (ob.activity_area); 
-        var selectTyp = (ob.data_obj).select;
-        var selectBgColor = (ob.data_obj).bgcolor;
-        var selShape = (ob.data_obj).shape;
-        var ques = e.querySelectorAll('.que');        
-        if(ques.length > 0){
-            // for (var i = 0; i < ques.length; i++) { 
-                // var thisQue  = ques[i];
-                var picks = e.querySelectorAll('.pick'); 
-                
-                for (var i = 0; i < picks.length; i++) {
-                    picks[i].addEventListener("click", function(){  
-                        var target = $(e.target);                         
-                        // if(!(target.hasClass('audioIcon'))){
-                            var _thisId = $(this).attr('id');
-                            var _parentNum = ($(this).attr('id')).split('_')[1];                        
-                            thisQue = $( "#"+_thisId ).closest( "#que_"+_parentNum ) ;
-                            var thisQuePicks = thisQue.find('.pick');                            
-                            self.showIcons(false);
-                            var isSel = !($(this).hasClass('selected'));
-                            
-                            if(selectTyp == 'single'){                                
-                                self.resetAllPicks(thisQue, thisQuePicks);                            
-                            }else{                 
-                                self.resetAllPicks(thisQue, [$(this)]);  
-                            }
-                            if(isSel){
-                                $(this).addClass('selected');
-                                if(selShape == 'cross'){
-                                    $(this).find('.selX').show();
-                                }else if(selShape == 'svg'){
-                                    $(this).find('svg').removeClass('fillWhite');
-                                    $(this).find('svg').addClass('fillBlue');
-                                }else if(selShape == 'tickbox'){
-                                    $(this).find('.selectTick').css('display', 'block');
-                                }else{
-                                    if(selectBgColor != 'none'){
-                                        $(this).css('background-color', selectBgColor);  
-                                    }else{
-                                        $(this).addClass('selectedDefault');  
-                                    }
-                                }
-                            }                       
-                            document.getElementsByClassName('checkBtn')[0].classList.remove("disabled");
-                            document.getElementsByClassName('resetBtn')[0].classList.remove("disabled");
-                        // }      
-                    });
-                    
-                }
+  init: function (ob) {
+    this.ob = ob;
+    // this.reset();
+    this.listen(ob);
+  },
+  listen: function (ob) {
+    var self = this;
+    var e = ob.activity_area;
+    var selectTyp = ob.data_obj.select;
+    var selectBgColor = ob.data_obj.bgcolor;
+    var selShape = ob.data_obj.shape;
+    var ques = e.querySelectorAll(".que");
+    if (ques.length > 0) {
+      // for (var i = 0; i < ques.length; i++) {
+      // var thisQue  = ques[i];
+      var picks = e.querySelectorAll(".pick");
 
-            // } 
-        }
-        
-    },    
-    resetAllPicks:function(qOb, aArr){  
-        var ob = this.ob; 
-        var picks = aArr;
-        var selShape = (ob.data_obj).shape;        
-        for (var i = 0; i < picks.length; i++) {            
-            var tPick = (picks[i].classList == undefined)?(picks[i])[0]: picks[i];
-            
-            tPick.classList.remove("selected"); 
-            tPick.classList.remove("selectedDefault");             
-            tPick.classList.remove("isCorrect");   
-            tPick.classList.remove("isNotCorrect");
-            tPick.style.backgroundColor = 'transparent';   
-            
-            if((tPick.querySelectorAll('.selX')).length > 0){
-                (tPick.querySelector('.selX')).style.display = 'none';  
+      for (var i = 0; i < picks.length; i++) {
+        picks[i].addEventListener("click", function () {
+          var target = $(e.target);
+          // if(!(target.hasClass('audioIcon'))){
+          var _thisId = $(this).attr("id");
+          var _parentNum = $(this).attr("id").split("_")[1];
+          thisQue = $("#" + _thisId).closest("#que_" + _parentNum);
+          var thisQuePicks = thisQue.find(".pick");
+          self.showIcons(false);
+          var isSel = !$(this).hasClass("selected");
+
+          if (selectTyp == "single") {
+            self.resetAllPicks(thisQue, thisQuePicks);
+          } else {
+            self.resetAllPicks(thisQue, [$(this)]);
+          }
+          if (isSel) {
+            $(this).addClass("selected");
+            if (selShape == "cross") {
+              $(this).find(".selX").show();
+            } else if (selShape == "svg") {
+              $(this).find("svg").removeClass("fillWhite");
+              $(this).find("svg").addClass("fillBlue");
+            } else if (selShape == "tickbox") {
+              $(this).find(".selectTick").css("display", "block");
+            } else {
+              if (selectBgColor != "none") {
+                $(this).css("background-color", selectBgColor);
+              } else {
+                $(this).addClass("selectedDefault");
+              }
             }
-            if((tPick.querySelectorAll('.selectTick')).length > 0){
-                (tPick.querySelector('.selectTick')).style.display = 'none';                   
-               /* tPick.querySelector('.tickBox').classList.remove('red'); 
+          }
+          document
+            .getElementsByClassName("checkBtn")[0]
+            .classList.remove("disabled");
+          document
+            .getElementsByClassName("resetBtn")[0]
+            .classList.remove("disabled");
+          // }
+        });
+      }
+
+      // }
+    }
+  },
+  resetAllPicks: function (qOb, aArr) {
+    var ob = this.ob;
+    var picks = aArr;
+    var selShape = ob.data_obj.shape;
+    for (var i = 0; i < picks.length; i++) {
+      var tPick = picks[i].classList == undefined ? picks[i][0] : picks[i];
+
+      tPick.classList.remove("selected");
+      tPick.classList.remove("selectedDefault");
+      tPick.classList.remove("isCorrect");
+      tPick.classList.remove("isNotCorrect");
+      tPick.style.backgroundColor = "transparent";
+
+      if (tPick.querySelectorAll(".selX").length > 0) {
+        tPick.querySelector(".selX").style.display = "none";
+      }
+      if (tPick.querySelectorAll(".selectTick").length > 0) {
+        tPick.querySelector(".selectTick").style.display = "none";
+        /* tPick.querySelector('.tickBox').classList.remove('red'); 
                 tPick.querySelector('.tickBox').classList.remove('green');  
                 tPick.querySelector('.tickBox').classList.add('blue'); */
-            }
-            if(selShape == 'svg') {
-                var svgsIn = tPick.querySelectorAll('svg');                
-                if(svgsIn.length > 0){
-                    for(var svg=0;svg<svgsIn.length;svg++){
-                        svgsIn[svg].classList.remove("fillBlue"); 
-                        svgsIn[svg].classList.remove("fillGreen"); 
-                        svgsIn[svg].classList.remove("fillRed"); 
-                        svgsIn[svg].classList.add("fillWhite"); 
-                    }
-                }
-            }          
+      }
+      if (selShape == "svg") {
+        var svgsIn = tPick.querySelectorAll("svg");
+        if (svgsIn.length > 0) {
+          for (var svg = 0; svg < svgsIn.length; svg++) {
+            svgsIn[svg].classList.remove("fillBlue");
+            svgsIn[svg].classList.remove("fillGreen");
+            svgsIn[svg].classList.remove("fillRed");
+            svgsIn[svg].classList.add("fillWhite");
+          }
         }
-    },
-    validate:function(){
-        var self = this;
-        var ob = this.ob;
-        var selectBgColor = (ob.data_obj).bgcolor;
-        var selShape = (ob.data_obj).shape;
-        var e = (ob.activity_area); 
-        var elsQue = e.querySelectorAll('.que'); 
-        var numOfMCQs = elsQue.length;
-        var allCorrect = false; 
-        var resultArr = [];        
-        for (var i = 0; i < elsQue.length; i++) { 
-            resultArr[i] = 0;
-            var fIndx = parseInt(elsQue[i].dataset.qno);
-            var fDataObj = ((ob.data_obj).questions[fIndx-1]);
-            (elsQue[i].querySelector('.tick')).style.display = 'none';
-            (elsQue[i].querySelector('.cross')).style.display = 'none';            
-            var _cAns = getIntArray(fDataObj.answer);           
-            var _uAns = [];
-           
-            var picks = elsQue[i].querySelectorAll('.pick');            
-            if(picks.length > 0){
-                for(var a=0;a<picks.length;a++){ 
-                    if(picks[a].classList.contains('selected')){
-                     //   picks[a].classList.remove('selectedDefault')
-                        _uAns.push(a+1);
-                        var isAns = ($.inArray( (a+1), _cAns) >=0 ); 
-                        /*if(selShape == 'tickbox'){
-                            picks[a].querySelector('.tickBox').classList.remove('blue'); 
-                            picks[a].querySelector('.tickBox').classList.remove('red'); 
-                            picks[a].querySelector('.tickBox').classList.remove('green'); 
-                        }*/
-                        if(isAns){
-                            /*if(selectBgColor != 'none'){
-                                picks[a].style.backgroundColor = '#8cc63f';  
-                            }*/
-                            if(selectBgColor == 'none' && selShape != 'svg' && selShape != 'tickbox'){
-                            //    picks[a].classList.add('isCorrect');
-                            }
-                            if(selShape == 'cross'){
-                                picks[a].classList.add('isCorrect');                               
-                            }else if(selShape == 'svg'){
-                                picks[a].querySelector('svg').classList.remove('fillBlue');                            
-                                picks[a].querySelector('svg').classList.add('fillGreen');
-                            }else if(selShape == 'tickbox'){                                
-                                // picks[a].querySelector('.tickBox').classList.add('green'); 
-                            }
-                            if((picks[a].querySelectorAll('.icon_wrap')).length > 0){
-                                (picks[a].querySelector('.icon_wrap')).style.display = 'block';  
-                                (picks[a].querySelector('.tick')).style.display = 'block';                                
-                            } 
-                        }else{
-                           /* if(selectBgColor != 'none'){
-                                picks[a].style.backgroundColor = '#f53656';  
-                            }*/
-                            if(selectBgColor == 'none' && selShape != 'svg' && selShape != 'tickbox'){
-                             //   picks[a].classList.add('isNotCorrect');
-                            }
-                            if(selShape == 'cross'){
-                                picks[a].classList.add('isNotCorrect');                               
-                            }else if(selShape == 'svg'){
-                                picks[a].querySelector('svg').classList.remove('fillBlue');                            
-                                picks[a].querySelector('svg').classList.add('fillRed');
-                            }else if(selShape == 'tickbox'){
-                                // picks[a].querySelector('.tickBox').classList.add('red');  
-                            }
-                            if((picks[a].querySelectorAll('.icon_wrap')).length > 0){
-                                (picks[a].querySelector('.icon_wrap')).style.display = 'block';                                  
-                                (picks[a].querySelector('.cross')).style.display = 'block';
-                            } 
-                        }
-                    }                   
-                }
-            } 
-            if((_uAns.length>0) && (_cAns.length == _uAns.length)){
-                resultArr[i] = (compareArrays(_uAns, _cAns))? 1:0;                
-                 
-                if((fDataObj).audio != ''){ 
-                    if(((fDataObj).audioenable == 'correct') && resultArr[i] == 1) {
-                        (elsQue[i].querySelector('.audioIcon')).classList.remove("disabled");                        
-                    } 
-                }
-            }
-           
-        }
-                
-        allCorrect = (((resultArr.join('').split('0'))[0]).length == numOfMCQs); 
-        self.showIcons(true, resultArr, allCorrect); 
-        showFeedback(true,allCorrect);
-       
-        if(allCorrect){
-            document.getElementsByClassName('resetBtn')[0].classList.add("disabled"); 
-        }        
-    },
-    showIcons:function(aBoo, aVal, aResult){
-        var ob = this.ob;        
-        var e = (ob.activity_area);
-        var selShape = (ob.data_obj).shape;
-        var needIcon = ((typeof (ob.data_obj).showicon != undefined && (ob.data_obj).showicon != null) ? (ob.data_obj).showicon : 'true');
-        var elsQue = e.querySelectorAll('.que');       
-        for (var i = 0; i < elsQue.length; i++) {
-            if(aBoo){
-                if(elsQue.length != 1){
-                    (elsQue[i].querySelector('.icon_wrap')).style.display = 'block'; 
-                    if(aVal[i] == 1){
-                        (elsQue[i].querySelector('.tick')).style.display = 'block';
-                    }else{
-                        (elsQue[i].querySelector('.cross')).style.display = 'block';
-                    }
-                }else{                    
-                    var picks = elsQue[i].querySelectorAll('.pick'); 
-                    if(picks.length > 0){
-                        if(needIcon == 'true'){
-                            (elsQue[i].querySelector('.icon_wrap')).style.display = 'block'; 
-
-                            if(aVal[i] == 1){
-                                (elsQue[i].querySelector('.tick')).style.display = 'block';
-                            }else{
-                                (elsQue[i].querySelector('.cross')).style.display = 'block';
-                            }
-                        }
-                    }
-                }
-
-                
-            }else{
-                if(elsQue.length != 1){
-                    (elsQue[i].querySelector('.icon_wrap')).style.display = 'none'; 
-                    (elsQue[i].querySelector('.tick')).style.display = 'none';
-                    (elsQue[i].querySelector('.cross')).style.display = 'none';
-                }else{                   
-                    if(needIcon != 'true'){                   
-                        if((elsQue[i].querySelectorAll('.icon_wrap_holder')).length > 0){
-                            (elsQue[i].querySelector('.icon_wrap_holder')).classList.remove('d-flex');
-                            (elsQue[i].querySelector('.icon_wrap_holder')).classList.add('d-none');
-                        }
-                    }else{
-                        (elsQue[i].querySelector('.icon_wrap')).style.display = 'none'; 
-                        (elsQue[i].querySelector('.tick')).style.display = 'none';
-                        (elsQue[i].querySelector('.cross')).style.display = 'none';
-                    }                    
-                }                
-                var picks = elsQue[i].querySelectorAll('.pick'); 
-                if(picks.length > 0){
-                    for(var a=0;a<picks.length;a++){  
-                        if((picks[a].querySelectorAll('.icon_wrap')).length > 0){
-                            (picks[a].querySelector('.icon_wrap')).style.display = 'none';  
-                            (picks[a].querySelector('.tick')).style.display = 'none';
-                            (picks[a].querySelector('.cross')).style.display = 'none';
-                        }
-                    }
-                }
-            }
-            
-        }
-    },
-    reset:function(){
-        var self = this;
-        var ob = this.ob;        
-        var e = (ob.activity_area);        
-
-        var selShape = (ob.data_obj).shape;
-        var elsQue = e.querySelectorAll('.que');  
-        
-        for (var i = 0; i < elsQue.length; i++) { 
-            var fIndx = parseInt(elsQue[i].dataset.qno);
-            var fDataObj = ((ob.data_obj).questions[fIndx-1]);            
-            self.showIcons(false);             
-            if(fDataObj.audio != ''){ 
-                if(fDataObj.audio != 'no'){
-                    if((elsQue[i].querySelectorAll('.audioIcon')).length > 0){
-                        if(fDataObj.audioenable == 'correct'){                
-                            (elsQue[i].querySelector('.audioIcon')).style.display = 'block';
-                            (elsQue[i].querySelector('.audioIcon')).classList.add("disabled");
-                        }else if(fDataObj.audioenable == 'default'){
-                            (elsQue[i].querySelector('.audioIcon')).style.display = 'block';
-                            (elsQue[i].querySelector('.audioIcon')).classList.remove("disabled");
-                        }
-                    }                    
-                }else{
-                    if((elsQue[i].querySelectorAll('.audioIcon')).length > 0){
-                        // (elsQue[i].querySelector('.audioIcon')).style.display = 'none';  
-                    }
-                }
-            }
-            var pickOptions = elsQue[i].querySelectorAll('.pick');                
-            self.resetAllPicks(elsQue[i], pickOptions);    
-            if(pickOptions.length > 0){
-                for(var a=0;a<pickOptions.length;a++){                     
-                    if(((fDataObj.options)[a]).audio != ''){ 
-                        if(((fDataObj.options)[a]).audio != 'no'){
-                            if((pickOptions[a].querySelectorAll('.audioIcon')).length > 0){
-                                if(((fDataObj.options)[a]).audioenable == 'correct'){
-                                    (pickOptions[a].querySelector('.audioIcon')).style.display = 'block';
-                                    (pickOptions[a].querySelector('.audioIcon')).classList.add("disabled");
-                                }else if(((fDataObj.options)[a]).audioenable == 'default'){
-                                    (pickOptions[a].querySelector('.audioIcon')).style.display = 'block';
-                                    (pickOptions[a].querySelector('.audioIcon')).classList.remove("disabled");
-                                }
-                            }
-                        }else{
-                            if((pickOptions[a].querySelectorAll('.audioIcon')).length > 0){
-                                (pickOptions[a].querySelector('.audioIcon')).style.display = 'none'; 
-                            } 
-                        }
-                    }
-                    if((pickOptions[a].querySelectorAll('.selX')).length > 0){
-                        (pickOptions[a].querySelector('.selX')).style.display = 'none';  
-                    }                                      
-                    if(selShape != ''){
-                        if(selShape == 'roundrect'){
-                            pickOptions[a].classList.add("roundedCorners");
-                        } else if(selShape == 'circle'){
-                            pickOptions[a].classList.add("noCorners");
-                        } else if(selShape == 'rectangle'){
-                            pickOptions[a].classList.add("sharpCorners");
-                        } else if (selShape == 'tickbox'){                            
-                            if((pickOptions[a].querySelectorAll('.tickBox')).length > 0){
-                              //  (pickOptions[a].querySelector('.tickBox')).classList.add('blue'); 
-                                (pickOptions[a].querySelector('.selectTick')).style.display = 'none';  
-                            } 
-                        }
-                    }
-                    pickOptions[a].classList.remove("selected");
-                    pickOptions[a].style.cursor = 'pointer';
-                    pickOptions[a].classList.remove('isCorrect');
-                    pickOptions[a].classList.remove('isNotCorrect');
-                }
-            }
-        }
-        document.getElementsByClassName('checkBtn')[0].classList.add("disabled");           
-    },
-    initialSettings:function(){
-        this.reset();
-        initialSettingsDone(1);  
+      }
     }
-}
+  },
+  validate: function () {
+  var self = this;
+  var ob = this.ob;
+
+  var selectBgColor = ob.data_obj.bgcolor;
+  var selShape = ob.data_obj.shape;
+  var e = ob.activity_area;
+
+  var elsQue = e.querySelectorAll(".que");
+  var numOfMCQs = elsQue.length;
+
+  var resultArr = [];
+
+  for (var i = 0; i < elsQue.length; i++) {
+    resultArr[i] = 0;
+
+    var fIndx = parseInt(
+      elsQue[i].dataset.qno
+    );
+
+    var fDataObj =
+      ob.data_obj.questions[
+        fIndx - 1
+      ];
+
+    var tick =
+      elsQue[i].querySelector(
+        ".tick"
+      );
+
+    var cross =
+      elsQue[i].querySelector(
+        ".cross"
+      );
+
+    if (tick) {
+      tick.style.display = "none";
+    }
+
+    if (cross) {
+      cross.style.display = "none";
+    }
+
+    /*
+      الإجابة الأصلية من الداتا.
+      لو كانت [] نخليها فعلًا Array فاضية
+      وما نمررها إلى getIntArray.
+    */
+    var rawAnswer =
+      fDataObj.answer != undefined &&
+      fDataObj.answer != null
+        ? fDataObj.answer
+        : [];
+
+    var hasNoCorrectAnswers =
+      Array.isArray(rawAnswer) &&
+      rawAnswer.length === 0;
+
+    var _cAns =
+      hasNoCorrectAnswers
+        ? []
+        : getIntArray(rawAnswer);
+
+    var _uAns = [];
+
+    var allowEmpty =
+      fDataObj.allowempty != undefined &&
+      fDataObj.allowempty != null
+        ? fDataObj.allowempty
+            .toString()
+            .toLowerCase()
+        : "no";
+
+    var picks =
+      elsQue[i].querySelectorAll(
+        ".pick"
+      );
+
+    /*
+      نجمع اختيارات الطالب
+    */
+    if (picks.length > 0) {
+      for (
+        var a = 0;
+        a < picks.length;
+        a++
+      ) {
+        if (
+          picks[a].classList.contains(
+            "selected"
+          )
+        ) {
+          _uAns.push(a + 1);
+
+          var isAns =
+            $.inArray(
+              a + 1,
+              _cAns
+            ) >= 0;
+
+          /*
+            معالجة الشكل عند اختيار جواب صحيح
+          */
+          if (isAns) {
+            if (
+              selectBgColor == "none" &&
+              selShape != "svg" &&
+              selShape != "tickbox"
+            ) {
+              // لا نغيّر اللون
+            }
+
+            if (selShape == "cross") {
+              picks[a].classList.add(
+                "isCorrect"
+              );
+            } else if (
+              selShape == "svg"
+            ) {
+              var correctSvg =
+                picks[a].querySelector(
+                  "svg"
+                );
+
+              if (correctSvg) {
+                correctSvg.classList.remove(
+                  "fillBlue"
+                );
+
+                correctSvg.classList.add(
+                  "fillGreen"
+                );
+              }
+            }
+
+            /*
+              إذا كانت الأيقونة موجودة داخل الاختيار نفسه
+            */
+            var pickCorrectIconWrap =
+              picks[a].querySelector(
+                ".icon_wrap"
+              );
+
+            var pickCorrectTick =
+              picks[a].querySelector(
+                ".tick"
+              );
+
+            if (pickCorrectIconWrap) {
+              pickCorrectIconWrap.style.display =
+                "block";
+            }
+
+            if (pickCorrectTick) {
+              pickCorrectTick.style.display =
+                "block";
+            }
+          } else {
+            /*
+              معالجة الشكل عند اختيار جواب خطأ
+            */
+            if (
+              selectBgColor == "none" &&
+              selShape != "svg" &&
+              selShape != "tickbox"
+            ) {
+              // لا نغيّر اللون
+            }
+
+            if (selShape == "cross") {
+              picks[a].classList.add(
+                "isNotCorrect"
+              );
+            } else if (
+              selShape == "svg"
+            ) {
+              var wrongSvg =
+                picks[a].querySelector(
+                  "svg"
+                );
+
+              if (wrongSvg) {
+                wrongSvg.classList.remove(
+                  "fillBlue"
+                );
+
+                wrongSvg.classList.add(
+                  "fillRed"
+                );
+              }
+            }
+
+            /*
+              إذا كانت الأيقونة موجودة داخل الاختيار نفسه
+            */
+            var pickWrongIconWrap =
+              picks[a].querySelector(
+                ".icon_wrap"
+              );
+
+            var pickWrongCross =
+              picks[a].querySelector(
+                ".cross"
+              );
+
+            if (pickWrongIconWrap) {
+              pickWrongIconWrap.style.display =
+                "block";
+            }
+
+            if (pickWrongCross) {
+              pickWrongCross.style.display =
+                "block";
+            }
+          }
+        }
+      }
+    }
+
+    /*
+      حالة خاصة للسطر الذي لا يحتوي
+      أي جواب صحيح.
+
+      مثال:
+      answer: []
+      allowempty: "yes"
+
+      يعتبر صحيحًا فقط إذا الطالب
+      لم يحدد أي كلمة.
+    */
+    if (
+      allowEmpty == "yes" &&
+      hasNoCorrectAnswers &&
+      _uAns.length == 0
+    ) {
+      resultArr[i] = 1;
+    } else if (
+      _uAns.length > 0 &&
+      _cAns.length ==
+        _uAns.length
+    ) {
+      resultArr[i] =
+        compareArrays(
+          _uAns,
+          _cAns
+        )
+          ? 1
+          : 0;
+    } else {
+      resultArr[i] = 0;
+    }
+
+    /*
+      تفعيل الصوت عند الإجابة الصحيحة
+    */
+    if (
+      fDataObj.audio != "" &&
+      fDataObj.audio != "no" &&
+      fDataObj.audioenable ==
+        "correct" &&
+      resultArr[i] == 1
+    ) {
+      var audioIcon =
+        elsQue[i].querySelector(
+          ".audioIcon"
+        );
+
+      if (audioIcon) {
+        audioIcon.classList.remove(
+          "disabled"
+        );
+      }
+    }
+  }
+
+  /*
+    كل الأسئلة لازم تكون نتيجتها 1.
+    السؤال الفاضي ينحسب 1 بسبب allowempty.
+  */
+  var allCorrect =
+    resultArr.indexOf(0) == -1 &&
+    resultArr.length ==
+      numOfMCQs;
+
+  self.showIcons(
+    true,
+    resultArr,
+    allCorrect
+  );
+
+  showFeedback(
+    true,
+    allCorrect
+  );
+
+  if (allCorrect) {
+    document
+      .getElementsByClassName(
+        "resetBtn"
+      )[0]
+      .classList.add("disabled");
+  }
+},
+  showIcons: function (aBoo, aVal, aResult) {
+    var ob = this.ob;
+    var e = ob.activity_area;
+    var selShape = ob.data_obj.shape;
+    var needIcon =
+      typeof ob.data_obj.showicon != undefined && ob.data_obj.showicon != null
+        ? ob.data_obj.showicon
+        : "true";
+    var elsQue = e.querySelectorAll(".que");
+    for (var i = 0; i < elsQue.length; i++) {
+      if (aBoo) {
+        if (elsQue.length != 1) {
+          elsQue[i].querySelector(".icon_wrap").style.display = "block";
+          if (aVal[i] == 1) {
+            elsQue[i].querySelector(".tick").style.display = "block";
+          } else {
+            elsQue[i].querySelector(".cross").style.display = "block";
+          }
+        } else {
+          var picks = elsQue[i].querySelectorAll(".pick");
+          if (picks.length > 0) {
+            if (needIcon == "true") {
+              elsQue[i].querySelector(".icon_wrap").style.display = "block";
+
+              if (aVal[i] == 1) {
+                elsQue[i].querySelector(".tick").style.display = "block";
+              } else {
+                elsQue[i].querySelector(".cross").style.display = "block";
+              }
+            }
+          }
+        }
+      } else {
+        if (elsQue.length != 1) {
+          elsQue[i].querySelector(".icon_wrap").style.display = "none";
+          elsQue[i].querySelector(".tick").style.display = "none";
+          elsQue[i].querySelector(".cross").style.display = "none";
+        } else {
+          if (needIcon != "true") {
+            if (elsQue[i].querySelectorAll(".icon_wrap_holder").length > 0) {
+              elsQue[i]
+                .querySelector(".icon_wrap_holder")
+                .classList.remove("d-flex");
+              elsQue[i]
+                .querySelector(".icon_wrap_holder")
+                .classList.add("d-none");
+            }
+          } else {
+            elsQue[i].querySelector(".icon_wrap").style.display = "none";
+            elsQue[i].querySelector(".tick").style.display = "none";
+            elsQue[i].querySelector(".cross").style.display = "none";
+          }
+        }
+        var picks = elsQue[i].querySelectorAll(".pick");
+        if (picks.length > 0) {
+          for (var a = 0; a < picks.length; a++) {
+            if (picks[a].querySelectorAll(".icon_wrap").length > 0) {
+              picks[a].querySelector(".icon_wrap").style.display = "none";
+              picks[a].querySelector(".tick").style.display = "none";
+              picks[a].querySelector(".cross").style.display = "none";
+            }
+          }
+        }
+      }
+    }
+  },
+  reset: function () {
+    var self = this;
+    var ob = this.ob;
+    var e = ob.activity_area;
+
+    var selShape = ob.data_obj.shape;
+    var elsQue = e.querySelectorAll(".que");
+
+    for (var i = 0; i < elsQue.length; i++) {
+      var fIndx = parseInt(elsQue[i].dataset.qno);
+      var fDataObj = ob.data_obj.questions[fIndx - 1];
+      self.showIcons(false);
+      if (fDataObj.audio != "") {
+        if (fDataObj.audio != "no") {
+          if (elsQue[i].querySelectorAll(".audioIcon").length > 0) {
+            if (fDataObj.audioenable == "correct") {
+              elsQue[i].querySelector(".audioIcon").style.display = "block";
+              elsQue[i].querySelector(".audioIcon").classList.add("disabled");
+            } else if (fDataObj.audioenable == "default") {
+              elsQue[i].querySelector(".audioIcon").style.display = "block";
+              elsQue[i]
+                .querySelector(".audioIcon")
+                .classList.remove("disabled");
+            }
+          }
+        } else {
+          if (elsQue[i].querySelectorAll(".audioIcon").length > 0) {
+            // (elsQue[i].querySelector('.audioIcon')).style.display = 'none';
+          }
+        }
+      }
+      var pickOptions = elsQue[i].querySelectorAll(".pick");
+      self.resetAllPicks(elsQue[i], pickOptions);
+      if (pickOptions.length > 0) {
+        for (var a = 0; a < pickOptions.length; a++) {
+          if (fDataObj.options[a].audio != "") {
+            if (fDataObj.options[a].audio != "no") {
+              if (pickOptions[a].querySelectorAll(".audioIcon").length > 0) {
+                if (fDataObj.options[a].audioenable == "correct") {
+                  pickOptions[a].querySelector(".audioIcon").style.display =
+                    "block";
+                  pickOptions[a]
+                    .querySelector(".audioIcon")
+                    .classList.add("disabled");
+                } else if (fDataObj.options[a].audioenable == "default") {
+                  pickOptions[a].querySelector(".audioIcon").style.display =
+                    "block";
+                  pickOptions[a]
+                    .querySelector(".audioIcon")
+                    .classList.remove("disabled");
+                }
+              }
+            } else {
+              if (pickOptions[a].querySelectorAll(".audioIcon").length > 0) {
+                pickOptions[a].querySelector(".audioIcon").style.display =
+                  "none";
+              }
+            }
+          }
+          if (pickOptions[a].querySelectorAll(".selX").length > 0) {
+            pickOptions[a].querySelector(".selX").style.display = "none";
+          }
+          if (selShape != "") {
+            if (selShape == "roundrect") {
+              pickOptions[a].classList.add("roundedCorners");
+            } else if (selShape == "circle") {
+              pickOptions[a].classList.add("noCorners");
+            } else if (selShape == "rectangle") {
+              pickOptions[a].classList.add("sharpCorners");
+            } else if (selShape == "tickbox") {
+              if (pickOptions[a].querySelectorAll(".tickBox").length > 0) {
+                //  (pickOptions[a].querySelector('.tickBox')).classList.add('blue');
+                pickOptions[a].querySelector(".selectTick").style.display =
+                  "none";
+              }
+            }
+          }
+          pickOptions[a].classList.remove("selected");
+          pickOptions[a].style.cursor = "pointer";
+          pickOptions[a].classList.remove("isCorrect");
+          pickOptions[a].classList.remove("isNotCorrect");
+        }
+      }
+    }
+    document.getElementsByClassName("checkBtn")[0].classList.add("disabled");
+  },
+  initialSettings: function () {
+    this.reset();
+    initialSettingsDone(1);
+  },
+};

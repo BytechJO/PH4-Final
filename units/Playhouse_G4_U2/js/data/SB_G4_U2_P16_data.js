@@ -24,7 +24,7 @@ var mcq_data = {
     "mainTitle"             : "../images/pages/sb-icons/reading.png",
     "mainTitleIcon"         : "../images/pages/sb-icons/adv_icon_1.png",
     "mainTitleIconPos"      : {"right": "90px"},
-    "mainTitleAudio"        : "../audios/under.mp3",
+    "mainTitleAudio"        : "../audios/page_16/READING.mp3",
     "subTitleTextLeft"      : "",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],

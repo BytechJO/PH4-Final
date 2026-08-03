@@ -139,18 +139,18 @@
     width: auto;
     margin-top: 10px;
 }
-
-.image-container{
-    position: absolute;
-    right: 260px;
-    bottom: 30px;
-    
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 50px;
 }
 
-.image-container img{
+.image-container img {
     width: 260px;
     height: 160px;
-    margin: 0px 70px;
+    margin: 0;
     object-fit: cover;
     border-radius: 15px;
     border: 2px solid #36a0c7;

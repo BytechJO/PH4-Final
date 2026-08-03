@@ -21,8 +21,8 @@ var stereo_data = {
 var fillin_data = {    
     "layout"                : 1,
     "numinrow"              : [[1,1,1,1,1,1,1]],
-    "mainTitle"             : "../images/pages/sb-icons/word_main_title.png",
-    "mainTitleIcon"         : "../images/pages/sb-icons/word_main_title_icon.png",
+    "mainTitle"             : "../images/pages/sb-icons/grammer_main_title.png",
+    "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_11/GRAMMAR.mp3",
     "subTitleTextLeft"      : "<span class='blue_text'>1</span>  With the family.",

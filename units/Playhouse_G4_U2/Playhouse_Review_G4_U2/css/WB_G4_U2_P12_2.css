@@ -1,0 +1,522 @@
+:root {
+  --temp: #8acbec;
+}
+
+/* =========================================
+   General
+========================================= */
+
+.bg_image.mx-auto {
+  text-align: center;
+}
+
+.image {
+  display: none;
+}
+
+.image img {
+  width: 250px;
+}
+
+img.bg_img {
+  width: 35%;
+}
+
+.options {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  font-size: 22px;
+}
+
+/* ترتيب الكلمات على اليسار والشبكة على اليمين */
+.options > .h-100 {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* =========================================
+   Clues
+========================================= */
+
+.puzzleclues {
+  width: 42% !important;
+  min-width: 390px;
+  height: auto;
+  margin: 0 !important;
+  display: block !important;
+  align-content: center;
+}
+
+.clue_grp {
+  width: 100%;
+  margin: 10px 0 24px;
+  padding: 0;
+
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+
+  font-size: 20px;
+}
+
+.clue_grp .clueDirection {
+  margin: 0 0 7px;
+  padding: 0;
+
+  text-align: left;
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #292929;
+}
+
+.clue_grp .clue {
+  width: 100%;
+  min-height: 31px;
+  height: auto;
+
+  display: flex;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+}
+
+.clue_grp .clueText {
+  width: 100%;
+  min-height: 31px;
+  height: auto;
+
+  margin: 0 !important;
+  padding: 0;
+
+  line-height: 1.4;
+  color: #292929;
+}
+
+.clue_grp .clueText b {
+  display: inline-block;
+  min-width: 28px;
+}
+
+/* إخفاء أيقونات الصح والخطأ بجانب الجمل */
+.icon_wrap_holder {
+  display: none;
+}
+
+.cluetext {
+  width: 400px;
+}
+
+.tick,
+.cross {
+  width: 26px;
+  height: 26px;
+  margin-top: 2px;
+}
+
+.clueDirection {
+  font-weight: bold;
+}
+
+.clue_word {
+  margin: 5px 15px;
+  font-size: 24px;
+}
+
+/* =========================================
+   Puzzle Container
+========================================= */
+
+.puzzle_container {
+  width: 58%;
+  min-width: 580px;
+  height: 100%;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  overflow: visible;
+}
+
+.puzzlematrix {
+  position: relative;
+
+  width: 560px;
+  height: 390px;
+
+  margin: 0 auto;
+
+  /*
+    الخلايا الأصلية 40px، والـzoom يكبر الشبكة كاملة
+    بدون تخريب أماكن الخلايا المحسوبة بالجافاسكربت.
+  */
+  zoom: 1.25;
+}
+
+/* =========================================
+   Puzzle Cells
+========================================= */
+
+.puzzlematrix .cell {
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #0cb14b;
+  border-radius: 6px;
+
+  background-color: #ffffff;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+.puzzlematrix .cell:hover {
+  background-color: #f7fff9;
+}
+
+/* رقم الكلمة داخل الخلية */
+.puzzlematrix .cell p {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+
+  z-index: 2;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 13px;
+  line-height: 1;
+  font-weight: normal;
+  color: #222222;
+
+  pointer-events: none;
+}
+
+/* الحرف داخل الخلية */
+.puzzlematrix .cell input[type="text"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 6px 2px 0;
+
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+
+  font-size: 23px;
+  line-height: 1;
+  font-weight: bold;
+
+  text-align: center;
+  text-transform: lowercase;
+
+  color: #000000;
+
+  transform: translate(-50%, -50%);
+}
+
+.puzzlematrix .cell input[type="text"]:focus {
+  outline: none;
+  background-color: rgba(12, 177, 75, 0.07);
+  box-shadow: inset 0 0 0 2px rgba(12, 177, 75, 0.18);
+}
+
+/* إزالة لون المتصفح التلقائي */
+.puzzlematrix .cell input[type="text"]:-webkit-autofill,
+.puzzlematrix .cell input[type="text"]:-webkit-autofill:hover,
+.puzzlematrix .cell input[type="text"]:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000000;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+}
+
+/* =========================================
+   Word Options
+========================================= */
+
+.word_options {
+  width: 80%;
+
+  margin-bottom: 30px;
+
+  border: 2px solid #0cb14b;
+  border-radius: 20px;
+
+  background-color: #e0f5ff7d;
+}
+
+.word_opt_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 0;
+
+  z-index: 5;
+}
+
+/* =========================================
+   Responsive - Laptop
+========================================= */
+
+@media (max-width: 1199.98px) {
+  .options {
+    width: 95%;
+  }
+
+  .options > .h-100 {
+    gap: 15px;
+  }
+
+  .puzzleclues {
+    width: 40% !important;
+    min-width: 350px;
+  }
+
+  .puzzle_container {
+    width: 60%;
+    min-width: 530px;
+  }
+
+  .puzzlematrix {
+    width: 560px;
+    height: 390px;
+    zoom: 1.15;
+  }
+
+  img.bg_img {
+    margin-top: 104px;
+  }
+}
+
+/* =========================================
+   Responsive - Tablet
+========================================= */
+
+@media (max-width: 990.98px) {
+  .options {
+    width: 95%;
+    height: auto;
+  }
+
+  .options > .h-100 {
+    height: auto !important;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .puzzleclues {
+    width: 100% !important;
+    min-width: 0;
+
+    margin: auto !important;
+  }
+
+  .clue_grp {
+    width: 90%;
+    margin: 10px auto 20px;
+  }
+
+  .puzzle_container {
+    width: 100%;
+    min-width: 0;
+    min-height: 430px;
+  }
+
+  .puzzlematrix {
+    width: 560px;
+    height: 390px;
+    zoom: 1.1;
+  }
+
+  img.bg_img {
+    width: 35%;
+    margin-top: 104px;
+  }
+}
+
+/* =========================================
+   Responsive - Small Tablet
+========================================= */
+
+@media (max-width: 768.98px) {
+  .options {
+    width: 100%;
+  }
+
+  .puzzleclues {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .clue_grp {
+    width: 90%;
+  }
+
+  .word_options {
+    width: calc(100% - 20px);
+    margin: 0 10px 20px;
+  }
+
+  .puzzle_container {
+    min-height: 390px;
+    overflow: auto;
+  }
+
+  .puzzlematrix {
+    width: 560px;
+    height: 390px;
+    zoom: 1;
+  }
+
+  img.bg_img {
+    width: 50%;
+    margin-top: 104px;
+  }
+}
+
+/* =========================================
+   Responsive - Mobile
+========================================= */
+
+@media (max-width: 640.98px) {
+  .options {
+    overflow-x: hidden;
+  }
+
+  .clue_grp {
+    width: 95%;
+    font-size: 18px;
+  }
+
+  .clue_grp .clueDirection {
+    font-size: 21px;
+  }
+
+  .word_options {
+    width: calc(100% - 20px);
+    height: 90px;
+
+    margin: 0 10px 20px;
+
+    overflow-y: auto;
+  }
+
+  .puzzle_container {
+    width: 100%;
+    min-height: 340px;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .puzzlematrix {
+    flex-shrink: 0;
+
+    width: 560px;
+    height: 390px;
+
+    margin-left: 10px;
+
+    zoom: 0.9;
+  }
+}
+
+@media (max-width: 575.98px) {
+  img.bg_img {
+    width: 60%;
+    margin-top: 104px;
+  }
+
+  .puzzlematrix {
+    zoom: 0.82;
+  }
+}
+
+@media (max-width: 370.98px) {
+  .clue_grp {
+    font-size: 17px;
+  }
+
+  .puzzlematrix {
+    zoom: 0.72;
+  }
+}.icon_wrap_holder {
+  display: block;
+  width: 26px;
+  min-width: 26px;
+  margin-top: 2px;
+  margin-right: 8px;
+}
+
+.icon_wrap {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+
+.tick,
+.cross {
+  display: none;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}/* تصغير المحتوى وإزالة السكرول */
+.activity_area {
+  overflow: hidden !important;
+}
+
+.options {
+  width: 75%;
+  height: calc(100% - 10px);
+  overflow: hidden;
+}
+
+.options > .h-100 {
+  height: 100% !important;
+  gap: 20px;
+}
+
+.puzzle_container {
+  min-width: 520px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.puzzlematrix {
+  width: 520px;
+  height: 300px;
+  zoom: 1.1;
+  margin: 0 auto;
+}

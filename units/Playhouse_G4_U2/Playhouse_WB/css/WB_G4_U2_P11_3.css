@@ -1,5 +1,5 @@
 .all_cont {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   align-items: center;
 }
@@ -35,7 +35,7 @@
   width: 45%;
   margin: 0px;
   position: relative;
-  height: 110px;
+  height: 80px;
 }
 
 .fillin_set{
@@ -156,4 +156,8 @@
 /* ------------------------------------------------*/
 /* body working fine 320 to 475 */
 @media (max-width: 475.98px) {
+}
+.text{
+  margin-right: 20px;
+  font-weight: bold;
 }

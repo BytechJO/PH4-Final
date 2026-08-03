@@ -52,7 +52,7 @@ var _data = {
         "filetoload" : [],
         "reviewbutton" : {
             'visible'   : 'yes', // yes (or) no
-            'link'      : 'Playhouse_Review_G4_U2/views/fillin_text_in_sentences.html'
+            'link'      : 'Playhouse_Review_G4_U2/views/WB_G4_U2_P12_2.html'
         },
         "booksbutton" : {
             "workbook": {

@@ -73,7 +73,7 @@ var fillin_data = {
       "audio": "",
       "audioenable": "default", // correct (or) default
       "image": "",
-      "answer": [""],
+      "answer": ["rode a bike"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no  
       "strictorder": "yes", // yes (or) no              
@@ -84,7 +84,7 @@ var fillin_data = {
       "audio": "",
       "audioenable": "default", // correct (or) default
       "image": "",
-      "answer": [""],
+      "answer": ["had a party and ate ice cream"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no  
       "strictorder": "yes", // yes (or) no              
@@ -95,7 +95,7 @@ var fillin_data = {
       "audio": "",
       "audioenable": "default", // correct (or) default
       "image": "",
-      "answer": [""],
+      "answer": ["saw my grandparents"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no  
       "strictorder": "yes", // yes (or) no              
@@ -106,7 +106,7 @@ var fillin_data = {
       "audio": "",
       "audioenable": "default", // correct (or) default
       "image": "",
-      "answer": [""],
+      "answer": ["read a book"],
       "alternateanswer": [[]],
       "strictcase": "no", // yes (or) no  
       "strictorder": "yes", // yes (or) no              

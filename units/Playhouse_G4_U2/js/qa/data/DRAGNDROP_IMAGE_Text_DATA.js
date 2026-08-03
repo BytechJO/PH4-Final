@@ -3,7 +3,7 @@ var _activity_json =
         "mainTitle"             : "../images/pages/sb-icons/writing.png",
         "mainTitleIcon"         : "../images/pages/sb-icons/adv_icon_1.png",
         "mainTitleIconPos"      : {"right": "90px"},
-    "mainTitleAudio"        : "../audios/under.mp3",
+    "mainTitleAudio"        : "../audios/page_18/WRITING.mp3",
     "subTitleTextLeft"      : "<span class='title-order'>1</span> Class writing.",
     "subTitleTextRight"     : "Look at the pictures and write what they did last weekend.",
     "subTitleIcons"         : [],

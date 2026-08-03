@@ -24,7 +24,7 @@ var reading_data = {
     "mainTitleIconPos"      : {"right": "90px"},
     "mainTitleAudio": "../audios/page_17/PHONICS_AND_SPELLING.mp3",
     "subTitleTextLeft": "<span class='title-order'>2</span> Listen to it.",
-    "subTitleTextRight": "<span class='green_text'>How many short ‘ea’ words can you find? Circle all the short ‘ea’ words you find.</span>",
+    "subTitleTextRight": "<span class='green_text'>How many short ‘<span class='red'>ea</span>’ words can you find? Circle all the short ‘<span class='red'>ea</span>’ words you find.</span>",
     "subTitleIcons": [],
     "subTitleAudio": "../audios/page_17/2_Listen_to_it.mp3",
     "slides": [
