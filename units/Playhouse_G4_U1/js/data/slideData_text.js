@@ -22,7 +22,7 @@ var reading_data = {
     "mainTitle": "../images/pages/sb-icons/reading.png",
     "mainTitleIcon": "../images/pages/sb-icons/adv_icon_1.png",
     "mainTitleIconPos"      : {"right": "86px"},
-    "mainTitleAudio": "../audios/page_8/under.mp3",
+    "mainTitleAudio": "../audios/page_9/READING.mp3",
     "subTitleTextLeft": "<span class='title-order'>1</span> Read about it!",
     "subTitleTextRight": "<span class='green_text'>Read the non-fiction story below.</span>",
     "subTitleIcons": [],

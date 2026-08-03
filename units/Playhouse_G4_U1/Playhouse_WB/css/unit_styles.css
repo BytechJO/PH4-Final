@@ -1,6 +1,38 @@
 /* //  ****************************************** // */
 
+.act_head_group {
+    width: 81%;
+    margin: auto;
+}
 
+.q-type-img-container {
+    height: 50px;
+    position: relative;
+    margin-top: 18px;
+    margin-left: -30px;
+}
+
+
+.mainTitle {
+    height: 100%;
+}
+
+.mainTitleIcon {
+    right: -18px;
+    position: absolute;
+    height: 70px;
+    top: -15px;
+}
+
+.activityHeading {
+    font-family: Arcon;
+    font-weight: bold;
+    color: rgb(0, 185, 242);
+    font-size: 26px;
+}
+.black_text{
+    color: black
+}
 /* //  ActivitiesCSS - Version no: R-02
 /* // updated - July 10, 2020 
 /* //  ****************************************** // */
@@ -152,12 +184,8 @@ footer {
     background-position: 10% 0;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1050;
 }
 
-.que input:focus{
-    outline: none;
-}
 
 /**End**/
 

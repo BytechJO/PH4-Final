@@ -183,4 +183,6 @@ ol li span {
     /* .fill_in .que {
         width: 200px;
     } */
+}.checkBtn {
+  display: none !important;
 }

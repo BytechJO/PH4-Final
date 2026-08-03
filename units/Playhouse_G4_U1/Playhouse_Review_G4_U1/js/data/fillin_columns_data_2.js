@@ -5,7 +5,7 @@ var fillin_data = {
     "mainTitleIcon": "",
     "mainTitleIconPos": {"right": "-20px"},
     "mainTitleAudio": "../audios/under.mp3",
-    "subTitleTextLeft"      : '<span class="green_text">1</span> Read it and write it! If Ian started his holiday on Monday, then write about where he was and what he did each day.',
+    "subTitleTextLeft"      : '<span class="title-order">1</span> Read it and write it! If Ian started his holiday on Monday, then write about where he was and what he did each day.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",

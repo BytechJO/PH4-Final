@@ -246,4 +246,6 @@
     .img_fillin_gr {
         width: auto;
     }
+}.checkBtn {
+  display: none !important;
 }

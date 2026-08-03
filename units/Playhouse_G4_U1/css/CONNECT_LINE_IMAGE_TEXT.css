@@ -133,10 +133,12 @@ body {
     height: 25px;
   }
   
-  .text {
-   color: #5858c2;  
-   font-weight: bold;
-  }
+ .text {
+  color: #5858c2;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
 
   /**End**/
   

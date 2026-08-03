@@ -129,30 +129,11 @@ body {
     vertical-align: baseline;
 }
 
-.activityHeading {
-    font-family: Arcon;
-    font-weight: bold;
-    color: rgb(0, 185, 242);
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-}
-
 .audioQuestionTitle {
     cursor: pointer;
     transition: all .3s ease-in-out;
     width: fit-content;
     max-width: 90%;
-}
-
-.q-type-img-container {
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.q-type-img-container img {
-    height: 100%;
 }
 
 /* ========[[[[[[ Grade below 4 ]]]]]]========*/
@@ -229,7 +210,7 @@ body {
 .sub_footer {
     position: fixed;
     right: 0;
-    bottom: 80px;
+    bottom: 40px;
     left: 0;
     z-index: 1039;
     padding-bottom: 4px;

@@ -21,7 +21,9 @@
 }
 
 .col_grid_container {
-    width: 88%;
+    width: 80%;
+    margin-bottom: 50px;
+
 }
 
 .img_card {
