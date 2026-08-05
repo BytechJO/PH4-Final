@@ -1,234 +1,603 @@
-.all_cont{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.screen_elements{
-    width: 94%;
-    height: 100%;
+:root {
+  --game-green: #11ad4b;
+  --game-dark: #282828;
+  --game-line: #565d61;
+  --game-blue: #159bc4;
+  --game-card-border: #1599bd;
 }
 
-.ques {
-    display: flex;
-    flex-wrap: wrap;
+/* =========================================
+   General layout
+========================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
 }
 
-.group_elm{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.screen_elements {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.game_content {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+  padding: 5px 15px 20px;
+}
+
+
+/* =========================================
+   Options
+========================================= */
+
+.word_opt_sticky {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  margin: 0 auto 12px;
+  border: 2px solid var(--temp);
+  border-radius: 10px;
+  background: #dff9ff;
+}
+
+.word_options {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.clue_word {
+  padding: 3px 25px;
+  font-size: 22px;
+}
+
+/* =========================================
+   Questions grid
+========================================= */
+
+.questions_grid {
+  position: relative;
+  z-index: 2;
+  width: 83%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 50px;
+  row-gap: 8px;
+  align-items: start;
+}
+
+.question_item {
+  position: relative;
+  width: 100%;
+  min-height: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.question_item:nth-child(5) {
+  grid-column: 1 / 2;
+}
+
+.question_image_wrapper {
+  width: 171px;
+  height: 133px;
+  margin: 0 auto 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.question_image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 13px;
 }
 
 .fillin_gr {
-    /* width: 100%; */
+  width: 100%;
 }
 
-.activityHeading b {
-    color: #000;
+.q_space {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
 }
 
-.func_ctrls{
-    /* display: none !important; */
+.question_number {
+  flex: 0 0 auto;
+  min-width: 25px;
+  margin-top: 3px;
+  color: #1d2428;
+  font-size: 19px;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
-}
-
-.image_space {
-    width: 150px;
-    margin-right: 25px;
-    /* width: 75%; */
-    /* height: 342px; */
-    /* margin: 0px auto; */
-}
-  
-.image_space img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
-.q_order{
-    width: 50px;
-    font-weight: bolder;
+.fillin_set {
+  width: calc(100% - 55px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  color: #252525;
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 38px;
+  text-align: left;
 }
 
 .txt-audioIcon {
-    color: rgb(58, 58, 58);
-    font-size: 27px;
+  color: #3a3a3a;
+  font-size: 23px;
 }
 
-.ques{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
+.question-second-line {
+  display: inline-block;
+  width: 100%;
+  padding-left: 15px;
 }
 
-.q_image {
-    width: 520px;
+/* =========================================
+   Inputs and helper numbers
+========================================= */
+
+.input_hint_wrap {
+  position: relative;
+  width: 20px;
+  min-height: 52px;
+  margin: 0 1px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  vertical-align: top;
 }
 
-.q_image img{
-    width: 100%;
+.input_hint_wrap .text_input_area {
+  width: 20px;
+  height: 31px;
+  margin: 0;
+  padding: 0 1px;
+  border: none;
+  border-bottom: 2px solid var(--game-line);
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: #000;
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  box-shadow: none;
 }
 
-.q_box{
-    width:  100%;
-    height: 70px;
+.input_hint_wrap .text_input_area:focus {
+  border-bottom-color: var(--game-blue);
+  outline: none;
 }
 
-.fill_in .img_fillin_gr {
-    width: 50%;
-    height: 210px;
-    position: relative;
-    justify-items: center;
+.input_hint_wrap .text_input_area[readonly] {
+  cursor: default;
 }
 
-.fillin_gr .q_space {
-    width: 100%;
-}
-.fillin_set {
-    font-family: Arcon;
-    color: black;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.input_hint_wrap .full_word_input {
+  width: 155px;
+  padding: 0 4px;
+  color: #159dcc;
+  font-size: 18px;
+  text-align: left;
 }
 
-.fillin_set input:focus{
-    outline: none;
+.default_answer_question .input_hint_wrap {
+  width: 155px;
 }
 
-.fillin_set input {
-    /* flex: 2 2 10px; */
-    width: 25px;
-    /* width: 180px; */
-    height: 35px;
-    color: black;
-    /* padding-left: 20px; */
-    border: none;
-    margin: 0px 1px;
-    border-bottom: 2px solid #595a5a;
-    background-color: transparent;
+.default_answer_question .full_word_input {
+  text-decoration: none;
 }
 
-.que:nth-child(1) input {
-    width: 200px !important;
+.hint_number {
+  width: 100%;
+  min-height: 16px;
+  margin-top: 1px;
+  display: block;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
 }
 
-.text_End {
-    position: absolute;
-    font-size: 23px;
+/* =========================================
+   Validation icons
+========================================= */
+
+.icon_wrap_holder {
+  flex: 0 0 32px;
+  width: 32px;
+  min-height: 34px;
+  margin-left: 4px;
 }
 
 .icon_wrap {
-    /* position: absolute;
-    margin-top: -35px; 
-    right: 100px; */
+  display: none;
+  width: 30px;
 }
 
 .tick,
 .cross {
-    width: 35px;
+  display: none;
+  width: 30px;
+  height: 30px;
 }
 
 .tick img,
 .cross img {
-    width: 100%;
-    /* display: none; */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
+
+/* =========================================
+   Large character image
+========================================= */
+
+.character_image_container {
+  position: absolute;
+  z-index: 1;
+  right: 19%;
+  bottom: 20px;
+  width: 245px;
+  height: 330px;
+  pointer-events: none;
+}
+
+.character_image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+/* =========================================
+   Final puzzle card
+========================================= */
+
+.final_puzzle_card {
+  position: relative;
+  z-index: 3;
+  width: 430px;
+  min-height: 150px;
+  margin-top: 8px;
+  padding: 15px 18px 12px;
+  border: 2px solid #394ca5;
+  border-radius: 4px 24px 24px 4px;
+  background: #fff;
+  color: #202020;
+  text-align: left;
+  transform: rotate(-0.7deg);
+  box-shadow: 4px 3px 0 rgba(57, 76, 165, 0.18);
+}
+
+.final_puzzle_title {
+  margin-bottom: 4px;
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.final_puzzle_image_wrap {
+  width: 90px;
+  height: 52px;
+  margin: 0 auto 1px;
+}
+
+.final_puzzle_image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.final_puzzle_content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.final_puzzle_cells {
+  width: calc(100% - 40px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  /*
+   * المسافة بين الكلمات:
+   * IT / WAS / SOME / MICE
+   */
+  gap: 16px;
+  margin-left: 10px;
+}
+
+/*
+ * كل كلمة تكون مجموعة مستقلة.
+ */
+.final_word_group {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  /*
+   * مسافة صغيرة بين حروف نفس الكلمة.
+   */
+  gap: 3px;
+}
+
+.final_cell {
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final_letter_input {
+  width: 24px;
+  height: 27px;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid #434343;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: #222;
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  box-shadow: none;
+}
+
+.final_letter_input:focus {
+  border-bottom-color: var(--game-blue);
+}
+
+.final_letter_input[data-fixed] {
+  cursor: default;
+}
+
+/*
+ * أرقام الخانات من 1 إلى 13.
+ */
+.final_cell_number {
+  min-height: 14px;
+  margin-top: 2px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+}
+
+/*
+ * علامة الصح والخطأ الخاصة بالسؤال الأخير.
+ */
+.final_puzzle_icon_holder {
+  flex: 0 0 35px;
+  width: 35px;
+  min-height: 35px;
+  margin-left: 5px;
+}
+
+.final_puzzle_icon_holder .icon_wrap {
+  width: 32px;
+}
+
+.final_puzzle_icon_holder .tick,
+.final_puzzle_icon_holder .cross {
+  width: 32px;
+  height: 32px;
+}
+
+/* =========================================
+   Hidden / unused elements
+========================================= */
 
 .image_wrap {
-    display: none;
+  display: none;
 }
 
-.clue_word {
-    padding: 2px 27px;
-    font-size: 22px;
+.q_image {
+  width: 520px;
 }
 
-.word_options {
-    width: 100%;
-    border-radius: 10px;
-    background-color: #c3f4ff8c;
+.q_image img {
+  width: 100%;
 }
 
-.word_opt_sticky {
-    width: 100%;
-    margin: 0px auto;
-    position: -webkit-sticky;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 5;
-    border: 2px solid var(--temp);
-    border-radius: 10px;
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1100px) {
+  .questions_grid {
+    width: 80%;
+    column-gap: 25px;
+  }
+
+  .character_image_container {
+    width: 210px;
+    height: 300px;
+  }
+
+  .fillin_set {
+    font-size: 16px;
+  }
+
+  .input_hint_wrap {
+    width: 18px;
+  }
+
+  .input_hint_wrap .text_input_area {
+    width: 18px;
+    font-size: 19px;
+  }
+
+  .final_puzzle_cells {
+    gap: 11px;
+  }
+
+  .final_word_group {
+    gap: 2px;
+  }
+
+  .final_cell,
+  .final_letter_input {
+    width: 22px;
+  }
 }
 
-.words-list li{
-    height: 110px;
-    font-weight: bolder;
-    color: black;
-    border: 1px solid black;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.right-content .p-0{
-    height: 110px;
-    border: 1px solid black;
-}
-
-.tips_content img {
-    height: 30px;
-    width: auto;
-    margin-top: 10px;
-}
-
-.image-container{
-    position: absolute;
-    right: 260px;
-    bottom: 50px;
-    
-}
-
-.image-container img{
-    width: 300px;
-    height: 210px;
-    margin: 0px 70px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 2px solid #36a0c7;
-}
-
-/* ************************************************* */
-/* ************************************************* */
 @media (max-width: 991.98px) {
-    .fill_in .img_fillin_gr {
-        width: 160px;
-    }
+  .game_content {
+    min-height: auto;
+  }
+
+  .questions_grid {
+    width: 100%;
+  }
+
+  .character_image_container {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 200px;
+    height: 260px;
+    margin: -170px 0 0 auto;
+  }
+
+  .final_puzzle_card {
+    width: 390px;
+  }
 }
 
-@media (max-width: 575.98px) {
-    .fill_in .img_fillin_gr {
-        width: 200px;
-    }
+@media (max-width: 767.98px) {
+  .questions_grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .question_item:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .question_item {
+    min-height: 175px;
+  }
+
+  .character_image_container {
+    width: 180px;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .final_puzzle_card {
+    width: 100%;
+    max-width: 430px;
+    margin: 10px auto;
+  }
+
+  .final_puzzle_cells {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+  }
 }
 
 @media (max-width: 475.98px) {
-    /* .fill_in .img_fillin_gr {
-        width: 200px;
-    } */
+  .screen_elements {
+    width: 100%;
+  }
+
+  .game_content {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .question_image_wrapper {
+    width: 120px;
+    height: 100px;
+  }
+
+  .fillin_set {
+    width: calc(100% - 45px);
+    font-size: 15px;
+  }
+
+  .question_number {
+    min-width: 22px;
+    font-size: 17px;
+  }
+
+  .input_hint_wrap {
+    width: 17px;
+  }
+
+  .input_hint_wrap .text_input_area {
+    width: 17px;
+    font-size: 18px;
+  }
+
+  .default_answer_question .input_hint_wrap,
+  .input_hint_wrap .full_word_input {
+    width: 140px;
+  }
+
+  .final_puzzle_card {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .final_puzzle_content {
+    align-items: flex-end;
+  }
+
+  .final_puzzle_cells {
+    width: calc(100% - 34px);
+    gap: 9px;
+  }
+
+  .final_word_group {
+    gap: 1px;
+  }
+
+  .final_cell,
+  .final_letter_input {
+    width: 20px;
+  }
+
+  .final_puzzle_icon_holder {
+    flex-basis: 30px;
+    width: 30px;
+  }
 }

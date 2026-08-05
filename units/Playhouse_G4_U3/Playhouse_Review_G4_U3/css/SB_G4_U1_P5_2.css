@@ -1,0 +1,354 @@
+.all_cont {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.screen_elements {
+    width: 95%;
+    height: 100%;
+}
+
+.group_elm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   Main image
+========================================= */
+
+.el_box {
+    width: 100%;
+    max-width: 1150px;
+    height: auto;
+    margin: 0 auto;
+    background-image: none;
+    background-color: transparent;
+}
+
+.question {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.park-activity-image {
+    width: 100%;
+    max-width: 1050px;
+    height: auto;
+    max-height: 450px;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.textImg {
+    display: none !important;
+}
+
+/* =========================================
+   Heading
+========================================= */
+
+.activityHeading {
+    width: 100%;
+}
+
+.activityHeading b {
+    font-weight: bolder;
+    color: #000;
+}
+
+.page_sub_title {
+    width: 100%;
+}
+
+.page_sub_title p {
+    margin: 0;
+}
+
+.title-order {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    color: #000;
+    background-color: #0cb14b;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.green {
+    color: #0cb14b;
+    font-weight: bold;
+}
+
+.subTitleTextRight {
+    display: none;
+}
+
+/* =========================================
+   Hide activity controls
+========================================= */
+
+.func_ctrls {
+    display: none !important;
+}
+
+/* =========================================
+   Old image space
+========================================= */
+
+.image_space {
+    width: 75%;
+    height: 342px;
+    margin: 0 auto;
+}
+
+.image_space img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* =========================================
+   Fill in elements
+========================================= */
+
+.q_order {
+    width: 50px;
+}
+
+.ques {
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.q_box {
+    width: 100%;
+    height: 70px;
+}
+
+.fill_in .que {
+    width: 100%;
+}
+
+.txtBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arcon;
+    font-size: 28px;
+    color: #000;
+}
+
+.txtBox input {
+    flex: 1;
+    height: 35px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid #7e7e7e;
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+}
+
+.txtBox input:focus {
+    outline: none;
+}
+
+/* =========================================
+   Image answer elements
+========================================= */
+
+.img_space {
+    width: 480px;
+    object-fit: contain;
+}
+
+.img_space img {
+    width: 100%;
+    border: 3px solid #67c0e0;
+    border-radius: 15px;
+}
+
+.icon_wrap {
+    position: absolute;
+    right: 100px;
+    margin-top: -35px;
+}
+
+.tick,
+.cross {
+    width: 35px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+}
+
+.image_wrap {
+    display: none;
+}
+
+/* =========================================
+   Word options
+========================================= */
+
+.clue_word {
+    margin: 5px;
+    padding: 0 12px;
+}
+
+.word_options {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid var(--temp);
+    border-radius: 20px;
+    font-size: 23px;
+}
+
+.word_opt_sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.words-list li {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: bolder;
+}
+
+.right-content .p-0 {
+    height: 110px;
+    border: 1px solid #000;
+}
+
+/* =========================================
+   Tips
+========================================= */
+
+.tips_content img {
+    width: auto;
+    height: 30px;
+    margin-top: 10px;
+}
+
+/* =========================================
+   Extra image container
+========================================= */
+
+.image-container {
+    position: absolute;
+    right: 260px;
+    bottom: 50px;
+}
+
+.image-container img {
+    width: 300px;
+    height: 210px;
+    margin: 0 70px;
+    border: 2px solid #36a0c7;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1199.98px) {
+    .park-activity-image {
+        max-width: 950px;
+        max-height: 580px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .screen_elements {
+        width: 98%;
+    }
+
+    .park-activity-image {
+        max-width: 850px;
+        max-height: 520px;
+    }
+
+    .fill_in .que {
+        width: 160px;
+    }
+
+    .page_sub_title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .park-activity-image {
+        width: 100%;
+        max-height: 470px;
+    }
+
+    .title-order {
+        width: 28px;
+        height: 28px;
+    }
+
+    .page_sub_title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fill_in .que {
+        width: 200px;
+    }
+
+    .screen_elements {
+        width: 100%;
+    }
+
+    .park-activity-image {
+        max-height: 400px;
+    }
+
+    .page_sub_title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 475.98px) {
+    .park-activity-image {
+        max-height: 340px;
+    }
+
+    .title-order {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+    }
+}

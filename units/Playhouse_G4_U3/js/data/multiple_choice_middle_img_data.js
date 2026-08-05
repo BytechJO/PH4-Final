@@ -21,10 +21,10 @@ var stereo_data = {
 var mcq_data = {   
     "layout"                : 1,
     "numinrow"              : [[1]],
-    "mainTitle"             : "../images/pages/sb-icons/conv_main_title.png",
-    "mainTitleIcon"         : "../images/pages/sb-icons/conv_main_title_icon.png",
+   "mainTitle": "../images/pages/sb-icons/gram_main_title.png",
+    "mainTitleIcon": "../images/pages/sb-icons/gram_main_title_icon.png",
+    "mainTitleAudio": "../audios/page_22/GRAMMAR.mp3",
     "mainTitleIconPos"      : {"right": "90px"},
-    "mainTitleAudio"        : "../audios/under.mp3",
     "subTitleTextLeft"      : "<span class='title-order'>3</span> <b>Circle it!</b>",
     "subTitleTextRight"     : "Circle the past continuous form in the sentences below.",
     "subTitleIcons"         : [""],

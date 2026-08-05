@@ -51,3 +51,6 @@ textarea {
         line-height: 54.7px;
 }
 }
+.checkBtn, .resetBtn{
+display: none !important;
+}

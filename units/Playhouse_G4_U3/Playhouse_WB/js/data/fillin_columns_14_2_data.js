@@ -25,7 +25,7 @@ var fillin_data = {
     "mainTitleIcon"         : "../images/pages/sb-icons/word_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_14/WORD_POWER.mp3",
-    "subTitleTextLeft"      : '<span class="blue_text">1</span> Answer it! Answer the questions about the conversation.',
+    "subTitleTextLeft"      : '<span class="blue_text">2</span> Unscramble it!  Unscramble the letters to find a phrase about what you could do at a carnival. Then rewrite the sentence.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/page_14/2_Unscramble_it!_Unscramble_the_letters_to_find_a_phrase_about_what_you_could_do_at_a_carnival.mp3",

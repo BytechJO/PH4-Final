@@ -1,250 +1,351 @@
-.all_cont{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.screen_elements{
-    width: 80%;
-    height: 100%;
+:root {
+  --temp: #11ad4b;
+  --writing-green: #11ad4b;
+  --writing-dark: #252525;
+  --writing-line: #5c5c5c;
+  --writing-focus: #159bc4;
 }
 
-.ques {
-    display: flex;
-    flex-wrap: wrap;
+/* =========================================
+   General
+========================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
 }
 
-.img_fillin_gr:nth-child(5),
-.img_fillin_gr:nth-child(6),
-.img_fillin_gr:nth-child(7) {
-    width: 55% !important;
+.screen_elements {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-.img_fillin_gr:nth-child(5) input,
-.img_fillin_gr:nth-child(6) input,
-.img_fillin_gr:nth-child(7) input {
-    width: 600px !important;
+.group_elm {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-.img_fillin_gr:nth-child(5) .icon_wrap_holder,
-.img_fillin_gr:nth-child(6) .icon_wrap_holder,
-.img_fillin_gr:nth-child(7) .icon_wrap_holder {
-    display: none;
+.writing_activity_group {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.group_elm{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
-.fillin_gr {
-    /* width: 100%; */
-}
+/* =========================================
+   Main title
+========================================= */
 
-.activityHeading b {
-    color: #000;
-}
 
-.func_ctrls{
-    /* display: none !important; */
-}
+/* =========================================
+   Options
+========================================= */
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
-}
-
-.image_space {
-    width: 250px;
-    margin-right: 25px;
-    /* width: 75%; */
-    /* height: 342px; */
-    /* margin: 0px auto; */
-}
-  
-.image_space img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
-.q_order{
-    width: 50px;
-    font-weight: bolder;
-}
-
-.txt-audioIcon {
-    color: rgb(58, 58, 58);
-    font-size: 27px;
-}
-
-.ques{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.q_image {
-    width: 520px;
-}
-
-.q_image img{
-    width: 100%;
-}
-
-.q_box{
-    width:  100%;
-    height: 70px;
-}
-
-.fill_in .img_fillin_gr {
-    width: 22%;
-    /* height: 60px; */
-    position: relative;
-    justify-items: center;
-}
-
-.fillin_gr .q_space {
-    /* width: 100%; */
-}
-.fillin_set {
-    font-family: Arcon;
-    color: black;
-    /* width: 100%; */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.fillin_set input:focus{
-    outline: none;
-}
-
-.fillin_set input {
-    /* flex: 2 2 10px; */
-    width: 25px;
-    /* width: 180px; */
-    height: 35px;
-    color: black;
-    /* padding-left: 20px; */
-    border: none;
-    margin: 0px 1px;
-    border-bottom: 2px solid #595a5a;
-    background-color: transparent;
-}
-
-.text_End {
-    position: absolute;
-    font-size: 23px;
-}
-
-.icon_wrap {
-    /* position: absolute;
-    margin-top: -35px; 
-    right: 100px; */
-}
-
-.tick,
-.cross {
-    width: 35px;
-}
-
-.tick img,
-.cross img {
-    width: 100%;
-    /* display: none; */
-}
-
-.image_wrap {
-    display: none;
-}
-
-.clue_word {
-    padding: 2px 27px;
-    font-size: 26px;
+.word_opt_sticky {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  margin: 0 auto 15px;
+  border: 2px solid var(--temp);
+  border-radius: 10px;
+  background-color: rgba(195, 244, 255, 0.55);
 }
 
 .word_options {
-    width: 100%;
-    border-radius: 10px;
-    background-color: #aad5f1;
-    padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 8px;
 }
 
-.word_opt_sticky {
-    width: 100%;
-    margin: 0px auto;
-    position: -webkit-sticky;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 5;
-    border: 2px solid var(--temp);
-    border-radius: 10px;
+.clue_word {
+  padding: 3px 25px;
+  color: var(--writing-dark);
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 22px;
 }
 
-.words-list li{
-    height: 110px;
-    font-weight: bolder;
-    color: black;
-    border: 1px solid black;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+/* =========================================
+   Optional image
+========================================= */
+
+.writing_activity_image {
+  width: 100%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.right-content .p-0{
-    height: 110px;
-    border: 1px solid black;
+.writing_activity_image img {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: contain;
 }
 
-.tips_content img {
-    height: 30px;
-    width: auto;
-    margin-top: 10px;
+.writing_image_back {
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
-.image-container{
-    position: absolute;
-    right: 260px;
-    bottom: 50px;
-    
+/* =========================================
+   Writing questions
+========================================= */
+
+.ques.writing_questions {
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 
-.image-container img{
-    width: 300px;
-    height: 210px;
-    margin: 0px 70px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 2px solid #36a0c7;
+.writing_line_question {
+  width: 100%;
+  min-height: 55px;
+  margin: 0;
+  padding: 0;
 }
 
-/* ************************************************* */
-/* ************************************************* */
+.writing_line_question .fillin_gr {
+  width: 100%;
+}
+
+.writing_q_space {
+  width: 100%;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.writing_fillin_set {
+  width: calc(100% - 40px);
+  display: block;
+  color: var(--writing-dark);
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 22px;
+  text-align: left;
+}
+
+/* =========================================
+   Writing inputs
+========================================= */
+
+.writing_fillin_set .writing_line_input {
+  width: 70%;
+  height: 43px;
+  margin: 0;
+  padding: 4px 8px 2px;
+  border: none;
+  border-bottom: 2px solid var(--writing-line);
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: left;
+  box-shadow: none;
+}
+
+.writing_fillin_set .writing_line_input:hover {
+  border-bottom-color: #3f3f3f;
+}
+
+.writing_fillin_set .writing_line_input:focus {
+  border-bottom-color: var(--writing-focus);
+  outline: none;
+  box-shadow: none;
+}
+
+.writing_fillin_set .writing_line_input[readonly],
+.writing_fillin_set .writing_line_input:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+/* =========================================
+   Validation icons
+========================================= */
+
+.writing_line_question .icon_wrap_holder {
+  display: none;
+}
+
+.writing_line_question .icon_wrap,
+.writing_line_question .tick,
+.writing_line_question .cross {
+  display: none !important;
+}
+
+/* =========================================
+   General FillIn support
+========================================= */
+
+.fillin_gr {
+  width: 100%;
+}
+
+.q_space {
+  width: 100%;
+}
+
+.fillin_set input:focus {
+  outline: none;
+}
+
+.text_input_area {
+  color: #000;
+}
+
+.image_space {
+  width: 150px;
+  margin-right: 25px;
+}
+
+.image_space img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.q_image {
+  width: 520px;
+}
+
+.q_image img {
+  width: 100%;
+}
+
+.image_wrap {
+  display: none;
+}
+
+/* =========================================
+   Audio elements
+========================================= */
+
+.txt-audioIcon {
+  color: #3a3a3a;
+  font-size: 23px;
+}
+
+.audio_icon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+/* =========================================
+   Footer controls
+========================================= */
+
+.sub_footer_icon img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   Tablet
+========================================= */
+
 @media (max-width: 991.98px) {
-    .fill_in .img_fillin_gr {
-        width: 160px;
-    }
+  .screen_elements {
+    width: 95%;
+  }
+
+  .writing_activity_group {
+    width: 95%;
+  }
+
+  .ques.writing_questions {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .page_sub_title p {
+    font-size: 20px;
+  }
+
+  .writing_fillin_set .writing_line_input {
+    font-size: 20px;
+  }
 }
+
+/* =========================================
+   Mobile
+========================================= */
 
 @media (max-width: 575.98px) {
-    .fill_in .img_fillin_gr {
-        width: 200px;
-    }
+  .screen_elements,
+  .group_elm,
+  .writing_activity_group {
+    width: 100%;
+  }
+
+  .ques.writing_questions {
+    padding: 12px 10px;
+  }
+
+  .writing_line_question,
+  .writing_q_space {
+    min-height: 50px;
+  }
+
+  .writing_fillin_set {
+    width: 100%;
+  }
+
+  .writing_fillin_set .writing_line_input {
+    height: 40px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .page_sub_title p {
+    font-size: 18px;
+  }
+
+  .title-order {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+  }
 }
 
+/* =========================================
+   Small mobile
+========================================= */
+
 @media (max-width: 475.98px) {
-    /* .fill_in .img_fillin_gr {
-        width: 200px;
-    } */
+  .ques.writing_questions {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .writing_fillin_set .writing_line_input {
+    font-size: 17px;
+  }
+}
+
+.checkBtn{
+    display: none !important;
 }

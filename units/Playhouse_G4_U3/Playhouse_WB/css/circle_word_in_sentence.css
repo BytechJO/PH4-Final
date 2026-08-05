@@ -1,181 +1,404 @@
-.question_group {
-    width: 1003px;
+/* =========================================
+   Main Container
+========================================= */
+
+.options {
+    width: 80%;
     height: 100%;
-    margin: 0 8px;
-    align-items: center;
+    margin: 0 auto;
 }
+
+.all_cont {
+    width: 100%;
+    height: 100%;
+}
+
+.options > .all_cont > .h-100 {
+    width: 100%;
+    height: auto !important;
+    display: block !important;
+    margin-bottom: 80px;
+}
+
+/* =========================================
+   Questions Grid
+========================================= */
+
+.question_group {
+    width: 100%;
+    margin: 0 auto;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 60px;
+    row-gap: 20px;
+    align-items: start;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* =========================================
+   Question Card
+========================================= */
+
 .que {
-    width:496px;
-    height: 280px ;
-    padding: 15px 10px;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+
     position: relative;
-    /* padding-right: 40px; */
-    border-radius: 10px;
-    /* box-shadow: 0px 0px 20px -13px black; */
-    font-size: 25px;
-    /* border: 2px solid #000 !important; */
+    box-sizing: border-box;
+
+    font-size: 22px;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+/* الرقم موجود داخل الصورة */
+.que::before,
+.que::after {
+    content: none !important;
+    display: none !important;
+}
+
+.ques_line {
+    width: 100%;
+    display: block !important;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.q_grp {
+    width: 100%;
+    display: block !important;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
 }
 
 .q_part {
-    letter-spacing: 1px;
-    margin-right: 10px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    display: block !important;
+    letter-spacing: 0;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
 }
 
-.q_num_space {
-    width: 27px;
-    margin-right: 5px;
+/* =========================================
+   Question Image
+========================================= */
+
+.img_space {
+    width: 100%;
+    height: 235px;
+    margin: 0 0 8px;
+    padding: 0;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 0;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+
+    pointer-events: none;
 }
 
-.q_part {
-    height: intrinsic;
-    height: -moz-max-content;
-    height: -webkit-max-content;
-    height: max-content;
+.img_space img {
+    width: 100% !important;
+    height: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: block;
+    object-fit: contain;
+    object-position: center;
+
+    position: relative;
+    z-index: 0;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+/* =========================================
+   Sentence Area
+========================================= */
+
+.text_container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: block !important;
+
+    border: none !important;
+    background: transparent !important;
 }
 
 .text_part {
-    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: grid !important;
+    grid-template-columns: max-content minmax(0, 1fr);
+    align-items: center;
+
+    column-gap: 10px;
+    row-gap: 8px;
+
+    font-family: Arcon, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #111;
 }
+
+.text_part > .audioIcon {
+    width: auto !important;
+    min-width: 0;
+
+    margin: 0;
+    padding-left: 10px;
+
+    text-align: left;
+    white-space: nowrap;
+
+    color: #111 !important;
+    opacity: 1 !important;
+    pointer-events: auto;
+}
+
+/* =========================================
+   Pick Set
+========================================= */
 
 .pick_set {
-    margin: 0 6px;
-}
-
-.all_picks {
     width: 100%;
+    min-width: 0;
+
+    grid-column: 2;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 32px 46px;
+
+    column-gap: 0;
+    row-gap: 8px;
+
+    position: relative;
+    box-sizing: border-box;
+
+    border: none !important;
+    background: transparent !important;
 }
 
-.picks_grp {
-    margin-top: 10px;
-    margin-bottom: 10px;
+/*
+   باك جراوند واحدة مشتركة للخيارين
+*/
+.pick_set::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 46px;
+
+    background-color: #e2f3f9;
+    border: 1px solid #b8d5df;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 0;
 }
+
+/* =========================================
+   Input Line
+========================================= */
+
+.text_input_area {
+    grid-column: 1 / -1;
+    grid-row: 1;
+
+    width: 100%;
+    height: 32px;
+
+    margin: 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    border: none !important;
+    border-bottom: 1.5px solid #555 !important;
+    border-radius: 0 !important;
+
+    outline: none !important;
+    box-shadow: none !important;
+
+    background: transparent !important;
+    color: #000 !important;
+
+    font-family: Arcon, Arial, sans-serif;
+    font-size: 19px;
+    text-align: center;
+}
+
+/* =========================================
+   Choices
+========================================= */
 
 .pick {
-    width: 331px;
-    margin: 2px;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 46px;
+
+    margin: 0;
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid transparent !important;
+    border-radius: 8px;
+
+    background: transparent !important;
+    box-shadow: none;
+
+    color: #111;
+
+    font-family: Arcon, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.1;
+
     text-align: center;
-    min-width: 150px;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 2px 10px;
-    font-weight: bold;
-    color: #424242;
+    white-space: nowrap;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition:
+        border-color 0.15s ease,
+        background-color 0.15s ease;
 }
 
-.roundedCorners {
-    border-radius: 10px;
+/* الخيار الأول */
+.pick:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 2;
 }
 
-.text_container {
-    width: 450px;
+/* الخيار الثاني */
+.pick:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
 }
+
+/*
+   عند تحديد الخيار:
+   يظهر مستطيل حول الخيار المحدد فقط
+*/
+.pick.selected,
+.pick.active,
+.pick.select,
+.pick[style*="border"] {
+    border: 3px solid #08a9e5 !important;
+    border-radius: 8px !important;
+    background-color: rgba(94, 202, 239, 0.25) !important;
+}
+
+/* في حال الكود يستخدم class باسم clicked */
+.pick.clicked {
+    border: 3px solid #08a9e5 !important;
+    border-radius: 8px !important;
+    background-color: rgba(94, 202, 239, 0.25) !important;
+}
+
+/* الإجابة الصحيحة */
+.pick.correct {
+    border: 3px solid #18a957 !important;
+    border-radius: 8px !important;
+    background-color: rgba(76, 204, 122, 0.22) !important;
+}
+
+/* الإجابة الخاطئة */
+.pick.wrong,
+.pick.incorrect {
+    border: 3px solid #e54848 !important;
+    border-radius: 8px !important;
+    background-color: rgba(239, 84, 84, 0.2) !important;
+}
+
+/* =========================================
+   Check / Cross Icons
+========================================= */
 
 .icon_wrap {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 4px;
+    right: 5px;
+    z-index: 10;
+
+    padding: 0 !important;
 }
 
 .tick,
 .cross {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
 }
 
-.text_part .audioIcon {
-    width: 154px;
-    text-align: center;
+.tick img,
+.cross img {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 !important;
+    object-fit: contain;
 }
 
-.text_input_area {
-    text-align: center;
-    width: 329px;
-    background-color: transparent;
-    border: none;
-    border-radius: 0px;
-    border-bottom: 2px solid black;
-    margin-bottom: 5px;
-    color: black !important;
-}
-
-.img_space {
-    width: 430px;
-}
-
-.img_space img {
-    width: 95%!important;
-    margin: 0px 22px;
-}
-
-.audioIcon.off.d-flex.align-items-center {
-    margin: 5px;
-    margin-top: -5px;
-}
-
-/* ====================================================== */
-/*              Media Queries Start                       */
-/* ====================================================== */
-/* ------------------------------------------------ */
-/*              M Q max-width: 1799.98px */
-/* ------------------------------------------------*/
-/* // Large devices (desktops, less than 1800px) */
-
-/* // Large devices (desktops, less than 1800px) */
-@media (max-width: 1799.98px) {}
-
-/* ------------------------------------------------ */
-/*              M Q max-width: 1399.98px */
-/* ------------------------------------------------*/
-/* // Large devices (desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-    .que {
-        margin-bottom: 2px;
-        padding: 10px 6px;
-        padding-right: 40px;
-    }
-
-    .img_space {
-        /* height: 130px;
-    padding: 10px;
-    margin: auto; */
-    }
-}
-
-/* ------------------------------------------------ */
-/*              M Q max-width: 1199.98px */
-/* ------------------------------------------------*/
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
-
-/* ------------------------------------------------ */
-/*              M Q max-width: 991.98px */
-/* ------------------------------------------------*/
-/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
-@media (max-width: 991.98px) {
-    .q_part {
-        letter-spacing: 1px;
-        margin-right: -2px;
-    }
-}
-
-/* ------------------------------------------------ */
-/* M Q max-width: 767.98px */
-/* ------------------------------------------------*/
-/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
-@media (max-width: 767.98px) {
-    .question_group {
-        width: 100%;
-    }
-
-}
-
-/* ------------------------------------------------ */
-/* M Q max-width: 575.98px */
-/* ------------------------------------------------*/
-/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
-@media (max-width: 575.98px) {}
-
-/* body working fine 320 to 475 */
-@media (max-width: 475.98px) {}
+/* =========================================
+   General Helpers
+========================================= */
 
 .border-none {
     border: none !important;
@@ -188,9 +411,150 @@
 
 .not-disapled {
     opacity: 1 !important;
-    pointer-events: all;
+    pointer-events: auto;
 }
 
-/* .mb-70{
-    margin-bottom: 70px;
-} */
+.question_group,
+.que,
+.ques_line,
+.q_grp,
+.q_part,
+.img_space,
+.img_space img,
+.text_container {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1399.98px) {
+    .question_group {
+        column-gap: 35px;
+        row-gap: 16px;
+    }
+
+    .img_space {
+        height: 200px;
+    }
+
+    .text_part {
+        font-size: 19px;
+    }
+
+    .pick_set {
+        grid-template-rows: 30px 42px;
+    }
+
+    .pick_set::before {
+        height: 42px;
+    }
+
+    .pick {
+        height: 42px;
+        font-size: 17px;
+    }
+
+    .text_input_area {
+        height: 30px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .options {
+        width: 94%;
+    }
+
+    .question_group {
+        column-gap: 25px;
+    }
+
+    .img_space {
+        height: 180px;
+    }
+
+    .text_part {
+        font-size: 18px;
+    }
+
+    .pick {
+        font-size: 16px;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .question_group {
+        column-gap: 18px;
+        row-gap: 18px;
+    }
+
+    .img_space {
+        height: 165px;
+    }
+
+    .text_part {
+        font-size: 17px;
+    }
+
+    .text_part > .audioIcon {
+        padding-left: 5px;
+    }
+
+    .pick_set {
+        grid-template-rows: 29px 40px;
+    }
+
+    .pick_set::before {
+        height: 40px;
+    }
+
+    .pick {
+        height: 40px;
+        padding: 3px 5px;
+        font-size: 14px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .question_group {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .img_space {
+        height: 220px;
+    }
+
+    .text_part {
+        font-size: 19px;
+    }
+
+    .pick {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .options {
+        width: 92%;
+    }
+
+    .img_space {
+        height: 180px;
+    }
+
+    .text_part {
+        grid-template-columns: max-content minmax(0, 1fr);
+        font-size: 16px;
+    }
+
+    .pick {
+        font-size: 14px;
+        white-space: normal;
+    }
+}

@@ -9,7 +9,8 @@
   width: auto;
 }
 
-.fillin_set {}
+.fillin_set {
+}
 
 .audio_icon {
   height: 39px;
@@ -21,7 +22,7 @@
 }
 
 .all_cont {
-  height: 100%;
+  /* height: 100%; */
   align-items: center;
 }
 
@@ -107,17 +108,11 @@
   left: 0;
 }
 
-
 .img_container {
   position: absolute;
   right: 100px;
   bottom: 20px;
 }
-
-
-
-
-
 
 /**** popup window ***/
 
@@ -128,13 +123,15 @@
 /*              M Q max-width: 1799.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1800px) */
-@media (max-width: 1799.98px) {}
+@media (max-width: 1799.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1399.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1199.98px */
@@ -154,22 +151,39 @@
 /*              M Q max-width: 991.98px */
 /* ------------------------------------------------*/
 /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+}
 
 /* ------------------------------------------------ */
 /* M Q max-width: 767.98px */
 /* ------------------------------------------------*/
 /* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+}
 
 /* ------------------------------------------------ */
 /* M Q max-width: 575.98px */
 /* ------------------------------------------------*/
 /* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 475.98px             */
 /* ------------------------------------------------*/
 /* body working fine 320 to 475 */
-@media (max-width: 475.98px) {}
+@media (max-width: 475.98px) {
+}
+.static_dialogue {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.static_dialogue .fillin_gr {
+  width: 100%;
+}
+
+.static_dialogue .fillin_set {
+  font-size: 25px;
+  color: #000;
+}

@@ -25,7 +25,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_15/CONVERSATION.mp3",
-    "subTitleTextLeft"      : '<span class="blue_text">1</span> Answer it! Answer the questions about the conversation in Exercise 1. Make sure you answer in complete sentences.',
+    "subTitleTextLeft"      : '<span class="blue_text">3</span> Answer it! Answer the questions about the conversation in Exercise 1. Make sure you answer in complete sentences.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/page_15/3_Answer_it!_Answer_the_questions_about_the_conversation_in_Exercise_1_Make_sure_you_answer_in.mp3",

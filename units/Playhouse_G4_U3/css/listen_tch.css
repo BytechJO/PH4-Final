@@ -1,0 +1,614 @@
+:root {
+  --tch-green: #1db24b;
+  --tch-dark-green: #15853a;
+
+  --tch-pale-green: #e3f2df;
+  --tch-green-border: #a7d39f;
+
+  --tch-blue: #16b9ee;
+  --tch-tab: #dff3fb;
+
+  --tch-red: #d52431;
+  --tch-yellow: #e6a900;
+
+  --tch-line: #575757;
+  --tch-text: #222222;
+}
+
+/* ======================================================
+   Main Activity
+====================================================== */
+
+.all_cont.tch-all-cont {
+  width: 100%;
+  min-height: 100%;
+
+  align-items: flex-start !important;
+}
+
+.tch-activity {
+  width: 94%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+  padding-top: 8px;
+
+  box-sizing: border-box;
+}
+
+/* ======================================================
+   Word Bank
+====================================================== */
+
+.tch-word-bank {
+  width: 92%;
+
+  margin: 0 auto 38px;
+  padding: 8px 16px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 6px 12px;
+
+  background-color:
+    var(--tch-pale-green);
+
+  border:
+    1px solid
+    var(--tch-green-border);
+
+  border-radius: 12px;
+
+  box-sizing: border-box;
+}
+
+/* ======================================================
+   Word Item
+====================================================== */
+
+.tch-word-item {
+  position: relative;
+
+  min-width: 0;
+  min-height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  box-sizing: border-box;
+}
+
+/* ======================================================
+   Selectable Word
+====================================================== */
+
+.tch-word {
+  min-width: 0;
+  min-height: 34px;
+
+  padding: 4px 9px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid transparent;
+  border-radius: 6px;
+
+  outline: 0;
+
+  background-color: transparent;
+
+  font-family:
+    Arcon,
+    Arial,
+    sans-serif;
+
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.15;
+
+  color: var(--tch-text);
+
+  cursor: pointer;
+  text-align: center;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.tch-word .word-text {
+  display: block;
+
+  width: auto;
+
+  white-space: nowrap;
+}
+
+.tch-word:hover {
+  background-color:
+    rgba(
+      29,
+      178,
+      75,
+      0.07
+    );
+}
+
+.tch-word:focus-visible {
+  outline:
+    2px solid
+    var(--tch-blue);
+
+  outline-offset: 2px;
+}
+
+/* ======================================================
+   Selected Word
+
+   المستطيل يظهر حول الكلمة نفسها
+   ويظل موجودًا حتى الضغط عليها مرة ثانية أو Reset
+====================================================== */
+
+.tch-word.selected {
+  border-color:
+    var(--tch-green);
+
+  background-color:
+    rgba(
+      29,
+      178,
+      75,
+      0.12
+    );
+}
+
+.tch-word.selected
+.word-text {
+  font-weight: 700;
+}
+
+/* ======================================================
+   Word Result Icons
+====================================================== */
+
+.word-result {
+  width: 25px;
+  height: 25px;
+
+  flex: 0 0 25px;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+.word-result-tick,
+.word-result-cross {
+  width: 25px;
+  height: 25px;
+
+  display: none;
+}
+
+.word-result img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* ======================================================
+   Correct Selected Word
+====================================================== */
+
+.tch-word-item:has(
+  .tch-word.correct-choice
+)
+.word-result {
+  display: flex;
+}
+
+.tch-word-item:has(
+  .tch-word.correct-choice
+)
+.word-result-tick {
+  display: block;
+}
+
+.tch-word-item:has(
+  .tch-word.correct-choice
+)
+.word-result-cross {
+  display: none;
+}
+
+
+/* ======================================================
+   Wrong Selected Word
+====================================================== */
+
+.tch-word-item:has(
+  .tch-word.wrong-choice
+)
+.word-result {
+  display: flex;
+}
+
+.tch-word-item:has(
+  .tch-word.wrong-choice
+)
+.word-result-cross {
+  display: block;
+}
+
+.tch-word-item:has(
+  .tch-word.wrong-choice
+)
+.word-result-tick {
+  display: none;
+}
+
+.tch-word.wrong-choice {
+  border-color:
+    var(--tch-red);
+
+  background-color:
+    rgba(
+      213,
+      36,
+      49,
+      0.11
+    );
+
+  color:
+    var(--tch-red);
+}
+
+
+
+/* ======================================================
+   Columns
+====================================================== */
+
+.tch-columns {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 38px;
+}
+
+/* ======================================================
+   Individual Column
+====================================================== */
+
+.tch-column {
+  position: relative;
+
+  min-width: 0;
+  min-height: 245px;
+
+  padding-top: 16px;
+
+  box-sizing: border-box;
+}
+
+/* ======================================================
+   Column Tab
+====================================================== */
+
+.column-tab {
+  position: absolute;
+
+  z-index: 2;
+
+  top: 0;
+  left: 50%;
+
+  width: 78px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform:
+    translateX(-50%);
+
+  background-color:
+    var(--tch-tab);
+
+  border-radius: 8px;
+
+  font-family:
+    Arcon,
+    Arial,
+    sans-serif;
+
+  font-size: 21px;
+  font-weight: 600;
+
+  color: #44505a;
+}
+
+/* ======================================================
+   Column Body
+====================================================== */
+
+.column-body {
+  position: relative;
+
+  min-height: 220px;
+
+  padding:
+    42px
+    20px
+    18px;
+
+  border:
+    2px solid
+    var(--tch-blue);
+
+  border-radius: 22px;
+
+  background-color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+/* ======================================================
+   Input Lines
+====================================================== */
+
+.answer-line {
+  width: 100%;
+  height: 42px;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.tch-answer-input {
+  width: 100%;
+  height: 34px;
+
+  padding:
+    2px
+    4px
+    5px;
+
+  border: 0;
+
+  border-bottom:
+    1.5px solid
+    var(--tch-line);
+
+  outline: 0;
+
+  background-color:
+    transparent;
+
+  font-family:
+    Arcon,
+    Arial,
+    sans-serif;
+
+  font-size: 20px;
+
+  color: #000000;
+
+  box-sizing: border-box;
+}
+
+.tch-answer-input:focus {
+  border-bottom-color:
+    var(--tch-blue);
+}
+
+/* ======================================================
+   Old Project Correct / Wrong Icons For Columns
+====================================================== */
+
+.tch-column
+.icon_wrap_holder {
+  position: absolute;
+
+  right: 10px;
+  bottom: 8px;
+
+  width: 35px;
+  height: 35px;
+
+  z-index: 4;
+}
+
+.tch-column
+.icon_wrap {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+.tch-column
+.tick,
+.tch-column
+.cross {
+  width: 35px;
+  height: 35px;
+
+  display: none;
+}
+
+.tch-column
+.tick img,
+.tch-column
+.cross img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* Correct column */
+
+.tch-column.correct
+.icon_wrap {
+  display: block;
+}
+
+.tch-column.correct
+.tick {
+  display: block;
+}
+
+.tch-column.correct
+.cross {
+  display: none;
+}
+
+/* Wrong column */
+
+.tch-column.wrong
+.icon_wrap {
+  display: block;
+}
+
+.tch-column.wrong
+.cross {
+  display: block;
+}
+
+.tch-column.wrong
+.tick {
+  display: none;
+}
+
+/* ======================================================
+   Responsive
+====================================================== */
+
+@media (
+  max-width: 1199.98px
+) {
+  .tch-page-title
+  .subTitleTextRight {
+    font-size: 20px;
+  }
+
+  .tch-word {
+    font-size: 17px;
+  }
+
+  .tch-columns {
+    gap: 24px;
+  }
+}
+
+@media (
+  max-width: 991.98px
+) {
+  .tch-word-bank {
+    width: 96%;
+
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  }
+
+  .tch-columns {
+    gap: 16px;
+  }
+
+  .column-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (
+  max-width: 767.98px
+) {
+  .tch-word-bank {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    margin-bottom: 25px;
+  }
+
+  .tch-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .tch-column {
+    width: min(
+      92%,
+      440px
+    );
+
+    margin: 0 auto;
+  }
+}
+
+@media (
+  max-width: 575.98px
+) {
+  .tch-activity {
+    width: 98%;
+  }
+
+  .tch-page-title
+  .subTitleTextLeft {
+    font-size: 21px;
+  }
+
+  .tch-page-title
+  .subTitleTextRight {
+    padding-left: 0;
+
+    font-size: 17px;
+  }
+
+  .tch-word-bank {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .tch-word {
+    font-size: 16px;
+  }
+
+  .word-result {
+    width: 22px;
+    height: 22px;
+
+    flex-basis: 22px;
+  }
+
+  .word-result-tick,
+  .word-result-cross {
+    width: 22px;
+    height: 22px;
+  }
+}

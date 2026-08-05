@@ -1,56 +1,359 @@
+/* =========================================
+   Main Content
+========================================= */
+
+.options {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .all_cont {
-    width: 100%;
-    /* height: 100%; */
+  width: 100%;
+  height: 100%;
+  display: block !important;
 }
 
 .screen_elements {
-    width: 80%;
+  width: calc(100% - 310px);
+  height: auto;
+  margin: 0;
+  display: block !important;
 }
 
 .group_elm {
-    width: 100%;
-    height: 100%;
-    font-size: 24px;
+  width: 100%;
+  height: auto !important;
+  margin: 0;
+  padding: 5px 0 70px;
+
+  display: block !important;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.55;
+
+  color: #111;
 }
+
+/* =========================================
+   Dialogue Rows
+========================================= */
+
+.fill_in .que,
+.que.img_fillin_gr {
+  width: 100% !important;
+  height: auto !important;
+
+  margin: 0 0 1px;
+  padding: 0;
+
+  display: block !important;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.fillin_gr {
+  width: 100%;
+  height: auto;
+
+  display: block !important;
+}
+
+.q_space {
+  width: 100%;
+  height: auto;
+
+  position: relative;
+
+  display: block !important;
+}
+
+.fillin_set {
+  width: 100%;
+  display: block;
+}
+
+/* العنصر الذي يحتوي اسم المتحدث والنص */
+.fillin_set > .audioIcon {
+  width: 100%;
+  min-height: 0;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex !important;
+  align-items: flex-start !important;
+
+  color: #111 !important;
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+/* =========================================
+   Speaker Name
+========================================= */
 
 .pre_text {
-    width: 108px;
-    font-weight: bold;
+  width: 92px;
+  min-width: 92px;
+
+  margin: 0;
+  padding: 0 12px 0 0;
+
+  display: inline-block;
+
+  font-weight: bold;
+  text-align: right;
+
+  color: #111;
 }
 
+/* =========================================
+   Dialogue Text
+========================================= */
+
+.dialogue_text {
+  flex: 1;
+  min-width: 0;
+
+  display: inline-block;
+
+  color: #111;
+  font-weight: normal;
+  text-align: left;
+}
+
+.underlined_phrase {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* =========================================
+   Image
+========================================= */
+
 .image-container {
-    position: absolute;
-    right: 90px;
-    top: 140px;
+  width: 280px;
+  height: auto;
+
+  position: absolute;
+  top: 145px;
+  right: 55px;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .image-container img {
-    width: 270px;
-    height: 180px;
-    object-fit: contain;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+  width: 100%;
+  height: auto;
+  max-height: 290px;
+
+  margin: 0;
+  padding: 0;
+
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+
+  border: 2px solid #18aee8;
+  border-radius: 10px;
+
+  box-sizing: border-box;
+
+  transform: none !important;
+  -webkit-transform: none !important;
+}
+
+/* =========================================
+   Hide Unused Validation Elements
+========================================= */
+
+.icon_wrap,
+.tick,
+.cross {
+  display: none !important;
 }
 
 .func_ctrls {
-    display: none !important;
+  display: none !important;
 }
 
+/* =========================================
+   Heading
+========================================= */
+
+.activityHeading {
+  color: #08a9e5;
+}
+
+.page_sub_title {
+  display: flex;
+  align-items: center;
+}
+
+.page_sub_title p {
+  margin: 0;
+}
+
+.page_sub_title .blue_text {
+  margin-right: 5px;
+  color: #08a9e5;
+  font-weight: bold;
+}
+
+.page_sub_title b {
+  color: #08a9e5;
+  font-style: italic;
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1399.98px) {
+  .screen_elements {
+    width: calc(100% - 275px);
+  }
+
+  .group_elm {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .pre_text {
+    width: 82px;
+    min-width: 82px;
+  }
+
+  .image-container {
+    width: 245px;
+    right: 40px;
+    top: 135px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .options {
+    width: 92%;
+  }
+
+  .screen_elements {
+    width: calc(100% - 235px);
+  }
+
+  .group_elm {
+    font-size: 17px;
+  }
+
+  .pre_text {
+    width: 75px;
+    min-width: 75px;
+    padding-right: 9px;
+  }
+
+  .image-container {
+    width: 210px;
+    right: 32px;
+    top: 140px;
+  }
+}
 
 @media (max-width: 991.98px) {
-    .fill_in .que {
-        width: 160px;
-    }
+  .screen_elements {
+    width: calc(100% - 190px);
+  }
+
+  .group_elm {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .pre_text {
+    width: 68px;
+    min-width: 68px;
+  }
+
+  .image-container {
+    width: 170px;
+    right: 24px;
+    top: 135px;
+  }
+
+  .fill_in .que {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .options {
+    width: 90%;
+  }
+
+  .screen_elements {
+    width: 100%;
+    padding-top: 210px;
+  }
+
+  .image-container {
+    width: 220px;
+
+    top: 125px;
+    right: 50%;
+
+    transform: translateX(50%);
+  }
+
+  .group_elm {
+    font-size: 17px;
+  }
+
+  .pre_text {
+    width: 78px;
+    min-width: 78px;
+  }
 }
 
 @media (max-width: 575.98px) {
-    .fill_in .que {
-        width: 200px;
-    }
+  .screen_elements {
+    padding-top: 175px;
+  }
+
+  .image-container {
+    width: 180px;
+  }
+
+  .group_elm {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .fillin_set > .audioIcon {
+    align-items: flex-start !important;
+  }
+
+  .pre_text {
+    width: 67px;
+    min-width: 67px;
+    padding-right: 7px;
+  }
 }
 
 @media (max-width: 475.98px) {
-    /* .fill_in .que {
-        width: 200px;
-    } */
+  .group_elm {
+    font-size: 14px;
+  }
+
+  .pre_text {
+    width: 61px;
+    min-width: 61px;
+  }
 }

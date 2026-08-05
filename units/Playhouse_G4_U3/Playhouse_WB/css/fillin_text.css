@@ -189,3 +189,6 @@
         width: 200px;
     } */
 }
+.checkBtn{
+display: none !important;
+}

@@ -47,6 +47,150 @@ function buildFillInBody(aObj) {
 		htmlStmt += '<div class="all_cont justify-content-start justify-content-sm-center">';
 		htmlStmt += '<div class="screen_elements d-flex flex-column">';
 		htmlStmt += '<div class="group_elm d-flex flex-wrap justify-content-center align-items-center mb-70">';
+		if (
+    aObj.slides != undefined &&
+    Array.isArray(aObj.slides) &&
+    aObj.slides.length > 0
+) {
+
+    for (
+        var slideIndex = 0;
+        slideIndex < aObj.slides.length;
+        slideIndex++
+    ) {
+
+        var slide = aObj.slides[slideIndex];
+
+        if (slide.layout == "grid_columns") {
+
+            var curIndex = 0;
+            var wordStyle = 0;
+
+            var audioArry = slide.audio || [];
+            var wordArray = slide.word || [];
+            var imageArray = slide.image || [];
+
+            htmlStmt +=
+                "<div class='d-flex justify-content-center align-items-center grid_columns_container " +
+                (slide.parent_class_name || "") +
+                "'>";
+
+            htmlStmt += "<div class='col_grid_container'>";
+
+            var mainImage = "";
+
+            if (Array.isArray(slide.mainImage)) {
+                mainImage = slide.mainImage[0] || "";
+            } else {
+                mainImage = slide.mainImage || "";
+            }
+
+            if (mainImage != "") {
+                htmlStmt +=
+                    "<img src='" +
+                    mainImage +
+                    "' style='width:100%;'/>";
+            }
+
+            if (
+                slide.middleImage != undefined &&
+                slide.middleImage != ""
+            ) {
+                htmlStmt +=
+                    "<img src='" +
+                    slide.middleImage +
+                    "' class='middle_image'/>";
+            }
+
+            htmlStmt +=
+                "<div class='snap_group_all cont_group' style='" +
+                (slide.group_styles || "") +
+                "'>";
+
+            var ImagePos = slide.imagePlacePos || [];
+
+            for (
+                var snapIndex = 0;
+                snapIndex < ImagePos.length;
+                snapIndex++
+            ) {
+
+                htmlStmt +=
+                    "<div class='snap_group_" +
+                    Number(snapIndex + 1) +
+                    " row mx-0'>";
+
+                for (
+                    var imgIndex = 0;
+                    imgIndex < ImagePos[snapIndex].colData.length;
+                    imgIndex++
+                ) {
+
+                    htmlStmt +=
+                        "<div class='col-12 col-md-" +
+                        ImagePos[snapIndex].colWidth[imgIndex] +
+                        "'>";
+
+                    if (
+                        ImagePos[snapIndex].colData[imgIndex] != 0
+                    ) {
+
+                        wordStyle = curIndex + 1;
+
+                        htmlStmt +=
+                            "<div class='snap_card audioIcon' " +
+                            "data-slideNum='" +
+                            Number(slideIndex + 1) +
+                            "' " +
+                            "data-audio='" +
+                            (audioArry[curIndex] || "") +
+                            "' " +
+                            "data-onaudioplay=''>";
+
+                        if (
+                            wordArray[curIndex] != undefined
+                        ) {
+
+                            htmlStmt +=
+                                "<div class='ss_word ss_t_" +
+                                wordStyle +
+                                "'>";
+
+                            htmlStmt +=
+                                "<div class='ss_text'>" +
+                                wordArray[curIndex] +
+                                "</div>";
+
+                            htmlStmt += "</div>";
+
+                        } else if (
+                            imageArray[curIndex] != undefined
+                        ) {
+
+                            htmlStmt +=
+                                "<img src='" +
+                                imageArray[curIndex] +
+                                "' class='img_card'/>";
+                        }
+
+                        htmlStmt += "</div>";
+
+                        curIndex++;
+                    }
+
+                    htmlStmt += "</div>";
+                }
+
+                htmlStmt += "</div>";
+            }
+
+            htmlStmt += "</div>";
+            htmlStmt += "</div>";
+            htmlStmt += "</div>";
+        }
+    }
+}
+
 			htmlStmt += '<div class="area d-flex flex-wrap">';
 
 				htmlStmt += '<div class="textarea-container">';

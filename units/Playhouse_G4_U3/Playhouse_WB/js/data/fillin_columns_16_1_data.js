@@ -25,7 +25,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_16/GRAMMAR.mp3",
-    "subTitleTextLeft"      : '<span class="blue_text">1</span> Write about it! Using the words, make sentences using the past continuous form. Use ‘was‘ and ‘were‘ correctly.',
+    "subTitleTextLeft"      : '<span class="blue_text">1</span> Write about it! Using the words, make sentences using the <span class="black">past continuous</span> form. Use ‘<span class="black">was</span>‘ and ‘<span class="black">were</span>‘ correctly.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/page_16/1_Write_about_it!_Using_the_words_make_sentences_using_the_past_continuous_form.mp3",
@@ -65,7 +65,7 @@ var fillin_data = {
             "audio": "../audios/page_16/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "",
-            "array_images":["../images/pages/activities/16-1-img-1.png","../images/pages/activities/16-1-img-2.png","../images/pages/activities/16-1-img-3.png"],
+            "array_images":["../images/pages/activities/16-3-img-1.png","../images/pages/activities/16-3-img-2.png","../images/pages/activities/16-3-img-3.png"],
             "array_images_audio":[],
             "answer": ["My family and I were riding the merry-go-round"],
             "strictcase": "no", // yes (or) no 

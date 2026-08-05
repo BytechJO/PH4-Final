@@ -1,0 +1,55 @@
+var stereo_data = {
+  audio: "",
+  exist: false,
+  bgColor_rgb: "rgb(12, 177, 75)",
+  type: "text",
+  playListData: [
+    {
+      audiourl: "../audios/page_36/demo.mp3",
+    },
+    {
+      url: "",
+    },
+    {
+      url: "",
+    },
+    {
+      url: "",
+    },
+  ],
+};
+var fillin_data = {
+  layout: 1,
+  numinrow: [[1]],
+  mainTitle: "../images/pages/sb-icons/conv_main_title.png",
+  mainTitleIcon: "../images/pages/sb-icons/conv_main_title_icon.png",
+  mainTitleIconPos: { right: "90px" },
+  mainTitleAudio: "../audios/page_21/CONVERSATION.mp3",
+  subTitleTextLeft: '<span class="title-order">2</span> <b>Say it.</b>',
+  subTitleTextRight:
+    "Now it’s your turn! Practise the conversation with a partner. What did you enjoy? Here are some ideas:",
+  subTitleIcons: [""],
+  subTitleAudio: "../audios/under.mp3",
+  activityheading: "",
+  activityheading_audio: "../audios/under.mp3",
+  activityicon: "../images/icons/key_icon.png",
+  main_activityheading: "../images/pages/activities/WORD_POWER.jpg",
+  main_activityheading_audio: "../audios/under.mp3",
+  defaultAnswer: -1,
+  leftList: "",
+  image: "",
+  imageposition: "front",
+  question: "drinking a milkshake / watching a clown / getting my face painted / eating candy floss / seeing the animals",
+  text: [""],
+  questions: [
+    {
+      textfront: "I have got",
+      audio: "../audios/under.mp3",
+      audioenable: "default", // correct (or) default
+      image: "",
+      answer: ["They had a party"],
+      strictcase: "no", // yes (or) no
+      type: "text", // text (or) number
+    },
+  ],
+};

@@ -1,4 +1,3 @@
-
 /* //  ****************************************** // */
 
 
@@ -22,6 +21,29 @@
     margin-top: -15px;
 }
 
+.subTitleTextRight{
+    display: block;
+    margin-left: 54px !important;
+    color: #0cb14b;
+}
+
+.title-order{
+    padding: 4px 20px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #0cb14b;
+}
+
+.green_text {
+    color: #0cb14b;
+}
+
+.red{
+    color: red;
+}
+.black{
+    color: #000;
+}
 /* //  ActivitiesCSS - Version no: R-02
 /* // updated - July 10, 2020 
 /* //  ****************************************** // */
@@ -122,40 +144,6 @@
     border-color: #3582b4;
 }
 
-:root{
-    --tempGreen: #0cb14b;
-}
-
-.subTitleTextRight{
-    display: block;
-    margin-left: 54px !important;
-    color: #0cb14b;
-}
-
-.title-order {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    color: #fff;
-    background-color: #0cb14b;
-}
-
-.blue_text {
-    color: #00b7ce;
-}
-
-.darkBlue_text {
-    color: darkblue;
-}
-
-.green_text {
-    color: #0cb14b;
-}
-
-.red_text{
-    color: red;
-}
 
 /**************** Unit Color code end***************/
 
