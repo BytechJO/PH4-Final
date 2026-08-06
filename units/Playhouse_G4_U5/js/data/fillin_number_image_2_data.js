@@ -1,6 +1,6 @@
 var stereo_data = {
   "audio":"",
-  "exist":true,
+  "exist":false,
   "bgColor_rgb":"rgb(12, 177, 75)",
   "playListData" : [
       {

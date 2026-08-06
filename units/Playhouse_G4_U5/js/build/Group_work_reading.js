@@ -71,7 +71,11 @@ function buildFillInBody(aObj) {
 				}
 			}
 
-		
+		if (aObj.image && aObj.image !== "no") {
+    htmlStmt += '<div class="image_space">';
+    htmlStmt += '<img src="' + aObj.image + '" alt="">';
+    htmlStmt += '</div>';
+}
 		htmlStmt += '</div>';
 		htmlStmt += '</div></div></div>'; // end - all_cont / options 
 		

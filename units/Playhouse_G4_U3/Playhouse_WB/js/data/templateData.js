@@ -24,7 +24,7 @@ var _data = {
 
     audio: "./audios/AGW_1_SB_U15_TitleAudio.mp3",
     title: {
-      text: "Getting Ready for School",
+      text: "At the Carnival",
       color: "rgb(255, 255, 255);",
       "text-align": "center",
       "font-size": "44px",

@@ -26,7 +26,7 @@ var mcq_tick_data = {
     "mainTitleIcon"         : "../images/pages/sb-icons/word_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_24/WORD_POWER.mp3",
-    "subTitleTextLeft"      : "<span class='orange_text'>2</span> You do it! Look at the Word Power words in the table. Tick ✓ the adjectives that best match each noun. Remember, you can use more than one adjective for a noun.",
+    "subTitleTextLeft"      : "<span class='orange_text'>2</span> You do it! Look at the Word Power words in the table. Tick <span class='black'>✓</span>  the adjectives that best match each noun. Remember, you can use more than one adjective for a noun.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/page_24/2_You_do_it!_Look_at_the_Word_Power_words_in_the_table_Tick_the_adjectives_that_best_match.mp3",

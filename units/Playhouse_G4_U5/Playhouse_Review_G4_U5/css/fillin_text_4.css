@@ -1,230 +1,553 @@
-.all_cont{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.screen_elements{
-    width: 94%;
-    height: 100%;
+:root {
+  --game-green: #18ad4b;
+  --game-dark: #303030;
+  --game-line: #32383b;
+  --game-blue: #159bc4;
+  --input-green: #19b653;
 }
 
-.ques {
-    display: flex;
-    flex-wrap: wrap;
+/* =========================================
+   Main Layout
+========================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: center;
 }
 
-.group_elm{
-    width: 95%;
-    height: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.screen_elements {
+  width: 90%;
+  height: 100%;
+
+  margin: 0 auto;
 }
 
-.fillin_gr {
-    /* width: 100%; */
+.game_content {
+  width: 100%;
+  min-height: 390px;
+
+  margin: 0 auto;
+  padding: 5px 15px 20px;
+
+  position: relative;
+
+  box-sizing: border-box;
 }
 
-.activityHeading b {
-    color: #000;
+/* =========================================
+   Questions Grid
+========================================= */
+
+.questions_grid {
+  width: 80%;
+
+  margin: 5px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 55px;
+  row-gap: 18px;
+
+  align-items: start;
 }
 
-.func_ctrls{
-    /* display: none !important; */
+/* =========================================
+   Question Item
+========================================= */
+
+.question_item {
+  width: 100%;
+  min-height: 58px;
+
+  margin: 0;
+  padding: 0;
+
+  display: block;
+
+  position: relative;
 }
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
+/*
+ * لا توجد صور داخل أسئلة هذه الصفحة.
+ */
+.question_image_wrapper {
+  display: none !important;
 }
 
-.image_space {
-    width: 200px;
-    /* margin-right: 25px; */
-    /* width: 75%; */
-    /* height: 342px; */
-    /* margin: 0px auto; */
-}
-  
-.image_space img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+.question_item .fillin_gr {
+  width: 100%;
 }
 
-.q_order{
-    width: 50px;
-    font-weight: bolder;
+.question_item .q_space {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  position: relative;
+
+  text-align: left;
 }
 
-.txt-audioIcon {
-    color: rgb(58, 58, 58);
-    font-size: 27px;
+/*
+ * نخفي الترقيم التلقائي؛
+ * لأن الصورة الأصلية لا تحتوي أرقام أسئلة.
+ */
+.question_number {
+  display: none !important;
 }
 
-.ques{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-}
+/* =========================================
+   Question Content
+========================================= */
 
-.q_image {
-    width: 520px;
-}
-
-.q_image img{
-    width: 100%;
-}
-
-.q_box{
-    width:  100%;
-    height: 70px;
-}
-
-.fill_in .img_fillin_gr {
-    width: 50%;
-    height: 280px;
-    position: relative;
-    justify-items: center;
-}
-
-.fillin_gr .q_space {
-    width: 100%;
-}
 .fillin_set {
-    font-family: Arcon;
-    color: black;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  width: calc(100% - 40px);
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  color: var(--game-dark);
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+
+  text-align: left;
 }
 
-.fillin_set input:focus{
-    outline: none;
+/*
+ * النص الذي يحتوي الكلمة المشوشة.
+ */
+.txt-audioIcon {
+  min-width: 125px;
+
+  margin-right: 0;
+
+  display: inline-flex !important;
+  align-items: flex-start;
+
+  color: var(--game-dark);
+
+  font-size: 20px;
+  line-height: 36px;
 }
 
-.fillin_set input {
-    /* flex: 2 2 10px; */
-    width: 300px;
-    /* width: 180px; */
-    height: 35px;
-    color: black;
-    /* padding-left: 20px; */
-    border: none;
-    margin: 0px 5px;
-    border-bottom: 2px solid #595a5a;
-    background-color: transparent;
+/*
+ * الكلمة المشوشة نفسها.
+ */
+.scrambled-word {
+  min-width: 120px;
+
+  display: inline-block;
+
+  color: #333;
+
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.text_End {
-    position: absolute;
-    font-size: 23px;
+/* =========================================
+   Letter Inputs
+========================================= */
+
+.input_hint_wrap {
+  width: 39px;
+  min-width: 39px;
+  min-height: 54px;
+
+  margin: 0;
+
+  display: inline-flex;
+  flex: 0 0 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+
+  vertical-align: top;
+}
+
+.input_hint_wrap .text_input_area {
+  width: 39px;
+  height: 36px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 1.5px solid var(--input-green);
+  border-right-width: 0;
+  border-radius: 0;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.6);
+  color: #000;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 34px;
+  text-align: center;
+
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+/*
+ * إغلاق الحد الأيمن للخانة الأخيرة.
+ */
+.question_item .input_hint_wrap:last-of-type .text_input_area {
+  border-right-width: 1.5px;
+}
+
+/*
+ * عند التركيز.
+ */
+.input_hint_wrap .text_input_area:focus {
+  position: relative;
+  z-index: 2;
+
+  border: 2px solid var(--game-blue);
+  outline: none;
+}
+
+/* =========================================
+   Hint Numbers
+========================================= */
+
+.hint_number {
+  width: 100%;
+  min-height: 17px;
+
+  margin-top: 2px;
+
+  display: block;
+
+  color: #333;
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* =========================================
+   Validation Icons
+========================================= */
+
+.icon_wrap_holder {
+  width: 34px;
+  min-width: 34px;
+  min-height: 36px;
+
+  margin-left: 6px;
+
+  flex: 0 0 34px;
 }
 
 .icon_wrap {
-    /* position: absolute;
-    margin-top: -35px; 
-    right: 100px; */
+  width: 31px;
+
+  display: none;
 }
 
 .tick,
 .cross {
-    width: 35px;
+  width: 31px;
+  height: 31px;
+
+  display: none;
 }
 
 .tick img,
 .cross img {
-    width: 100%;
-    /* display: none; */
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: contain;
 }
 
-.image_wrap {
-    display: none;
+/* =========================================
+   Final Puzzle
+========================================= */
+
+.final_puzzle_card {
+  width: 100%;
+
+  margin: 22px auto 0;
+  padding: 0;
+
+  position: relative;
+  z-index: 3;
+
+  border: none;
+  border-radius: 0;
+
+  background: transparent;
+  box-shadow: none;
+
+  color: var(--game-dark);
+
+  text-align: center;
+  transform: none;
 }
 
-.clue_word {
-    padding: 2px 27px;
-    font-size: 22px;
+.final_puzzle_title,
+.final_puzzle_image_wrap {
+  display: none;
 }
 
-.word_options {
-    width: 100%;
-    border-radius: 10px;
-    background-color: #c3f4ff8c;
+.final_puzzle_content {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  position: relative;
 }
 
+.final_puzzle_cells {
+  width: auto;
+
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 58px;
+}
+
+/*
+ * SHALLOW و POOL.
+ */
+.final_word_group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+.final_cell {
+  width: 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+ * الخانات النهائية تظهر كخطوط فقط.
+ */
+.final_letter_input {
+  width: 36px;
+  height: 28px;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  border-bottom: 2px solid var(--game-line);
+  border-radius: 0;
+  outline: none;
+
+  background: transparent;
+  color: #222;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  box-shadow: none;
+}
+
+.final_letter_input:focus {
+  border-bottom-color: var(--game-blue);
+}
+
+/* =========================================
+   Final Numbers
+========================================= */
+
+.final_cell_number {
+  min-height: 17px;
+
+  margin-top: 4px;
+
+  color: #333;
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* =========================================
+   Final Validation Icon
+========================================= */
+
+.final_puzzle_icon_holder {
+  width: 35px;
+  min-width: 35px;
+  min-height: 35px;
+
+  margin-left: 10px;
+
+  flex: 0 0 35px;
+}
+
+.final_puzzle_icon_holder .icon_wrap {
+  width: 32px;
+}
+
+.final_puzzle_icon_holder .tick,
+.final_puzzle_icon_holder .cross {
+  width: 32px;
+  height: 32px;
+}
+
+/* =========================================
+   Remove Unused Elements
+========================================= */
+
+.character_image_container,
+.image_wrap,
+.q_image,
 .word_opt_sticky {
-    width: 100%;
-    margin: 0px auto;
-    position: -webkit-sticky;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 5;
-    border: 2px solid var(--temp);
-    border-radius: 10px;
+  display: none !important;
 }
 
-.words-list li{
-    height: 110px;
-    font-weight: bolder;
-    color: black;
-    border: 1px solid black;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1100px) {
+  .screen_elements {
+    width: 94%;
+  }
+
+  .questions_grid {
+    column-gap: 30px;
+  }
+
+  .txt-audioIcon {
+    min-width: 105px;
+  }
+
+  .scrambled-word {
+    min-width: 100px;
+  }
+
+  .input_hint_wrap {
+    width: 33px;
+    min-width: 33px;
+    flex-basis: 33px;
+  }
+
+  .input_hint_wrap .text_input_area {
+    width: 33px;
+  }
+
+  .final_word_group {
+    gap: 7px;
+  }
+
+  .final_cell,
+  .final_letter_input {
+    width: 32px;
+  }
 }
 
-.right-content .p-0{
-    height: 110px;
-    border: 1px solid black;
-}
+@media (max-width: 767.98px) {
+  .questions_grid {
+    grid-template-columns: 1fr;
 
-.tips_content img {
-    height: 30px;
-    width: auto;
-    margin-top: 10px;
-}
+    row-gap: 15px;
+  }
 
-.image-container{
-    position: absolute;
-    right: 260px;
-    bottom: 50px;
-    
-}
+  .question_item {
+    max-width: 470px;
 
-.image-container img{
-    width: 300px;
-    height: 210px;
-    margin: 0px 70px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 2px solid #36a0c7;
-}
+    margin: 0 auto;
+  }
 
-/* ************************************************* */
-/* ************************************************* */
-@media (max-width: 991.98px) {
-    .fill_in .img_fillin_gr {
-        width: 160px;
-    }
-}
+  .final_puzzle_cells {
+    gap: 30px;
+  }
 
-@media (max-width: 575.98px) {
-    .fill_in .img_fillin_gr {
-        width: 200px;
-    }
+  .instruction-text {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 475.98px) {
-    /* .fill_in .img_fillin_gr {
-        width: 200px;
-    } */
+  .screen_elements {
+    width: 100%;
+  }
+
+  .game_content {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .fillin_set {
+    width: calc(100% - 32px);
+
+    font-size: 16px;
+  }
+
+  .txt-audioIcon {
+    min-width: 86px;
+
+    font-size: 17px;
+  }
+
+  .scrambled-word {
+    min-width: 82px;
+
+    font-size: 17px;
+  }
+
+  .input_hint_wrap {
+    width: 29px;
+    min-width: 29px;
+    flex-basis: 29px;
+  }
+
+  .input_hint_wrap .text_input_area {
+    width: 29px;
+    height: 33px;
+
+    font-size: 18px;
+  }
+
+  .final_puzzle_cells {
+    flex-wrap: wrap;
+
+    gap: 20px;
+  }
+
+  .final_word_group {
+    gap: 5px;
+  }
+
+  .final_cell,
+  .final_letter_input {
+    width: 27px;
+  }
 }

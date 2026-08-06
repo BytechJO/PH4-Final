@@ -18,8 +18,8 @@ var stereo_data = {
     ],
   }
 var reading_data = {
-    "mainTitle": "../images/pages/sb-icons/grammer_main_title.png",
-    "mainTitleIcon": "../images/pages/sb-icons/word_main_title_icon.png",
+ "mainTitle": "../images/pages/sb-icons/WRITING.jpg",
+    "mainTitleIcon": "",
     "mainTitleIconPos": {"right": "90px"},
     "mainTitleAudio": "../audios/page_28/WRITING.mp3",
     "subTitleTextLeft": "<span class='title-order'>2</span> Write about it! Here‘s an example of the beginning of a description. After reading this one, try your own!",

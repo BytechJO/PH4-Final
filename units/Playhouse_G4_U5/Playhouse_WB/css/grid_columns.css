@@ -133,7 +133,6 @@
 .grid_without_background .snap_group_all{
     background-color: transparent;
     border: none;
-    padding: 0px;
 }
 .grid_without_background .col_item{
     display: flex;

@@ -1,0 +1,363 @@
+/* =========================================
+   General
+========================================= */
+
+.all_cont {
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: center;
+}
+
+.screen_elements {
+  width: 95%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* =========================================
+   Main Board
+========================================= */
+
+.famous-place-board {
+  width: min(95%, 1100px);
+  height: 510px;
+
+  margin: 10px auto 80px;
+
+  position: relative;
+
+  border-radius: 14px;
+  border-right: 5px solid #858585;
+  border-bottom: 5px solid #858585;
+
+  background: linear-gradient(110deg, #fff9db 0%, #fff4bf 50%, #fff8d7 100%);
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Arrow SVG
+========================================= */
+
+.fact-arrows {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  overflow: visible;
+  pointer-events: none;
+}
+
+.fact-arrows line {
+  stroke: #222;
+  stroke-width: 1.7;
+}
+
+.fact-arrows path {
+  fill: #222;
+}
+
+/* =========================================
+   Fact Cards
+========================================= */
+
+.fact-card {
+  width: 27%;
+  height: 38%;
+
+  position: absolute;
+  z-index: 2;
+
+  border: 2px solid #ff6a2b;
+  border-radius: 9px;
+
+  background-color: rgba(255, 255, 255, 0.72);
+
+  box-sizing: border-box;
+}
+
+.fact-card-left-top {
+  top: 5%;
+  left: 1.5%;
+}
+
+.fact-card-left-bottom {
+  bottom: 5%;
+  left: 1.5%;
+}
+
+.fact-card-right-top {
+  top: 5%;
+  right: 1.5%;
+}
+
+.fact-card-right-bottom {
+  right: 1.5%;
+  bottom: 5%;
+}
+
+.fact-label {
+  min-width: 70px;
+
+  padding: 2px 9px;
+
+  position: absolute;
+  top: -2px;
+  left: 50%;
+
+  transform: translate(-50%, -1px);
+
+  background-color: #f15a24;
+  color: #fff;
+
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Fact Textarea
+========================================= */
+
+.fact-input {
+  width: calc(100% - 22px);
+  height: calc(100% - 45px);
+
+  margin: 38px 11px 7px;
+  padding: 7px 9px;
+
+  display: block;
+
+  border: none;
+  outline: none;
+  resize: none;
+
+  background-color: transparent;
+  color: #000;
+
+  font-family: inherit;
+  font-size: 19px;
+  line-height: 1.35;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+.fact-input::placeholder {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.fact-input:focus {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================================
+   Famous Place Centre
+========================================= */
+
+.famous-place-center {
+  width: 27%;
+  height: 55%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+
+  transform: translate(-50%, -50%);
+}
+
+.famous-place-label {
+  margin-bottom: 15px;
+
+  color: #333;
+
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.famous-place-circle {
+  width: 230px;
+  height: 230px;
+
+  margin: auto;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #ff6a2b;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  box-sizing: border-box;
+}
+
+.place-input {
+  width: 75%;
+  height: 60%;
+
+  padding: 10px;
+
+  border: none;
+  outline: none;
+  resize: none;
+
+  background-color: transparent;
+  color: #000;
+
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.place-input::placeholder {
+  color: #aaa;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* =========================================
+   Check / Cross Icons
+========================================= */
+
+.icon_wrap {
+  width: 38px;
+  height: 38px;
+
+  position: absolute;
+  right: -17px;
+  bottom: -17px;
+  z-index: 10;
+
+  display: none;
+}
+
+.tick,
+.cross {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: contain;
+}
+
+.famous-place-circle .icon_wrap {
+  right: 5px;
+  bottom: 8px;
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 900px) {
+  .famous-place-board {
+    height: 455px;
+  }
+
+  .famous-place-circle {
+    width: 190px;
+    height: 190px;
+  }
+
+  .famous-place-label {
+    font-size: 19px;
+  }
+
+  .fact-label {
+    min-width: 58px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .fact-input {
+    font-size: 16px;
+  }
+
+  .subTitleTextRight {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .famous-place-board {
+    width: 96%;
+    height: 700px;
+  }
+
+  .fact-arrows {
+    display: none;
+  }
+
+  .fact-card {
+    width: 42%;
+    height: 25%;
+  }
+
+  .fact-card-left-top {
+    top: 4%;
+    left: 4%;
+  }
+
+  .fact-card-right-top {
+    top: 4%;
+    right: 4%;
+  }
+
+  .fact-card-left-bottom {
+    bottom: 4%;
+    left: 4%;
+  }
+
+  .fact-card-right-bottom {
+    right: 4%;
+    bottom: 4%;
+  }
+
+  .famous-place-center {
+    width: 45%;
+    height: auto;
+  }
+
+  .famous-place-circle {
+    width: 170px;
+    height: 170px;
+  }
+}
+.func_ctrls {
+  display: none !important;
+}
