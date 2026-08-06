@@ -1,215 +1,209 @@
-.all_cont{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.screen_elements{
-    width: 90%;
-    height: 100%;
+.poem_fillin_group {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-.group_elm{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #2ab85c;
-    border-radius: 25px;
+.poem_fillin_group .que,
+.poem_fillin_group .fillin_gr,
+.poem_fillin_group .q_space,
+.poem_fillin_group .fillin_set {
+  width: 100%;
+  height: 100%;
 }
 
-.func_ctrls {
-    display: none !important;
+.poem_fillin_group .que {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-.activityHeading b {
-    color: #000;
+.poem_fillin_group .fillin_gr {
+  align-items: stretch !important;
 }
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
+.poem_fillin_group .q_space {
+  position: relative;
 }
 
-.image_space {
-    width: 75%;
-    height: 342px;
-    margin: 0px auto;
-}
-  
-.image_space img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+.poem_fillin_set {
+  display: block !important;
 }
 
-.q_order{
-    width: 50px;
-    font-weight: bolder;
+.poem_activity {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 38px;
+  box-sizing: border-box;
 }
 
-.ques{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
+.poem_left {
+  width: 45%;
+  min-width: 0;
+  display: flex;
 }
 
-.q_box{
-    width:  100%;
-    height: 70px;
+.poem_box {
+  width: 100%;
+  padding: 18px 20px;
+  border: 4px solid #0aaa57;
+  border-radius: 20px;
+  background-color: #fffef0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: 22px;
+
+  color: #2c2c2c;
+  font-size: 25px;
+  line-height: 1.45;
+  text-align: left;
 }
 
-.fill_in .que {
-    width: 100%;
-    height: 65px;
-
+.poem_line {
+  margin: 0;
 }
 
-.fillin_gr .q_space {
-    width: 100%;
-}
-.fillin_set {
-    font-family: Arcon;
-    font-size: 25px;
-    color: black;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.poem_input_line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.fillin_set input:focus{
-    outline: none;
+.poem_fillin_group .text_input_area {
+  width: 205px !important;
+  min-width: 205px;
+  height: 40px;
+  margin: 0;
+  padding: 2px 8px;
+  border: none;
+  border-bottom: 2px solid #555;
+  border-radius: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #000;
+  font-family: inherit;
+  font-size: 24px;
+  text-align: center;
+  outline: none;
+  box-shadow: none;
 }
 
-.fillin_set input {
-    flex: 2 2 10px;
-    height: 35px;
-    color: black;
-    padding-left: 20px;
-    border: none;
-    font-size: 21px;
-    border-bottom: 2px solid #535353;
+.poem_fillin_group .text_input_area:focus {
+  border-bottom-color: #0aaa57;
 }
 
-.icon_wrap {
-    position: absolute;
-    margin-top: -35px; 
-    right: 100px;
+.poem_right {
+  width: 48%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.tick,
-.cross {
-    width: 35px;
+.verb_examples {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 38px;
 }
 
-.tick img,
-.cross img {
-    width: 100%;
+.verb_item {
+  display: grid;
+  grid-template-columns: 62px 78px 95px;
+  align-items: center;
+  color: #303030;
+  font-size: 24px;
+  white-space: nowrap;
 }
 
-.image_wrap {
-    display: none;
+.verb_arrow {
+  position: relative;
+  width: 68px;
+  height: 2px;
+  background-color: #ef3434;
 }
 
-.clue_word {
-    padding: 2px 27px;
+.verb_arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  transform: translateY(-50%);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #ef3434;
+}
+
+.poem_image {
+  width: 112%;
+  height: 258px;
+  overflow: hidden;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.poem_image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.poem_fillin_group .icon_wrap_holder {
+  position: absolute;
+  left: 41%;
+  bottom: 8px;
+}
+
+.poem_fillin_group .tick img,
+.poem_fillin_group .cross img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+  .poem_activity {
+    gap: 22px;
+  }
+
+  .poem_box {
     font-size: 22px;
+  }
+
+  .verb_item {
+    grid-template-columns: 55px 65px 82px;
+    font-size: 21px;
+  }
+
+  .verb_arrow {
+    width: 56px;
+  }
 }
 
-.word_options {
+@media (max-width: 760px) {
+  .poem_activity {
+    flex-direction: column;
+  }
+
+  .poem_left,
+  .poem_right {
     width: 100%;
-    border-radius: 10px;
-    background-color: #c3f4ff8c;
-}
+  }
 
-.word_opt_sticky {
-    width: 100%;
-    margin: 0px auto;
-    position: -webkit-sticky;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 5;
-    border: 2px solid var(--temp);
-    border-radius: 10px;
-}
+  .poem_box {
+    min-height: 430px;
+  }
 
-.words-list li{
-    height: 110px;
-    font-weight: bolder;
-    color: black;
-    border: 1px solid black;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.right-content .p-0{
-    height: 110px;
-    border: 1px solid black;
-}
-
-.tips_content img {
-    height: 30px;
-    width: auto;
-    margin-top: 10px;
-}
-
-.image-container{
-    position: absolute;
-    right: 260px;
-    bottom: 50px;
-    
-}
-
-.image-container img{
-    width: 300px;
-    height: 210px;
-    margin: 0px 70px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 2px solid #36a0c7;
-}
-
-/* ================== */
-
-.fillin_with_background {
-    width: 950px;
-    height: 80%;
-    padding: 20px;
-    background-color: #f9fae8;
-}
-.fillin_with_background .que {
-    height: 25%;
-    font-size: 26px;
-}
-.fillin_with_background  input {
-    margin: 0px 20px;
-    font-size: 25px;
-    background-color: transparent;
-    border-bottom: 2px solid #2b2a2a;
-}
-
-/* ************************************************* */
-/* ************************************************* */
-@media (max-width: 991.98px) {
-    .fill_in .que {
-        width: 160px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .fill_in .que {
-        width: 200px;
-    }
-}
-
-@media (max-width: 475.98px) {
-    /* .fill_in .que {
-        width: 200px;
-    } */
+  .poem_image {
+    height: 280px;
+  }
 }

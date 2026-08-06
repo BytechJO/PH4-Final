@@ -1,174 +1,565 @@
-.all_cont{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+/* =========================================
+   Main Activity Container
+========================================= */
+
+.all_cont {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: center;
 }
-.screen_elements{
-    width: 87%;
-    height: 100%;
+.screen_elements {
+    width: 95%;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
 }
 
-.group_elm{
-    width: 80%;
-    height: 100%;
-    display: flex;
+.group_elm {
+    width: 90%;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto;
+    padding: 10px 20px 70px;
+
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    column-gap: 25px;
+    row-gap: 40px;
+
     justify-content: center;
-    align-items: center;
+    align-items: start;
+
     position: relative;
+    box-sizing: border-box;
 }
+
+/* المحادثة الثالثة تكون تحت وفي المنتصف */
+.group_elm .q_image[data-qno="5"] {
+    grid-column: 2;
+}
+
+.group_elm .q_image[data-qno="6"] {
+    grid-column: 3;
+}
+/* =========================================
+   Hide Controls
+========================================= */
 
 .func_ctrls {
-    display: none !important;
+  display: none !important;
 }
+
+/* =========================================
+   Activity Heading
+========================================= */
 
 .activityHeading b {
-    color: #000;
+  color: #000;
 }
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
+/* =========================================
+   Options Area
+   Scroll appears when questions exceed screen
+========================================= */
+
+.options {
+  width: 100%;
+  height: calc(100vh - 170px);
+
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  box-sizing: border-box;
 }
+
+/* إخفاء شكل شريط التمرير مع بقاء التمرير فعال */
+.options::-webkit-scrollbar {
+  width: 7px;
+}
+
+.options::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.options::-webkit-scrollbar-thumb {
+  background: #b7b7b7;
+  border-radius: 10px;
+}
+
+/* =========================================
+   General Question Elements
+========================================= */
+
+.q_num_space {
+  width: 40px;
+  font-weight: bold;
+}
+
+.q_order {
+  width: 50px;
+  font-weight: bolder;
+}
+
+.ques {
+  width: 100%;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.q_box {
+  width: 100%;
+  height: 70px;
+}
+
+/* =========================================
+   General Image Space
+========================================= */
 
 .image_space {
-    width: 75%;
-    height: 342px;
-    margin: 0px auto;
+  width: 75%;
+  height: 342px;
+
+  margin: 0 auto;
 }
-  
+
 .image_space img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
 }
 
-.q_order{
-    width: 50px;
-    font-weight: bolder;
-}
-
-.ques{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-}
-
-.q_box{
-    width:  100%;
-    height: 70px;
-}
+/* =========================================
+   Each Question Image
+========================================= */
 
 .q_image {
-    width: 50%;
-    position: absolute;
+  width: 100%;
+  height: auto;
+
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
 }
 
+/* الصورة الخلفية التي تحتوي الشخصية وفقاعة الكلام */
 .q_image .back_img {
-    height: 368px;
-    position: relative;
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+
+  object-fit: contain;
 }
 
-.fill_in .que {
-    font-size: 25px;
-    position: absolute;
-    top: 0;
-    text-align: left;
+/* =========================================
+   Input Container Over Image
+========================================= */
+
+.fill_in .q_image .que {
+  position: absolute;
+  z-index: 5;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  box-sizing: border-box;
 }
 
-.q_image[data-qno="1"] {
-    top: 0px;
-    left: 0px;
-}
-.q_image[data-qno="2"] {
-    bottom: 0px;
-    right: 0px;
-}
+/*
+   الصور الفردية:
+   السؤال 1
+   السؤال 3
+   السؤال 5
 
-/* 1-text */
-.q_image[data-qno="1"] .que {
-    top: 94px;
-    left: 63px;
-    width: 358px;
-}
+   الانبوت داخل الفقاعة العلوية
+*/
+.q_image:nth-child(odd) .que {
+  top: 25.5%;
+  left: 12%;
 
-/* 2-text*/
-.q_image[data-qno="2"] .que {
-    top: 262px;
-    left: 30px;
+  width: 68%;
 }
 
+/*
+   الصور الزوجية:
+   السؤال 2
+   السؤال 4
+   السؤال 6
 
-/* ======================================== */
+   الانبوت داخل الفقاعة السفلية
+*/
+.q_image:nth-child(even) .que {
+  top: 70%;
+  left: 6%;
+
+  width: 72%;
+}
+
+/* تثبيت المواقع باستخدام data-qno كذلك */
+.q_image[data-qno="1"] .que,
+.q_image[data-qno="3"] .que,
+.q_image[data-qno="5"] .que {
+  top: 20.5%;
+  left: 12%;
+
+  width: 80%;
+}
+
+.q_image[data-qno="2"] .que,
+.q_image[data-qno="4"] .que,
+.q_image[data-qno="6"] .que {
+  top: 70%;
+  left: 6%;
+
+  width: 80%;
+}
+
+/* =========================================
+   Fill-in Structure
+========================================= */
+
+.fillin_gr {
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+}
 
 .fillin_gr .q_space {
-    width: 100%;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
 }
 
 .fillin_set {
-    font-family: Arcon;
-    color: black;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  color: #000;
+  font-family: Arcon;
+
+  box-sizing: border-box;
 }
 
-.fillin_set input:focus{
-    outline: none;
+/* =========================================
+   Input
+========================================= */
+
+.fillin_set input,
+.fillin_set .text_input_area {
+  width: 100%;
+  height: 42px;
+
+  margin: 0;
+  padding: 0 8px;
+
+  display: block;
+
+  color: #000;
+  font-family: Arcon;
+  font-size: 23px;
+  line-height: 42px;
+  text-align: left;
+
+  border: none;
+  border-bottom: 2px solid #595a5a;
+  border-radius: 0;
+
+  outline: none;
+  background-color: transparent;
+
+  box-shadow: none;
+
+  box-sizing: border-box;
 }
 
-.fillin_set input {
-    /* flex: 2 2 10px; */
-    width: 335px;
-    /* height: 35px; */
-    color: black;
-    /* padding-left: 20px; */
-    font-size: 23px;
-    border: none;
-    margin: 0px 15px;
-    background-color: transparent;
-    border-bottom: 2px solid #595a5a;
+.fillin_set input:focus,
+.fillin_set .text_input_area:focus {
+  color: #000;
+
+  border: none;
+  border-bottom: 2px solid #595a5a;
+
+  outline: none;
+  background-color: transparent;
+
+  box-shadow: none;
+}
+
+/* منع لون المتصفح التلقائي عند التعبئة */
+.fillin_set input:-webkit-autofill,
+.fillin_set input:-webkit-autofill:hover,
+.fillin_set input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* =========================================
+   Correct / Wrong Icons
+========================================= */
+
+.icon_wrap_holder {
+  position: absolute;
+
+  top: 50%;
+  right: -42px;
+
+  transform: translateY(-50%);
+
+  z-index: 10;
 }
 
 .icon_wrap {
-    /* position: absolute;
-    margin-top: -35px; 
-    right: 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tick,
 .cross {
-    width: 35px;
+  width: 32px;
+  height: 32px;
 }
 
 .tick img,
 .cross img {
-    width: 100%;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
 }
+
+/* =========================================
+   Unused Image Wrapper
+========================================= */
 
 .image_wrap {
-    display: none;
+  display: none;
 }
 
+/* =========================================
+   Tablet
+========================================= */
 
-/* ************************************************* */
-/* ************************************************* */
 @media (max-width: 991.98px) {
-    .fill_in .que {
-        width: 160px;
-    }
+  .screen_elements {
+    width: 97%;
+  }
+
+  .group_elm {
+    width: 95%;
+
+    padding: 10px 10px 60px;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    column-gap: 12px;
+    row-gap: 30px;
+  }
+
+  .group_elm .q_image[data-qno="5"] {
+    grid-column: 2;
+  }
+
+  .group_elm .q_image[data-qno="6"] {
+    grid-column: 3;
+  }
+
+  .fillin_set input,
+  .fillin_set .text_input_area {
+    height: 38px;
+    padding: 0 5px;
+
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+  .icon_wrap_holder {
+    right: -34px;
+  }
+
+  .tick,
+  .cross {
+    width: 27px;
+    height: 27px;
+  }
 }
+
+/* =========================================
+   Mobile
+========================================= */
 
 @media (max-width: 575.98px) {
-    .fill_in .que {
-        width: 200px;
-    }
+  .options {
+    height: calc(100vh - 150px);
+  }
+
+  .screen_elements {
+    width: 100%;
+  }
+
+  .group_elm {
+    width: 100%;
+
+    padding: 10px 12px 60px;
+
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 25px;
+  }
+
+  /*
+       عندما تصبح الصور تحت بعضها،
+       تبقى مواقع الانبوت كما هي داخل كل صورة
+    */
+
+  .q_image:nth-child(odd) .que,
+  .q_image[data-qno="1"] .que,
+  .q_image[data-qno="3"] .que,
+  .q_image[data-qno="5"] .que {
+    top: 25.5%;
+    left: 12%;
+
+    width: 68%;
+  }
+
+  .q_image:nth-child(even) .que,
+  .q_image[data-qno="2"] .que,
+  .q_image[data-qno="4"] .que,
+  .q_image[data-qno="6"] .que {
+    top: 70%;
+    left: 6%;
+
+    width: 72%;
+  }
+
+  .fillin_set input,
+  .fillin_set .text_input_area {
+    height: 36px;
+
+    font-size: 17px;
+    line-height: 36px;
+  }
+
+  .icon_wrap_holder {
+    right: -31px;
+  }
+
+  .tick,
+  .cross {
+    width: 25px;
+    height: 25px;
+  }
 }
 
+/* =========================================
+   Very Small Mobile
+========================================= */
+
 @media (max-width: 475.98px) {
-    /* .fill_in .que {
-        width: 200px;
-    } */
+  .group_elm {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .fillin_set input,
+  .fillin_set .text_input_area {
+    height: 32px;
+
+    padding: 0 4px;
+
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .icon_wrap_holder {
+    right: -27px;
+  }
+
+  .tick,
+  .cross {
+    width: 22px;
+    height: 22px;
+  }
+}
+/* النصوص الجاهزة في المحادثة الأولى */
+.q_image[data-qno="1"] .fillin_set,
+.q_image[data-qno="2"] .fillin_set {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.q_image[data-qno="1"] .txt-audioIcon,
+.q_image[data-qno="2"] .txt-audioIcon {
+  width: 100%;
+  display: block !important;
+
+  color: #000;
+  font-family: Arcon;
+  font-size: 22px;
+  line-height: 1.25;
+  text-align: left;
+
+  white-space: normal;
+}
+
+/* لا تظهر أيقونة صح أو خطأ للمحادثة المحلولة */
+.q_image[data-qno="1"] .icon_wrap_holder,
+.q_image[data-qno="2"] .icon_wrap_holder {
+  display: none !important;
+}.q_image[data-qno="1"] .que {
+  top: 2%;
 }

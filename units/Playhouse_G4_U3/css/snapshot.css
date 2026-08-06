@@ -795,4 +795,5 @@ body {
 }
 .number_bold {
   font-weight: 900;
+  padding-left: 10px;
 }

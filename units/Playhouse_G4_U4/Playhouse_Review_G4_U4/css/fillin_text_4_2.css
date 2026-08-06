@@ -161,6 +161,7 @@
     border-radius: 10px;
     background-color: #aad5f1;
     padding: 10px;
+    margin-top: -50px;
 }
 
 .word_opt_sticky {
@@ -230,4 +231,49 @@
     /* .fill_in .img_fillin_gr {
         width: 200px;
     } */
+}
+/* تقريب الصح والخطأ من نهاية الجملة */
+.fillin_gr .q_space {
+    width: auto !important;
+    max-width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fillin_gr .fillin_set {
+    width: auto !important;
+    flex: 0 1 auto;
+}
+
+.fillin_gr .icon_wrap_holder {
+    width: 42px !important;
+    min-width: 42px;
+    height: 42px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fillin_gr .icon_wrap {
+    width: 35px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fillin_gr .tick,
+.fillin_gr .cross {
+    width: 35px;
+    height: 35px;
+}
+
+.fillin_gr .tick img,
+.fillin_gr .cross img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

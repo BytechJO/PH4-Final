@@ -17,15 +17,6 @@
     background-color: #ffe8d1;
     padding: 50px;
 }
-
-.slide_9 .col_grid_container {
-    background-color: #fff5d2;
-}
-
-.slide_9 .col_grid_container img {
-    height: 294px;
-    position: absolute;
-}
 /* =========================== */
 .full_grid_without_background_image {
     width: 80%;
@@ -36,4 +27,37 @@
     text-align: center;
     padding: 20px;
     border-radius: 20px;
+}.talk-about-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.talk-about-row b {
+    white-space: nowrap;
+}
+
+.talk-about-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}.sub-title-right-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subTitleTextRight {
+    margin: 0;
+}
+
+.sub-title-right-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
 }

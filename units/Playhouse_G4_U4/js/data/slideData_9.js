@@ -21,7 +21,7 @@ var stereo_data = {
 var reading_data = {
     "mainTitle": "../images/pages/sb-icons/writing.png",
     "mainTitleIcon": "../images/pages/sb-icons/phonics_3_icon.png",
-    "mainTitleAudio": "../audios/under.mp3",
+    "mainTitleAudio"        : "../audios/page_38/WRITING.mp3",
     "mainTitleIconPos"      : {"right": "90px"},
     "subTitleTextLeft": "<span class='title-order'>2</span> Write an invitation.",
     "subTitleTextRight": "",

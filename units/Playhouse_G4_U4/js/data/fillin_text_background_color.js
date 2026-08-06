@@ -1,127 +1,101 @@
 var stereo_data = {
-  "audio":"",
-  "exist":true,
-  "bgColor_rgb":"rgb(12, 177, 75)",
-  "type":"text",
-  "playListData" : [
-      {
-        'audiourl': '../audios/page_37/2.mp3',
-      },
-      {
-        'url': '',
-      },
-      {
-        'url': '',
-      },
-      {
-        'url': '',
-      }
+  audio: "",
+  exist: true,
+  bgColor_rgb: "rgb(12, 177, 75)",
+  type: "text",
+
+  playListData: [
+    {
+      audiourl: "../audios/page_x/2.mp3",
+    },
+    {
+      url: "",
+    },
+    {
+      url: "",
+    },
+    {
+      url: "",
+    },
   ],
-}
+};
+
 var fillin_data = {
-    "layout"               : 1,
-    "numinrow"              : [[1], [1], [1], [1], [1]],
-    "mainTitle"             : "../images/pages/sb-icons/phonics_main_title.png",
-    "mainTitleIcon"         : "../images/pages/sb-icons/phonics_main_title_icon.png",
-    "mainTitleAudio"        : "../audios/page_37/PHONICS_AND_SPELLING.mp3",
-    "mainTitleIconPos"      : {"right": "90px"},
-    "subTitleTextLeft"      : '<span class="title-order">2</span> Listen to it.',
-    "subTitleTextRight"     : "Listen to the poem. Complete the poem with the words you hear.",
-    "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/page_37/2_Listen_to_it.mp3",
-    "activitysubheading"    : "",
-    "activityicon"          : "../images/icons/key_icon.png",
-    "image"                 : "",
-    "imageposition"         : "back",// "front" (or) "back"
-    "numbering"       : "none", // "alphabet" (or) "number"
-    "numberstartfrom" : 1,
-    "options"         : [],
-    "parentClassName" : "fillin_with_background",
-    "questions"       :
-     [
+  layout: 1,
+  numinrow: [[1]],
+
+  mainTitle: "../images/pages/sb-icons/phonics_main_title.png",
+  mainTitleIcon: "../images/pages/sb-icons/phonics_main_title_icon.png",
+  mainTitleAudio: "../audios/page_37/PHONICS_AND_SPELLING.mp3",
+  mainTitleIconPos: { right: "90px" },
+  subTitleTextLeft: "<span class='title-order'>2</span>  Listen to it.",
+  subTitleTextRight:
+    "Listen to the poem. Complete the poem with the words you hear.",
+  subTitleIcons: [],
+  parentClassName: "poem_fillin_group",
+  subTitleAudio: "../audios/page_37/2_Listen_to_it.mp3",
+
+  image: "no",
+  imageposition: "back",
+
+  numbering: "none",
+  numberstartfrom: 1,
+
+  options_images: [],
+
+  poemImage: "../images/pages/activities/p37_1.png",
+
+  verbPairs: [
+    ["slide", "sliding"],
+    ["take", "taking"],
+    ["have", "having"],
+    ["hike", "hiking"],
+    ["bike", "biking"],
+    ["make", "making"],
+  ],
+
+  questions: [
+    {
+      singleword: false,
+
+      poemLines: [
         {
-          "singleword": false,
-          "text": "To the park we went riding,",
-          "textaudios": ["../audios/page_37/under.mp3"],
-          "audio": "",
-          "audioenable": "default", // correct (or) default
-          "image": "",
-          "answer": [""],
-          "alternateanswer": [[]],
-          "strictcase": "no", // yes (or) no  
-          "strictorder": "yes", // yes (or) no              
-          "maxlength": 200,
-          "type": "", // text (or) number
+          text: "To the park we went riding,",
         },
         {
-          "singleword": false,
-          "text": "and next we were [_]",
-          "textaudios": ["../audios/page_37/under.mp3"],
-          "audio": "",
-          "audioenable": "default", // correct (or) default
-          "image": "",
-          "answer": ["sliding"],
-          "alternateanswer": [[]],
-          "strictcase": "no", // yes (or) no  
-          "strictorder": "yes", // yes (or) no              
-          "maxlength": 200,
-          "type": "", // text (or) number
+          textBefore: "and next we were ",
+          input: true,
         },
         {
-          "singleword": false,
-          "text": "We were playing and running so fast.",
-          "textaudios": ["../audios/page_37/under.mp3"],
-          "audio": "",
-          "audioenable": "default", // correct (or) default
-          "image": "",
-          "answer": [""],
-          "alternateanswer": [[]],
-          "strictcase": "no", // yes (or) no  
-          "strictorder": "yes", // yes (or) no              
-          "maxlength": 200,
-          "type": "", // text (or) number
+          text: "We were playing and running so fast.",
         },
         {
-          "singleword": false,
-          "text": "Soon my friends were hiking,",
-          "textaudios": ["../audios/page_37/under.mp3"],
-          "audio": "",
-          "audioenable": "default", // correct (or) default
-          "image": "",
-          "answer": [""],
-          "alternateanswer": [[]],
-          "strictcase": "no", // yes (or) no  
-          "strictorder": "yes", // yes (or) no              
-          "maxlength": 200,
-          "type": "", // text (or) number
+          text: "Soon my friends were hiking,",
         },
         {
-          "singleword": false,
-          "text": "and to my house I was ",
-          "textaudios": ["../audios/page_37/under.mp3"],
-          "audio": "",
-          "audioenable": "default", // correct (or) default
-          "image": "",
-          "answer": [""],
-          "alternateanswer": [[]],
-          "strictcase": "no", // yes (or) no  
-          "strictorder": "yes", // yes (or) no              
-          "maxlength": 200,
-          "type": "", // text (or) number
+          textBefore: "and to my house I was ",
+          input: true,
         },
         {
-          "singleword": false,
-          "text": "so quickly, since dinner was past!",
-          "textaudios": ["../audios/page_37/under.mp3"],
-          "audio": "",
-          "audioenable": "default", // correct (or) default
-          "image": "",
-          "answer": [""],
-          "alternateanswer": [[]],
-          "strictcase": "no", // yes (or) no  
-          "strictorder": "yes", // yes (or) no              
-          "maxlength": 200,
-          "type": "", // text (or) number
+          text: "so quickly, since dinner was past!",
         },
-      ]
-    }
+      ],
+
+      textaudios: ["", "", "", "", "", ""],
+      audio: "",
+      audioenable: "default",
+
+      image: "",
+
+      answer: ["sliding", "biking"],
+
+      alternateanswer: [[], []],
+
+      strictcase: "no",
+      strictorder: "yes",
+
+      maxlength: 10,
+      type: "text",
+    },
+  ],
+};

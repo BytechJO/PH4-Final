@@ -1,0 +1,636 @@
+/* =========================================
+   Main options
+========================================= */
+
+.options {
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================================
+   Main activity container
+========================================= */
+
+.wordsearch_all_cont {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px 20px 15px;
+
+  background-color: #eaf9fd;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Main two-column layout
+========================================= */
+
+.wordsearch_content {
+  width: 95%;
+  max-width: 1100px;
+  height: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(330px, 42%)
+    minmax(480px, 58%);
+
+  gap: 18px;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   Header
+========================================= */
+
+.wordsearch_title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.wordsearch_title p {
+  margin: 0;
+}
+
+.wordsearch_title b {
+  color: #000;
+}
+
+.green_number {
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 5px;
+
+  border-radius: 50%;
+
+  background-color: #22b84c;
+  color: #000;
+
+  font-family: Arcon;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* =========================================
+   Left section
+========================================= */
+
+.wordsearch_left {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Word list
+========================================= */
+
+.wordlist {
+  width: 145px;
+  min-height: 185px;
+
+  padding: 10px 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  position: absolute;
+
+  top: 18px;
+  right: 2px;
+
+  z-index: 5;
+
+  border: 2px solid #ff7d2b;
+
+  background-color: #fff;
+  margin-top: 0px !important;
+  box-sizing: border-box;
+}
+
+.wordlist .word {
+  width: 100%;
+  min-height: 34px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 7px;
+
+  font-family: Arcon;
+  font-size: 20px;
+  color: #333;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+.wordlist .word.inLine {
+  display: flex;
+}
+
+.wordlist .word p {
+  margin: 0;
+  padding: 0;
+}
+
+.wordlist .word i {
+  width: 20px;
+  min-width: 20px;
+
+  color: #1caf4d;
+
+  font-size: 18px;
+
+  text-align: center;
+}
+
+/* Word list popup on small screens */
+
+.wordlist.onPop {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+  right: auto;
+
+  z-index: 30;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   Side image
+========================================= */
+
+.wordsearch_image {
+  width: 100%;
+  height: 340px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  margin-top: 90px;
+
+  box-sizing: border-box;
+}
+
+.wordsearch_image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+/* =========================================
+   Matrix holder
+========================================= */
+
+.wordmatrix_holder {
+  width: 100% !important;
+  max-width: 560px;
+
+  height: 100% !important;
+  max-height: 470px;
+
+  min-height: 420px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background-color: #fff;
+
+  box-sizing: border-box;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  touch-action: none;
+}
+
+/* =========================================
+   Matrix fills full holder
+========================================= */
+
+.wordmatrix {
+  width: 100% !important;
+  height: 100% !important;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  margin: 0 !important;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Rows
+========================================= */
+
+.wordmatrix .ws_row {
+  width: 100% !important;
+  height: auto !important;
+
+  flex: 1 1 0;
+
+  display: flex !important;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Cells
+========================================= */
+
+.wordmatrix .ws_col {
+  width: auto !important;
+  height: auto !important;
+
+  flex: 1 1 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  font-family: Arcon;
+  font-size: clamp(16px, 1.7vw, 24px);
+  color: #222;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Letter
+========================================= */
+
+.wordmatrix .ws_col p {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  position: absolute !important;
+
+  top: 50% !important;
+  left: 50% !important;
+
+  transform: translate(-50%, -50%) !important;
+
+  font-family: Arcon;
+  font-size: inherit !important;
+  color: #222;
+
+  line-height: 1 !important;
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+/* =========================================
+   Selection rectangles
+========================================= */
+
+.wordmatrix .rect,
+.wordmatrix .corr {
+  position: absolute;
+
+  display: none;
+
+  border: 5px solid rgba(40, 170, 230, 0.45);
+
+  box-sizing: border-box;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+.wordmatrix .corrHolder {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+/* =========================================
+   Mobile word-list button
+========================================= */
+
+.wordlist_but {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  z-index: 35;
+
+  border-radius: 50%;
+
+  background-color: #fff;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+}
+
+.wordlist_but img {
+  width: 70%;
+  height: 70%;
+
+  object-fit: contain;
+}
+
+/* =========================================
+   General
+========================================= */
+
+.activityHeading b {
+  color: #000;
+}
+
+.wordsearch_content,
+.wordsearch_left,
+.wordmatrix_holder,
+.wordmatrix,
+.wordlist,
+.wordsearch_image {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Laptop
+========================================= */
+
+@media (max-width: 1199.98px) {
+  .wordsearch_content {
+    width: 98%;
+
+    grid-template-columns:
+      minmax(290px, 39%)
+      minmax(440px, 61%);
+
+    gap: 12px;
+  }
+
+  .wordlist {
+    width: 138px;
+
+    right: 0;
+  }
+
+  .wordlist .word {
+    font-size: 18px;
+  }
+
+  .wordsearch_image {
+    height: 290px;
+  }
+
+  .wordmatrix_holder {
+    max-width: 520px;
+    max-height: 440px;
+
+    min-height: 390px;
+  }
+
+  .wordmatrix .ws_col {
+    font-size: clamp(15px, 1.6vw, 21px);
+  }
+}
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 991.98px) {
+  .wordsearch_content {
+    grid-template-columns:
+      minmax(250px, 36%)
+      minmax(400px, 64%);
+  }
+
+  .wordsearch_left {
+    min-height: 390px;
+  }
+
+  .wordlist {
+    width: 130px;
+    min-height: 170px;
+
+    padding: 8px 12px;
+  }
+
+  .wordlist .word {
+    min-height: 31px;
+
+    font-size: 17px;
+  }
+
+  .wordsearch_image {
+    height: 250px;
+  }
+
+  .wordmatrix_holder {
+    min-height: 370px;
+  }
+
+  .wordmatrix .ws_col {
+    font-size: clamp(14px, 1.5vw, 19px);
+  }
+}
+
+/* =========================================
+   Small tablet
+========================================= */
+
+@media (max-width: 767.98px) {
+  .wordsearch_all_cont {
+    align-items: flex-start;
+
+    padding-top: 10px;
+  }
+
+  .wordsearch_content {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    align-items: start;
+  }
+
+  .wordsearch_left {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  .wordlist {
+    width: 150px;
+    min-height: 175px;
+
+    position: static;
+  }
+
+  .wordsearch_image {
+    width: 45%;
+    height: 155px;
+
+    margin-top: 0;
+  }
+
+  .wordmatrix_holder {
+    width: 100% !important;
+    max-width: 560px;
+
+    min-height: 350px;
+
+    margin: 0 auto;
+  }
+
+  .wordmatrix .ws_col {
+    font-size: clamp(14px, 2.5vw, 18px);
+  }
+}
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 575.98px) {
+  .wordsearch_all_cont {
+    padding: 5px;
+  }
+
+  .wordsearch_content {
+    width: 100%;
+  }
+
+  .wordsearch_left {
+    flex-direction: column;
+  }
+
+  .wordsearch_image {
+    display: none;
+  }
+
+  .wordlist {
+    width: 95%;
+    min-height: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 15px;
+    row-gap: 2px;
+
+    padding: 7px 12px;
+  }
+
+  .wordlist .word {
+    min-height: 29px;
+
+    font-size: 16px;
+  }
+
+  .wordmatrix_holder {
+    width: 100% !important;
+    min-height: 320px;
+
+    padding: 4px;
+  }
+
+  .wordmatrix .ws_col {
+    font-size: clamp(12px, 3.7vw, 16px);
+  }
+
+  .green_number {
+    width: 29px;
+    height: 29px;
+
+    font-size: 18px;
+  }
+}

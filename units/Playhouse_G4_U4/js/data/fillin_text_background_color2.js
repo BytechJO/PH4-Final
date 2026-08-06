@@ -23,12 +23,12 @@ var fillin_data = {
     "numinrow"              : [[1], [1], [1], [1], [1]],
     "mainTitle"             : "../images/pages/sb-icons/writing.png",
     "mainTitleIcon"         : "../images/pages/sb-icons/phonics_3_icon.png",
-    "mainTitleAudio"        : "../audios/under.mp3",
+    "mainTitleAudio"        : "../audios/page_38/WRITING.mp3",
     "mainTitleIconPos"      : {"right": "90px"},
     "subTitleTextLeft"      : '<span class="title-order">1</span> Write to a new friend!',
     "subTitleTextRight"     : "Write an e-mail to a new friend. Find out about your new friend and tell them about yourself.",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "",
     "image"                 : "",
     "imageposition"         : "back",// "front" (or) "back"
     "numbering"       : "none", // "alphabet" (or) "number"

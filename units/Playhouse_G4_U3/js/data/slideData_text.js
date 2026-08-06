@@ -2,7 +2,13 @@ var stereo_data = {
   audio: "",
   exist: true,
   bgColor_rgb: "rgb(12, 177, 75)",
-  type: "toggle_slide",
+type: "slider",
+
+  sliderTimes: [
+    [0, 21],
+    [21, 58],
+    [58, 90],
+  ],
   playListData: [
     {
       audiourl: "../audios/page_24/1.mp3",

@@ -52,7 +52,7 @@ var reading_data = {
         "imagePlacePos":[
             {"colWidth": [2,10], "colData": [0,1] },
             {"colWidth": [12], "colData": [1] },
-            {"colWidth": [1,11], "colData": [0,1] },
+            {"colWidth": [1,10], "colData": [0,1] },
             {"colWidth": [1,11], "colData": [0,1] },
             {"colWidth": [1,11], "colData": [0,1] },
             {"colWidth": [1,11], "colData": [0,1] },
