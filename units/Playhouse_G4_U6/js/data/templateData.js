@@ -51,7 +51,7 @@ var _data = {
         "booksbutton" : { 
             "workbook": {
                 'icon'   : '../images/icons/book-2.png', 
-                'link'      : '../Playhouse_WB/views/Square_puzzle.html'
+                'link'      : '../Playhouse_WB/views/draw_image.html'
             },
             "studentbook": {
                 'icon'   : '../images/icons/book-1.png',

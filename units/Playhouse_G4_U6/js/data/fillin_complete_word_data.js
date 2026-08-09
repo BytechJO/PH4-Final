@@ -24,7 +24,7 @@ var fillin_data = {
   "mainTitle"             : "../images/pages/sb-icons/phonics.png",
   "mainTitleIcon"         : "../images/pages/sb-icons/phonics_main_title_icon.png",
   "mainTitleIconPos"      : {"right": "70px"},
-  "mainTitleAudio"        : "../audios/under.mp3",
+  "mainTitleAudio"        : "../audios/page_53/PHONICS_AND_SPELLING.mp3",
   "subTitleTextLeft"      : "<span class='title-order'>1</span>  Write the missing letters to make these words rhyme.",
   "subTitleTextRight"     : "",
   "subTitleIcons"         : [""],
@@ -47,7 +47,7 @@ var fillin_data = {
         "audio": "",
         "audioenable": "default", // correct (or) default
         "image": "../images/pages/activities/word_1.png",
-        "answer": ["o"],
+        "answer": ["c"],
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no  
         "strictorder": "yes", // yes (or) no              

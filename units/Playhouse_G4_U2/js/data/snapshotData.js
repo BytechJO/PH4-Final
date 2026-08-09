@@ -70,16 +70,16 @@ var Popups_data = {
           "../images/pages/snapshots/page-1/popup-3-elem-3.png",
         ],
         words: [
-          "1 saw my grandparents",
-          "2 read a book",
-          "3 rode a bike",
-          "4 went to the mall",
-          "5 cut my hair",
-          "6 sat in the dentist chair",
-          "7 drank milk",
-          "8 had a party",
-          "9 took a picture",
-          "10 ate ice cream",
+          "<span class='number_bold'>1</span> saw my grandparents",
+          "<span class='number_bold'>2</span> read a book",
+          "<span class='number_bold'>3</span> rode a bike",
+          "<span class='number_bold'>4</span> went to the mall",
+          "<span class='number_bold'>5</span> cut my hair",
+          "<span class='number_bold'>6</span> sat in the dentist chair",
+          "<span class='number_bold'>7</span> drank milk",
+          "<span class='number_bold'>8</span> had a party",
+          "<span class='number_bold'>9</span> took a picture",
+          "<span class='number_bold'>10</span> ate ice cream",
         ],
         audio: [
           "../audios/page_12/1_saw_my_grandparents.mp3",
@@ -136,6 +136,18 @@ var Popups_data = {
     // "../images/pages/page-1/intro-11.png",
     // "../images/pages/page-1/intro-12.png",
   ],
+  popupDirections: [
+    "bottom", //1
+    "bottom", //2
+    "bottom", //3
+    "bottom", //4
+    "bottom", //5
+    "top", //6
+    "top", //7
+    "bottom", //8
+    "bottom", //9
+    "top", //10
+  ],
   postions: [
     "left: 27.5%; top: 15.5%;",
     "left: 33.67%; top: 29.25%;",
@@ -151,7 +163,7 @@ var Popups_data = {
     // "left: 30.75%; top: 71.13%;",
   ],
   imagesAudio: [
-    "../audios/page_12/1_Listen_and_say.mp3",
+    "../audios/page_12/1_saw_my_grandparents.mp3",
     "../audios/page_12/2_read_a_book.mp3",
     "../audios/page_12/3_rode_a_bike.mp3",
     "../audios/page_12/4_went_to_the_mall.mp3",

@@ -138,18 +138,30 @@ var Popups_data = {
     // "../images/pages/page-1/intro-11.png",
     // "../images/pages/page-1/intro-12.png",
   ],
-postions: [
-  "left: 19.17%; top: 31.25%;",
-  "left: 40.5%; top: 9.75%;",
-  "left: 40.5%; top: 38.25%;",
-  "left: 39.67%; top: 63.75%;",
-  "left: 18.67%; top: 78.75%;",
-  "left: 69.17%; top: 33.5%;",
-  "left: 70.67%; top: 49.25%;",
-  "left: 54%; top: 50%;",
-  "left: 74.83%; top: 60%;",
-  "left: 39.67%; top: 83.75%;",
-],
+  popupDirections: [
+    "bottom",//1
+    "bottom",//2
+    "bottom",//3
+    "bottom",//4
+    "bottom",//5
+    "bottom",//6
+    "bottom",//7
+    "bottom",//8
+    "bottom",//9
+    "top",//10
+  ],
+  postions: [
+    "left: 19.17%; top: 31.25%;",
+    "left: 40.5%; top: 9.75%;",
+    "left: 40.5%; top: 38.25%;",
+    "left: 39.67%; top: 63.75%;",
+    "left: 18.67%; top: 78.75%;",
+    "left: 69.17%; top: 33.5%;",
+    "left: 70.67%; top: 49.25%;",
+    "left: 54%; top: 50%;",
+    "left: 74.83%; top: 60%;",
+    "left: 39.67%; top: 83.75%;",
+  ],
   imagesAudio: [
     "../audios/page_20/1_riding_a_merry_go-round.mp3",
     "../audios/page_20/2_watching_a_show.mp3",

@@ -72,12 +72,6 @@ var wordsearch_data = {
                     "audioenable"   : "default", // correct (or) default
                 },
                 {
-                    "text"          : "suburbs",
-                    "image"         : "no",
-                    "audio"         : "../audios/page_29/under.mp3",
-                    "audioenable"   : "default", // correct (or) default
-                },
-                {
                     "text"          : "village",
                     "image"         : "no",
                     "audio"         : "../audios/page_29/under.mp3",

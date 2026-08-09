@@ -31,10 +31,15 @@
     font-size: 26px;
 }
 
-.dark_text{
+.blue_text {
+    color: #00aeef;
+}
+.black{
     color: #000;
 }
-
+.bold_text{
+    font-weight: bold;
+}
 /* //  ActivitiesCSS - Version no: R-02
 /* // updated - July 10, 2020 
 /* //  ****************************************** // */
@@ -135,9 +140,7 @@
     border-color: #3582b4;
 }
 
-.blue_text{
-     color: #00aeef;
-}
+
 /**************** Unit Color code end***************/
 
 .activityTitle,

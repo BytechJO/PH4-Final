@@ -1,0 +1,303 @@
+/* =========================================================
+   CONVERSATION BOARD
+========================================================= */
+
+.options {
+  width: 90%;
+  height: auto;
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.conversation_board_all {
+  width: 90%;
+
+  margin: 0 auto;
+
+  padding: 15px 20px 40px;
+
+  background: #d9f8ff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.conversation_board_grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  grid-auto-rows: minmax(110px, auto);
+
+  gap: 7px;
+
+  align-items: stretch;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   CELL
+========================================================= */
+
+.board_cell {
+  min-width: 0;
+
+  min-height: 110px;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px;
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.board_cell_text {
+  width: 100%;
+
+  color: #222;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  font-style: italic;
+
+  line-height: 1.18;
+
+  text-align: center;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.board_cell_image {
+  width: 100%;
+
+  height: 65px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2px;
+}
+
+.board_cell_image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   START / FINISH
+========================================================= */
+
+.board_start,
+.board_finish {
+  background: #ff9f5d;
+}
+
+.board_start .board_cell_text,
+.board_finish .board_cell_text {
+  font-size: 32px;
+
+  font-style: italic;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+.board_yellow {
+  background: #fff171;
+}
+
+.board_orange {
+  background: #f5c56e;
+}
+
+.board_blue {
+  background: #a9dff2;
+}
+
+.board_green {
+  background: #bddf9f;
+}
+
+.board_beige {
+  background: #ead798;
+}
+
+.board_pink {
+  background: #e5b6d2;
+}
+
+.board_image {
+  background: #ffffff;
+
+  border: 2px solid #17b64e;
+}
+
+/* =========================================================
+   RULES
+========================================================= */
+
+.board_rules {
+  min-height: 100px;
+
+  padding: 10px 12px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border: 1px solid #17b64e;
+
+  color: #222;
+
+  font-size: 12px;
+
+  line-height: 1.2;
+
+  box-sizing: border-box;
+}
+
+.rule_line {
+  min-height: 14px;
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.board_empty {
+  min-height: 70px;
+
+  background: transparent;
+}
+
+/* =========================================================
+   RESPONSIVE 1200
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .conversation_board_all {
+    width: 96%;
+  }
+
+  .conversation_board_grid {
+    gap: 5px;
+  }
+
+  .board_cell {
+    min-height: 100px;
+
+    padding: 6px;
+  }
+
+  .board_cell_text {
+    font-size: 14px;
+  }
+
+  .board_cell_image {
+    height: 58px;
+  }
+
+  .board_start .board_cell_text,
+  .board_finish .board_cell_text {
+    font-size: 27px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE 992
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .conversation_board_all {
+    padding: 10px 12px 35px;
+  }
+
+  .board_cell {
+    min-height: 90px;
+
+    padding: 5px;
+  }
+
+  .board_cell_text {
+    font-size: 12px;
+  }
+
+  .board_cell_image {
+    height: 50px;
+  }
+
+  .board_start .board_cell_text,
+  .board_finish .board_cell_text {
+    font-size: 23px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE 768
+========================================================= */
+
+@media (max-width: 767.98px) {
+  .conversation_board_grid {
+    grid-template-columns: repeat(6, minmax(80px, 1fr));
+
+    overflow-x: auto;
+  }
+
+  .conversation_board_title {
+    font-size: 16px;
+  }
+
+  .board_title_number {
+    width: 25px;
+    height: 25px;
+
+    font-size: 16px;
+  }
+}
+.board_rules_image {
+  padding: 0;
+  background: transparent;
+}
+
+.board_rules_image .board_cell_image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.board_rules_image .board_cell_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

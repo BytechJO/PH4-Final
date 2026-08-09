@@ -22,7 +22,7 @@
 }
 
 .all_cont {
-  height: 100%;
+  /* height: 100%; */
   align-items: center;
 }
 
@@ -36,7 +36,7 @@
 }
 .group_elm {
   /* width: 1059px; */
-  line-height: 95px;
+  line-height: 75px;
   margin: 0px auto;
   justify-content: center;
 }

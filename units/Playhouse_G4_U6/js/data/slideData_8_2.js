@@ -41,12 +41,12 @@ var reading_data = {
         "audio": ["../audios/page_50/Pg6_2.1_Stella.mp3","../audios/page_50/dough.mp3","../audios/page_50/sauce.mp3","../audios/page_50/sprinkle.mp3","../audios/page_50/cheese.mp3","../audios/page_50/add.mp3","../audios/page_50/pepperoni.mp3","../audios/page_50/slice.mp3"],
         "word": [
             
-            "• He <span class='red_text'>used to</span> walk to work, but now he drives.",
-            "• He <span class='red_text'>had to</span> drive to work on Mondays.",
-            "• She <span class='red_text'>used to</span> exercise every morning, but now she sleeps",
-            "• She <span class='red_text'>had to</span> exercise in the mornings instead of sleeping in.",
-            "• Mrs. Johnson <span class='red_text'>used to</span> teach, but now she stays at home.",
-            "• She <span class='red_text'>had to</span> stay at home to take care of her son.",
+            "• He <span class='red'>used to</span> walk to work, but now he drives.",
+            "• He <span class='red'>had to</span> drive to work on Mondays.",
+            "• She <span class='red'>used to</span> exercise every morning, but now she sleeps",
+            "• She <span class='red'>had to</span> exercise in the mornings instead of sleeping in.",
+            "• Mrs. Johnson <span class='red'>used to</span> teach, but now she stays at home.",
+            "• She <span class='red'>had to</span> stay at home to take care of her son.",
            "<img src='../images/pages/activities/3-img-0.png' class='mid_image'>",
             ],
         "imagePlacePos":[

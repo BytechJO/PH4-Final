@@ -76,16 +76,16 @@ var Popups_data = {
           "../images/pages/snapshots/page-1/popup-3-elem-3.png",
         ],
         words: [
-          "1 (be) at the beach",
-          "2 (be) with family",
-          "3 (be) out of town",
-          "4 (be) on holiday",
-          "5 (be) at the park",
-          "6 (be) at the swimming pool",
-          "7 (be) at school",
-          "8 (be) at home",
-          "9 (be) at a friend’s house",
-          "10 (be) at a party",
+          "<span class='number_bold'>1</span> (be) at the beach",
+          "<span class='number_bold'>2</span> (be) with family",
+          "<span class='number_bold'>3</span> (be) out of town",
+          "<span class='number_bold'>4</span> (be) on holiday",
+          "<span class='number_bold'>5</span> (be) at the park",
+          "<span class='number_bold'>6</span> (be) at the swimming pool",
+          "<span class='number_bold'>7</span> (be) at school",
+          "<span class='number_bold'>8</span> (be) at home",
+          "<span class='number_bold'>9</span> (be) at a friend’s house",
+          "<span class='number_bold'>10</span> (be) at a party",
         ],
         audio: [
           "../audios/page_4/(be)_at_the_beach.mp3",
@@ -145,21 +145,33 @@ var Popups_data = {
     // "../images/pages/page-1/intro-11.png",
     // "../images/pages/page-1/intro-12.png",
   ],
-postions: [
-  "left: 14.50%; top: 18.00%;",
-  "left: 38.00%; top: 19.75%;",
-  "left: 50.00%; top: 8.00%;",
-  "left: 59.17%; top: 17.75%;",
-  "left: 20.50%; top: 73.75%;",
-  "left: 39.17%; top: 88.13%;",
-  "left: 66.83%; top: 47.50%;",
-  "left: 43.33%; top: 54.50%;",
-  "left: 56.83%; top: 65.75%;",
-  "left: 58.50%; top: 84.00%;",
+  popupDirections: [
+    "bottom", //1
+    "bottom", //2
+    "bottom", //3
+    "bottom", //4
+    "bottom", //5
+    "top", //6
+    "top", //7
+    "bottom", //8
+    "bottom", //9
+    "top", //10
+  ],
+  postions: [
+    "left: 14.50%; top: 18.00%;",
+    "left: 38.00%; top: 19.75%;",
+    "left: 50.00%; top: 8.00%;",
+    "left: 59.17%; top: 17.75%;",
+    "left: 20.50%; top: 73.75%;",
+    "left: 39.17%; top: 88.13%;",
+    "left: 66.83%; top: 47.50%;",
+    "left: 43.33%; top: 54.50%;",
+    "left: 56.83%; top: 65.75%;",
+    "left: 58.50%; top: 84.00%;",
 
-  // "left: 42.33%; top: 59.38%;",
-  // "left: 30.75%; top: 71.13%;",
-],
+    // "left: 42.33%; top: 59.38%;",
+    // "left: 30.75%; top: 71.13%;",
+  ],
   imagesAudio: [
     "../audios/page_4/(be)_at_the_beach.mp3",
     "../audios/page_4/(be)_with_family.mp3",

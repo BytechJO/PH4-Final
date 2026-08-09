@@ -5,7 +5,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='green_text'>2</span> Fill it in! Use either ‘used to’ or ‘had to’ to complete the sentence.",
+    "subTitleTextLeft"      : "<span class='green_text'>2</span> Fill it in! <span class='green'>Use either ‘</span><span class='red'>used to<span class='green'>’ or ‘</span><span class='red'>had to</span><span class='green'>’ to complete the sentence.</span>",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",

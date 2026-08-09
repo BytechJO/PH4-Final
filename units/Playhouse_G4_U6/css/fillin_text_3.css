@@ -1,0 +1,397 @@
+/* =========================================================
+   SLIDE 8_3
+   Fill In - 6 free inputs
+   3 rows × 2 columns
+   Reset only / No Check
+========================================================= */
+
+
+/* =========================================================
+   MAIN ACTIVITY
+========================================================= */
+
+
+.options {
+  width: 100%;
+  height: 100%;
+}
+
+.cont_ht_sf {
+  width: 100%;
+}
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+.screen_elements {
+  width: 94%;
+  height: 100%;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   6 QUESTIONS
+   2 columns × 3 rows
+========================================================= */
+
+.group_elm {
+  width: 92%;
+  height: auto;
+
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  column-gap: 80px;
+  row-gap: 45px;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 20px 10px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EACH QUESTION
+========================================================= */
+
+.que {
+  width: 100%;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+.img_fillin_gr {
+  width: 100% !important;
+}
+
+
+/* =========================================================
+   FILL IN ROW
+========================================================= */
+
+.que > .fillin_gr {
+  width: 100%;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.q_space {
+  width: 100%;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================================
+   INPUT HOLDER
+========================================================= */
+
+.fillin_set {
+  width: 100%;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.text_input_area {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  height: 58px !important;
+
+  margin: 0 !important;
+  padding: 6px 15px !important;
+
+  box-sizing: border-box;
+
+  border: 2px solid #17b95b !important;
+  border-radius: 10px !important;
+
+  outline: none !important;
+
+  background-color: #fff !important;
+
+  color: #222 !important;
+
+  font-family: inherit;
+  font-size: 24px !important;
+  font-weight: normal;
+
+  text-align: left;
+
+  box-shadow: none !important;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.text_input_area:focus {
+  border-color: #079845 !important;
+
+  box-shadow:
+    0 0 0 3px rgba(23, 185, 91, 0.15) !important;
+}
+
+
+/* browser autofill */
+.text_input_area:-webkit-autofill {
+  -webkit-box-shadow:
+    0 0 0 1000px #fff inset !important;
+
+  -webkit-text-fill-color: #222 !important;
+}
+
+
+/* =========================================================
+   REMOVE QUESTION AUDIO / EXTRA TEXT SPACE
+   لأن السؤال عبارة عن input فقط
+========================================================= */
+
+.fillin_set .txt-audioIcon {
+  margin: 0;
+}
+
+
+/* إذا كان العنصر فاضي ما ياخد مساحة */
+.fillin_set .txt-audioIcon:empty {
+  display: none !important;
+}
+
+
+/* =========================================================
+   NO NUMBERING
+========================================================= */
+
+.q_num_space {
+  display: none !important;
+}
+
+
+/* =========================================================
+   NO TICK / CROSS
+========================================================= */
+
+.icon_wrap_holder,
+.icon_wrap,
+.tick,
+.cross {
+  display: none !important;
+}
+
+
+/* =========================================================
+   HIDE CHECK BUTTON ONLY
+========================================================= */
+
+/*
+   حطيت أكثر الأسماء الشائعة عند المشروع
+   حتى لو اسم زر Check مختلف بين الصفحات
+*/
+
+.act_check,
+.check_btn,
+.checkBtn,
+.check_answer,
+.checkAnswer,
+.validate_btn,
+.validation_btn,
+.btn_check,
+.check_icon,
+.checkIcon {
+  display: none !important;
+}
+
+
+/* =========================================================
+   KEEP RESET VISIBLE
+========================================================= */
+
+.act_reset,
+.reset_btn,
+.resetBtn,
+.reset {
+  display: block !important;
+}
+
+
+/* =========================================================
+   FUNCTION CONTROLS
+========================================================= */
+
+.func_ctrls {
+  display: flex !important;
+}
+
+
+/* =========================================================
+   OPTIONS
+   لا يوجد word bank بهذه الصفحة
+========================================================= */
+
+.word_opt_sticky,
+.word_options,
+.options_images {
+  display: none !important;
+}
+
+
+/* =========================================================
+   IMAGES
+   لا نستخدم images بهذه الصفحة
+========================================================= */
+
+.group_elm > .images {
+  display: none !important;
+}
+
+.image_space,
+.img_space {
+  display: none;
+}
+
+
+/* =========================================================
+   REMOVE VALIDATION COLORS
+========================================================= */
+
+.text_input_area.correct,
+.text_input_area.incorrect,
+.text_input_area.right,
+.text_input_area.wrong {
+  color: #222 !important;
+
+  background-color: #fff !important;
+
+  border-color: #17b95b !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1199.98px) {
+
+  .group_elm {
+    width: 95%;
+
+    column-gap: 50px;
+    row-gap: 35px;
+  }
+
+  .text_input_area {
+    height: 52px !important;
+
+    font-size: 22px !important;
+  }
+
+  .page_sub_title > p:first-child {
+    font-size: 25px;
+  }
+
+  .subTitleTextRight {
+    font-size: 21px;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+
+  .group_elm {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    row-gap: 20px;
+  }
+
+  .text_input_area {
+    height: 48px !important;
+
+    font-size: 20px !important;
+  }
+
+  .subTitleTextRight {
+    margin-left: 0 !important;
+  }
+}.custom_grid_image {
+    width: 100%;
+    height: 130px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-column: 2;
+  grid-row: 2;
+
+  overflow: hidden;
+}
+
+.custom_grid_image img {
+  width: 35%;
+  height: 100%;
+
+  object-fit: cover;
+}

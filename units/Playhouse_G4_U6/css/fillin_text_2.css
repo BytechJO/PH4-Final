@@ -1,218 +1,258 @@
-.all_cont{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.screen_elements{
-    width: 90%;
-    height: 100%;
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.group_elm{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.screen_elements {
+  width: 94%;
+  height: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.images img {
-    height: 250px;
+.group_elm {
+  width: 92%;
+  min-height: 420px;
+
+  position: relative;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  justify-content: center !important;
+  align-items: flex-start !important;
+
+  padding: 20px 340px 20px 45px;
+
+  margin: 0 auto;
+
+  background: #eef7ed;
+
+  border-radius: 18px;
+
+  box-sizing: border-box;
 }
 
-.activityHeading b {
-    color: #000;
+/* كل سطر */
+.que {
+  width: 100% !important;
+  height: auto !important;
+
+  margin: 5px 0 !important;
+  padding: 0 !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  box-sizing: border-box;
 }
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
+.img_fillin_gr {
+  width: 100% !important;
 }
 
-.image_space {
-    width: 75%;
-    height: 342px;
-    margin: 0px auto;
-}
-  
-.image_space img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+.fillin_gr {
+  width: 100% !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.q_order{
-    width: 50px;
-    font-weight: bolder;
+.q_space {
+  width: 100% !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.ques{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-}
-
-.q_box{
-    width:  100%;
-    height: 70px;
-}
-
-.fill_in .que {
-    /* width: 100%; */
-    height: 73px;
-    justify-content: center;
-}
-
-.fillin_gr .q_space {
-    width: 100%;
-}
 .fillin_set {
-    font-family: Arcon;
-    font-size: 25px;
-    color: black;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100% !important;
+
+  display: flex !important;
+  flex-wrap: nowrap !important;
+
+  justify-content: center !important;
+  align-items: baseline !important;
+
+  font-family: Arcon;
+  font-size: 25px;
+  color: #2b2b2b;
+
+  line-height: 1.4;
 }
 
-.fillin_set input:focus{
-    outline: none;
+/* النص */
+.txt-audioIcon {
+  min-width: fit-content !important;
+
+  display: inline-flex !important;
+  align-items: baseline !important;
+
+  color: #2b2b2b;
+
+  font-size: 25px;
+  font-weight: normal;
+
+  white-space: nowrap;
 }
 
-.fillin_set input {
-    /* flex: 2 2 10px; */
-    height: 35px;
-    color: black;
-    padding-left: 20px;
-    border: none;
-    font-size: 21px;
-    border-bottom: 2px solid #535353;
+/* input */
+.fillin_set input,
+.text_input_area {
+  width: 130px !important;
+  min-width: 130px !important;
+  max-width: 130px !important;
+
+  height: 34px !important;
+
+  margin: 0 5px !important;
+  padding: 0 5px !important;
+
+  border: none !important;
+  border-bottom: 2px solid #555 !important;
+
+  border-radius: 0 !important;
+
+  outline: none !important;
+
+  background: transparent !important;
+
+  color: #e32636 !important;
+
+  font-family: Arcon;
+  font-size: 23px !important;
+
+  text-align: left !important;
+
+  box-shadow: none !important;
+}
+
+.fillin_set input:focus,
+.text_input_area:focus {
+  outline: none !important;
+  border-bottom: 2px solid #555 !important;
+  box-shadow: none !important;
+}
+
+/* أول سطر */
+.que:nth-child(1) {
+  margin-bottom: 8px !important;
+}
+
+/* فراغ خفيف بين أبيات القصيدة */
+.que:nth-child(4),
+.que:nth-child(6) {
+  margin-bottom: 10px !important;
+}
+
+/* صورة المحقق */
+.group_elm::after {
+  content: "";
+
+  position: absolute;
+
+  right: 35px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 280px;
+  height: 360px;
+
+  background-image: url("../images/pages/activities/6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  pointer-events: none;
+}
+
+/* numbering */
+.q_num_space {
+  display: none !important;
+}
+
+/* check / cross */
+.icon_wrap_holder {
+  width: 35px;
+  min-width: 35px;
+
+  position: relative;
+
+  margin-left: 5px;
 }
 
 .icon_wrap {
-    position: absolute;
-    margin-top: -35px; 
-    right: 100px;
+  position: static !important;
+  margin: 0 !important;
 }
 
 .tick,
 .cross {
-    width: 35px;
-}
-
-.func_ctrls{
-    display: none !important;
+  width: 30px;
+  height: 30px;
 }
 
 .tick img,
 .cross img {
-    width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.image_wrap {
-    display: none;
+/* ما بدنا صور داخل السؤال */
+.image_space,
+.img_space {
+  display: none !important;
 }
 
-.clue_word {
-    padding: 2px 27px;
+/* options */
+.word_opt_sticky,
+.word_options,
+.options_images {
+  display: none !important;
+}
+
+
+/* responsive */
+@media (max-width: 1199.98px) {
+  .group_elm {
+    width: 95%;
+    padding-right: 290px;
+    padding-left: 30px;
+  }
+
+  .group_elm::after {
+    width: 240px;
+    height: 330px;
+    right: 20px;
+  }
+
+  .fillin_set,
+  .txt-audioIcon {
     font-size: 22px;
-}
+  }
 
-.word_options {
-    width: 55%;
-    border-radius: 10px;
-    background-color: rgba(164, 240, 101, 0.578);
-}
+  .fillin_set input,
+  .text_input_area {
+    width: 115px !important;
+    min-width: 115px !important;
+    max-width: 115px !important;
 
-.word_opt_sticky {
-    width: 100%;
-    margin: 0px auto;
-    position: -webkit-sticky;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 5;
-    border: 2px solid var(--temp);
-    border-radius: 10px;
-}
-
-.words-list li{
-    height: 110px;
-    font-weight: bolder;
-    color: black;
-    border: 1px solid black;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.right-content .p-0{
-    height: 110px;
-    border: 1px solid black;
-}
-
-.tips_content img {
-    height: 30px;
-    width: auto;
-    margin-top: 10px;
-}
-
-.image-container{
-    position: absolute;
-    right: 260px;
-    bottom: 50px;
-    
-}
-
-.image-container img{
-    width: 300px;
-    height: 210px;
-    margin: 0px 70px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 2px solid #36a0c7;
-}
-
-/* ================== */
-
-.fillin_with_background {
-    width: 950px;
-    height: 80%;
-    padding: 20px;
-    background-color: #fcf5b0;
-}
-.fillin_with_background .que {
-    height: 25%;
-    font-size: 26px;
-}
-.fillin_with_background  input {
-    margin: 0px 20px;
-    font-size: 25px;
-    background-color: transparent;
-    border-bottom: 2px solid #2b2a2a;
-}
-
-/* ************************************************* */
-/* ************************************************* */
-@media (max-width: 991.98px) {
-    .fill_in .que {
-        width: 160px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .fill_in .que {
-        width: 200px;
-    }
-}
-
-@media (max-width: 475.98px) {
-    /* .fill_in .que {
-        width: 200px;
-    } */
+    font-size: 21px !important;
+  }
+}.word_hint {
+  color: #e52b38;
+  font-size: 25px;
+  font-weight: normal;
+  margin-left: 4px;
 }

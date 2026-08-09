@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Playhouse</title>
+
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css" />
+    <style id="ui_style"></style>
+
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/draw.css" />
+    <link rel="stylesheet" href="../css/audio.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/unit_styles.css" />
+    <link rel="stylesheet" href="../css/activities.css" />
+
+    <!-- Activity CSS -->
+    <link rel="stylesheet" href="../css/draw_image.css" />
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="../js/data/templateData.js"></script>
+    <script src="../js/data/activityList.js"></script>
+
+    <!-- Activity Data -->
+    <script src="../js/data/draw_image_data.js"></script>
+
+    <script src="../js/build/jsonRender.js"></script>
+  </head>
+
+  <body>
+    <div class="mask_parent">
+      <div class="mask_left"></div>
+      <div class="mask_right"></div>
+    </div>
+
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+
+    <header class="fixed-top"></header>
+
+    <div class="mainContent">
+      <div class="container content_wrap activity_wrap">
+        <div class="fixed-top screen_numbers_wrap" style="z-index: 2"></div>
+
+        <div class="activity_buts d-none" data-buttons=""></div>
+
+        <div
+          class="activity_container activity_area draw_image_activity mx-auto"
+          data-activity="draw_image"
+        ></div>
+      </div>
+    </div>
+
+    <div class="sub_footer">
+      <div class="container sub_footer_buttons_wrap"></div>
+    </div>
+
+    <footer class="fixed-bottom"></footer>
+
+    <script>
+      var _mediaList = {
+        image: [],
+        audio: [],
+        video: [],
+      };
+    </script>
+
+    <script src="../js/build/toolbar.js"></script>
+    <script src="../js/build/template.js"></script>
+    <script src="../js/build/audio.js"></script>
+
+    <!-- NEW -->
+    <script src="../js/build/draw_image.js"></script>
+
+    <script src="../js/generalfunctions.js"></script>
+
+    <!-- NEW -->
+    <script src="../js/activity/draw_image.js"></script>
+
+    <script src="../js/activities.js"></script>
+    <script src="../js/loading.js"></script>
+    <script src="../js/sketchpad.js"></script>
+  </body>
+</html>

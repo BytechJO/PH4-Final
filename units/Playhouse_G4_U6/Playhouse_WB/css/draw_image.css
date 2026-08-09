@@ -1,0 +1,266 @@
+/* =========================================================
+   DRAW IMAGE ACTIVITY
+========================================================= */
+
+.options {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.draw_image_all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex !important;
+
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Grid
+========================================================= */
+
+.draw_image_grid {
+  width: 94%;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: 8px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Card
+========================================================= */
+
+.draw_image_card {
+  width: 100%;
+
+  height: 255px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #fff;
+
+  border: 1.5px solid #aaa;
+
+  border-radius: 12px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Drawing Area
+========================================================= */
+
+.draw_image_area {
+  position: relative;
+
+  flex: 1;
+
+  min-height: 0;
+
+  overflow: hidden;
+
+  background: #fff;
+}
+
+.draw_image_canvas {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  cursor: crosshair;
+
+  touch-action: none;
+}
+
+.draw_uploaded_image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  object-fit: contain;
+
+  background: #fff;
+}
+
+/* =========================================================
+   Word Label
+========================================================= */
+
+.draw_word_label {
+  height: 46px;
+
+  flex: 0 0 46px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px;
+
+  border: 1px solid #b5d0dc;
+
+  border-radius: 10px;
+
+  background: #e0f4fc;
+
+  color: #111;
+
+  font-size: 22px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Tools
+========================================================= */
+
+.draw_card_tools {
+  position: absolute;
+
+  top: 5px;
+  right: 5px;
+
+  display: flex;
+
+  gap: 4px;
+
+  z-index: 10;
+
+  opacity: 0;
+
+  transition: opacity 0.2s ease;
+}
+
+.draw_image_area:hover .draw_card_tools,
+.draw_image_card.draw_mode .draw_card_tools,
+.draw_image_card.image_mode .draw_card_tools {
+  opacity: 1;
+}
+
+.draw_card_tools button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+
+  border: 1px solid #aaa;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  color: #333;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.draw_card_tools button:hover {
+  transform: scale(1.06);
+}
+
+/* =========================================================
+   States
+========================================================= */
+
+.draw_image_card.draw_mode .draw_mode_btn {
+  background: #e5f7ff;
+}
+
+.draw_image_card.image_mode .upload_image_btn {
+  background: #e5f7ff;
+}
+
+/* =========================================================
+   Hide Check
+========================================================= */
+
+.checkBtn {
+  display: none !important;
+}
+
+/* Reset only */
+.resetBtn {
+  display: block;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .draw_image_grid {
+    width: 96%;
+
+    gap: 6px;
+  }
+
+  .draw_image_card {
+    height: 220px;
+  }
+
+  .draw_word_label {
+    height: 40px;
+
+    flex-basis: 40px;
+
+    font-size: 18px;
+  }
+
+  .draw_card_tools button {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .draw_image_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    grid-template-rows: auto;
+
+    overflow-y: auto;
+
+    padding-bottom: 30px;
+  }
+
+  .draw_image_card {
+    height: 230px;
+  }
+}

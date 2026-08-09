@@ -26,7 +26,7 @@ var fillin_data = {
     "mainTitleAudio"        : "../audios/page_50/GRAMMAR.mp3",
     "mainTitleIconPos"      : {"right": "90px"},
     "subTitleTextLeft"      : "<span class='title-order'>4</span> Write it!",
-    "subTitleTextRight"     : "Complete the sentences with ‘<span class='red_text'>used to</span>’ or ‘<span class='red_text'>had to</span>’.",
+    "subTitleTextRight"     : "Complete the sentences with ‘<span class='red'>used to</span>’ or ‘<span class='red'>had to</span>’.",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",
     "subTitleAudio"         : "../audios/under.mp3",

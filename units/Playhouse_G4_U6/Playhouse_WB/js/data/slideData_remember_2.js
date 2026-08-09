@@ -42,17 +42,17 @@ var reading_data = {
         "audio": ["../audios/page_32/Pg6_2.1_Stella.mp3","../audios/page_32/dough.mp3","../audios/page_32/sauce.mp3","../audios/page_32/sprinkle.mp3","../audios/page_32/cheese.mp3","../audios/page_32/add.mp3","../audios/page_32/pepperoni.mp3","../audios/page_32/slice.mp3"],
         "word": [
            
-            "Remember that words that rhyme have the same ending sounds. <span class='dark_text'>Man</span> and <span class='dark_text'>can</span> rhyme."+
-            "<span class='dark_text'>Skate</span> and <span class='dark_text'>skip</span> have sounds that are the same, but they are not the same at the end. They do not rhyme.",
+            "Remember that words that rhyme have the same ending sounds. <span class='black'>Man</span> and <span class='black'>can</span> rhyme."+
+            "<span class='black'>Skate</span> and <span class='black'>skip</span> have sounds that are the same, but they are not the same at the end. They do not rhyme.",
                 
             "Rhyming",
             "Not rhyming",
             
-            "<span class='dark_text'>cake and make</span>",
-            "<span class='dark_text'>downtown and downstairs</span>",
+            "<span class='black'>cake and make</span>",
+            "<span class='black'>downtown and downstairs</span>",
 
-            "<span class='dark_text'>small and call</span>",
-            "<span class='dark_text'>fruit and France</span>",
+            "<span class='black'>small and call</span>",
+            "<span class='black'>fruit and France</span>",
 
             ],
         "imagePlacePos":[

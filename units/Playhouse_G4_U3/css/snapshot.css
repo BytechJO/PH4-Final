@@ -797,3 +797,43 @@ body {
   font-weight: 900;
   padding-left: 10px;
 }
+.image-container {
+  position: absolute;
+}
+
+.image-container .hover-image {
+  position: absolute;
+
+  left: 50%;
+  top: 100%;
+
+  transform: translateX(-50%);
+
+  margin-top: px;
+
+  white-space: nowrap;
+
+  z-index: 99999999;
+}
+
+/* تحت الرقم */
+.image-container.popup-bottom .hover-image {
+  top: 100%;
+  bottom: auto;
+
+  transform: translateX(-50%);
+
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+/* فوق الرقم */
+.image-container.popup-top .hover-image {
+  top: 0;
+  bottom: auto;
+
+  transform: translate(-50%, -115%);
+
+  margin-top: 0;
+  margin-bottom: 0px;
+}

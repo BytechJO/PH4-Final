@@ -133,6 +133,18 @@ var Popups_data = {
     // "../images/pages/page-1/intro-11.png",
     // "../images/pages/page-1/intro-12.png",
   ],
+  popupDirections: [
+    "bottom",//1
+    "bottom",//2
+    "bottom",//3
+    "bottom",//4
+    "bottom",//5
+    "bottom",//6
+    "bottom",//7
+    "bottom",//8
+    "bottom",//9
+    "top",//10
+  ],
   postions: [
     "left:22.92%; top:34.38%;",
     "left:36.50%; top:35.13%;",
