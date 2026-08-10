@@ -5,7 +5,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='green_text'>1</span> Finish it! Use the map and the word list to fill in the blanks. ",
+    "subTitleTextLeft"      : "<span class='green_text'>1</span> Finish it! <span class='green'>Use the map and the word list to fill in the blanks.</span> ",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",

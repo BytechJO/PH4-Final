@@ -41,7 +41,7 @@ var reading_data = {
         "group_styles": "",
         "audio": ["../audios/page_37/Pg6_2.1_Stella.mp3","../audios/page_37/dough.mp3","../audios/page_37/sauce.mp3","../audios/page_37/sprinkle.mp3","../audios/page_37/cheese.mp3","../audios/page_37/add.mp3","../audios/page_37/pepperoni.mp3","../audios/page_37/slice.mp3"],
         "word": [
-            "<span class='blue_text'>Some words spelt with `<span class='black_text'>-dge</span>’, sound like the letter <span class='black_text'>j</span>.</span>",
+            "<span class='blue_text'>Some words spelt with `<span class='black'>-dge</span>’, sound like the letter <span class='black'>j</span>.</span>",
   
             "<span class='blue_text'>ri</span>dge",
             "<span class='blue_text'>le</span> dge",

@@ -32,14 +32,14 @@
 }
 
 .blue_text {
-    color: rgb(0, 185, 242);
+    color: #00aeef;
 }
-
-.black_text {
+.black{
     color: #000;
-    font-weight: bolder;
 }
-
+.bold_text{
+    font-weight: bold;
+}
 /* //  ActivitiesCSS - Version no: R-02
 /* // updated - July 10, 2020 
 /* //  ****************************************** // */

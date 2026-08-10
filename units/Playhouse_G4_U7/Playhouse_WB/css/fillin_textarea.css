@@ -45,3 +45,14 @@ textarea {
         line-height: 54.7px;
 }
 }
+.writing-main-image {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.writing-main-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
     <style id='ui_style'>
     </style>
+    <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reading_ui.css">
     <!-- <link rel="stylesheet" href="../css/reading.css"> -->
@@ -44,6 +45,21 @@
         
     </div>
     
+
+    <!-- <div class="sub_footer">
+        <div class='container'>
+            <div class="d-flex justify-content-center">
+                <div class="d-flex align-self-end nav_ctrls">
+                    <div class="sub_footer_icon subFooterNav backNav mx-1">
+                        <img src='../images/icons/back_btn.png' />
+                    </div>
+                    <div class="sub_footer_icon subFooterNav nextNav mx-1">
+                        <img src='../images/icons/next_btn.png' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <footer class='fixed-bottom'></footer>
     <script>
         var _mediaList = {
@@ -52,8 +68,8 @@
             "video": []
         };
 		
-        // non zero in textbox pagniation reading
-        $('#txt_num').keypress(function (e) {
+// non zero in textbox pagniation reading
+$('#txt_num').keypress(function (e) {
             if (this.value.length == 0 && e.which == 48) {
                 return false;
             }

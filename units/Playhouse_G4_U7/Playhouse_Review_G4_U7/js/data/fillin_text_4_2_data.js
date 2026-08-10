@@ -5,7 +5,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='green_text'>2</span> Write about it! Finish the ‘-dge’ words and write ‘better’, ‘best’, ‘worse’, ‘worst’, ‘more’ or ‘most’ in each sentence.",
+    "subTitleTextLeft"      : "<span class='green_text'>2</span> Write about it! <span class='green'>Finish the ‘<span class='red'>-dge</span>’ words and write ‘<span class='red'>better</span>’, ‘<span class='red'>best</span>’, ‘<span class='red'>worse</span>’, ‘<span class='red'>worst</span>’, ‘<span class='red'>more</span>’ or ‘<span class='red'>most</span>’ in each sentence.</span>",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",

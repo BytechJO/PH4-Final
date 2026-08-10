@@ -21,9 +21,9 @@ var stereo_data = {
 var reading_data = {
     "mainTitle": "../images/pages/sb-icons/gramprac_main_title.png",
     "mainTitleIcon": "../images/pages/sb-icons/phonics_main_title_icon.png",
-    "mainTitleAudio": "../audios/under.mp3",
+    "mainTitleAudio": "../audios/page_63/GRAMMAR_PRACTICE.mp3",
     "mainTitleIconPos"      : {"right": "60px"},
-    "subTitleTextLeft": "<span class='title-order'>1</span> Talk about it!",
+    "subTitleTextLeft": "<span class='title-order'>2</span> Talk about it!",
     "subTitleTextRight": "",
     "subTitleIcons": [],
     "subTitleAudio": "../audios/under.mp3",

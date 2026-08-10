@@ -22,7 +22,7 @@ var stereo_data = {
 var fillin_data = {    
     "layout"                : 1,
     "numinrow"              : [[1,1]],
-    "mainTitle"             : "../images/pages/sb-icons/grammer_main_title.png",
+    "mainTitle"             : "../images/pages/sb-icons/word_main_title.png",
     "mainTitleIcon"         : "../images/pages/sb-icons/word_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_34/WORD_POWER.mp3",

@@ -5,7 +5,7 @@ var stereo_data = {
     "type":"text",
     "playListData" : [
         {
-          'audiourl': '../audios/page_65/1.mp3',
+          'audiourl': '../audios/page_66/1.mp3',
         },
         {
           'url': '',
@@ -21,12 +21,12 @@ var stereo_data = {
 var reading_data = {
     "mainTitle": "../images/pages/sb-icons/writing.png",
     "mainTitleIcon": "../images/pages/sb-icons/adv_icon_1.png",
-    "mainTitleAudio": "../audios/page_65/PHONICS_AND_SPELLING.mp3",
+    "mainTitleAudio": "../audios/page_66/WRITING.mp3",
     "mainTitleIconPos"      : {"right": "90px"},
     "subTitleTextLeft": "<span class='title-order'>1</span> Read about it!",
-    "subTitleTextRight": "Read the Descriptive paragraph. It includes detailed descriptions of people, places and events. ",
+    "subTitleTextRight": "Read the <span class='red'>Descriptive paragraph</span>. It includes detailed descriptions of people, places and events. ",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/page_65/1_Listen_and_read_along.mp3",
+    "subTitleAudio": "../audios/page_66/1_Read_about_it!.mp3",
     "slides": [
     {
        

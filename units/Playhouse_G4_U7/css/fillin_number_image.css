@@ -8,7 +8,7 @@
 }
 
 .screen_elements {
-  width: 90%;
+  width: 70%;
   height: 100% !important;
 }
 
@@ -16,8 +16,15 @@
   width: 100%;
   height: 100%;
   font-size: 25px;
-}
 
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+}
 .audio_icon {
   height: 39px;
   padding: 1px;
@@ -32,26 +39,24 @@
 }
 
 .img_fillin_gr {
-  width: 290px;
+  width: 200px;
   position: relative;
   margin: 0px 10px;
   font-size: 28px;
 }
-
 .image_space {
-  width: 288px;
-  height: 207px;
+  width: 100%;
+  height: 175px;
 }
 
 .image_space img {
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 29px;
-
+  object-fit: cover;
+  border-radius: 25px;
 }
 
-.textFront{
+.textFront {
   margin: 2px auto;
   font-weight: bolder;
   font-size: 32px;
@@ -67,15 +72,15 @@
   margin-top: 10px;
   font-size: 28px;
   position: absolute;
-  right: 118px;
+  right: 70px;
   bottom: 0px;
   margin: 0px auto;
   text-align: center !important;
   border-radius: 10px;
   background-color: #fff;
-  border: 2px solid rgb(123, 193, 65);
+  border: 2px solid #0cb14b;
 }
-.q_space{
+.q_space {
   margin: 0px auto;
 }
 
@@ -105,7 +110,6 @@
   top: 0px;
   right: 10px;
 }
-
 
 .icon_wrap {
   position: absolute;
@@ -148,13 +152,15 @@
 /*              M Q max-width: 1799.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1800px) */
-@media (max-width: 1799.98px) {}
+@media (max-width: 1799.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1399.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1199.98px */
@@ -168,32 +174,36 @@
   .img_fillin_gr {
     width: 268px;
   }
-  
-.screen_elements {
-  height: 100% !important;
-}
+
+  .screen_elements {
+    height: 100% !important;
+  }
 }
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 991.98px */
 /* ------------------------------------------------*/
 /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+}
 
 /* ------------------------------------------------ */
 /* M Q max-width: 767.98px */
 /* ------------------------------------------------*/
 /* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+}
 
 /* ------------------------------------------------ */
 /* M Q max-width: 575.98px */
 /* ------------------------------------------------*/
 /* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 475.98px             */
 /* ------------------------------------------------*/
 /* body working fine 320 to 475 */
-@media (max-width: 475.98px) {}
+@media (max-width: 475.98px) {
+}

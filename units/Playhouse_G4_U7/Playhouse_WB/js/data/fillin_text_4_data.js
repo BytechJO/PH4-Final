@@ -26,7 +26,7 @@ var fillin_data = {
   "mainTitleIcon"         : "",
   "mainTitleIconPos"      : {"right": "-18px"},
   "mainTitleAudio"        : "../audios/page_37/PHONICS_AND_SPELLING.mp3",
-  "subTitleTextLeft"      : '<span class="red_text">1</span> Pair it up! Finish each analogy by relating the two pairs of words in the same way.',
+  "subTitleTextLeft"      : '<span class="red_text">2</span> Pair it up! Finish each analogy by relating the two pairs of words in the same way.',
   "subTitleTextRight"     : "",
   "subTitleIcons"         : [],
   "subTitleAudio"         : "../audios/page_37/2_Pair_it_up!_Finish_each_analogy_by_relating_the_two_pairs_of_words_in_the_same_way.mp3",

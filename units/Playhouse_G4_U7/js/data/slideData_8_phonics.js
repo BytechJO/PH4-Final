@@ -24,7 +24,7 @@ var reading_data = {
     "mainTitleAudio": "../audios/page_65/PHONICS_AND_SPELLING.mp3",
     "mainTitleIconPos"      : {"right": "70px"},
     "subTitleTextLeft": "<span class='title-order'>1</span> Listen and read along.",
-    "subTitleTextRight": "",
+    "subTitleTextRight": "<span class='black'>Say it!</span>",
     "subTitleIcons": [],
     "subTitleAudio": "../audios/page_65/1_Listen_and_read_along.mp3",
     "slides": [

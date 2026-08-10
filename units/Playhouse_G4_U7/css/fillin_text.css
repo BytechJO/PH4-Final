@@ -1,215 +1,356 @@
-.all_cont{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.screen_elements{
-    width: 85%;
-    height: 100%;
+/* =========================================
+   MAIN
+========================================= */
+
+.options {
+  width: 90%;
+  height: auto;
+
+  margin: 0 auto;
 }
 
-.group_elm{
-    width: 57%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
+.all_cont {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+
+  justify-content: center;
 }
 
-.activityHeading b {
-    color: #000;
+/* =========================================
+   SCREEN
+========================================= */
+
+.screen_elements {
+  width: 80%;
+  height: auto;
 }
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
+/* =========================================
+   GROUP
+========================================= */
+
+.group_elm {
+  width: 100%;
+  height: auto;
+
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    300px;
+
+  column-gap: 30px;
+
+  align-items: center;
+
+  position: relative;
+
+  box-sizing: border-box;
 }
 
-.image_space {
-    width: 75%;
-    height: 342px;
-    margin: 0px auto;
-}
-  
-.image_space img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+/* =========================================
+   QUESTIONS
+========================================= */
+
+.que {
+  grid-column: 1;
+
+  width: 100%;
+
+  min-height: 55px;
+
+  margin: 0 0 10px;
+  padding: 0;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  color: #222;
+
+  font-family: Arcon, Arial, sans-serif;
+
+  font-size: 22px;
+
+  line-height: 1.35;
 }
 
-.q_order{
-    width: 50px;
-    font-weight: bolder;
+/* =========================================
+   QUESTION ROW
+========================================= */
+
+.ques {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  margin: 0;
 }
 
-.ques{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
+/* =========================================
+   NUMBER
+========================================= */
+
+.q_num_space {
+  width: 36px;
+  min-width: 36px;
+
+  margin-right: 4px;
+
+  padding-top: 2px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  color: #222;
+
+  text-align: left;
 }
 
-.q_box{
-    width:  100%;
-    height: 70px;
+/* =========================================
+   QUESTION CONTENT
+========================================= */
+
+.question_content {
+  width: calc(100% - 40px);
+
+  min-width: 0;
 }
 
-.fill_in .que {
-    width: 100%;
-    /* height: 65px; */
+.question_text {
+  width: 100%;
 
-}
+  color: #222;
 
-.fillin_gr .q_space {
-    width: 100%;
-}
-.fillin_set {
-    font-family: Arcon;
-    font-size: 25px;
-    color: black;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  font-size: 25px;
+
+  line-height: 1.4;
+
+  text-align: left;
 }
 
-.fillin_set input:focus{
-    outline: none;
+/* =========================================
+   INPUT
+========================================= */
+
+.text_input_area {
+  width: 220px;
+  height: 32px;
+
+  margin: 0 5px;
+
+  padding: 0 5px;
+
+  display: inline-block;
+
+  vertical-align: baseline;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  border-bottom: 1.8px solid #222;
+
+  border-radius: 0;
+
+  outline: none;
+
+  box-shadow: none;
+
+  background: transparent;
+
+  color: #000;
+
+  font-family: Arcon, Arial, sans-serif;
+
+  font-size: 25px;
+
+  text-align: center;
+
+  line-height: 30px;
 }
 
-.fillin_set input {
-    /* flex: 2 2 10px; */
-    width: 200px;
-    height: 35px;
-    color: black;
-    padding-left: 20px;
-    border: none;
-    font-size: 21px;
-    border-bottom: 2px solid #535353;
+/* =========================================
+   DEFAULT / EXAMPLE
+========================================= */
+
+.text_input_area.default_answer {
+  width: 75px;
+
+  color: #e32f2f !important;
+
+  border-bottom: none !important;
+
+  font-weight: normal;
+
+  opacity: 1 !important;
+
+  -webkit-text-fill-color: #e32f2f;
+
+  cursor: default;
 }
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.activity_image {
+  grid-column: 2;
+
+  grid-row: 1 / span 3;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  align-self: center;
+}
+
+.activity_image img {
+  width: 100%;
+  max-width: 290px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  border-radius: 17px;
+}
+
+/* =========================================
+   VALIDATION ICON
+========================================= */
 
 .icon_wrap {
-    position: absolute;
-    margin-top: -35px; 
-    right: 100px;
+  width: 28px;
+  height: 28px;
+
+  margin-left: 5px;
+
+  position: relative;
+
+  flex: 0 0 28px;
 }
 
 .tick,
 .cross {
-    width: 35px;
-}
+  width: 26px;
+  height: 26px;
 
-.func_ctrls{
-    display: none !important;
+  display: none;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
 }
 
 .tick img,
 .cross img {
-    width: 100%;
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
 }
 
-.image_wrap {
-    display: none;
+/* =========================================
+   FIRST QUESTION
+   Example
+========================================= */
+
+#que_1 .question_text {
+  color: #222;
 }
 
-.clue_word {
-    padding: 2px 27px;
-    font-size: 22px;
+/* =========================================
+   HELPERS
+========================================= */
+
+.d-none {
+  display: none !important;
 }
 
-.word_options {
-    width: 100%;
-    border-radius: 10px;
-    background-color: #c3f4ff8c;
+.border-none {
+  border: none !important;
 }
 
-.word_opt_sticky {
-    width: 100%;
-    margin: 0px auto;
-    position: -webkit-sticky;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 5;
-    border: 2px solid var(--temp);
-    border-radius: 10px;
+.not-disapled {
+  opacity: 1 !important;
+
+  pointer-events: auto;
 }
 
-.words-list li{
-    height: 110px;
-    font-weight: bolder;
-    color: black;
-    border: 1px solid black;
-    align-items: center;
+@media (max-width: 1199px) {
+  .options {
+    width: 95%;
+  }
+
+  .group_elm {
+    grid-template-columns:
+      minmax(0, 1fr)
+      230px;
+
+    column-gap: 18px;
+  }
+
+  .que,
+  .question_text,
+  .q_num_space {
+    font-size: 18px;
+  }
+
+  .text_input_area {
+    width: 180px;
+
+    font-size: 18px;
+  }
+
+  .activity_image img {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .group_elm {
     display: flex;
-    justify-content: center;
-}
 
-.right-content .p-0{
-    height: 110px;
-    border: 1px solid black;
-}
+    flex-direction: column;
 
-.tips_content img {
-    height: 30px;
-    width: auto;
-    margin-top: 10px;
-}
+    align-items: stretch;
+  }
 
-.image-container{
-    position: absolute;
-    right: 260px;
-    bottom: 50px;
-    
-}
+  .activity_image {
+    width: 260px;
 
-.image-container img{
-    width: 300px;
-    height: 210px;
-    margin: 0px 70px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 2px solid #36a0c7;
-}
+    margin: 20px auto 0;
+  }
 
-/* ================== */
+  .question_text,
+  .que,
+  .q_num_space {
+    font-size: 17px;
+  }
 
-.fillin_with_background {
-    width: 950px;
-    height: 80%;
-    padding: 20px;
-    background-color: #fcf5b0;
-}
-.fillin_with_background .que {
-    height: 25%;
-    font-size: 26px;
-}
-.fillin_with_background  input {
-    margin: 0px 20px;
-    font-size: 25px;
-    background-color: transparent;
-    border-bottom: 2px solid #2b2a2a;
-}
+  .text_input_area {
+    width: 160px;
 
-/* ************************************************* */
-/* ************************************************* */
-@media (max-width: 991.98px) {
-    .fill_in .que {
-        width: 160px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .fill_in .que {
-        width: 200px;
-    }
-}
-
-@media (max-width: 475.98px) {
-    /* .fill_in .que {
-        width: 200px;
-    } */
+    font-size: 17px;
+  }
 }

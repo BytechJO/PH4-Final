@@ -100,6 +100,7 @@ function buildReadingHTML(aObj) {
 
 function findTimeRange(timeToCheck, targetTime) {
     for (let i = 0; i < targetTime.length; i++) {
+        console.log(targetTime[i])
       let [startTime, endTime] = targetTime[i];
       if (timeToCheck >= startTime && timeToCheck <= endTime) {
         return i
