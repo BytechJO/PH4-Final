@@ -5,7 +5,7 @@ var fillin_data = {
     "mainTitleIcon": "",
     "mainTitleIconPos": {"right": "-20px"},
     "mainTitleAudio": "../audios/under.mp3",
-    "subTitleTextLeft"      : '<span class="green_text">1</span> Put it together! Make sentences using the animals’ names and the adverbs that are given.',
+    "subTitleTextLeft"      : '<span class="green_text">1</span> Put it together! <span class="green">Make sentences using the animals’ names and the adverbs that are given.</span>',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",

@@ -13,16 +13,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         "file"               : "fillin_text_2.html",
-         'type'               : 'fillin',
-         'subtype'            : '',
-         'build'              : 'yes', // yes (or) no   
-         'activityCtrls'      : 'yes',
-         'layout'             : 2,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    "file"               : "fillin_text_2.html",
+      //    'type'               : 'fillin',
+      //    'subtype'            : '',
+      //    'build'              : 'yes', // yes (or) no   
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 2,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          "file"               : "fillin_with_img.html",
          'type'               : 'fillin',
@@ -110,16 +110,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      // {
-      //    "file"               : "fillin_text_5.html",
-      //    'type'               : 'fillin',
-      //    'subtype'            : '',
-      //    'build'              : 'yes', // yes (or) no   
-      //    'activityCtrls'      : 'yes',
-      //    'layout'             : 2,
-      //    'visited'            : 0,
-      //    'score'              : 0,
-      // },
+      {
+         "file"               : "fillin_text_6.html",
+         'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       
    ]
 }

@@ -709,3 +709,41 @@
   top: 70px !important;
   left: 39px !important;
 }
+
+/* =========================================
+   RADIO - TABLET / MOBILE
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .modal-dialog,
+  .modal-content {
+    overflow: visible !important;
+  }
+
+  .rotator {
+    right: 0px !important;
+    top: 5% !important;
+    z-index: 99999 !important;
+  }
+
+  .sterio_container {
+    top: 70px !important;
+    left: 39px !important;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .rotator {
+    right: 10px !important;
+    top: 4% !important;
+
+    transform-origin: right center;
+  }
+}

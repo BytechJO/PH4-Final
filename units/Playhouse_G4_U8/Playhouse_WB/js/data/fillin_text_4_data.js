@@ -26,7 +26,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_42/PHONICS_AND_SPELLING.mp3",
-    "subTitleTextLeft"      : '<span class="red_text">1</span> Write about it! Write a sentence for each word.',
+    "subTitleTextLeft"      : '<span class="red_text">2</span> Write about it! Write a sentence for each word.',
     "subTitleTextRight"     : "Example: ‘halves‘: We cut the apple into halves.",
     "title_position":"under",
     "subTitleIcons"         : [],
