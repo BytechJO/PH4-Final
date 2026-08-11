@@ -1,75 +1,4 @@
-var newsletterPopupAudio = new Audio();
 
-var activeNewsletterPopup = "";
-var activeNewsletterAudioPath = "";
-
-/*
- * إيقاف صوت البوب أب.
- *
- * resetAudio = true
- * يوقف الصوت ويرجعه إلى البداية.
- *
- * resetAudio = false
- * يعمل Pause ويحفظ مكان الصوت.
- */
-function stopNewsletterPopupAudio(resetAudio) {
-  newsletterPopupAudio.pause();
-
-  if (resetAudio === true) {
-    newsletterPopupAudio.currentTime = 0;
-  }
-}
-
-/*
- * تشغيل صوت جديد عند فتح البوب أب.
- */
-function startNewsletterPopupAudio(audioPath, popupSelector) {
-  if (!audioPath) {
-    activeNewsletterPopup = popupSelector;
-    activeNewsletterAudioPath = "";
-    return;
-  }
-
-  newsletterPopupAudio.pause();
-  newsletterPopupAudio.currentTime = 0;
-
-  activeNewsletterPopup = popupSelector;
-  activeNewsletterAudioPath = audioPath;
-
-  newsletterPopupAudio.src = audioPath;
-
-  newsletterPopupAudio.play().catch(function (error) {
-    console.log("Newsletter audio could not play:", error);
-  });
-}
-
-/*
- * Pause / Resume عند الضغط داخل البوب أب.
- */
-function toggleNewsletterPopupAudio() {
-  if (!activeNewsletterAudioPath) {
-    return;
-  }
-
-  if (newsletterPopupAudio.paused) {
-    /*
-     * إذا انتهى الصوت بالكامل، يبدأ مرة ثانية من البداية.
-     */
-    if (newsletterPopupAudio.ended) {
-      newsletterPopupAudio.currentTime = 0;
-    }
-
-    newsletterPopupAudio.play().catch(function (error) {
-      console.log("Newsletter audio could not resume:", error);
-    });
-  } else {
-    newsletterPopupAudio.pause();
-  }
-}
-
-/*
- * ربط الصوت مع البوب أب.
- */
 function bindNewsletterPopupAudio(popupSelector, audioPath) {
   /*
    * عند فتح البوب أب.
@@ -649,38 +578,6 @@ function buildModelContent(aObj) {
         .empty()
         .append(listen4PopupHtml);
     }
-
-    /*
-     * ربط صوت Letter from the Editor.
-     */
-    bindNewsletterPopupAudio(
-      ".readHilightsPanel_" + currentSlide,
-      slideData.titleAudio || "",
-    );
-
-    /*
-     * ربط صوت Star Student.
-     */
-    bindNewsletterPopupAudio(
-      ".readHilightsPanel2_" + currentSlide,
-      slideData.starTitleAudio || "",
-    );
-
-    /*
-     * ربط صوت What are they saying?
-     */
-    bindNewsletterPopupAudio(
-      ".readHilightsPanel3_" + currentSlide,
-      slideData.conversationTitleAudio || "",
-    );
-
-    /*
-     * ربط صوت البوب أب الرابع.
-     */
-    bindNewsletterPopupAudio(
-      ".readHilightsPanel4_" + currentSlide,
-      slideData.questionTitleAudio || "",
-    );
   }
 }
 

@@ -686,3 +686,23 @@
 .img_click_container.img-2 .unscramble_card_text:hover {
   transform: scale(1.2);
 }
+
+.rotator {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+}
+
+/* إذا بدك تحددي مكان الراديو داخل البوب أب */
+.rotator {
+  position: absolute;
+  right: -200px !important;
+  top: 2% !important;
+  z-index: 9999;
+}
+.sterio_container {
+  top: 70px !important;
+  left: 39px !important;
+}

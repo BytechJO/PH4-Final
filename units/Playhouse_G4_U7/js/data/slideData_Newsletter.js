@@ -1,10 +1,11 @@
 var stereo_data = {
   audio: "",
-  exist: false,
+  exist: true,
   bgColor_rgb: "rgb(12, 177, 75)",
   playListData: [
     {
-      audiourl: "../audios/demoo.mp3",
+      audiourl:
+        "../audios/page_67/PLAYHOUSE_4_SCHOOLBOOK_UNIT_07_TRACK_08_01.mp3",
     },
     {
       url: "",

@@ -85,3 +85,112 @@ function buildReadingHTML(aObj) {
     setLoadedStatus(getCurrFileOrDirectory("file"));
   }
 }
+$(document).ready(function () {
+
+  // فقط هدول البوب أب فيهم راديو
+  var stereoPopups = "#news, #star";
+
+  // الراديو مخفي بالبداية
+  $(".rotator").hide();
+
+
+  // =====================================================
+  // لما يفتح Popup
+  // =====================================================
+  $(stereoPopups).on("shown.bs.modal", function () {
+
+    var popupId = "#" + this.id;
+    var slide = reading_data.slides[0];
+    var audioPath = "";
+
+
+    // صوت NEWS
+    if (popupId === "#news") {
+      audioPath = slide.titleAudio || "";
+    }
+
+    // صوت STAR
+    else if (popupId === "#star") {
+      audioPath = slide.starTitleAudio || "";
+    }
+
+
+    // =====================================================
+    // غيّر الصوت الحقيقي داخل Playlist
+    // =====================================================
+    if (audioPath !== "") {
+
+      // غيّر الـ data
+      stereo_data.playListData[0].audiourl = audioPath;
+
+      // غيّر الـ li اللي بناه الراديو فعليًا
+      var $firstTrack = $(".playlist li:first-child");
+
+      $firstTrack.attr("audiourl", audioPath);
+
+      // مهم جداً:
+      // نخلي audio() يعمل initAudio للصوت الجديد
+      $firstTrack.trigger("click");
+    }
+
+
+    // =====================================================
+    // الراديو
+    // =====================================================
+    var $rotator = $(".rotator");
+
+
+    // نحفظ مكانه الأصلي مرة واحدة
+    if (!$rotator.data("originalParent")) {
+      $rotator.data("originalParent", $rotator.parent());
+    }
+
+
+    // نحطه داخل الـ Popup المفتوح
+    $(this).find(".modal-content").append($rotator);
+
+
+    // يظهر مسكر بالبداية
+    $rotator
+      .show()
+      .removeClass("active")
+      .css("transform", "rotate(-92deg)");
+  });
+
+
+
+  // =====================================================
+  // لما يسكر Popup
+  // =====================================================
+  $(stereoPopups).on("hidden.bs.modal", function () {
+
+    // وقف صوت الراديو
+    $(".pause").trigger("click");
+
+
+    // رجع شريط الصوت للبداية
+    try {
+      $(".tracker").slider("value", 0);
+    } catch (e) {}
+
+
+    var $rotator = $(".rotator");
+
+
+    // رجع الراديو مسكر وخفيه
+    $rotator
+      .removeClass("active")
+      .css("transform", "rotate(-92deg)")
+      .hide();
+
+
+    // رجعه لمكانه الأصلي
+    var originalParent = $rotator.data("originalParent");
+
+    if (originalParent) {
+      originalParent.append($rotator);
+    }
+
+  });
+
+});

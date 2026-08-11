@@ -644,3 +644,22 @@
     font-size: 16px;
   }
 }
+.rotator {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+}
+
+/* إذا بدك تحددي مكان الراديو داخل البوب أب */
+.rotator {
+  position: absolute;
+  right: -315px !important;
+  top: 2% !important;
+  z-index: 9999;
+}
+.sterio_container {
+  top: 70px !important;
+  left: 39px !important;
+}

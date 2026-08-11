@@ -81,3 +81,62 @@ function buildReadingHTML(aObj) {
     setLoadedStatus(getCurrFileOrDirectory("file"));
   }
 }
+$(document).ready(function () {
+  var stereoPopups = "#news";
+
+  $(".rotator").hide();
+
+  $(stereoPopups).on("shown.bs.modal", function () {
+    var popupId = "#" + this.id;
+    var slide = reading_data.slides[0];
+    var audioPath = "";
+
+    if (popupId === "#news") {
+      audioPath = slide.titleAudio || "";
+    } else if (popupId === "#star") {
+      audioPath = slide.starTitleAudio || "";
+    } else if (popupId === "#conv") {
+      audioPath = slide.conversationTitleAudio || "";
+    } else if (popupId === "#fillin") {
+      audioPath = slide.questionTitleAudio || "";
+    }
+
+    if (
+      stereo_data &&
+      stereo_data.playListData &&
+      stereo_data.playListData[0]
+    ) {
+      stereo_data.playListData[0].audiourl = audioPath;
+    }
+
+    var $rotator = $(".rotator");
+
+    if (!$rotator.data("originalParent")) {
+      $rotator.data("originalParent", $rotator.parent());
+    }
+
+    $(this).find(".modal-content").append($rotator);
+
+    $rotator.show().removeClass("active").css("transform", "rotate(-92deg)");
+  });
+
+  $(stereoPopups).on("hidden.bs.modal", function () {
+    // وقف صوت الراديو فقط
+    $(".pause").trigger("click");
+
+    // رجع التراكر للبداية
+    try {
+      $(".tracker").slider("value", 0);
+    } catch (e) {}
+
+    var $rotator = $(".rotator");
+
+    $rotator.removeClass("active").css("transform", "rotate(-92deg)").hide();
+
+    var originalParent = $rotator.data("originalParent");
+
+    if (originalParent) {
+      originalParent.append($rotator);
+    }
+  });
+});

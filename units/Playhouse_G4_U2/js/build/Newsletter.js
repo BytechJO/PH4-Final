@@ -85,3 +85,76 @@ function buildReadingHTML(aObj) {
     setLoadedStatus(getCurrFileOrDirectory("file"));
   }
 }
+$(document).ready(function () {
+
+  var stereoPopups = "#news, #star, #news2";
+
+  $(".rotator").hide();
+
+  $(stereoPopups).on("shown.bs.modal", function () {
+
+    var popupId = "#" + this.id;
+    var slide = reading_data.slides[0];
+    var audioPath = "";
+
+    if (popupId === "#news") {
+      audioPath = slide.titleAudio || "";
+    }
+
+    else if (popupId === "#star") {
+      audioPath = slide.starTitleAudio || "";
+    }
+
+    else if (popupId === "#news2") {
+      audioPath = slide.listen5TitleAudio || "";
+    }
+
+    if (audioPath !== "") {
+
+      stereo_data.playListData[0].audiourl = audioPath;
+
+      var $firstTrack = $(".playlist li:first-child");
+
+      $firstTrack.attr("audiourl", audioPath);
+
+      $firstTrack.trigger("click");
+    }
+
+    var $rotator = $(".rotator");
+
+    if (!$rotator.data("originalParent")) {
+      $rotator.data("originalParent", $rotator.parent());
+    }
+
+    $(this).find(".modal-content").append($rotator);
+
+    $rotator
+      .show()
+      .removeClass("active")
+      .css("transform", "rotate(-92deg)");
+  });
+
+
+  $(stereoPopups).on("hidden.bs.modal", function () {
+
+    $(".pause").trigger("click");
+
+    try {
+      $(".tracker").slider("value", 0);
+    } catch (e) {}
+
+    var $rotator = $(".rotator");
+
+    $rotator
+      .removeClass("active")
+      .css("transform", "rotate(-92deg)")
+      .hide();
+
+    var originalParent = $rotator.data("originalParent");
+
+    if (originalParent) {
+      originalParent.append($rotator);
+    }
+  });
+
+});
