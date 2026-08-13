@@ -40,7 +40,7 @@ var reading_data = {
         "group_styles": "",
         "audio": ["../audios/page_65/Pg6_2.1_Stella.mp3","../audios/page_65/dough.mp3","../audios/page_65/sauce.mp3","../audios/page_65/sprinkle.mp3","../audios/page_65/cheese.mp3","../audios/page_65/add.mp3","../audios/page_65/pepperoni.mp3","../audios/page_65/slice.mp3"],
         "word": [
-            "<img src='../images/pages/activities/img1.png' style='width:90%;'/>"
+            "<img src='../images/pages/activities/img1.PNG' style='width:90%;'/>"
             ],
         "imagePlacePos":[
           {"colWidth": [12], "colData": [1] },

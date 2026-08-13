@@ -37,7 +37,7 @@ var reading_data = {
 
       mainImage: "../images/pages/news-letter/1-news-title.png",
       questionImage: "../images/pages/news-letter/1-conv-img.png",
-      starImage: "../images/pages/news-letter/2-img-2-title.png",
+      starImage: "../images/pages/news-letter/2-img-2-title.PNG",
       convImage: "../images/pages/news-letter/3-img-title.png",
 
       /*

@@ -48,27 +48,28 @@ var mcq_data = {
             "options": [
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img2.png",
+                    "image": "../images/pages/activities/img2.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
                 },
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img3.png",
+                    "image": "../images/pages/activities/img3.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
                 },
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img4.png",
+                    "image": "../images/pages/activities/img4.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
                 }
             ]
         },
+
         {
             "question": "",
             "answer": [1,6,8,11],            
@@ -78,21 +79,21 @@ var mcq_data = {
             "options": [
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img5.png",
+                    "image": "../images/pages/activities/img5.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
                 },
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img6.png",
+                    "image": "../images/pages/activities/img6.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
                 },
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img7.png",
+                    "image": "../images/pages/activities/img7.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
@@ -108,21 +109,21 @@ var mcq_data = {
             "options": [
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img8.png",
+                    "image": "../images/pages/activities/img8.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
                 },
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img9.png",
+                    "image": "../images/pages/activities/img9.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
                 },
                 {
                     "text": "",
-                    "image": "../images/pages/activities/img10.png",
+                    "image": "../images/pages/activities/img10.PNG",
                     "audio": "no",
                     "audioenable": "default", // correct (or) default
                     "needspaceafter": 'no'
