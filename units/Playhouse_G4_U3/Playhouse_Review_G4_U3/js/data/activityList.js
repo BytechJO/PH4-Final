@@ -44,15 +44,15 @@ var _activityData = {
       score: 0,
     },
 
-    {
-      file: "fillin_square.html",
-      type: "wordsearch",
-      build: "yes", // yes (or) no
-      activityCtrls: "yes",
-      layout: 1,
-      visited: 0,
-      score: 0,
-    },
+    // {
+    //   file: "fillin_square.html",
+    //   type: "wordsearch",
+    //   build: "yes", // yes (or) no
+    //   activityCtrls: "yes",
+    //   layout: 1,
+    //   visited: 0,
+    //   score: 0,
+    // },
     // {
     //    'file'               : 'circle_word_in_sentence.html',
     //    'type'               : 'mcq',

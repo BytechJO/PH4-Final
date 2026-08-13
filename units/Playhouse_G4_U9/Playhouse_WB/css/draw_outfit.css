@@ -1,0 +1,277 @@
+/* =========================================
+   DRAW OUTFIT
+========================================= */
+
+.drawoutfit-options {
+  width: 100%;
+}
+
+.drawoutfit-all-cont {
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.drawoutfit-screen-elements {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.drawoutfit-wrapper {
+  width: 80%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 36%)
+    minmax(400px, 64%);
+
+  gap: 30px;
+
+  align-items: start;
+
+  margin: 0 auto;
+
+  padding: 10px 10px 25px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   REFERENCE IMAGE
+========================================= */
+
+.drawoutfit-reference {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+.drawoutfit-reference img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 430px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* =========================================
+   DRAWING SIDE
+========================================= */
+
+.drawoutfit-drawing-side {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+/* =========================================
+   TOOLBAR
+========================================= */
+
+.drawoutfit-toolbar {
+  width: 100%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 8px 10px;
+
+  border: 1px solid #00a9ed;
+
+  border-radius: 12px;
+
+  background: #f8fcff;
+
+  box-sizing: border-box;
+}
+
+.draw-tool,
+.draw-action {
+  width: 38px;
+
+  height: 38px;
+
+  border: 1px solid #bbb;
+
+  border-radius: 7px;
+
+  background: white;
+
+  font-size: 21px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0;
+}
+
+.draw-tool:hover,
+.draw-action:hover {
+  background: #e8f7fd;
+}
+
+.draw-tool.active {
+  border-color: #00a9ed;
+
+  background: #dff5ff;
+}
+
+/* =========================================
+   COLOR BUTTONS
+========================================= */
+
+.draw-color-group {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 4px;
+
+  margin-left: 5px;
+}
+
+.draw-color {
+  width: 25px;
+
+  height: 25px;
+
+  padding: 0;
+
+  border: 2px solid #ddd;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.draw-color.active {
+  border: 3px solid #00a9ed;
+}
+
+.draw-custom-color {
+  width: 38px;
+
+  height: 34px;
+
+  padding: 2px;
+
+  border: 1px solid #aaa;
+
+  border-radius: 5px;
+
+  background: white;
+}
+
+.draw-size {
+  height: 34px;
+
+  padding: 0 8px;
+
+  border: 1px solid #aaa;
+
+  border-radius: 5px;
+
+  background: white;
+}
+
+/* =========================================
+   CANVAS
+========================================= */
+
+.drawoutfit-canvas-holder {
+  width: 100%;
+
+  aspect-ratio: 1018 / 650;
+
+  border: 2px solid #00a9ed;
+
+  border-radius: 15px;
+
+  background: white;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+#drawOutfitCanvas {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  cursor: crosshair;
+
+  touch-action: none;
+}
+
+/* =========================================
+   HIDE ACTIVITY CHECK CONTROLS
+========================================= */
+
+.checkBtn {
+  display: none !important;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .drawoutfit-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .drawoutfit-reference img {
+    max-width: 400px;
+  }
+}
+.func_ctrls {
+  display: none !important;
+}
+.draw-size-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 6px;
+}
+
+.draw-size-slider {
+  width: 140px;
+  cursor: pointer;
+}
+
+.draw-size-value {
+  display: none;
+}

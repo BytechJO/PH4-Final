@@ -51,7 +51,7 @@ var _data = {
         "booksbutton" : { 
             "workbook": {
                 'icon'   : '../images/icons/book-2.png', 
-                'link'      : '../Playhouse_WB/views/slide_1.html'
+                'link'      : '../Playhouse_WB/views/decode_1.html'
             },
             "studentbook": {
                 'icon'   : '../images/icons/book-1.png',

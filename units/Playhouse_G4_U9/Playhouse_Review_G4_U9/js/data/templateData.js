@@ -41,7 +41,7 @@ var _data = {
         "booksbutton" : {
             "workbook": {
                 'icon'   : '../images/icons/book-2.png',
-                'link'      : '../../Playhouse_WB/views/fill_number_or_letter.html'
+                'link'      : '../../Playhouse_WB/views/decode_1.html'
             },
             "studentbook": {
                 'icon'   : '../images/icons/book-1.png',

@@ -1,0 +1,546 @@
+/* =========================================
+   Main Activity
+========================================= */
+
+.all_cont {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+.screen_elements {
+  width: 96%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 0 auto;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.group_elm {
+  width: 1000px;
+  height: 650px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 0 auto;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Options
+========================================= */
+
+.options {
+  width: 100%;
+  height: auto;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Paper
+========================================= */
+
+.shopping_letter {
+  width: 950px;
+  height: 600px;
+
+  position: relative;
+
+  margin: 8px auto 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+}
+
+/* =========================================
+   General Input Style
+========================================= */
+
+.letter_input {
+  position: absolute;
+
+  height: 30px;
+
+  margin: 0;
+  padding: 0 4px;
+
+  border: none !important;
+  border-bottom: 1px solid #555 !important;
+
+  outline: none !important;
+
+  background: transparent !important;
+
+  color: #222 !important;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+
+  line-height: 29px;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+
+  box-sizing: border-box;
+}
+
+.letter_input:focus {
+  border: none !important;
+  border-bottom: 1px solid #333 !important;
+
+  outline: none !important;
+
+  background: transparent !important;
+
+  box-shadow: none !important;
+}
+
+/* =========================================
+   Address
+========================================= */
+
+.address_section {
+  position: absolute;
+
+  top: 5%;
+  left: 41%;
+
+  width: 31%;
+  height: 13%;
+}
+
+.address_line {
+  position: absolute;
+
+  left: 0;
+
+  width: 100%;
+}
+
+.address_line_1 {
+  top: 0;
+}
+
+.address_line_2 {
+  top: 35px;
+}
+
+.address_brace {
+  position: absolute;
+  top: 7%;
+  left: 75.5%;
+  height: 81px;
+  color: #333;
+  font-family: Georgia, serif;
+  font-size: 108px;
+  font-weight: 100;
+  line-height: 76px;
+  transform: scaleX(-0.35);
+  transform-origin: left center;
+}
+
+/* =========================================
+   Date
+========================================= */
+
+.letter_date {
+  top: 18%;
+  left: 41%;
+
+  width: 31%;
+}
+
+/* =========================================
+   Dear
+========================================= */
+
+.dear_text {
+  position: absolute;
+
+  top: 26.5%;
+  left: 6.5%;
+
+  color: #333;
+
+  font-family: Georgia, serif;
+  font-size: 17px;
+}
+
+.letter_receiver {
+  top: 25.8%;
+  left: 11%;
+
+  width: 26%;
+}
+
+.receiver_comma {
+  position: absolute;
+
+  top: 26.5%;
+  left: 37.2%;
+
+  color: #333;
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+/* =========================================
+   Main Letter Body
+========================================= */
+
+.letter_body_lines {
+  position: absolute;
+
+  top: 32%;
+  left: 10%;
+
+  width: 62%;
+  height: 42%;
+}
+
+.body_line {
+  position: absolute;
+
+  left: 0;
+
+  width: 100%;
+}
+
+.body_line_1 {
+  top: 0;
+}
+
+.body_line_2 {
+  top: 35px;
+}
+
+.body_line_3 {
+  top: 70px;
+}
+
+.body_line_4 {
+  top: 105px;
+}
+
+.body_line_5 {
+  top: 140px;
+}
+
+.body_line_6 {
+  top: 175px;
+}
+
+.body_line_7 {
+  top: 210px;
+}
+
+/* =========================================
+   Paragraph Brace
+========================================= */
+
+.paragraph_brace {
+  position: absolute;
+  top: 31%;
+  left: 69.5%;
+  height: 266px;
+  color: #333;
+  font-family: Georgia, serif;
+  font-size: 235px;
+  font-weight: 1;
+  line-height: 249px;
+  transform: scaleX(-0.28);
+  transform-origin: center;
+}
+
+/* =========================================
+   Sincerely
+========================================= */
+
+.sincerely_text {
+  position: absolute;
+
+  top: 78%;
+  left: 41%;
+
+  color: #333;
+
+  font-family: Georgia, serif;
+  font-size: 17px;
+}
+
+/* =========================================
+   Closing
+========================================= */
+
+.letter_closing {
+  top: 82%;
+  left: 41%;
+
+  width: 31%;
+}
+
+/* =========================================
+   Signature
+========================================= */
+
+.letter_signature {
+  top: 85.3%;
+  left: 41%;
+
+  width: 31%;
+}
+
+/* =========================================
+   Print Name
+========================================= */
+
+.letter_print_name {
+  top: 90.3%;
+  left: 41%;
+
+  width: 31%;
+}
+
+/* =========================================
+   Right Labels
+========================================= */
+
+.letter_label {
+  position: absolute;
+
+  min-width: 120px;
+
+  padding: 3px 8px;
+
+  border: 1px solid #9ad97a;
+  border-radius: 5px;
+
+  background: #fff;
+
+  color: #24ac4d;
+
+  font-size: 13px;
+  font-weight: normal;
+
+  line-height: 1.05;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Arrows
+========================================= */
+
+.letter_arrow {
+  position: absolute;
+
+  color: #f22;
+
+  font-size: 27px;
+  font-weight: normal;
+
+  line-height: 1;
+}
+
+/* =========================================
+   Address Label
+========================================= */
+
+.label_address {
+  top: 6.2%;
+  left: 78%;
+}
+
+.arrow_address {
+  top: 6.6%;
+  left: 74.5%;
+}
+
+/* =========================================
+   Date Label
+========================================= */
+
+.label_date {
+  top: 19.5%;
+  left: 79%;
+}
+
+.arrow_date {
+  top: 18.9%;
+  left: 75.5%;
+}
+
+/* =========================================
+   Receiver Label
+========================================= */
+
+.label_receiver {
+  top: 25.5%;
+  left: 79%;
+
+  min-width: 130px;
+}
+
+.arrow_receiver {
+  top: 27%;
+  left: 75.5%;
+}
+
+/* =========================================
+   Paragraph Label
+========================================= */
+
+.label_paragraph {
+  top: 49%;
+  left: 80%;
+
+  min-width: 130px;
+}
+
+.arrow_paragraph {
+  top: 52%;
+  left: 76.5%;
+}
+
+/* =========================================
+   Closing Label
+========================================= */
+
+.label_closing {
+  top: 78.8%;
+  left: 78%;
+}
+
+.arrow_closing {
+  top: 79.2%;
+  left: 74.5%;
+}
+
+/* =========================================
+   Signature Label
+========================================= */
+
+.label_signature {
+  top: 85%;
+  left: 78%;
+}
+
+.arrow_signature {
+  top: 85.7%;
+  left: 74.5%;
+}
+
+/* =========================================
+   Print Name Label
+========================================= */
+
+.label_print_name {
+  top: 91%;
+  left: 78%;
+}
+
+.arrow_print_name {
+  top: 91.7%;
+  left: 74.5%;
+}
+
+/* =========================================
+   Hide Grammarly noise a little
+========================================= */
+
+.shopping_letter grammarly-extension,
+.shopping_letter grammarly-desktop-integration {
+  display: none !important;
+}
+
+/* =========================================
+   Hide Activity Controls
+========================================= */
+
+.func_ctrls {
+  display: none !important;
+}
+
+/* =========================================
+   Main Title
+========================================= */
+
+.act_head_group .q-type-img-container {
+  position: relative;
+}
+
+.mainTitle {
+  max-height: 55px;
+
+  object-fit: contain;
+}
+
+.mainTitleIcon {
+  position: absolute;
+
+  object-fit: contain;
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media screen and (max-width: 1100px) {
+  .group_elm {
+    width: 950px;
+    height: 610px;
+  }
+
+  .shopping_letter {
+    width: 900px;
+    height: 568px;
+  }
+
+  .letter_input {
+    font-size: 15px;
+  }
+
+  .letter_label {
+    font-size: 12px;
+  }
+}
+.arrow_address {
+  display: none;
+}
+.letter_closing {
+  display: none;
+}

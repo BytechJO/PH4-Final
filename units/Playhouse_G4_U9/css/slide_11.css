@@ -1,0 +1,481 @@
+/* =========================================================
+   TALK ABOUT IT PAGE
+========================================================= */
+
+.talk_about_page {
+  width: 80%;
+  min-height: 100%;
+
+  position: relative;
+
+  padding: 5px 20px 15px;
+
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+
+  color: #222;
+
+  background: transparent;
+}
+
+/* =========================================================
+   INSTRUCTION
+========================================================= */
+
+.talk_about_page .talk_instruction {
+  width: 94%;
+
+  margin: 0 auto 4px;
+
+  font-size: 22px;
+  line-height: 1.35;
+
+  font-weight: 700;
+
+  color: #18a94a;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   EXAMPLE
+========================================================= */
+
+.talk_about_page .talk_example {
+  width: 94%;
+
+  margin: 0 auto 8px;
+
+  font-size: 18px;
+  line-height: 1.35;
+
+  text-align: left;
+
+  color: #222;
+
+  box-sizing: border-box;
+}
+
+.talk_about_page .talk_example_label {
+  color: #ef3440;
+
+  font-weight: bold;
+
+  margin-right: 6px;
+}
+
+.talk_about_page .talk_example_text {
+  color: #222;
+}
+
+/* =========================================================
+   IMAGES AREA
+========================================================= */
+
+.talk_about_page .talk_items_area {
+  width: 100%;
+  height: 500px;
+
+  position: relative;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   GENERAL IMAGE ITEM
+========================================================= */
+
+.talk_about_page .talk_item {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+.talk_about_page .talk_item_img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+/* =========================================================
+   FIRST ROW
+========================================================= */
+
+.talk_about_page .talk_item_1 {
+  left: 2%;
+  top: 0%;
+
+  width: 16%;
+  height: 43%;
+}
+
+.talk_about_page .talk_item_2 {
+  left: 20%;
+  top: 2%;
+
+  width: 14%;
+  height: 41%;
+}
+
+.talk_about_page .talk_item_3 {
+  left: 38%;
+  top: 8%;
+
+  width: 17%;
+  height: 35%;
+}
+
+.talk_about_page .talk_item_4 {
+  left: 57%;
+  top: 9%;
+
+  width: 16%;
+  height: 34%;
+}
+
+.talk_about_page .talk_item_5 {
+  left: 78%;
+  top: 3%;
+
+  width: 18%;
+  height: 40%;
+}
+
+/* =========================================================
+   SECOND ROW
+========================================================= */
+
+.talk_about_page .talk_item_6 {
+  left: 3%;
+  top: 58%;
+
+  width: 17%;
+  height: 33%;
+}
+
+.talk_about_page .talk_item_7 {
+  left: 25%;
+  top: 62%;
+
+  width: 17%;
+  height: 29%;
+}
+
+.talk_about_page .talk_item_8 {
+  left: 49%;
+  top: 58%;
+
+  width: 18%;
+  height: 33%;
+}
+
+.talk_about_page .talk_item_9 {
+  left: 78%;
+  top: 55%;
+
+  width: 17%;
+  height: 36%;
+}
+
+/* =========================================================
+   PHRASES BOX
+========================================================= */
+
+.talk_about_page .talk_phrases_box {
+  width: 92%;
+
+  margin: 6px auto 0;
+
+  padding: 7px 14px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1.15fr
+    0.95fr
+    0.8fr;
+
+  grid-template-rows: repeat(2, auto);
+
+  column-gap: 4%;
+  row-gap: 4px;
+
+  background: #e6f2e4;
+
+  border: 1px solid #a0d4a1;
+
+  border-radius: 10px;
+
+  font-size: 17px;
+  line-height: 1.2;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   PHRASES
+========================================================= */
+
+.talk_about_page .talk_phrase {
+  text-align: left;
+
+  white-space: nowrap;
+
+  color: #333;
+}
+
+/* =========================================================
+   PHRASES POSITION
+========================================================= */
+
+.talk_about_page .talk_phrase:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.talk_about_page .talk_phrase:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.talk_about_page .talk_phrase:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.talk_about_page .talk_phrase:nth-child(4) {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.talk_about_page .talk_phrase:nth-child(5) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.talk_about_page .talk_phrase:nth-child(6) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.talk_about_page .talk_phrase:nth-child(7) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.talk_about_page .talk_phrase:nth-child(8) {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+/* =========================================================
+   LARGE SCREENS
+========================================================= */
+
+@media screen and (min-width: 1400px) {
+  .talk_about_page .talk_items_area {
+    height: 540px;
+  }
+
+  .talk_about_page .talk_instruction {
+    font-size: 23px;
+  }
+
+  .talk_about_page .talk_example {
+    font-size: 19px;
+  }
+
+  .talk_about_page .talk_phrases_box {
+    font-size: 18px;
+  }
+}
+
+/* =========================================================
+   MEDIUM SCREENS
+========================================================= */
+
+@media screen and (max-width: 1200px) {
+  .talk_about_page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .talk_about_page .talk_instruction {
+    width: 96%;
+
+    font-size: 20px;
+  }
+
+  .talk_about_page .talk_example {
+    width: 96%;
+
+    font-size: 17px;
+  }
+
+  .talk_about_page .talk_items_area {
+    height: 460px;
+  }
+
+  .talk_about_page .talk_phrases_box {
+    width: 94%;
+
+    font-size: 16px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 950px) {
+  .talk_about_page .talk_instruction {
+    font-size: 18px;
+  }
+
+  .talk_about_page .talk_example {
+    font-size: 15px;
+  }
+
+  .talk_about_page .talk_items_area {
+    height: 410px;
+  }
+
+  .talk_about_page .talk_phrases_box {
+    width: 96%;
+
+    column-gap: 3%;
+
+    font-size: 14px;
+  }
+
+  .talk_about_page .talk_item_1 {
+    left: 1%;
+    width: 18%;
+  }
+
+  .talk_about_page .talk_item_2 {
+    left: 20%;
+    width: 15%;
+  }
+
+  .talk_about_page .talk_item_3 {
+    left: 38%;
+    width: 18%;
+  }
+
+  .talk_about_page .talk_item_4 {
+    left: 58%;
+    width: 16%;
+  }
+
+  .talk_about_page .talk_item_5 {
+    left: 78%;
+    width: 18%;
+  }
+
+  .talk_about_page .talk_item_6 {
+    left: 2%;
+    width: 18%;
+  }
+
+  .talk_about_page .talk_item_7 {
+    left: 25%;
+    width: 18%;
+  }
+
+  .talk_about_page .talk_item_8 {
+    left: 49%;
+    width: 18%;
+  }
+
+  .talk_about_page .talk_item_9 {
+    left: 78%;
+    width: 18%;
+  }
+}
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media screen and (max-width: 750px) {
+  .talk_about_page {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .talk_about_page .talk_instruction {
+    width: 98%;
+
+    font-size: 16px;
+  }
+
+  .talk_about_page .talk_example {
+    width: 98%;
+
+    font-size: 14px;
+  }
+
+  .talk_about_page .talk_items_area {
+    height: 360px;
+  }
+
+  .talk_about_page .talk_phrases_box {
+    width: 98%;
+
+    padding: 6px 10px;
+
+    font-size: 13px;
+
+    column-gap: 2%;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 600px) {
+  .talk_about_page .talk_items_area {
+    height: 320px;
+  }
+
+  .talk_about_page .talk_phrases_box {
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-rows: repeat(4, auto);
+
+    row-gap: 5px;
+
+    font-size: 12px;
+  }
+
+  .talk_about_page .talk_phrase:nth-child(1),
+  .talk_about_page .talk_phrase:nth-child(2),
+  .talk_about_page .talk_phrase:nth-child(3),
+  .talk_about_page .talk_phrase:nth-child(4),
+  .talk_about_page .talk_phrase:nth-child(5),
+  .talk_about_page .talk_phrase:nth-child(6),
+  .talk_about_page .talk_phrase:nth-child(7),
+  .talk_about_page .talk_phrase:nth-child(8) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}

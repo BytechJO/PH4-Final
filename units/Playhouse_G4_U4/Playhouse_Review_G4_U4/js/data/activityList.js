@@ -23,15 +23,15 @@ var _activityData = {
       visited: 0,
       score: 0,
     },
-    {
-      file: "fillin_square.html",
-      type: "wordsearch",
-      build: "yes", // yes (or) no
-      activityCtrls: "yes",
-      layout: 1,
-      visited: 0,
-      score: 0,
-    },
+    // {
+    //   file: "fillin_square.html",
+    //   type: "wordsearch",
+    //   build: "yes", // yes (or) no
+    //   activityCtrls: "yes",
+    //   layout: 1,
+    //   visited: 0,
+    //   score: 0,
+    // },
     {
       file: "wordsearch_P56_3.html",
     type: "wordsearch",

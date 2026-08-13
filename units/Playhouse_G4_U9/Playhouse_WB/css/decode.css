@@ -1,0 +1,873 @@
+/* =========================================
+   DECODE ACTIVITY
+========================================= */
+
+.decode-options {
+  width: 100%;
+}
+
+
+.decode-all-cont {
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.decode-screen-elements {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.decode-wrapper {
+  width: 96%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 5px 10px 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CIPHER TABLE
+========================================= */
+
+.decode-table-wrapper {
+  width: 100%;
+
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+  display: flex;
+  justify-content: center;
+
+  overflow-x: auto;
+}
+
+
+.decode-table {
+  border-collapse: collapse;
+
+  background-color: white;
+}
+
+
+.decode-table-cell {
+  width: 31px;
+  min-width: 31px;
+
+  height: 28px;
+
+  padding: 0;
+
+  text-align: center;
+  vertical-align: middle;
+
+  border: 1px solid #333;
+
+  font-size: 18px;
+  line-height: 1;
+
+  color: #111;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.decode-message {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-items: flex-end;
+
+  column-gap: 20px;
+
+  row-gap: 26px;
+
+  padding: 0 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   WORD GROUP
+   IMPORTANT:
+   entire word stays together
+========================================= */
+
+.decode-word-group {
+  position: relative;
+
+  display: inline-flex;
+
+  flex-wrap: nowrap;
+
+  align-items: flex-end;
+
+  flex: 0 0 auto;
+
+  white-space: nowrap;
+}
+
+
+.decode-word-content {
+  display: inline-flex;
+
+  flex-wrap: nowrap;
+
+  align-items: flex-end;
+
+  white-space: nowrap;
+
+  flex: 0 0 auto;
+}
+
+
+/* =========================================
+   LETTER BOX
+========================================= */
+
+.decode-letter-box {
+  position: relative;
+
+  width: 31px;
+  height: 56px;
+
+  flex: 0 0 31px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   ANSWER AREA
+========================================= */
+
+.decode-answer-area {
+  position: relative;
+
+  width: 100%;
+
+  height: 29px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.decode-input {
+  width: 100%;
+
+  height: 28px;
+
+  padding: 0;
+
+  margin: 0;
+
+  border: none !important;
+
+  outline: none !important;
+
+  box-shadow: none !important;
+
+  background: transparent !important;
+
+  text-align: center;
+
+  font-family: inherit;
+
+  font-size: 21px;
+
+  line-height: 28px;
+
+  font-weight: 500;
+
+  color: #000;
+
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+}
+
+
+.decode-input:focus {
+  border: none !important;
+
+  outline: none !important;
+
+  box-shadow: none !important;
+
+  background-color: rgba(0, 174, 239, 0.09) !important;
+}
+
+
+/* =========================================
+   GIVEN LETTER
+========================================= */
+
+.decode-given-letter {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 21px;
+
+  line-height: 28px;
+
+  font-weight: bold;
+
+  color: #000;
+}
+
+
+/* =========================================
+   LINE UNDER LETTER
+========================================= */
+
+.decode-line {
+  width: 27px;
+
+  height: 1px;
+
+  margin: 0 auto;
+
+  border-bottom: 1px solid #999;
+}
+
+
+/* =========================================
+   CODED LETTER
+========================================= */
+
+.decode-coded-letter {
+  width: 100%;
+
+  margin-top: 5px;
+
+  text-align: center;
+
+  font-size: 17px;
+
+  line-height: 18px;
+
+  color: #111;
+}
+
+
+/* =========================================
+   PUNCTUATION
+========================================= */
+
+.decode-punctuation {
+  position: relative;
+
+  flex: 0 0 auto;
+
+  color: #111;
+
+  font-size: 24px;
+
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+
+/* -----------------------------------------
+   APOSTROPHE
+----------------------------------------- */
+
+.decode-apostrophe {
+  width: 9px;
+
+  margin-left: -2px;
+
+  margin-right: -2px;
+
+  align-self: flex-start;
+
+  margin-top: 2px;
+}
+
+
+/* -----------------------------------------
+   COMMA
+----------------------------------------- */
+
+.decode-comma {
+  width: 10px;
+
+  margin-left: -3px;
+
+  margin-right: 1px;
+
+  align-self: flex-start;
+
+  margin-top: 24px;
+}
+
+
+/* -----------------------------------------
+   PERIOD
+----------------------------------------- */
+
+.decode-period {
+  width: 9px;
+
+  margin-left: -3px;
+
+  margin-right: 1px;
+
+  align-self: flex-start;
+
+  margin-top: 24px;
+}
+
+
+/* -----------------------------------------
+   QUESTION MARK
+----------------------------------------- */
+
+.decode-question-mark {
+  width: 14px;
+
+  margin-left: 1px;
+
+  align-self: flex-start;
+
+  margin-top: 0;
+}
+
+
+/* -----------------------------------------
+   EXCLAMATION
+----------------------------------------- */
+
+.decode-exclamation {
+  width: 10px;
+
+  margin-left: 1px;
+
+  align-self: flex-start;
+
+  margin-top: 0;
+}
+
+
+/* =========================================
+   WORD RESULT
+   ONE ICON FOR ENTIRE WORD
+========================================= */
+
+.decode-word-result {
+  position: absolute;
+
+  top: -16px;
+
+  right: -14px;
+
+  width: 20px;
+
+  height: 20px;
+
+  z-index: 20;
+
+  pointer-events: none;
+}
+
+
+.decode-word-tick,
+.decode-word-cross {
+  display: none;
+
+  width: 20px;
+
+  height: 20px;
+}
+
+
+.decode-word-tick img,
+.decode-word-cross img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   GIVEN WORD
+   no validation icon needed if there are
+   no editable inputs inside it
+========================================= */
+
+.decode-word-group.no-editable-word
+.decode-word-result {
+  display: none;
+}
+
+
+/* =========================================
+   WORD POWER AREA
+========================================= */
+
+.decode-word-power {
+  width: 100%;
+
+  margin-top: 28px;
+
+  text-align: left;
+}
+
+
+/* =========================================
+   WORD POWER TITLE
+========================================= */
+
+.decode-word-power-title {
+  margin-bottom: 5px;
+
+  color: #00a9ed;
+
+  font-size: 22px;
+
+  line-height: 1.2;
+
+}
+
+
+/* =========================================
+   WORD LIST
+========================================= */
+
+.decode-word-list {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(7, 1fr);
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+
+.decode-word {
+  text-align: center;
+
+  font-size: 22px;
+
+  line-height: 1.2;
+
+
+  color: #111;
+}
+
+
+/* =========================================
+   OTHER WORD POWER
+========================================= */
+
+.decode-other-title {
+  margin-top: 4px;
+}
+
+
+.decode-other-list {
+  grid-template-columns:
+    repeat(3, minmax(100px, 150px));
+
+  justify-content: start;
+
+  gap: 10px 20px;
+}
+
+
+/* =========================================
+   HIDE OLD / UNUSED RESULT STYLES
+========================================= */
+
+.decode-result-icon,
+.decode-letter-result,
+.decode-letter-tick,
+.decode-letter-cross {
+  display: none !important;
+}
+
+
+/* =========================================
+   SCROLLBAR / CONTENT
+========================================= */
+
+.decode-options::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+.decode-options::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   RESPONSIVE - LARGE TABLETS
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .decode-wrapper {
+    width: 98%;
+  }
+
+
+  .decode-message {
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+    column-gap: 16px;
+  }
+
+
+  .decode-letter-box {
+    width: 29px;
+
+    flex-basis: 29px;
+  }
+
+
+  .decode-line {
+    width: 25px;
+  }
+
+
+  .decode-word {
+    font-size: 19px;
+  }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLETS
+========================================= */
+
+@media (max-width: 850px) {
+
+  .decode-sub-title {
+    font-size: 19px;
+  }
+
+
+  .decode-table-cell {
+    width: 27px;
+
+    min-width: 27px;
+
+    font-size: 16px;
+  }
+
+
+  .decode-message {
+    column-gap: 14px;
+
+    row-gap: 24px;
+  }
+
+
+  .decode-letter-box {
+    width: 27px;
+
+    flex-basis: 27px;
+  }
+
+
+  .decode-input,
+  .decode-given-letter {
+    font-size: 18px;
+  }
+
+
+  .decode-coded-letter {
+    font-size: 15px;
+  }
+
+
+  .decode-line {
+    width: 23px;
+  }
+
+
+  .decode-word-list {
+    grid-template-columns:
+      repeat(4, 1fr);
+  }
+
+
+  .decode-word-result {
+    top: -14px;
+
+    right: -12px;
+
+    width: 18px;
+
+    height: 18px;
+  }
+
+
+  .decode-word-tick,
+  .decode-word-cross {
+    width: 18px;
+
+    height: 18px;
+  }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - SMALL TABLETS
+========================================= */
+
+@media (max-width: 700px) {
+
+  .decode-message {
+    justify-content: flex-start;
+  }
+
+
+  .decode-letter-box {
+    width: 25px;
+
+    flex-basis: 25px;
+  }
+
+
+  .decode-line {
+    width: 22px;
+  }
+
+
+  .decode-input,
+  .decode-given-letter {
+    font-size: 17px;
+  }
+
+
+  .decode-coded-letter {
+    font-size: 14px;
+  }
+
+
+  .decode-word-group {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .decode-main-title {
+    width: 300px;
+
+    height: 42px;
+  }
+
+
+  .decode-title-arrow {
+    height: 42px;
+  }
+
+
+  .decode-title-text {
+    font-size: 21px;
+  }
+
+
+  .decode-heading {
+    margin-top: 14px;
+  }
+
+
+  .decode-sub-title {
+    font-size: 17px;
+  }
+
+
+  .decode-message {
+    justify-content: flex-start;
+
+    column-gap: 12px;
+
+    row-gap: 24px;
+
+    padding-left: 2px;
+
+    padding-right: 2px;
+  }
+
+
+  .decode-letter-box {
+    width: 24px;
+
+    flex-basis: 24px;
+
+    height: 52px;
+  }
+
+
+  .decode-answer-area {
+    height: 26px;
+  }
+
+
+  .decode-input,
+  .decode-given-letter {
+    height: 26px;
+
+    font-size: 16px;
+
+    line-height: 26px;
+  }
+
+
+  .decode-line {
+    width: 21px;
+  }
+
+
+  .decode-coded-letter {
+    margin-top: 4px;
+
+    font-size: 13px;
+  }
+
+
+  .decode-punctuation {
+    font-size: 20px;
+  }
+
+
+  .decode-word-result {
+    top: -13px;
+
+    right: -10px;
+
+    width: 16px;
+
+    height: 16px;
+  }
+
+
+  .decode-word-tick,
+  .decode-word-cross {
+    width: 16px;
+
+    height: 16px;
+  }
+
+
+  .decode-word-list {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .decode-other-list {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .decode-word-power-title {
+    font-size: 18px;
+  }
+
+
+  .decode-word {
+    font-size: 17px;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL SCREEN
+========================================= */
+
+@media (max-width: 430px) {
+
+  .decode-letter-box {
+    width: 22px;
+
+    flex-basis: 22px;
+  }
+
+
+  .decode-line {
+    width: 19px;
+  }
+
+
+  .decode-input,
+  .decode-given-letter {
+    font-size: 15px;
+  }
+
+
+  .decode-coded-letter {
+    font-size: 12px;
+  }
+
+
+  .decode-message {
+    column-gap: 10px;
+  }
+
+}

@@ -837,3 +837,47 @@ body {
   margin-top: 0;
   margin-bottom: 0px;
 }
+
+/* =========================================
+   HOVER IMAGE
+========================================= */
+
+.hover-image {
+  cursor: pointer;
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+
+/* تحت الرقم */
+
+.image-container.popup-bottom .hover-image {
+  top: 100%;
+  bottom: auto;
+
+  transform: translateX(-50%) scale(1);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.image-container.popup-bottom .hover-image:hover {
+  transform: translateX(-50%) scale(1.12);
+}
+
+
+/* فوق الرقم */
+
+.image-container.popup-top .hover-image {
+  top: 0;
+  bottom: auto;
+
+  transform: translate(-50%, -115%) scale(1);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.image-container.popup-top .hover-image:hover {
+  transform: translate(-50%, -115%) scale(1.12);
+}

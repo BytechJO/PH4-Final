@@ -1,0 +1,591 @@
+/* =========================================================
+   MAIN
+========================================================= */
+
+.options {
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.all_cont {
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT
+   بدون background وبدون container ملون
+========================================================= */
+
+.bagful_page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 5px 20px 15px;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  font-family: Arial, sans-serif;
+  color: #222;
+
+  /* مهم */
+  background: transparent;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.bagful_title_row {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 10px;
+}
+
+.bagful_title {
+  padding: 5px 30px;
+
+  background: #20a94b;
+
+  border-radius: 10px;
+
+  color: #fff;
+
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+
+  line-height: 1.1;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.bagful_intro {
+  width: 96%;
+
+  margin: 0 auto 12px;
+
+  font-size: 22px;
+  line-height: 1.35;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   SUPPLIES
+========================================================= */
+
+.bagful_supplies {
+  width: 96%;
+
+  margin: 0 auto 10px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 70px;
+
+  align-items: start;
+}
+
+.supplies_column {
+  min-width: 0;
+}
+
+.supplies_title {
+  margin-bottom: 4px;
+
+  color: #e82f3f;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  text-decoration: underline;
+}
+
+.supplies_list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.supply_item {
+  font-size: 22px;
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   GENERAL STEPS
+========================================================= */
+
+.step_row {
+  width: 96%;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+.step_content {
+  padding: 3px 0;
+
+  font-size: 22px;
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+.step_text {
+  color: #222;
+}
+
+
+/* =========================================================
+   STEP TITLES
+========================================================= */
+
+.step_title {
+  margin-right: 5px;
+
+  font-weight: bold;
+  font-style: italic;
+}
+
+.step_title_green {
+  color: #19a851;
+}
+
+.step_title_red {
+  color: #ef2638;
+}
+
+
+/* =========================================================
+   STEP IMAGES
+========================================================= */
+
+.step_image {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  min-width: 0;
+}
+
+.step_image img {
+  display: block;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   STEP 1 + STEP 2
+   نفس الصورة تغطي الاثنين
+========================================================= */
+
+.steps_one_two {
+  width: 96%;
+
+  margin: 0 auto 5px;
+
+  display: grid;
+
+  grid-template-columns: 145px 1fr;
+
+  column-gap: 10px;
+
+  align-items: stretch;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   STEP 1 + 2 IMAGE
+========================================================= */
+
+.steps_one_two .girl_image {
+  width: 145px;
+  height: 100%;
+
+  min-height: 170px;
+
+  padding: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.steps_one_two .girl_image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   STEP 1 + 2 TEXT COLUMN
+========================================================= */
+
+.steps_one_two_content {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.steps_one_two .step_content {
+  width: 100%;
+
+  padding: 0;
+
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+.step_one_content,
+.step_two_content {
+  margin: 0;
+}
+
+
+/* =========================================================
+   OLD STEP 3
+========================================================= */
+
+.step_three {
+  grid-template-columns: 1fr 125px;
+}
+
+
+/* =========================================================
+   GIRL IMAGE
+========================================================= */
+
+.girl_image {
+  width: 120px;
+  height: 115px;
+
+  padding-right: 8px;
+
+  box-sizing: border-box;
+}
+
+.girl_image img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* =========================================================
+   FROG / YELLOW ANIMAL
+========================================================= */
+
+.frog_image {
+  width: 120px;
+  height: 90px;
+
+  padding-left: 8px;
+
+  box-sizing: border-box;
+}
+
+.frog_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.step_spacer {
+  width: 130px;
+}
+
+
+/* =========================================================
+   STEP FOUR
+========================================================= */
+
+.step_four {
+  width: 96%;
+
+  margin: 4px auto 2px;
+
+  font-size: 22px;
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   STEP 3 + STEP 4
+   نفس الصورة تغطي الاثنين
+========================================================= */
+
+.steps_three_four {
+  width: 96%;
+
+  margin: 8px auto 5px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 145px;
+
+  column-gap: 10px;
+
+  align-items: stretch;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   STEP 3 + 4 TEXT COLUMN
+========================================================= */
+
+.steps_three_four_content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.steps_three_four .step_content {
+  width: 100%;
+
+  padding: 0;
+
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   STEP 3 + 4 IMAGE
+========================================================= */
+
+.step_three_four_image {
+  width: 190px;
+  height: 100%;
+
+  min-height: 110px;
+
+  padding: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.step_three_four_image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   BOTTOM ANIMALS
+========================================================= */
+
+.animals_grid {
+  width: 96%;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  column-gap: 15px;
+
+  align-items: end;
+}
+
+.animal_group {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.animal_picture {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.animal_picture img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.animal_center .animal_picture {
+  height: 255px;
+}
+
+.animal_caption {
+  width: 100%;
+
+  margin-top: 2px;
+
+  font-size: 22px;
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   HIDE CHECK / RESET
+========================================================= */
+
+.func_ctrls {
+  display: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .options {
+    width: 96%;
+  }
+
+  .bagful_page {
+    padding: 5px 12px 10px;
+  }
+
+  .bagful_title {
+    font-size: 19px;
+  }
+
+  .bagful_intro,
+  .supply_item {
+    font-size: 22px;
+  }
+
+  .bagful_supplies {
+    column-gap: 40px;
+  }
+
+  .step_content,
+  .step_four {
+    font-size: 11px;
+  }
+
+  .step_one,
+  .step_two {
+    grid-template-columns: 110px 1fr;
+  }
+
+  .step_three {
+    grid-template-columns: 1fr 110px;
+  }
+
+  .step_spacer {
+    width: 110px;
+  }
+
+  .girl_image {
+    width: 105px;
+    height: 100px;
+  }
+
+  .frog_image {
+    width: 100px;
+    height: 75px;
+  }
+
+  .animal_picture {
+    height: 130px;
+  }
+
+  .animal_center .animal_picture {
+    height: 145px;
+  }
+}
+
+
+/* =========================================================
+   SMALL
+========================================================= */
+
+@media (max-width: 767.98px) {
+  .options {
+    overflow: auto;
+  }
+
+  .bagful_page {
+    min-width: 650px;
+  }
+}

@@ -21,11 +21,11 @@ var stereo_data = {
 var fillin_data = {
     "layout": 1,
     "numinrow": [[1], [1], [1], [1], [1]],
-    "mainTitle"             : "../images/pages/sb-icons/gramprac_main_title.png",
-    "mainTitleIcon"         : "../images/pages/sb-icons/gram_main_title_icon.png",
-    "mainTitleAudio"        : "../audios/under.mp3",
-    "mainTitleIconPos"      : {"right": "70px"},
-    "subTitleTextLeft"      : "<span class='title-order'>1</span> You try it!",
+    "mainTitle": "../images/pages/sb-icons/phonics_main_title.png",
+    "mainTitleIcon": "../images/pages/sb-icons/phonics_main_title_icon.png",
+    "mainTitleAudio": "../audios/page_81/PHONICS_AND_SPELLING.mp3",
+    "mainTitleIconPos"      : {"right": "90px"},
+    "subTitleTextLeft"      : "<span class='title-order'>2</span> You try it!",
     "subTitleTextRight"     : "Complete the conversation by adding the correct suffixes to the CVC words.",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",
@@ -38,7 +38,7 @@ var fillin_data = {
     "questions": [
       {
         "singleword": false,
-        "text": "<span class='green_text'>Suzy:</span> I went [<span class='red_text'>shop</span>] [_] at the mall yesterday.",
+        "text": "<span class='green_text'>Suzy:</span> I went [<span class='red'>shop</span>] [_] at the mall yesterday.",
         "textaudios": ["../audios/under.mp3"],
         "audio": "",
         "audioenable": "default", // correct (or) default
@@ -80,7 +80,7 @@ var fillin_data = {
       },
       {
         "singleword": false,
-        "text": "<span class='green_text'>Kathy:</span> While my mum was [<span class='red_text'>sit</span>] [_] , my sister was [<span class='red_text'>run</span>] [_] all over the shop.",
+        "text": "<span class='green_text'>Kathy:</span> While my mum was [<span class='red'>sit</span>] [_] , my sister was [<span class='red'>run</span>] [_] all over the shop.",
         "textaudios": ["../audios/under.mp3"],
         "audio": "",
         "audioenable": "default", // correct (or) default
@@ -94,7 +94,7 @@ var fillin_data = {
       },
       {
         "singleword": false,
-        "text": "<span class='green_text'>Suzy:</span> I was at the shoe shop, too. I returned my new [<span class='red_text'>run</span>] [_] shoes for a [<span class='red_text'>big</span>] [_] pair.",
+        "text": "<span class='green_text'>Suzy:</span> I was at the shoe shop, too. I returned my new [<span class='red'>run</span>] [_] shoes for a [<span class='red'>big</span>] [_] pair.",
         "textaudios": ["../audios/under.mp3"],
         "audio": "",
         "audioenable": "default", // correct (or) default
@@ -108,7 +108,7 @@ var fillin_data = {
       },
       {
         "singleword": false,
-        "text": "<span class='green_text'>Kathy:</span> [<span class='red_text'>Run</span>] [_] shoes? I thought you were a [<span class='red_text'>swim</span>] [_]",
+        "text": "<span class='green_text'>Kathy:</span> [<span class='red'>Run</span>] [_] shoes? I thought you were a [<span class='red'>swim</span>] [_]",
         "textaudios": ["../audios/under.mp3"],
         "audio": "",
         "audioenable": "default", // correct (or) default
@@ -122,7 +122,7 @@ var fillin_data = {
       },
       {
         "singleword": false,
-        "text": "<span class='green_text'>Suzy:</span> I used to be a [<span class='red_text'>swim</span>] [_] , now I’m a [<span class='red_text'>run</span>] [_]",
+        "text": "<span class='green_text'>Suzy:</span> I used to be a [<span class='red'>swim</span>] [_] , now I’m a [<span class='red'>run</span>] [_]",
         "textaudios": ["../audios/under.mp3"],
         "audio": "",
         "audioenable": "default", // correct (or) default

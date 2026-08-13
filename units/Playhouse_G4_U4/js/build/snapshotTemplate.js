@@ -181,28 +181,71 @@ var snapshotAudio = null;
 
 function showImg() {
   $(document).ready(function () {
-    $(".point").click(function () {
+    // =====================================================
+    // CLICK ON POINT
+    // ONLY OPEN / CLOSE POPUP
+    // NO AUDIO HERE
+    // =====================================================
+
+    $(".point").click(function (e) {
+      e.stopPropagation();
+
       var imgName = $(this).data("img");
-      var audioSrc = $(this).data("audio");
 
       var $currentPopup = $("." + imgName);
+
       var isClosed = $currentPopup.css("display") === "none";
 
+      // سكّر كل البوكسات
       $(".hover-image").fadeOut();
 
+      // افتح المطلوب فقط
       if (isClosed) {
         $currentPopup.fadeIn();
+      }
+    });
 
-        if (audioSrc) {
-          if (snapshotAudio) {
-            snapshotAudio.pause();
-            snapshotAudio.currentTime = 0;
-          }
+    // =====================================================
+    // CLICK ON POPUP
+    // PLAY AUDIO
+    // =====================================================
 
-          snapshotAudio = new Audio(audioSrc);
-          snapshotAudio.play();
+    $(".hover-image").click(function (e) {
+      e.stopPropagation();
+
+      // نجيب الـ point المرتبط بنفس البوكس
+      var popupClasses = $(this).attr("class").split(" ");
+
+      var imgClass = "";
+
+      for (var i = 0; i < popupClasses.length; i++) {
+        if (popupClasses[i].indexOf("img-") === 0) {
+          imgClass = popupClasses[i];
+          break;
         }
       }
+
+      if (imgClass === "") {
+        return;
+      }
+
+      var $point = $('.point[data-img="' + imgClass + '"]');
+
+      var audioSrc = $point.data("audio");
+
+      if (!audioSrc) {
+        return;
+      }
+
+      // وقف أي صوت شغال
+      if (snapshotAudio) {
+        snapshotAudio.pause();
+        snapshotAudio.currentTime = 0;
+      }
+
+      snapshotAudio = new Audio(audioSrc);
+
+      snapshotAudio.play();
     });
   });
 }

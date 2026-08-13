@@ -21,7 +21,7 @@ var reading_data = {
     "mainTitle": "../images/pages/sb-icons/gramprac_main_title.png",
     "mainTitleIcon": "../images/pages/sb-icons/gram_main_title_icon.png",
     "mainTitleIconPos": {"right": "70px"},
-    "mainTitleAudio": "../audios/under.mp3",
+    "mainTitleAudio": "../audios/page_79/GRAMMAR_PRACTICE.mp3",
     "subTitleTextLeft": "<span class='title-order'>1</span> Talk about it!",
     "subTitleTextRight": "Use the words from the grammar box on page 78 and some of the suggested phrases below to compare and evaluate the following items.",
     "subTitleIcons": [],

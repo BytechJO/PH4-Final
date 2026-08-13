@@ -33,7 +33,23 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+{
+      file: "conversation_board.html",
 
+      type: "conversation_board",
+
+      subtype: "",
+
+      build: "yes",
+
+      activityCtrls: "no",
+
+      layout: 1,
+
+      visited: 0,
+
+      score: 0,
+    },
 
 
       // {

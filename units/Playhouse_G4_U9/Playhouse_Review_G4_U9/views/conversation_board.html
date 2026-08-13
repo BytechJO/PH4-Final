@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Playhouse</title>
+
+    <!-- =========================================
+         CSS
+    ========================================== -->
+
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" />
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css" />
+
+    <style id="ui_style"></style>
+
+    <link rel="stylesheet" href="../css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/draw.css" />
+
+    <link rel="stylesheet" href="../css/audio.css" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <link rel="stylesheet" href="../css/unit_styles.css" />
+
+    <link rel="stylesheet" href="../css/activities.css" />
+
+    <!-- Activity CSS -->
+
+    <link rel="stylesheet" href="../css/conversation_board.css" />
+
+    <!-- =========================================
+         LIBRARIES
+    ========================================== -->
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+
+    <script src="../js/jquery-ui.min.js"></script>
+
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/jquery.ui.touch-punch.min.js"></script>
+
+    <!-- =========================================
+         DATA
+    ========================================== -->
+
+    <script src="../js/data/templateData.js"></script>
+
+    <script src="../js/data/activityList.js"></script>
+
+    <script src="../js/data/conversation_board_data.js"></script>
+
+    <script src="../js/build/jsonRender.js"></script>
+  </head>
+
+  <body>
+    <!-- =========================================
+         MASK
+    ========================================== -->
+
+    <div class="mask_parent">
+      <div class="mask_left"></div>
+
+      <div class="mask_right"></div>
+    </div>
+
+    <!-- =========================================
+         LOADING
+    ========================================== -->
+
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="fixed-top"></header>
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <div class="mainContent" data-pageType="reading">
+      <div class="container content_wrap activity_wrap">
+        <div class="screen_numbers_wrap"></div>
+
+        <div class="activity_buts d-none" data-buttons=""></div>
+
+        <div class="activity_area conversation_board_activity mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- =========================================
+         SUB FOOTER
+    ========================================== -->
+
+    <div class="sub_footer">
+      <div class="container sub_footer_buttons_wrap"></div>
+    </div>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="fixed-bottom"></footer>
+
+    <!-- =========================================
+         MEDIA
+    ========================================== -->
+
+    <script>
+      var _mediaList = {
+        image: [],
+
+        audio: [],
+
+        video: [],
+      };
+    </script>
+
+    <!-- =========================================
+         BUILD
+    ========================================== -->
+
+    <script src="../js/build/toolbar.js"></script>
+
+    <script src="../js/build/template.js"></script>
+
+    <script src="../js/build/audio.js"></script>
+
+    <script src="../js/build/conversation_board.js"></script>
+
+    <!-- =========================================
+         GENERAL
+    ========================================== -->
+
+    <script src="../js/generalfunctions.js"></script>
+
+    <!-- =========================================
+         ACTIVITY
+    ========================================== -->
+
+    <script src="../js/activity/conversation_board.js"></script>
+
+    <script src="../js/activities.js"></script>
+
+    <script src="../js/loading.js"></script>
+  </body>
+</html>

@@ -5,7 +5,7 @@ var stereo_data = {
     "type":"text",
     "playListData" : [
         {
-          'audiourl': '../audios/page_45/2.mp3',
+          'audiourl': '../audios/page_45/1.mp3',
         },
         {
           'url': '',

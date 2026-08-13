@@ -22,15 +22,15 @@ var stereo_data = {
 var fillin_data = {
     "layout"               : 1,
     "numinrow"              : [[1], [1], [1], [1], [1]],
-    "mainTitle"             : "../images/pages/sb-icons/grammer_main_title.png",
-    "mainTitleIcon"         : "",
-    "mainTitleIconPos"      : {"right": "-18px"},
+    "mainTitle"             : "../images/pages/sb-icons/spilling.jpg",
+    "mainTitleIcon"         : "../images/pages/sb-icons/readwrite_main_title_icon.png",
+    "mainTitleIconPos"      : {"right": "-30px"},
     "mainTitleAudio"        : "../audios/page_47/PHONICS_AND_SPELLING.mp3",
     "subTitleTextLeft"      : '<span class="blue_text">1</span> Catch it! Try to catch all the misspelt words. When you find a word that is not spelt correctly, write the correct word on the line. Remember, a CVC word will double the consonant when a word ending (suffix) that starts with a vowel is added.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/page_47/1_Catch_it!_Try_to_catch_all_the_misspelt_words_When_you_find_a_word_that_is_not_spelt_correctly.mp3",
-    "image"                 : "",
+    "image"                 : "../images/pages/activities/4-img-1.png",
     "imageposition"         : "back",// "front" (or) "back"
     "defaultAnswer"         : 1,
     "numbering"             : "none", // "alphabet" (or) "number"
