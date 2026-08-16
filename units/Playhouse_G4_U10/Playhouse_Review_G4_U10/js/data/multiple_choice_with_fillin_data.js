@@ -12,7 +12,7 @@ var mcq_data = {
     "shape"                 : "roundrect", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) checkbox
     "bgcolor"               : "none",
     "showicon"              : "true",
-	"image"                 : "",
+	"image"                 : "../images/pages/activities/uu105.png",
 	"numbering"             : "number", // "alphabet" (or) "number"
     "numberstartfrom"       :  1,
     "questions"             :

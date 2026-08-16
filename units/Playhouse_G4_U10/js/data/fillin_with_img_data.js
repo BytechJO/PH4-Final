@@ -26,7 +26,7 @@ var fillin_data = {
     "mainTitleIconPos"      : {"right": "80px"},
     "mainTitleAudio"        : "../audios/page_89/CONVERSATION.mp3",
     "subTitleTextLeft"      : "<span class='title-order'>3</span> Listen to it!",
-    "subTitleTextRight"     : "Listen and write ‘<span class='red_text'>good</span>’, ‘<span class='red_text'>not good</span>’ or ‘<span class='red_text'>very good</span>’ under each picture.",
+    "subTitleTextRight"     : "Listen and write ‘<span class='red'>good</span>’, ‘<span class='red'>not good</span>’ or ‘<span class='red'>very good</span>’ under each picture.",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/page_89/3_Listen_to_it.mp3",
     "defaultAnswer"         : -1,
@@ -38,7 +38,7 @@ var fillin_data = {
             "audio": "../audios/page_89/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/2-img-1.png",
-            "answer": ["lamp"],
+            "answer": ["very good"],
             "strictcase": "no", // yes (or) no              
             "type": "text", // text (or) number
         },
@@ -48,7 +48,7 @@ var fillin_data = {
             "audio": "../audios/page_89/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/2-img-2.png",
-            "answer": ["table"],
+            "answer": ["good"],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },
@@ -58,7 +58,7 @@ var fillin_data = {
             "audio": "../audios/page_89/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/2-img-3.png",
-            "answer": ["bed"],
+            "answer": ["not good"],
             "strictcase": "no", // yes (or) no
             "type": "text", // text (or) number
         },

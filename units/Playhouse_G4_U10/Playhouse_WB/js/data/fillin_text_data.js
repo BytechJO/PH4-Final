@@ -22,7 +22,7 @@ var stereo_data = {
 var fillin_data = {
     "layout"               : 1,
     "numinrow"              : [[1], [1], [1], [1], [1]],
-    "mainTitle"             : "../images/pages/sb-icons/gramprac_main_title.png",
+    "mainTitle"             : "../images/pages/sb-icons/CONVERSATION.jpg",
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_50/CONVERSATION.mp3",

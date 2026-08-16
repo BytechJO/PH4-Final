@@ -39,7 +39,6 @@
   height: 450px;
 }
 
-
 .fill_box {
   min-height: 42px;
   margin-top: 6px;
@@ -82,9 +81,9 @@
 }
 
 .pick_set {
-      display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .que {
@@ -123,8 +122,8 @@
 }
 
 .pick {
-  width: 200px;
-  height: 180px;
+  width: 250px;
+  height: 150px;
   margin: 2px 12px;
   text-align: center;
   min-width: 150px;
@@ -142,7 +141,7 @@
   padding-right: 8px;
 }
 
-.right_title{
+.right_title {
   color: #fff;
   margin-left: 29px;
 }
@@ -152,7 +151,6 @@
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1800px) */
 @media (max-width: 1799.98px) {
-
   /* .img_space {
     width: 160px;
 } 
@@ -171,14 +169,12 @@
   .group_elm {
     flex-direction: row;
   }
-
 }
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1199.98px */
 /* ------------------------------------------------*/
 @media (max-width: 1199.98px) {
-
   /* 
     .img_space{
       width: 150px;  
@@ -190,7 +186,6 @@
   .fill_box {
     width: 440px;
   }
-
 }
 
 /* ------------------------------------------------ */
@@ -198,7 +193,6 @@
 /* ------------------------------------------------*/
 /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
 @media (max-width: 991.98px) {
-
   /*  .img_space{
       width: 310px;  
     }
@@ -209,15 +203,12 @@
   .fill_box {
     width: 340px;
   }
-
-
 }
 
 /* ------------------------------------------------ */
 /* M Q max-width: 779.98px */
 /* ------------------------------------------------*/
 @media (max-width: 779.98px) {
-
   .content_space,
   .ques_part_space {
     width: 100%;
@@ -234,14 +225,12 @@
   .group_elm {
     flex-direction: column;
   }
-
 }
 
 /* ------------------------------------------------ */
 /* M Q max-width: 575.98px */
 /* ------------------------------------------------*/
 @media (max-width: 575.98px) {
-
   /* .img_space {
     width: 75%; 
   } */
@@ -257,7 +246,10 @@
   /* .img_space {
       width: 60%; 
     } */
-
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+}
+.subTitleTextRight {
+  display: block !important;
+}

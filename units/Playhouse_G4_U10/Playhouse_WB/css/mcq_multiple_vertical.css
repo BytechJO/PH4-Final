@@ -1,6 +1,6 @@
 .all_cont{
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .group_elm{
@@ -65,7 +65,7 @@
 
 .image_container img{
     position: absolute;
-    top: 71px;
+    top: 36px;
     left: -27px;
     height: 270px;
 }
@@ -84,7 +84,7 @@
 .pick{
     /* width: 335px;
     height: 50px; */
-    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid transparent;
     border-radius: 0px !important;
     margin: auto 0px;
 }

@@ -1,0 +1,167 @@
+/* =========================================================
+   SPORTS WORDS PAGE
+========================================================= */
+
+.sports_words_page {
+  width: 80%;
+
+  margin: 10px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 70px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   SPORT BLOCK
+========================================================= */
+
+.sport_block {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.sport_title {
+  width: 100%;
+
+  margin-bottom: 15px;
+
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+
+  color: #111;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.sport_content {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 42% 58%;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   WORDS
+========================================================= */
+
+.sport_words {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  gap: 28px;
+
+  box-sizing: border-box;
+}
+
+.sport_word {
+  width: fit-content;
+
+  font-size: 23px;
+  line-height: 1.2;
+
+  color: #111;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.sport_image_box {
+  width: 100%;
+  height: 190px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #00aeef;
+  border-radius: 22px;
+
+  background: #e5e5e5;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.sport_image {
+  width: 92%;
+  height: 92%;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .sports_words_page {
+    width: 95%;
+
+    column-gap: 40px;
+  }
+
+  .sport_title {
+    font-size: 24px;
+  }
+
+  .sport_word {
+    font-size: 19px;
+  }
+
+  .sport_image_box {
+    height: 170px;
+  }
+
+  .sport_words {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sports_words_page {
+    grid-template-columns: 1fr;
+
+    row-gap: 35px;
+  }
+
+  .sport_content {
+    grid-template-columns: 40% 60%;
+  }
+
+  .sport_image_box {
+    height: 160px;
+  }
+}

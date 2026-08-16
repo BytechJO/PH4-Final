@@ -1,9 +1,10 @@
 .all_cont{
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 .screen_elements{
     width: 85%;

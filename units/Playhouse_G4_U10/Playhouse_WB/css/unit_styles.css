@@ -31,15 +31,15 @@
     font-size: 26px;
 }
 
-.blue_text{
-    color: rgb(0, 185, 242);
-    font-weight: bolder;
+.blue_text {
+    color: #00aeef;
 }
-
-.black_text{
+.dark_text{
     color: #000;
 }
-
+.bold_text{
+    font-weight: bold;
+}
 /* //  ActivitiesCSS - Version no: R-02
 /* // updated - July 10, 2020 
 /* //  ****************************************** // */

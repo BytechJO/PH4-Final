@@ -26,7 +26,7 @@ var mcq_data = {
     "mainTitleIconPos"      : {"right": "80px"},
     "mainTitleAudio"        : "../audios/page_92/READING.mp3",
     "subTitleTextLeft"      : '<span class="title-order">2</span> Answer it!',
-    "subTitleTextRight"     : "Write <span class='red_text'>‘true’, ‘false’</span> or <span class='red_text'>‘I can’t tell’</span>.",
+    "subTitleTextRight"     : "Write <span class='red'>‘true’, ‘false’</span> or <span class='red'>‘I can’t tell’</span>.",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/under.mp3",
     "activityheading"       : "",
@@ -72,7 +72,7 @@ var mcq_data = {
         {
             "question"              : "<b>4</b> &nbsp; Four people in Sarah’s class really like eating out in their free time.",
             "options"               :  ["True","False","I can’t tell"],
-            "answer"                : [2],
+            "answer"                : [3],
             "audio"                 : "../audios/under.mp3",
             "audioenable"           : "default", // correct (or) default
             

@@ -1,0 +1,306 @@
+/* =========================================================
+   SURVEY FILLIN PAGE
+========================================================= */
+
+.survey_fillin_page {
+  width: 80%;
+
+  margin: 20px auto 0;
+
+  display: flex;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.survey_fillin_table {
+  width: 95%;
+
+  overflow: hidden;
+
+  background: #bfe3c0;
+
+  border: 2px solid #81aaad;
+  border-radius: 15px;
+
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.25);
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.survey_fillin_header {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 57%)
+    minmax(0, 14.33%)
+    minmax(0, 14.33%)
+    minmax(0, 14.34%);
+
+  min-height: 48px;
+}
+
+.survey_header_cell {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 4px 8px;
+
+  color: #18af4d;
+
+  font-size: 21px;
+  font-weight: 500;
+
+  text-align: center;
+
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+
+  box-sizing: border-box;
+}
+
+.survey_header_cell:last-child {
+  border-right: none;
+}
+
+/* =========================================================
+   ROW
+========================================================= */
+
+.survey_fillin_row {
+  width: 100%;
+  min-height: 61px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 57%)
+    minmax(0, 14.33%)
+    minmax(0, 14.33%)
+    minmax(0, 14.34%);
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   QUESTION CELL
+========================================================= */
+
+.survey_question_cell {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  position: relative;
+
+  background: #bfe3c0;
+
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.survey_row_number {
+  width: 40px;
+
+  flex-shrink: 0;
+
+  padding-left: 8px;
+
+  color: #222;
+
+  font-size: 21px;
+  font-weight: 500;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   ANSWER CELL
+========================================================= */
+
+.survey_answer_cell {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #fff;
+
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+
+  box-sizing: border-box;
+}
+
+.survey_answer_cell:last-child {
+  border-right: none;
+}
+
+/* =========================================================
+   LAST ROW
+========================================================= */
+
+.survey_fillin_row:last-child .survey_question_cell,
+.survey_fillin_row:last-child .survey_answer_cell {
+  border-bottom: none;
+}
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.survey_fillin_table .survey_input {
+  width: 100%;
+  height: 100%;
+
+  min-height: 58px;
+
+  padding: 5px 8px;
+
+  margin: 0;
+
+  background: transparent;
+
+  border: none !important;
+  border-radius: 0;
+
+  outline: none;
+
+  color: #222 !important;
+
+  font-size: 19px;
+
+  box-sizing: border-box;
+}
+
+/* question input */
+
+.survey_question_input {
+  flex: 1;
+}
+
+/* answer input */
+
+.survey_answer_input {
+  text-align: center;
+}
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.survey_fillin_table .survey_input:focus {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* =========================================================
+   REMOVE DEFAULT FILLIN STYLES
+========================================================= */
+
+.survey_fillin_page .que {
+  height: auto;
+
+  border: none !important;
+
+  box-shadow: none !important;
+}
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.page_sub_title .subTitleTextRight {
+  display: block !important;
+
+  width: 100%;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .survey_fillin_page {
+    width: 98%;
+  }
+
+  .survey_header_cell {
+    font-size: 18px;
+  }
+
+  .survey_row_number {
+    font-size: 18px;
+  }
+
+  .survey_fillin_table .survey_input {
+    min-height: 52px;
+
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .survey_fillin_header,
+  .survey_fillin_row {
+    grid-template-columns:
+      minmax(0, 52%)
+      minmax(0, 16%)
+      minmax(0, 16%)
+      minmax(0, 16%);
+  }
+
+  .survey_header_cell {
+    padding: 3px;
+
+    font-size: 15px;
+  }
+
+  .survey_row_number {
+    width: 28px;
+
+    padding-left: 5px;
+
+    font-size: 15px;
+  }
+
+  .survey_fillin_table .survey_input {
+    min-height: 45px;
+
+    padding: 3px;
+
+    font-size: 14px;
+  }
+}
+.checkBtn {
+  display: none !important;
+}

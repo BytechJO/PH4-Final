@@ -1,0 +1,331 @@
+/* =========================================================
+   SURVEY READING
+========================================================= */
+
+.survey_reading_page {
+  width: 92%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.survey_table {
+  width: 95%;
+
+  background: #c3e3c4;
+
+  border: 2px solid #80a9aa;
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.25);
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   PEOPLE ROW
+========================================================= */
+
+.survey_people_row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 57% 43%;
+
+  min-height: 95px;
+
+  border-bottom: 1px solid #555;
+}
+
+.survey_people_empty {
+  width: 100%;
+}
+
+.survey_people_list {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-around;
+
+  padding: 3px 5px 0;
+
+  box-sizing: border-box;
+}
+
+.survey_person {
+  flex: 1;
+
+  height: 90px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.survey_person img {
+  max-width: 100%;
+  height: 85px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* =========================================================
+   QUESTIONS
+========================================================= */
+
+.survey_questions {
+  width: 100%;
+}
+
+.survey_question_row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 57% 43%;
+
+  border-bottom: 1px solid #555;
+
+  min-height: 52px;
+}
+
+.survey_question_row:last-child {
+  border-bottom: none;
+}
+
+/* =========================================================
+   QUESTION TEXT
+========================================================= */
+
+.survey_question_text {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 5px 10px;
+
+  font-size: 21px;
+
+  color: #333;
+
+  border-right: 1px solid #555;
+
+  box-sizing: border-box;
+}
+
+.survey_question_number {
+  margin-right: 12px;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   ANSWER CELLS
+========================================================= */
+
+.survey_answer_cells {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.survey_answer_cell {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px;
+
+  background: #fff;
+
+  color: #333;
+
+  font-size: 19px;
+
+  text-align: center;
+
+  border-right: 1px solid #555;
+
+  box-sizing: border-box;
+}
+
+.survey_answer_cell:last-child {
+  border-right: none;
+}
+
+/* =========================================================
+   WRITING PAPER
+========================================================= */
+
+.survey_writing {
+  width: 95%;
+  height: 145px;
+
+  position: relative;
+
+  margin-top: 35px;
+
+  box-sizing: border-box;
+}
+
+.survey_writing_background {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  left: 0;
+  top: -23px;
+
+  object-fit: fill;
+
+  z-index: 1;
+}
+
+/* =========================================================
+   WRITING TEXT
+========================================================= */
+
+.survey_writing_text {
+  width: 88%;
+  position: absolute;
+  left: 7%;
+  top: 52px;
+  z-index: 2;
+  color: #333;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.survey_writing_line {
+  width: 100%;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .survey_reading_page {
+    width: 96%;
+  }
+
+  .survey_question_text {
+    font-size: 18px;
+  }
+
+  .survey_answer_cell {
+    font-size: 17px;
+  }
+
+  .survey_person {
+    height: 80px;
+  }
+
+  .survey_person img {
+    height: 76px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .survey_people_row,
+  .survey_question_row {
+    grid-template-columns: 52% 48%;
+  }
+
+  .survey_question_text {
+    font-size: 15px;
+  }
+
+  .survey_answer_cell {
+    font-size: 14px;
+
+    padding: 3px;
+  }
+
+  .survey_person img {
+    height: 65px;
+  }
+
+  .survey_writing_text {
+    font-size: 15px;
+
+    line-height: 38px;
+  }
+}
+/* =========================================================
+   PEOPLE ROW
+========================================================= */
+
+.survey_people_row {
+  width: 100%;
+  min-height: 95px;
+
+  display: block;
+
+  border-bottom: 1px solid #555;
+}
+
+/* ما عاد بدنا المساحة الفاضية */
+.survey_people_empty {
+  display: none;
+}
+
+/* الصور موزعة على عرض الصف كامل */
+.survey_people_list {
+  width: 100%;
+  height: 95px;
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+
+  align-items: end;
+
+  padding: 3px 12px 0;
+
+  box-sizing: border-box;
+}
+
+.survey_person {
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.survey_person img {
+  max-width: 85%;
+  height: 85px;
+
+  object-fit: contain;
+
+  display: block;
+}

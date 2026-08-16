@@ -212,3 +212,100 @@
         width: 200px;
     } */
 }
+/* =========================================================
+   ADVERBS OF DEGREE SCALE
+========================================================= */
+
+.degree_scale {
+  width: 80%;
+  height: 105px;
+
+  position: relative;
+
+  margin: 10px auto 20px;
+
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+
+/* horizontal line */
+.degree_scale_line {
+  width: 100%;
+  height: 2px;
+
+  background: #222;
+
+  position: absolute;
+  top: 48px;
+  left: 0;
+}
+
+
+/* vertical marks */
+.degree_tick {
+  width: 2px;
+  height: 38px;
+
+  background: #222;
+
+  position: absolute;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+/* yellow ends */
+.degree_end {
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  top: 50%;
+
+  background: #ffcc00;
+  border-radius: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+}
+
+.degree_end_left {
+  left: -12px;
+}
+
+.degree_end_right {
+  right: -12px;
+}
+
+
+/* words */
+.degree_word {
+  position: absolute;
+
+  color: #32975d;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transform: translateX(-50%);
+}
+
+.degree_word_top {
+  top: 0;
+}
+
+.degree_word_bottom {
+  top: 69px;
+}
+
+
+/* fillin page */
+.fillin_degree_scale {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

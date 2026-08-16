@@ -41,7 +41,7 @@ var reading_data = {
         "group_styles": "",
         "audio": ["../audios/page_52/Pg6_2.1_Stella.mp3","../audios/page_52/dough.mp3","../audios/page_52/sauce.mp3","../audios/page_52/sprinkle.mp3","../audios/page_52/cheese.mp3","../audios/page_52/add.mp3","../audios/page_52/pepperoni.mp3","../audios/page_52/slice.mp3"],
         "word": [
-            "<span class='blue_text'>For words that end in <span class='black_text'>a silent ‘e’</span>, the <span class='black_text'>silent ‘e’ </span> is usually dropped when suffixes that start with a vowel are added. The ending ‘<span class='black_text'>–y</span>’ is considered a vowel.</span>",
+            "<span class='blue_text'>For words that end in <span class='dark_text'>a silent ‘e’</span>, the <span class='dark_text'>silent ‘e’ </span> is usually dropped when suffixes that start with a vowel are added. The ending ‘<span class='dark_text'>–y</span>’ is considered a vowel.</span>",
 
 
             ],
