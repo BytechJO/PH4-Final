@@ -1,0 +1,192 @@
+.conversation_writing_page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0 20px;
+  box-sizing: border-box;
+}
+
+.page_sub_title {
+  width: 100%;
+}
+
+.page_sub_title p {
+  display: inline;
+}
+
+.circle_word {
+  display: inline-block;
+
+  padding: 0 4px;
+
+  border: 2px solid #00aeef;
+
+  border-radius: 50%;
+
+  line-height: 1.1;
+}
+
+/* =========================================================
+   ROW
+========================================================= */
+
+.conversation_row {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  margin-bottom: 14px;
+}
+
+.speaker_label {
+  width: 65px;
+  min-width: 65px;
+
+  padding-top: 2px;
+
+  color: #111;
+
+  font-size: 20px;
+
+  text-align: left;
+}
+
+.conversation_lines {
+  flex: 1;
+}
+
+/* =========================================================
+   INPUT LINE
+========================================================= */
+
+.writing_line_wrap {
+  width: 100%;
+
+  margin-bottom: 9px;
+}
+
+.conversation_input {
+  width: 100%;
+
+  height: 28px;
+
+  padding: 0 5px;
+
+  border: none;
+
+  border-bottom: 1px solid #888;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #111;
+
+  font-family: inherit;
+
+  font-size: 20px;
+
+  box-sizing: border-box;
+}
+
+.conversation_input:focus {
+  border-bottom-color: #00aeef;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+  .conversation_writing_page {
+    width: 95%;
+  }
+
+  .speaker_label {
+    width: 60px;
+    min-width: 60px;
+
+    font-size: 18px;
+  }
+
+  .conversation_input {
+    font-size: 18px;
+  }
+}
+.conversation_toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.conversation_circle_btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 5px 12px;
+
+  border: 1px solid #aaa;
+  border-radius: 6px;
+
+  background: #fff;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.circle_tool_icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 28px;
+  height: 24px;
+
+  border: 2px solid #00aeef;
+  border-radius: 50%;
+
+  color: #00aeef;
+}
+
+/* writing line */
+
+.conversation_editable {
+  width: 100%;
+  min-height: 29px;
+
+  padding: 1px 5px;
+
+  border: none;
+  border-bottom: 1px solid #888;
+
+  outline: none;
+
+  color: #111;
+
+  font-size: 20px;
+  line-height: 28px;
+
+  box-sizing: border-box;
+}
+
+/* actual circle around selected word */
+
+.conversation_circled_word {
+  display: inline-block;
+
+  padding: 0 4px;
+  margin: 0 -2px;
+
+  border: 2px solid #00aeef;
+  border-radius: 50%;
+
+  line-height: 1.15;
+
+  cursor: pointer;
+}
+.checkBtn {
+  display: none !important;
+}

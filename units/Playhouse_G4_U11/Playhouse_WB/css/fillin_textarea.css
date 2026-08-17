@@ -1,94 +1,411 @@
-.amin-Activityheading {
-    width: fit-content;
+/* =========================================================
+   WRITING PAGE
+========================================================= */
+
+.options {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
-.page_sub_title b {
-    color: #000;
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.writing_page_content {
+  width: 82%;
+
+  margin: 0 auto;
+
+  padding-bottom: 30px;
+
+  color: #00aeef;
+
+  box-sizing: border-box;
 }
 
-.options{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    flex-direction: column;
+/* =========================================================
+   INTRO
+========================================================= */
+
+.writing_intro {
+  width: 95%;
+
+  margin: 10px 0 18px 20px;
+
+  color: #00aeef;
+
+  font-family: Arcon;
+  font-size: 24px;
+  font-weight: normal;
+
+  line-height: 1.3;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
 }
 
-.textFront{
-    width: 90%;
-    margin: auto;
+/* =========================================================
+   SECTION
+========================================================= */
+
+.writing_section {
+  width: 95%;
+
+  margin-left: 20px;
+  margin-bottom: 16px;
+
+  box-sizing: border-box;
 }
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.writing_section_heading {
+  width: 100%;
+
+  display: flex;
+
+  align-items: baseline;
+
+  flex-wrap: wrap;
+
+  gap: 5px;
+
+  color: #00aeef;
+
+  font-family: Arcon;
+  font-size: 28px;
+
+  line-height: 1.3;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.writing_section_number {
+  margin-right: 3px;
+
+  color: #00aeef;
+
+  font-family: Arcon;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.writing_section_title {
+  color: #00aeef;
+
+  font-family: Arcon;
+  font-size: 24px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   INSTRUCTION
+========================================================= */
+
+.writing_section_instruction {
+  color: #00aeef;
+
+  font-family: Arcon;
+  font-size: 28px;
+  font-weight: normal;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   SENTENCES
+========================================================= */
+
+.writing_sentences {
+  width: 100%;
+
+  margin-top: 6px;
+
+  box-sizing: border-box;
+}
+
+.writing_sentence {
+  width: 100%;
+
+  display: flex;
+
+  align-items: baseline;
+
+  color: #00aeef;
+
+  font-family: Arcon;
+  font-size: 28px;
+
+  line-height: 1.3;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+}
+
+.writing_bullet {
+  min-width: 18px;
+
+  color: #00aeef;
+
+  font-weight: bold;
+}
+
+.writing_sentence_text {
+  color: #00aeef;
+
+  font-family: Arcon;
+  font-size: 24px;
+}
+
+/* =========================================================
+   TEXTAREA CONTAINER
+========================================================= */
 
 .textarea-container {
-    background-image: url('../images/pages/activities/BOOKS.jpg');
-    background-size: cover;
-    padding: 20px;
-    width: 80%;
-    height: 378px;
-    border: solid 1px rgb(0, 185, 242);
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 20px;
+  width: 100%;
+
+  min-height: 340px;
+
+  margin-top: 15px;
+
+  position: relative;
+
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+
+  background-position: center;
+
+  box-sizing: border-box;
 }
 
-.text_input_area {
-    flex: 1;
-    border: none;
-    border-bottom: 1px solid black;
-}
+/* =========================================================
+   TEXTAREA
+========================================================= */
 
 #paper-textarea {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    padding: 0px 3px;
-    line-height: 48.7px;
-    font-size: 24.8px;
-    overflow: hidden;
+  width: 90%;
+  height: 85%;
+
+  position: absolute;
+
+  left: 5%;
+  top: 8%;
+
+  padding: 10px;
+
+  border: none;
+
+  outline: none;
+
+  resize: none;
+
+  background: transparent;
+
+  color: #222;
+
+  font-family: Arcon;
+  font-size: 20px;
+
+  line-height: 1.6;
+
+  box-sizing: border-box;
 }
 
-textarea {
-    border: none;
-    outline: none;
-    resize: none;
-    background: transparent;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
+/* =========================================================
+   TEXTAREA FOCUS
+========================================================= */
+
+#paper-textarea:focus {
+  outline: none;
+
+  border: none;
+
+  box-shadow: none;
 }
 
-.drag_drop_options {
-    display: inline-block;
-    padding: 14px;
-    margin: 0px auto;
-    margin-bottom: 20px;
-    width: 139px;
-    min-width: 139px;
-    height: 380px;
-    min-height: 380px;
-    text-align: center;
-    background-color: #e1f4fd;
-    border: solid 2px #00aeef;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+/* =========================================================
+   RESPONSIVE - 1200
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .writing_page_content {
+    width: 86%;
+  }
+
+  .writing_intro,
+  .writing_section {
+    width: 96%;
+  }
+
+  .writing_intro,
+  .writing_section_heading,
+  .writing_section_number,
+  .writing_section_title,
+  .writing_section_instruction {
+    font-size: 18px;
+  }
+
+  .writing_sentence,
+  .writing_sentence_text {
+    font-size: 17px;
+  }
 }
 
-.drag_drop_options .options_title_img {
-    border: 2px solid #00aeef;
-    width: 142px;
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: -30px;
-    background-color: #e1f4fd;
-    font-weight: bolder;
+/* =========================================================
+   RESPONSIVE - 992
+========================================================= */
 
+@media (max-width: 991.98px) {
+  .writing_page_content {
+    width: 90%;
+  }
+
+  .writing_intro {
+    margin-left: 10px;
+  }
+
+  .writing_section {
+    margin-left: 10px;
+  }
+
+  .writing_intro,
+  .writing_section_heading,
+  .writing_section_number,
+  .writing_section_title,
+  .writing_section_instruction {
+    font-size: 17px;
+  }
+
+  .writing_sentence,
+  .writing_sentence_text {
+    font-size: 16px;
+  }
+
+  #paper-textarea {
+    font-size: 18px;
+  }
 }
 
+/* =========================================================
+   RESPONSIVE - 768
+========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
+  .writing_page_content {
+    width: 94%;
+  }
 
-    #paper-textarea {
-        line-height: 54.7px;
-    }
+  .writing_intro {
+    margin-left: 0;
+  }
+
+  .writing_section {
+    margin-left: 0;
+  }
+
+  .writing_intro,
+  .writing_section_heading,
+  .writing_section_number,
+  .writing_section_title,
+  .writing_section_instruction {
+    font-size: 16px;
+  }
+
+  .writing_sentence,
+  .writing_sentence_text {
+    font-size: 15px;
+  }
+
+  .textarea-container {
+    min-height: 300px;
+  }
+
+  #paper-textarea {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - 576
+========================================================= */
+
+@media (max-width: 575.98px) {
+  .writing_page_content {
+    width: 96%;
+  }
+
+  .writing_intro,
+  .writing_section_heading,
+  .writing_section_number,
+  .writing_section_title,
+  .writing_section_instruction {
+    font-size: 15px;
+  }
+
+  .writing_sentence,
+  .writing_sentence_text {
+    font-size: 14px;
+  }
+
+  .textarea-container {
+    min-height: 280px;
+  }
+
+  #paper-textarea {
+    width: 92%;
+
+    left: 4%;
+
+    font-size: 16px;
+  }
+}
+.writing_sentence {
+  width: fit-content;
+
+  display: flex;
+  align-items: baseline;
+
+  padding: 2px 8px;
+
+  color: #00aeef;
+
+  font-family: Arcon;
+  font-size: 18px;
+  font-style: italic;
+
+  line-height: 1.3;
+
+  cursor: pointer;
+
+  border: 2px solid transparent;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+}
+
+/* الجملة المختارة */
+
+.writing_sentence_selected {
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+.func_ctrls {
+  display: none !important;
 }

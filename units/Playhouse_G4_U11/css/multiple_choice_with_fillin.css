@@ -50,10 +50,19 @@
 
 .group_elm {
   width: 85%;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   flex-wrap: wrap;
-  padding: 4px;
-  align-content: center;
+  padding: 20px 4px 4px;
+  align-content: flex-start;
+  align-items: flex-start !important;
+}
+
+.ques_part_space {
+  width: 100%;
+  min-height: fit-content;
+  justify-content: flex-start;
+  margin-top: 20px !important;
 }
 
 .ques_part_space {

@@ -1,201 +1,647 @@
-.all_cont{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.all_cont {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-.screen_elements{
-    width: 90%;
-    height: 100%;
+.screen_elements {
+  width: 90%;
+  height: 100%;
 }
 
-.group_elm{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.group_elm {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .activityHeading b {
-    color: #000;
+  color: #000;
 }
 
-.q_num_space{
-    width: 40px;
-    font-weight: bold;
+.q_num_space {
+  width: 40px;
+  font-weight: bold;
 }
 
 .image_space {
-    width: 75%;
-    height: 342px;
-    margin: 0px auto;
-}
-  
-.image_space img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  width: 75%;
+  height: 342px;
+  margin: 0px auto;
 }
 
-.q_order{
-    width: 50px;
-    font-weight: bolder;
+.image_space img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.q_order {
+  width: 50px;
+  font-weight: bolder;
 }
 
 .txt-audioIcon {
-    /* color: rgb(0, 185, 242); */
-    /* font-size: 27px; */
-    width: 500px;
-    text-align: left;
+  /* color: rgb(0, 185, 242); */
+  /* font-size: 27px; */
+  width: 500px;
+  text-align: left;
 }
 
-.ques{
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
+.ques {
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
 }
 
-.q_box{
-    width:  100%;
-    height: 70px;
+.q_box {
+  width: 100%;
+  height: 70px;
 }
 
 .fill_in .que {
-    width: 100%;
-    height: 85px;
+  width: 100%;
+  height: 85px;
 }
 
 .fillin_gr .q_space {
-    width: 100%;
+  width: 100%;
 }
 .fillin_set {
-    font-family: Arcon;
-    color: black;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  font-family: Arcon;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.fillin_set input:focus{
-    outline: none;
+.fillin_set input:focus {
+  outline: none;
 }
 
 .fillin_set input {
-    /* flex: 2 2 10px; */
-    width: 250px;
-    height: 35px;
-    color: black;
-    text-align: center;
-    /* padding-left: 20px; */
-    border: none;
-    margin: 0px 15px;
-    border-bottom: 2px solid #595a5a;
+  /* flex: 2 2 10px; */
+  width: 250px;
+  height: 35px;
+  color: black;
+  text-align: center;
+  /* padding-left: 20px; */
+  border: none;
+  margin: 0px 15px;
+  border-bottom: 2px solid #595a5a;
 }
 
-.fillin_set input:last-child{
-    width: 60px;
+.fillin_set input:last-child {
+  width: 60px;
 }
 
 .icon_wrap {
-    /* position: absolute;
+  /* position: absolute;
     margin-top: -35px; 
     right: 100px; */
 }
 
 .tick,
 .cross {
-    width: 35px;
+  width: 35px;
 }
 
 .tick img,
 .cross img {
-    width: 100%;
+  width: 100%;
 }
 
 .image_wrap {
-    display: none;
+  display: none;
 }
 
 .clue_word {
-    padding: 2px 27px;
-    font-size: 22px;
+  padding: 2px 27px;
+  font-size: 22px;
 }
 
 .word_options {
-    width: 100%;
-    border-radius: 10px;
-    background-color: #c3f4ff8c;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #c3f4ff8c;
 }
 
 .word_opt_sticky {
-    width: 100%;
-    margin: 0px auto;
-    position: -webkit-sticky;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 5;
-    border: 2px solid var(--temp);
-    border-radius: 10px;
+  width: 100%;
+  margin: 0px auto;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5;
+  border: 2px solid var(--temp);
+  border-radius: 10px;
 }
 
-.words-list li{
-    height: 110px;
-    font-weight: bolder;
-    color: black;
-    border: 1px solid black;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.words-list li {
+  height: 110px;
+  font-weight: bolder;
+  color: black;
+  border: 1px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.right-content .p-0{
-    height: 110px;
-    border: 1px solid black;
+.right-content .p-0 {
+  height: 110px;
+  border: 1px solid black;
 }
 
 .tips_content img {
-    height: 30px;
-    width: auto;
-    margin-top: 10px;
+  height: 30px;
+  width: auto;
+  margin-top: 10px;
 }
 
-.image-container{
-    position: absolute;
-    right: 260px;
-    bottom: 50px;
-    
+.image-container {
+  position: absolute;
+  right: 260px;
+  bottom: 50px;
 }
 
-.image-container img{
-    width: 300px;
-    height: 210px;
-    margin: 0px 70px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 2px solid #36a0c7;
+.image-container img {
+  width: 300px;
+  height: 210px;
+  margin: 0px 70px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #36a0c7;
 }
 
 /* ************************************************* */
 /* ************************************************* */
 @media (max-width: 991.98px) {
-    .fill_in .que {
-        width: 160px;
-    }
+  .fill_in .que {
+    width: 160px;
+  }
 }
 
 @media (max-width: 575.98px) {
-    .fill_in .que {
-        width: 200px;
-    }
+  .fill_in .que {
+    width: 200px;
+  }
 }
 
 @media (max-width: 475.98px) {
-    /* .fill_in .que {
+  /* .fill_in .que {
         width: 200px;
     } */
+}
+/* =========================================================
+   QUESTION 1 - READ IT AND SAY IT
+========================================================= */
+
+.read_it_section {
+  width: 94%;
+  margin: 0 auto 25px;
+}
+
+.black_letters {
+  color: #000;
+}
+/* =========================================================
+   TITLE
+========================================================= */
+
+.read_it_heading {
+  width: 100%;
+
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 20px;
+
+  color: #00aeef;
+
+  font-size: 28px;
+
+  box-sizing: border-box;
+}
+
+.read_it_title_left {
+  font-weight: bold;
+}
+
+.read_it_title_right {
+  font-weight: normal;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.ie_ei_table {
+  width: 100%;
+
+  border: 1.5px solid #333;
+
+  border-radius: 15px 15px 0 0;
+
+  overflow: hidden;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   3 COLUMNS
+========================================================= */
+
+.ie_ei_columns {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* =========================================================
+   COLUMN
+========================================================= */
+
+.ie_ei_column {
+  min-width: 0;
+  min-height: 385px;
+
+  border-right: 1.5px solid #333;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+.ie_ei_column:last-child {
+  border-right: none;
+}
+
+/* =========================================================
+   COLUMN HEADER
+========================================================= */
+
+.ie_ei_column_header {
+  width: 100%;
+  min-height: 110px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  border-bottom: 1.5px solid #777;
+
+  background: #dff4fd;
+
+  color: #00aeef;
+
+  font-size: 22px;
+
+  box-sizing: border-box;
+}
+
+.ie_ei_number {
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #00aeef;
+
+  border-radius: 50%;
+
+  color: #00aeef;
+
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #fff;
+  line-height: 1;
+}
+
+.ie_ei_column_title {
+  color: #00aeef;
+
+  font-size: 22px;
+  font-weight: normal;
+}
+
+/* =========================================================
+   WORDS AREA
+========================================================= */
+
+.ie_ei_words {
+  width: 100%;
+  min-height: 275px;
+
+  padding: 40px 20px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  align-content: start;
+
+  column-gap: 25px;
+  row-gap: 20px;
+
+  box-sizing: border-box;
+}
+
+/* column 2 + column 3 one word per row */
+.ie_ei_column:nth-child(2) .ie_ei_words,
+.ie_ei_column:nth-child(3) .ie_ei_words {
+  grid-template-columns: 1fr;
+}
+
+/* =========================================================
+   WORD
+========================================================= */
+
+.ie_ei_word {
+  min-width: 0;
+
+  color: #00aeef;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  text-align: center;
+
+  line-height: 1.2;
+}
+
+/* =========================================================
+   EXCEPTIONS ROW
+========================================================= */
+
+.ie_ei_exceptions {
+  width: 100%;
+  min-height: 55px;
+
+  display: flex;
+
+  align-items: stretch;
+
+  border-top: 1.5px solid #333;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   EXCEPTIONS TITLE
+========================================================= */
+
+.exceptions_title {
+  width: 33.3%;
+  min-width: 31.3%;
+
+  padding: 8px 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  border-right: 1.5px solid #333;
+
+  background: #dff4fd;
+
+  color: #00aeef;
+
+  font-size: 20px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   EXCEPTION WORDS
+========================================================= */
+
+.exceptions_words {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 8px 12px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+
+  gap: 8px 18px;
+
+  box-sizing: border-box;
+}
+
+.exception_word {
+  color: #00aeef;
+
+  font-size: 21px;
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+  .read_it_section {
+    width: 96%;
+  }
+
+  .read_it_heading {
+    font-size: 20px;
+  }
+
+  .ie_ei_column_header {
+    min-height: 95px;
+
+    padding: 15px;
+
+    font-size: 19px;
+  }
+
+  .ie_ei_column_title {
+    font-size: 19px;
+  }
+
+  .ie_ei_number {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+
+    font-size: 18px;
+  }
+
+  .ie_ei_words {
+    padding: 30px 15px;
+
+    column-gap: 15px;
+    row-gap: 16px;
+  }
+
+  .ie_ei_word {
+    font-size: 18px;
+  }
+
+  .exceptions_title {
+    font-size: 18px;
+  }
+
+  .exception_word {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 800px) {
+  .read_it_heading {
+    font-size: 18px;
+  }
+
+  .ie_ei_column_header {
+    padding: 12px 8px;
+
+    gap: 7px;
+  }
+
+  .ie_ei_column_title {
+    font-size: 16px;
+  }
+
+  .ie_ei_number {
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+
+    font-size: 16px;
+  }
+
+  .ie_ei_words {
+    padding: 22px 8px;
+
+    grid-template-columns: 1fr;
+
+    row-gap: 13px;
+  }
+
+  .ie_ei_word {
+    font-size: 16px;
+  }
+
+  .exceptions_title {
+    padding: 7px;
+
+    gap: 7px;
+
+    font-size: 16px;
+  }
+
+  .exceptions_words {
+    gap: 5px 10px;
+  }
+
+  .exception_word {
+    font-size: 15px;
+  }
+} /* =========================================================
+   READ IT TITLE
+   نفس شكل activityHeading لكن بكلاسات مستقلة
+========================================================= */
+
+.read_it_activityHeading {
+  font-family: Arcon;
+  font-weight: bold;
+  color: rgb(0, 185, 242);
+  font-size: 26px;
+  width: 81%;
+  margin: 0 auto;
+}
+
+.read_it_audioQuestionTitle {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  max-width: 90%;
+}
+
+.read_it_page_sub_title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.read_it_page_sub_title p {
+  margin: 0;
+}
+
+.read_it_subTitleTextRight {
+  font-weight: bold;
+  color: rgb(0, 185, 242);
+  font-family: Arcon;
+  font-size: 26px;
+}
+
+/* نفس responsive تبع العنوان العام */
+
+@media (max-width: 575.98px) {
+  .read_it_activityHeading,
+  .read_it_subTitleTextRight {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .read_it_activityHeading,
+  .read_it_subTitleTextRight {
+    font-size: 24px;
+  }
+}
+/* =========================================================
+   FIX NEXT / BACK FOR THIS PAGE ONLY
+========================================================= */
+
+.sub_footer_icon_left,
+.sub_footer_icon_right {
+  position: fixed !important;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 9999;
+}
+
+.sub_footer_icon_left {
+  left: 15px;
+}
+
+.sub_footer_icon_right {
+  right: 15px;
 }

@@ -1,0 +1,764 @@
+/* =========================================================
+   CIRCLE / UNDERLINE / REWRITE ACTIVITY
+========================================================= */
+
+.circle_underline_activity {
+    width: 100%;
+    font-family: Arcon, Arial, sans-serif;
+}
+
+
+/* =========================================================
+   ACTIVITY HEADER
+========================================================= */
+
+.cur_act_head {
+    width: 94%;
+    margin: 0 auto 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+}
+
+
+.cur_title_row {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+.cur_title_number {
+    width: 28px;
+    height: 28px;
+
+    min-width: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #19ad50;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    line-height: 1;
+}
+
+
+.cur_title_text {
+    color: #222;
+
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+
+    line-height: 1.2;
+}
+
+
+.cur_instruction {
+    width: 94%;
+
+    margin-top: 5px;
+    margin-left: 30px;
+
+    color: #17a94d;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    line-height: 1.3;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   OPTIONS / MAIN AREA
+========================================================= */
+
+.circle_underline_activity .options {
+    width: 80%;
+
+    margin: 0 auto;
+
+}
+
+
+.circle_underline_activity .all_cont {
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+.cur_screen_elements {
+    width: 96%;
+
+    margin: 0 auto;
+
+    padding: 0 10px 25px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.cur_toolbar {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 3px 0 10px;
+}
+
+
+.cur_tool_btn {
+    min-width: 118px;
+    height: 40px;
+
+    padding: 4px 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 9px;
+
+    border: 2px solid #a9a9a9;
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: #333;
+
+    font-family: Arcon, Arial, sans-serif;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+
+.cur_tool_btn:hover {
+    transform: translateY(-1px);
+}
+
+
+.cur_tool_btn.active {
+    border-color: #19a94d;
+    background-color: #ebfff1;
+}
+
+
+/* =========================================================
+   CIRCLE TOOL ICON
+========================================================= */
+
+.circle_tool_icon {
+    min-width: 31px;
+    height: 27px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 5px;
+
+    border: 2px solid #e52f39;
+    border-radius: 50%;
+
+    color: #333;
+
+    font-size: 13px;
+
+    line-height: 1;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   UNDERLINE TOOL ICON
+========================================================= */
+
+.underline_tool_icon {
+    min-width: 31px;
+
+    display: inline-block;
+
+    color: #333;
+
+    font-size: 14px;
+
+    line-height: 1.3;
+
+    text-align: center;
+
+    text-decoration-line: underline;
+    text-decoration-color: #e52f39;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+
+/* =========================================================
+   QUESTIONS WRAPPER
+========================================================= */
+
+.cur_questions {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.cur_question {
+    position: relative;
+
+    width: 100%;
+
+    padding: 2px 0 8px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ORIGINAL SENTENCE ROW
+========================================================= */
+
+.cur_sentence_row {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+
+    color: #333;
+
+    font-size: 21px;
+
+    line-height: 1.8;
+
+    box-sizing: border-box;
+}
+
+
+.cur_q_number {
+    width: 35px;
+    min-width: 35px;
+
+    padding-top: 1px;
+
+    color: #222;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.cur_sentence {
+    flex: 1;
+
+    min-width: 0;
+
+    text-align: left;
+
+    white-space: normal;
+
+    word-break: normal;
+
+    overflow-wrap: normal;
+}
+
+
+/* =========================================================
+   EACH CLICKABLE WORD
+========================================================= */
+
+.word_token {
+    position: relative;
+
+    display: inline-block;
+
+    padding: 1px 2px;
+
+    color: #333;
+
+    cursor: pointer;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    vertical-align: baseline;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.1s ease,
+        background-color 0.1s ease;
+}
+
+
+/* optional hover */
+
+.word_token:hover {
+    background-color: rgba(0, 0, 0, 0.035);
+}
+
+
+/* =========================================================
+   SELECTED CIRCLE
+========================================================= */
+
+.marked_circle {
+    padding: 0 5px;
+
+    margin-left: -3px;
+    margin-right: -3px;
+
+    border: 2px solid #ed3038;
+
+    border-radius: 50%;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   SELECTED UNDERLINE
+========================================================= */
+
+.marked_underline {
+    text-decoration-line: underline;
+
+    text-decoration-color: #ed3038;
+
+    text-decoration-thickness: 2px;
+
+    text-underline-offset: 4px;
+}
+
+
+/* =========================================================
+   REWRITE ROW
+========================================================= */
+
+.cur_rewrite_row {
+    position: relative;
+
+    width: calc(100% - 46px);
+
+    margin-left: 46px;
+
+    margin-top: 2px;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   REWRITE INPUT
+========================================================= */
+
+.cur_rewrite_input {
+    width: 100%;
+    height: 37px;
+
+    padding: 2px 42px 2px 3px;
+
+    border: none;
+    border-bottom: 1.7px solid #5c5c5c;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: black;
+
+    font-family: Arcon, Arial, sans-serif;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+
+    box-sizing: border-box;
+}
+
+
+.cur_rewrite_input:focus {
+    outline: none;
+
+    border-bottom-color: #222;
+}
+
+
+/* prevent browser auto colors */
+
+.cur_rewrite_input:-webkit-autofill,
+.cur_rewrite_input:-webkit-autofill:hover,
+.cur_rewrite_input:-webkit-autofill:focus {
+    -webkit-text-fill-color: black;
+
+    box-shadow: 0 0 0 1000px white inset;
+
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+/* =========================================================
+   VALIDATION ICON HOLDER
+========================================================= */
+
+.cur_question .icon_wrap_holder {
+    position: absolute;
+
+    right: 3px;
+    bottom: 3px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cur_question .icon_wrap {
+    width: 32px;
+    height: 32px;
+
+    display: none;
+}
+
+
+.cur_question .tick,
+.cur_question .cross {
+    width: 32px;
+    height: 32px;
+
+    display: none;
+}
+
+
+.cur_question .tick img,
+.cur_question .cross img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   COMMON PROJECT OVERRIDES
+========================================================= */
+
+.circle_underline_activity .func_ctrls {
+    display: none !important;
+}
+
+
+.circle_underline_activity .image_wrap {
+    display: none;
+}
+
+
+.circle_underline_activity button:focus {
+    outline: none;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.circle_underline_activity .options::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+.circle_underline_activity .options::-webkit-scrollbar-thumb {
+    background-color: #c8c8c8;
+
+    border-radius: 10px;
+}
+
+
+.circle_underline_activity .options::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .cur_act_head {
+        width: 96%;
+    }
+
+
+    .cur_title_text {
+        font-size: 21px;
+    }
+
+
+    .cur_instruction {
+        width: 92%;
+
+        font-size: 17px;
+
+        margin-left: 30px;
+    }
+
+
+    .cur_screen_elements {
+        width: 98%;
+    }
+
+
+    .cur_sentence_row {
+        font-size: 18px;
+    }
+
+
+    .cur_rewrite_input {
+        font-size: 18px;
+    }
+
+
+    .cur_tool_btn {
+        min-width: 105px;
+
+        height: 37px;
+
+        font-size: 15px;
+    }
+
+
+    .circle_tool_icon {
+        min-width: 28px;
+        height: 25px;
+    }
+}
+
+
+/* =========================================================
+   SMALL TABLET / LARGE MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .cur_toolbar {
+        justify-content: center;
+
+        margin-bottom: 10px;
+    }
+
+
+    .cur_title_text {
+        font-size: 19px;
+    }
+
+
+    .cur_instruction {
+        width: calc(100% - 35px);
+
+        font-size: 16px;
+
+        line-height: 1.25;
+    }
+
+
+    .cur_sentence_row {
+        font-size: 17px;
+
+        line-height: 1.9;
+    }
+
+
+    .cur_q_number {
+        width: 31px;
+        min-width: 31px;
+    }
+
+
+    .cur_rewrite_row {
+        width: calc(100% - 38px);
+
+        margin-left: 38px;
+    }
+
+
+    .cur_rewrite_input {
+        height: 35px;
+
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .cur_act_head {
+        width: 98%;
+    }
+
+
+    .cur_screen_elements {
+        width: 100%;
+
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+
+    .cur_title_number {
+        width: 25px;
+        height: 25px;
+
+        min-width: 25px;
+
+        font-size: 17px;
+    }
+
+
+    .cur_title_text {
+        font-size: 18px;
+    }
+
+
+    .cur_instruction {
+        margin-left: 27px;
+
+        font-size: 15px;
+    }
+
+
+    .cur_toolbar {
+        gap: 7px;
+    }
+
+
+    .cur_tool_btn {
+        min-width: 98px;
+
+        height: 35px;
+
+        padding-left: 8px;
+        padding-right: 8px;
+
+        font-size: 14px;
+    }
+
+
+    .cur_questions {
+        gap: 9px;
+    }
+
+
+    .cur_sentence_row {
+        font-size: 16px;
+    }
+
+
+    .cur_q_number {
+        width: 28px;
+        min-width: 28px;
+    }
+
+
+    .word_token {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+
+    .marked_circle {
+        padding-left: 4px;
+        padding-right: 4px;
+
+        margin-left: -3px;
+        margin-right: -3px;
+    }
+
+
+    .cur_rewrite_row {
+        width: calc(100% - 34px);
+
+        margin-left: 34px;
+    }
+
+
+    .cur_rewrite_input {
+        height: 34px;
+
+        padding-right: 36px;
+
+        font-size: 16px;
+    }
+
+
+    .cur_question .icon_wrap_holder,
+    .cur_question .icon_wrap,
+    .cur_question .tick,
+    .cur_question .cross {
+        width: 29px;
+        height: 29px;
+    }
+}

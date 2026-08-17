@@ -1,249 +1,846 @@
 body {
   -webkit-touch-callout: none;
-  /* iOS Safari */
   -webkit-user-select: none;
-  /* Chrome/Safari/Opera */
   -khtml-user-select: none;
-  /* Konqueror */
   -moz-user-select: none;
-  /* Firefox */
   -ms-user-select: none;
-  /* Internet Explorer/Edge */
+
   user-select: none;
-  /* Non-prefixed version, currently supported by any browser but < IE9 */
 }
 
-.mainTitleIcon {
-  top: 0px;
-  right: 100px;
+
+:root {
+  --temp: #6d6d6d;
 }
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.all_cont {
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.cont_ht_sf {
+  height: 62vh;
+}
+
 
 .options {
   position: relative;
+
+  width: 90%;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
 }
 
-:root {
-  --temp: #ed1b2a;
-  --light: #f6967d;
-  --soft: #f8e4dc;
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.que.options {
+  width: 100%;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 80px;
+
+  position: relative;
+
+  box-sizing: border-box;
 }
 
-.txtHolder {
-  /* me */
-  /* width: 420px; */
-  /* min-width: 80px; */
-  /* padding-left: 10px; */
+
+/* =========================================================
+   LINES CONTAINER
+========================================================= */
+
+.lines {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  pointer-events: none;
+
+  z-index: 2;
 }
 
-.drag .txtHolder {
-  width: 160px;
-  /* border: 2px solid var(--light); */
-  /* border-radius: 15px; */
-  /* background-color: var(--soft) !important; */
-  text-align: center;
-  /* padding: 0px 20px; */
-  /* margin-bottom: 5px; */
+
+.line_svg {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: visible;
+
+  pointer-events: none;
+
+  z-index: 2;
 }
 
-.drop .txtHolder {
-  padding: 8px;
+
+/* =========================================================
+   TOP - IMAGES
+========================================================= */
+
+.drop_wrap {
+  order: 1;
+
+  width: 100%;
+
+  height: auto;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  box-sizing: border-box;
 }
+
+
+.droppers {
+  width: 80%;
+
+  height: auto;
+
+  margin-left: 0 !important;
+
+  padding: 18px 25px 0;
+
+  display: flex !important;
+
+  flex-direction: row !important;
+
+  align-items: flex-end !important;
+
+  justify-content: space-between !important;
+
+  border: 2px solid #20a94b;
+
+  border-radius: 20px;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EACH DROP
+========================================================= */
+
+.drop {
+  width: 18%;
+
+  height: auto;
+
+  margin: 0 !important;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: center !important;
+
+  justify-content: flex-end !important;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
 
 .drop_grp {
-  width: 130px;
+  width: 100%;
+
+  height: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+
+  box-sizing: border-box;
 }
 
-/* .drag .imgHolder */
 
-/* .drop .txtHolder {
-  border: 2px solid var(--light);
-  border-radius: 15px;
-  background-color: var(--light) !important;
+/* =========================================================
+   DROP IMAGE
+========================================================= */
+
+.drop .imgHolder {
+  width: 100%;
+
+  height: 170px;
+
+  margin: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+.drop .img_space {
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+.drop .img_space img,
+.drop .imgHolder img {
+  max-width: 100%;
+
+  max-height: 100%;
+
+  width: auto;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  margin: auto;
+}
+
+
+/* =========================================================
+   DROP NODE
+   تحت الصورة
+========================================================= */
+
+.drop .dropPoint {
+  order: 2;
+
+  margin-top: 8px;
+
+  margin-bottom: -7px;
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   BOTTOM - WORDS
+========================================================= */
+
+.drag_wrap {
+  order: 2;
+
+  width: 100%;
+
+  height: auto;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  box-sizing: border-box;
+}
+
+
+.dragger {
+  width: 80%;
+
+  padding: 0 25px;
+
+  display: flex !important;
+
+  flex-direction: row !important;
+
+  align-items: flex-start !important;
+
+  justify-content: space-between !important;
+
+  border: 2px solid #20a94b;
+
+  border-radius: 14px;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EACH DRAG
+========================================================= */
+
+.drag {
+  width: 18%;
+
+  height: auto !important;
+
+  margin: 0 !important;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: center !important;
+
+  justify-content: flex-start !important;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   DRAG NODE
+   فوق الكلمة
+========================================================= */
+
+.drag .dragPoint {
+  order: 1;
+
+  margin-top: -7px;
+
+  margin-bottom: 2px;
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.txtHolder {
+  width: fit-content;
+
+  padding: 8px;
+
+  font-size: 30px;
+}
+
+
+.drag .txtHolder {
+  order: 2;
+
+  width: 100% !important;
+
+  padding: 5px 2px 8px;
+
+  color: #222;
+
+  font-size: 22px;
+
   text-align: center;
-  overflow: hidden;
-} */
+
+  box-sizing: border-box;
+}
+
+
+.drop .txtHolder {
+  width: 100%;
+
+  padding: 7px;
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  border: 1px solid transparent;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   NODE
+========================================================= */
 
 .node {
   position: relative;
+
   top: 0;
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  max-width: 20px;
-  min-height: 20px;
-  max-height: 20px;
-  border-radius: 50px;
+
+  width: 14px;
+
+  min-width: 14px;
+
+  max-width: 14px;
+
+  height: 14px;
+
+  min-height: 14px;
+
+  max-height: 14px;
+
+  border-radius: 50%;
+
   cursor: pointer;
+
+  background-color: rgb(81, 245, 108);
+
   border: 3px solid transparent;
-  /* me */
-  /* margin-left: 35%; */
-  margin: auto;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+
+  z-index: 10;
 }
 
-.drop_grp {
-  position: relative;
+
+/* =========================================================
+   SELECTED NODE
+   هاي النقطة اللي الطالب ماسكها هسا
+========================================================= */
+
+.node.node_selected {
+  background-color: #ffffff !important;
+
+  border: 3px solid #0bc53a !important;
+
+  box-shadow:
+    0 0 0 4px rgba(11, 197, 58, 0.22),
+    0 0 12px rgba(11, 197, 58, 0.8);
+
+  z-index: 20;
 }
+
+
+/* =========================================================
+   FEEDBACK ICONS
+========================================================= */
 
 .icon_wrap_holder {
   position: absolute;
-  right: -14px;
-  top: -9px;
+
+  right: -8px;
+
+  top: 5px;
+
+  z-index: 20;
 }
 
-.droppers {
-  margin-top: 50px;
+
+.icon_wrap {
+  display: none;
 }
 
-.drag {
-  height: 150px;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  /* margin: 25px; */
-  width: 160px;
-}
-
-.drop {
-  margin: 10px;
-}
-
-.imgHolder {
-  height: 80%;
-  margin-top: 0;
-}
-
-.imgHolder img {
-  /* height: 100%; */
-  display: flex;
-  margin: auto;
-}
-
-.drag .imgHolder img {
-  width: 110px;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 70px;
-  border: 2px solid var(--temp);
-}
-
-.drop .imgHolder img {
-  width: 130px !important;
-  height: 150px;
-  object-fit: contain;
-
-}
-
-.line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-}
 
 .tick,
 .cross {
   width: 25px;
+
   height: 25px;
+
+  margin-top: 15px;
+
+  display: none;
 }
 
-/**End**/
 
-/* ====================================================== */
+.tick img,
+.cross img {
+  width: 100%;
 
-/*              Media Queries Start                       */
+  height: 100%;
 
-/* ====================================================== */
-
-/* ------------------------------------------------ */
-
-/*              M Q max-width: 1799.98px */
-
-/* ------------------------------------------------*/
-
-/* // Large devices (desktops, less than 1800px) */
-
-@media (max-width: 1799.98px) {
-  .drop {
-    /* me */
-    /* margin: 33px 0 60px; */
-    /* margin: 33%; */
-    /* me */
-  }
+  object-fit: contain;
 }
 
-/* ------------------------------------------------ */
 
-/*              M Q max-width: 1399.98px */
+/* =========================================================
+   DRAG IMAGE + TEXT OPTIONAL
+========================================================= */
 
-/* ------------------------------------------------*/
+.dragcont {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.dragcont .imgHolder {
+  width: 100%;
+
+  margin-bottom: 8px;
+
+  text-align: center;
+}
+
+
+.dragcont .imgHolder img {
+  max-width: 100%;
+
+  height: auto;
+}
+
+
+.dragcont .txtHolder {
+  width: 100% !important;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   OPTIONAL QUESTION IMAGE
+========================================================= */
+
+.q_img {
+  width: 400px;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+
+.q_img img {
+  max-width: 100%;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE OPTIONAL
+========================================================= */
+
+.right-image-container {
+  margin-top: 0;
+
+  margin-right: 35px;
+
+  position: relative;
+}
+
+
+.right-image {
+  width: 350px;
+
+  margin-left: 30px;
+}
+
+
+.textOnImage-container {
+  position: absolute;
+
+  top: 52px;
+
+  left: 138px;
+
+  font-size: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+.right_title {
+  color: #fff;
+
+  margin-left: 35px;
+
+  font-size: 26px;
+}
+
+
+.textOnImage-container .red_text {
+  font-weight: bolder;
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1400
+========================================================= */
 
 @media (max-width: 1399.98px) {
-  .drag {
-    /* me */
-    /* height: 118px; */
-    /* height: 90px; */
+
+  .droppers,
+  .dragger {
+    width: 94%;
+  }
+
+
+  .drop .imgHolder {
     height: 150px;
-    /* me */
+  }
+
+
+  .drag .txtHolder {
+    font-size: 20px;
+  }
+
+
+  .que.options {
+    gap: 70px;
   }
 }
 
-/* ------------------------------------------------ */
 
-/*              M Q max-width: 1199.98px */
+/* =========================================================
+   RESPONSIVE - 1200
+========================================================= */
 
-/* ------------------------------------------------*/
+@media (max-width: 1199.98px) {
 
-/* // Large devices (desktops, less than 1200px) */
+  .options {
+    width: 94%;
+  }
 
-@media (max-width: 1199.98px) {}
 
-/* ------------------------------------------------ */
+  .droppers,
+  .dragger {
+    width: 96%;
 
-/*              M Q max-width: 991.98px */
+    padding-left: 18px;
 
-/* ------------------------------------------------*/
+    padding-right: 18px;
+  }
 
-/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
 
-@media (max-width: 991.98px) {}
+  .drop .imgHolder {
+    height: 135px;
+  }
 
-/* ------------------------------------------------ */
 
-/* M Q max-width: 767.98px */
+  .drag .txtHolder {
+    font-size: 18px;
+  }
 
-/* ------------------------------------------------*/
 
-/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+  .que.options {
+    gap: 65px;
+  }
+}
 
-@media (max-width: 767.98px) {}
 
-/* ------------------------------------------------ */
+/* =========================================================
+   RESPONSIVE - 992
+========================================================= */
 
-/* M Q max-width: 575.98px */
+@media (max-width: 991.98px) {
 
-/* ------------------------------------------------*/
+  .droppers,
+  .dragger {
+    width: 98%;
 
-/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+    padding-left: 12px;
 
-@media (max-width: 575.98px) {}
+    padding-right: 12px;
+  }
 
-/* ------------------------------------------------ */
 
-/*              M Q max-width: 475.98px             */
+  .drop,
+  .drag {
+    width: 19%;
+  }
 
-/* ------------------------------------------------*/
 
-/* body working fine 320 to 475 */
+  .drop .imgHolder {
+    height: 115px;
+  }
+
+
+  .drag .txtHolder {
+    font-size: 16px;
+  }
+
+
+  .node {
+    width: 12px;
+
+    min-width: 12px;
+
+    max-width: 12px;
+
+    height: 12px;
+
+    min-height: 12px;
+
+    max-height: 12px;
+  }
+
+
+  .que.options {
+    gap: 55px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 768
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .options {
+    width: 98%;
+  }
+
+
+  .droppers,
+  .dragger {
+    width: 100%;
+
+    padding-left: 8px;
+
+    padding-right: 8px;
+  }
+
+
+  .drop .imgHolder {
+    height: 95px;
+  }
+
+
+  .drag .txtHolder {
+    width: 100% !important;
+
+    min-width: 0;
+
+    font-size: 14px;
+  }
+
+
+  .que.options {
+    gap: 48px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 576
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+  .droppers,
+  .dragger {
+    padding-left: 5px;
+
+    padding-right: 5px;
+  }
+
+
+  .drop .imgHolder {
+    height: 80px;
+  }
+
+
+  .drag .txtHolder {
+    padding-left: 0;
+
+    padding-right: 0;
+
+    font-size: 12px;
+  }
+
+
+  .node {
+    width: 10px;
+
+    min-width: 10px;
+
+    max-width: 10px;
+
+    height: 10px;
+
+    min-height: 10px;
+
+    max-height: 10px;
+  }
+
+
+  .node.node_selected {
+    border-width: 2px !important;
+
+    box-shadow:
+      0 0 0 3px rgba(11, 197, 58, 0.22),
+      0 0 8px rgba(11, 197, 58, 0.8);
+  }
+
+
+  .que.options {
+    gap: 42px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 476
+========================================================= */
 
 @media (max-width: 475.98px) {
-  .txtHolder {
-    width: 220px;
-    padding: 8px;
+
+  .drop .imgHolder {
+    height: 65px;
   }
 
-  .drag {
-    height: 125px;
+
+  .drag .txtHolder {
+    font-size: 11px;
+  }
+
+
+  .que.options {
+    gap: 38px;
   }
 }
-
-@media (max-width: 332.98) {}

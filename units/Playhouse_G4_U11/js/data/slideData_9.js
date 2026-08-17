@@ -1,11 +1,11 @@
 var stereo_data = {
     "audio":"",
-    "exist":false,
+    "exist":true,
     "bgColor_rgb":"rgb(12, 177, 75)",
     "type":"text",
     "playListData" : [
         {
-          'audiourl': '../audios/demoo.mp3',
+          'audiourl': '../audios/page_102/1.mp3',
         },
         {
           'url': '',
@@ -21,12 +21,12 @@ var stereo_data = {
 var reading_data = {
     "mainTitle": "../images/pages/sb-icons/writing.png",
     "mainTitleIcon": "../images/pages/sb-icons/adv_icon_1.png",
-    "mainTitleAudio": "../audios/under.mp3",
+    "mainTitleAudio": "../audios/page_102/WRITING.mp3",
     "mainTitleIconPos"      : {"right": "90px"},
     "subTitleTextLeft": "<span class='title-order'>1</span> Read about it!",
     "subTitleTextRight": "Read bout predictions.",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/under.mp3",
+    "subTitleAudio": "../audios/page_102/1_Read_about_it!.mp3",
     "slides": [
     {
        

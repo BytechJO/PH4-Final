@@ -1,0 +1,174 @@
+.pronoun_write_page {
+  width: 80%;
+
+  margin: 15px auto;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 45px;
+}
+
+/* =========================================================
+   SENTENCES
+========================================================= */
+
+.pronoun_write_sentences {
+  width: 48%;
+}
+
+.pronoun_write_sentence {
+  width: 100%;
+
+  margin-bottom: 24px;
+
+  display: flex;
+
+  align-items: baseline;
+
+  color: #222;
+
+  font-size: 20px;
+}
+
+.sentence_number {
+  width: 35px;
+  min-width: 35px;
+
+  font-weight: bold;
+}
+
+.sentence_text {
+  flex: 1;
+}
+
+/* =========================================================
+   BOXES
+========================================================= */
+
+.pronoun_write_boxes {
+  width: 48%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.pronoun_write_box {
+  width: 100%;
+
+  min-height: 145px;
+
+  padding: 8px 20px 15px;
+
+  border: 2px solid #333;
+
+  border-radius: 30px;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+.pronoun_write_box_title {
+  width: 100%;
+
+  margin-bottom: 7px;
+
+  color: #00aeef;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+/* =========================================================
+   INPUT GRID
+========================================================= */
+
+.pronoun_inputs_wrap {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 6px 12px;
+}
+
+.pronoun_input_row {
+  width: 100%;
+
+  position: relative;
+}
+
+.pronoun_write_input {
+  width: 100%;
+
+  height: 30px;
+
+  padding: 2px 28px 2px 4px;
+
+  border: none;
+
+  border-bottom: 1px solid #999;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #111;
+
+  font-size: 18px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.pronoun_write_input:focus {
+  border-bottom-color: #00aeef;
+}
+
+/* =========================================================
+   ICONS
+========================================================= */
+
+.pronoun_result {
+  position: absolute;
+
+  right: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+}
+
+.pronoun_result .icon_wrap {
+  position: static !important;
+
+  width: 24px;
+  height: 24px;
+}
+
+.pronoun_tick,
+.pronoun_cross {
+  width: 24px;
+  height: 24px;
+
+  display: none;
+}
+
+.pronoun_tick img,
+.pronoun_cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}

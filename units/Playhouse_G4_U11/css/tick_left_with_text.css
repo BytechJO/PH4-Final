@@ -1,231 +1,369 @@
-:root{
+:root {
   --temp: rgb(39,150,166);
   --light: #e8eff1;
 }
+
+/* =========================================================
+   MAIN
+========================================================= */
+
 .all_cont {
   width: 100%;
   height: 100%;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .group_elm {
-  width: 75%;
+  width: 100%;
   height: 100%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
+
 .subTitleTextRight b {
   color: red;
 }
+
+/* =========================================================
+   GRID 2 x 2
+========================================================= */
+
 .tick_group {
-  margin: 5px auto;
+  width: 80%;
+  margin: 0 auto;
+
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px;
+
+  align-items: start;
+  justify-content: center;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   EACH QUESTION
+========================================================= */
+
+.que {
+  position: relative;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  padding: 8px 12px;
+
+  margin: 0;
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+}
+
+/* =========================================================
+   QUESTION TITLE
+========================================================= */
+
+.heading {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 4px 5px 7px;
+
+  color: #2ebc64;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  line-height: 1.25;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   IMAGE + ANSWERS
+========================================================= */
+
+.que_group {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: nowrap !important;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 12px;
+
+  box-sizing: border-box;
+}
+
+.que .image_wrap {
+  width: 135px;
+  min-width: 135px;
+
+  height: 120px;
+
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.que .image_wrap img {
   width: 100%;
   height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   ANSWERS AREA
+========================================================= */
+
+.tick_fields {
+  flex: 1;
+
+  min-width: 0;
+  height: auto;
+
+  margin: 0;
+
   display: flex;
-  text-align: center;
   align-items: center;
+
+  box-sizing: border-box;
+}
+
+.ans_grup {
+  width: 100%;
+  height: auto;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  justify-content: center;
+
+  gap: 4px;
+}
+
+/* =========================================================
+   EACH OPTION
+========================================================= */
+
+.pick {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin: 0;
+
+  display: flex;
+  align-items: center !important;
+
+  box-sizing: border-box;
+}
+
+.tick_field {
+  width: 100%;
 }
 
 .tickBox {
-  color: black;
+  width: 32px;
+  min-width: 32px;
+  height: 28px;
+
   padding: 0;
-  /* margin-top: 8px; */
-  height: 30px;
-  width: 40px;
-  min-width: 40px;
+  margin-right: 7px;
+
+  position: relative;
+
   border: none;
-  border-radius: 0px !important;
+  border-radius: 0 !important;
   border-bottom: 2px solid #000;
+
+  color: black;
+
+  box-sizing: border-box;
 }
+
+.selectTick {
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.tick_fields .tickContent {
+  flex: 1;
+
+  width: auto !important;
+  max-width: calc(100% - 40px);
+
+  font-family: Arcon;
+  letter-spacing: 0.3px;
+
+  font-size: 22px;
+  line-height: 1.2;
+
+  color: #000;
+
+  white-space: normal;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   VALIDATION ICON
+========================================================= */
+
 .icon_wrap_holder {
-  right: 40px;
+  position: absolute;
+
+  z-index: 2;
+
+  top: 2px;
+  right: 5px;
+
+  height: auto;
+
+  border-radius: 12px;
 }
+
+.icon_wrap {
+  width: 28px;
+}
+
+.tick,
+.cross {
+  width: 28px;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+  padding-top: 0;
+}
+
+/* =========================================================
+   OTHER
+========================================================= */
+
 .cont_ht_sf.activity_area {
   width: 100%;
 }
+
 .activityTitle {
   margin-left: 60px;
 }
-.que {
-  position: relative;
-  width: intrinsic;
-  width: -moz-max-content;
-  width: -webkit-max-content;
-  width: max-content;
-  /* margin: auto; */
-  /* margin-bottom: 12px; */
-  border-radius: 12px;
-  /* background-repeat: no-repeat; */
-}
 
-
-.que .image_wrap {
-  margin-right: 15px;
-}
-.que .image_wrap img {
-  height: 125px;
-  /* width: 100%; */
-}
-.que_group {
-  /* height: 170px; */
-}
-.ans_grup{
-  height: 100%;
-}
-.tick_fields {
-  /* width: 250px; */
-  height: 100%;
-  /* margin-left: 147px; */
-}
-.tickBox {
-  border-radius: 10px;
-  /* border-color: 2px solid #f5b66e !important; */
-}
-.pick {
-  width: intrinsic;
-  width: -moz-max-content;
-  width: -webkit-max-content;
-  width: max-content;
-  /* margin-bottom: 10px; */
-}
-.tick_fields .tickContent {
-  font-family: Arcon;
-  letter-spacing: 1px;
-  border-radius: 3%;
-  /* padding: 0 10px 10px; */
-  width: intrinsic;
-  width: -moz-max-content;
-  width: -webkit-max-content;
-  width: max-content;
-  /* color: #a53626;   */
-  font-size: 24px;
-}
 .question_div {
   margin-bottom: 2%;
 }
-.question_div .heading {
-  padding: 10px;
-  padding-left: 10px;
-}
+
 .q_num_space {
-  padding: 0 10px 10px;
   width: 40px;
-}
-.heading{
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 60px;
-  color: #2ebc64;
-}
-/* .activityTitle{
-    color: #a43632;
-  } */
-.icon_wrap_holder {
-  position: absolute;
-  z-index: 2;
-  height: auto;
-  right: 10px;
-  /* background-color: white; */
-  border-radius: 12px;
-}
-.tick img,
-.cross img {
-  padding-top: 8px;
-}
-.tick_group{
-  /* width: 1152px; */
-  justify-content: center
-}
-.que {
-  /* width: 1107px; */
-  padding: 10px;
-  /* box-shadow: 12px 7px 15px #6c6b6b; */
+  padding: 0 10px 10px;
 }
 
+/* =========================================================
+   TABLET
+========================================================= */
 
-/**End**/
-
-/* ====================================================== */
-/*              Media Queries Start                       */
-/* ====================================================== */
-/* ------------------------------------------------ */
-/*              M Q max-width: 1199.98px */
-/* ------------------------------------------------*/
-@media (max-width: 1199.98px) {
-  .que .image_wrap {
-    height: 20vh;
-  }
-}
-/* ------------------------------------------------ */
-/*              M Q max-width: 991.98px */
-/* ------------------------------------------------*/
-/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
 @media (max-width: 991.98px) {
-  .que .image_wrap {
-    height: 27vh;
+
+  .tick_group {
+    width: 98%;
+    gap: 14px;
   }
-  .tick_fields {
-    margin: auto 19px;
-    width: 100%;
+
+  .que {
+    padding: 6px;
+  }
+
+  .heading {
+    font-size: 16px;
+  }
+
+  .que .image_wrap {
+    width: 110px;
+    min-width: 110px;
+    height: 105px;
   }
 
   .tick_fields .tickContent {
-    width: 100%;
+    font-size: 15px;
   }
-  .tick_field {
-    width: 100%;
+
+  .tickBox {
+    width: 27px;
+    min-width: 27px;
   }
 }
-/* ------------------------------------------------ */
-/* M Q max-width: 767.98px */
-/* ------------------------------------------------*/
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 767.98px) {
-  .que .image_wrap {
-    width: 100%;
-  }
-  .pick {
-    margin: auto;
-    margin-bottom: 20px;
-  }
+
   .tick_group {
-    padding-top: 10px;
-  }
-  .tick_field {
-    margin-left: 0;
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
-  .icon_wrap_holder {
-    right: 11%;
-  }
-}
-/* ------------------------------------------------ */
-/* M Q max-width: 575.98px */
-/* ------------------------------------------------*/
-@media (max-width: 575.98px) {
-}
-/* ------------------------------------------------ */
-/*              M Q max-width: 475.98px             */
-/* ------------------------------------------------*/
-@media (max-width: 475.98px) {
-  .pick {
-    margin-bottom: 10px;
+  .que {
+    width: 100% !important;
   }
 
-  .que .image_wrap img {
-    width: auto;
+  .que_group {
+    justify-content: center;
   }
+
   .que .image_wrap {
-    height: 27vh;
-    width: auto !important;
-    min-height: 167px;
+    width: 130px;
+    min-width: 130px;
+    height: 120px;
   }
-  .tick_fields {
-    width: 89%;
-    margin: auto 5px;
-    /* padding: 0 49px; */
+
+  .tick_fields .tickContent {
+    font-size: 17px;
   }
 }
-@media (max-width: 320px) {
-  .tick_fields {
-    padding: 2px;
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 475.98px) {
+
+  .que_group {
+    gap: 7px;
+  }
+
+  .que .image_wrap {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+  }
+
+  .tick_fields .tickContent {
+    font-size: 14px;
+  }
+
+  .tickBox {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
   }
 }
