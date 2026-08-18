@@ -1,0 +1,383 @@
+/* =========================================================
+   WORD POWER CROSSWORD
+========================================================= */
+
+.wp_crossword_all_cont {
+  width: 100%;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+.wp_crossword_activity {
+  width: 94%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 44% 56%;
+
+  gap: 25px;
+
+  padding: 15px 15px 25px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   CLUES
+========================================================= */
+
+.wp_crossword_clues {
+  width: 100%;
+
+  padding: 25px 10px 10px 20px;
+
+  box-sizing: border-box;
+}
+
+.wp_crossword_clue_group {
+  margin-bottom: 35px;
+}
+
+.wp_crossword_clue_title {
+  margin-bottom: 8px;
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  color: #222;
+}
+
+.wp_crossword_clue {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  margin-bottom: 13px;
+
+  font-size: 20px;
+
+  line-height: 1.35;
+
+  color: #222;
+}
+
+.wp_crossword_clue_number {
+  width: 32px;
+
+  min-width: 32px;
+
+  font-weight: bold;
+}
+
+.wp_crossword_clue_text {
+  flex: 1;
+}
+
+/* =========================================================
+   BOARD WRAPPER
+========================================================= */
+
+.wp_crossword_board_wrap {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #19ad4b;
+
+  border-radius: 22px;
+
+  background: #fff;
+
+  overflow: visible;
+}
+
+/* =========================================================
+   BOARD
+========================================================= */
+
+.wp_crossword_board {
+  --cw-cell: 35px;
+
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(var(--cw-cols), var(--cw-cell));
+
+  grid-template-rows: repeat(var(--cw-rows), var(--cw-cell));
+
+  justify-content: center;
+
+  align-content: center;
+
+  padding: 5px;
+
+  box-sizing: border-box;
+
+  overflow: visible;
+}
+
+/* =========================================================
+   CELL
+========================================================= */
+
+.wp_crossword_cell {
+  width: var(--cw-cell);
+
+  height: var(--cw-cell);
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  border: 2px solid #18ae4a;
+
+  border-radius: 7px;
+
+  background: #fff;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.wp_crossword_cell_number {
+  position: absolute;
+
+  left: 3px;
+
+  top: 1px;
+
+  z-index: 2;
+
+  font-size: 12px;
+
+  line-height: 1;
+
+  color: #222;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.wp_crossword_input {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 7px 1px 1px;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  color: #111;
+}
+
+/* =========================================================
+   WORD FEEDBACK
+========================================================= */
+
+.wp_crossword_word_feedback {
+  position: absolute;
+
+  z-index: 20;
+
+  width: 24px;
+
+  height: 24px;
+
+  pointer-events: none;
+}
+
+.wp_crossword_word_tick,
+.wp_crossword_word_cross {
+  display: none;
+}
+
+.wp_crossword_word_tick img,
+.wp_crossword_word_cross img {
+  width: 23px;
+
+  height: auto;
+
+  display: block;
+}
+
+/* =========================================================
+   DOWN FEEDBACK
+   فوق العمود
+========================================================= */
+
+.wp_crossword_word_feedback_down {
+  left: calc(
+    5px + (var(--word-col) - 1) * var(--cw-cell) + (var(--cw-cell) / 2)
+  );
+
+  top: calc(5px + (var(--word-row) - 1) * var(--cw-cell) - 26px);
+
+  transform: translateX(-50%);
+}
+
+/* =========================================================
+   ACROSS FEEDBACK
+   جنب الصف من اليمين
+========================================================= */
+
+.wp_crossword_word_feedback_across {
+  left: calc(
+    5px + (var(--word-col) - 1 + var(--word-length)) * var(--cw-cell) + 4px
+  );
+
+  top: calc(
+    5px + (var(--word-row) - 1) * var(--cw-cell) + (var(--cw-cell) / 2)
+  );
+
+  transform: translateY(-50%);
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.green_circle_num {
+  display: inline-flex;
+
+  width: 32px;
+
+  height: 32px;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-right: 7px;
+
+  border-radius: 50%;
+
+  background: #18ae4a;
+
+  color: #111;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+  .wp_crossword_activity {
+    width: 96%;
+
+    grid-template-columns: 45% 55%;
+
+    gap: 15px;
+  }
+
+  .wp_crossword_clues {
+    padding-left: 10px;
+  }
+
+  .wp_crossword_clue_title {
+    font-size: 20px;
+  }
+
+  .wp_crossword_clue {
+    margin-bottom: 9px;
+
+    font-size: 16px;
+  }
+
+  .wp_crossword_board {
+    --cw-cell: 29px;
+  }
+
+  .wp_crossword_board_wrap {
+    padding: 21px;
+  }
+
+  .wp_crossword_input {
+    font-size: 16px;
+  }
+
+  .wp_crossword_cell_number {
+    font-size: 10px;
+  }
+
+  .wp_crossword_word_feedback {
+    width: 20px;
+
+    height: 20px;
+  }
+
+  .wp_crossword_word_tick img,
+  .wp_crossword_word_cross img {
+    width: 20px;
+  }
+
+  .wp_crossword_word_feedback_down {
+    top: calc(5px + (var(--word-row) - 1) * var(--cw-cell) - 22px);
+  }
+}
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+  .wp_crossword_activity {
+    grid-template-columns: 43% 57%;
+  }
+
+  .wp_crossword_board {
+    --cw-cell: 25px;
+  }
+
+  .wp_crossword_clue {
+    font-size: 14px;
+  }
+
+  .wp_crossword_word_feedback {
+    width: 18px;
+
+    height: 18px;
+  }
+
+  .wp_crossword_word_tick img,
+  .wp_crossword_word_cross img {
+    width: 18px;
+  }
+}

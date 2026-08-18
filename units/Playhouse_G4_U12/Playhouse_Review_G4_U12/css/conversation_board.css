@@ -1,0 +1,1123 @@
+/* =========================================================
+   MAIN
+========================================================= */
+
+.options {
+  width: 95%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  overflow: auto;
+
+  background: transparent !important;
+}
+
+.pronoun_board_all_cont {
+  width: 100%;
+
+  min-height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  box-sizing: border-box;
+
+  background: transparent !important;
+}
+
+.pronoun_board_page {
+  width: 100%;
+
+  min-height: 100%;
+
+  padding: 8px 20px 20px;
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  background: transparent !important;
+
+  font-family: Arial, sans-serif;
+
+  color: #222;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.pronoun_board_title_row {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom: 10px;
+}
+
+.pronoun_board_title {
+  min-width: 210px;
+
+  padding: 5px 25px;
+
+  border-radius: 12px;
+
+  background: #22ae50;
+
+  color: #fff;
+
+  text-align: center;
+
+  font-size: 22px;
+
+  line-height: 1.1;
+
+  font-weight: bold;
+
+  font-style: italic;
+}
+
+/* =========================================================
+   PLAY TITLE
+========================================================= */
+
+.pronoun_play_title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 5px 0 12px;
+}
+
+.pronoun_play_number {
+  width: 20px;
+
+  height: 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #23ad50;
+
+  color: #000;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+.pronoun_play_text {
+  color: #22aa50;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   BOARD AREA
+========================================================= */
+
+.pronoun_board_area {
+  width: 100%;
+
+  min-height: 610px;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   GAME BOARD
+========================================================= */
+
+.pronoun_game_board {
+  width: 650px;
+
+  height: 590px;
+
+  position: relative;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SHARED BOARD CELL
+========================================================= */
+
+.pronoun_board_cell {
+  width: 95px;
+
+  height: 87px;
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #333;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.pronoun_cell_text {
+  position: relative;
+
+  z-index: 3;
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+  color: #333;
+}
+
+/* =========================================================
+   TOP ROW
+========================================================= */
+
+.pronoun_top_row {
+  position: absolute;
+
+  top: 0;
+
+  left: 35px;
+
+  display: flex;
+}
+
+/* =========================================================
+   BOTTOM ROW
+========================================================= */
+
+.pronoun_bottom_row {
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  display: flex;
+}
+
+/* =========================================================
+   START
+========================================================= */
+
+.pronoun_start_cell {
+  flex-direction: column;
+
+  background: #fff;
+}
+
+.pronoun_start_text {
+  margin-top: -10px;
+
+  font-size: 24px;
+
+  font-weight: bold;
+}
+
+.pronoun_start_marker {
+  width: 65px;
+
+  height: 22px;
+
+  position: relative;
+
+  margin-top: 4px;
+}
+
+.pronoun-marker-body {
+  position: absolute;
+
+  left: 5px;
+
+  top: 8px;
+
+  width: 38px;
+
+  height: 8px;
+
+  border-radius: 7px;
+
+  background: #ef5c31;
+
+  box-shadow: 8px -5px 0 #2e8dd1;
+}
+
+.pronoun-marker-arrow {
+  position: absolute;
+
+  right: 0;
+
+  top: 3px;
+
+  width: 0;
+
+  height: 0;
+
+  border-top: 8px solid transparent;
+
+  border-bottom: 8px solid transparent;
+
+  border-left: 18px solid #f2ad34;
+}
+
+/* =========================================================
+   TURN ARROW
+========================================================= */
+
+.pronoun_turn_arrow {
+  position: absolute;
+  right: 45px;
+  top: 15px;
+  z-index: 8;
+  font-size: 50px;
+  line-height: 1;
+  color: rgb(17, 17, 17);
+}
+
+/* =========================================================
+   DIAGONAL / STAIR PATH
+   الخانات تنزل لليسار
+========================================================= */
+
+.pronoun_diagonal_path {
+  position: absolute;
+
+  top: 88px;
+
+  right: 170px;
+
+  width: 120px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  transform: none !important;
+
+  z-index: 5;
+}
+
+/* =========================================================
+   PATH CELL
+========================================================= */
+
+.pronoun_path_cell {
+  width: 245px;
+  height: 53px;
+
+  position: relative;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #333;
+
+  clip-path: polygon(22% 0%, 100% 0%, 78% 100%, 0% 100%);
+
+  overflow: hidden;
+
+  margin-top: -1px;
+
+  transform: none !important;
+}
+
+/* =========================================================
+   STAIR POSITION
+========================================================= */
+
+.pronoun_path_cell:nth-child(1) {
+  margin-left: 0;
+}
+
+.pronoun_path_cell:nth-child(2) {
+  margin-left: -45px;
+}
+
+.pronoun_path_cell:nth-child(3) {
+  margin-left: -90px;
+}
+
+.pronoun_path_cell:nth-child(4) {
+  margin-left: -135px;
+}
+
+.pronoun_path_cell:nth-child(5) {
+  margin-left: -180px;
+}
+
+.pronoun_path_cell:nth-child(6) {
+  margin-left: -225px;
+}
+
+.pronoun_path_cell:nth-child(7) {
+  margin-left: -270px;
+}
+
+.pronoun_path_cell:nth-child(8) {
+  margin-left: -315px;
+}
+
+/* =========================================================
+   PATH TEXT
+========================================================= */
+
+.pronoun_path_cell .pronoun_cell_text {
+  position: relative;
+
+  z-index: 4;
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+  color: #333;
+
+  transform: none !important;
+}
+
+/* =========================================================
+   STAR
+========================================================= */
+
+.pronoun_star {
+  width: 52px;
+
+  height: 52px;
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: rgba(255, 255, 255, 0.94);
+
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 56%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 56%,
+    2% 35%,
+    39% 35%
+  );
+
+  z-index: 1;
+}
+
+.pronoun_path_cell .pronoun_star {
+  width: 48px;
+
+  height: 48px;
+
+  left: 50%;
+
+  top: 50%;
+
+  margin-left: -24px;
+
+  margin-top: -24px;
+
+  transform: none !important;
+}
+
+/* =========================================================
+   THEMES
+========================================================= */
+
+.pronoun_theme_pink {
+  background: #efdae7;
+}
+
+.pronoun_theme_blue {
+  background: #79a9d6;
+}
+
+.pronoun_theme_cyan {
+  background: #bfe7e6;
+}
+
+.pronoun_theme_green {
+  background: #dfea9b;
+}
+
+.pronoun_theme_orange {
+  background: #f8d49b;
+}
+
+.pronoun_theme_red {
+  background: #eb7478;
+}
+
+.pronoun_theme_yellow {
+  background: #e9e878;
+}
+
+.pronoun_theme_peach {
+  background: #efaa93;
+}
+
+.pronoun_theme_purple {
+  background: #ded3e9;
+}
+
+/* =========================================================
+   FINISH
+========================================================= */
+
+.pronoun_finish_cell {
+  background: #fff;
+
+  overflow: hidden;
+}
+
+.pronoun_finish_text {
+  position: relative;
+
+  z-index: 5;
+
+  font-size: 22px;
+
+  font-weight: bold;
+}
+
+.pronoun_confetti {
+  position: absolute;
+
+  inset: 0;
+}
+
+.confetti_piece {
+  position: absolute;
+
+  font-size: 14px;
+}
+
+.confetti_1 {
+  top: 4px;
+  left: 8px;
+  color: #ed2ba6;
+}
+
+.confetti_2 {
+  top: 10px;
+  left: 30px;
+  color: #12badc;
+}
+
+.confetti_3 {
+  top: 3px;
+  right: 8px;
+  color: #ffb600;
+}
+
+.confetti_4 {
+  top: 25px;
+  left: 4px;
+  color: #7930d5;
+}
+
+.confetti_5 {
+  top: 18px;
+  right: 15px;
+  color: #0fae47;
+}
+
+.confetti_6 {
+  bottom: 8px;
+  left: 10px;
+  color: #e91e63;
+}
+
+.confetti_7 {
+  bottom: 4px;
+  right: 10px;
+  color: #19aee3;
+}
+
+.confetti_8 {
+  top: 45px;
+  left: 32px;
+  color: #ff9800;
+}
+
+.confetti_9 {
+  top: 32px;
+  right: 3px;
+  color: #7e57c2;
+}
+
+.confetti_10 {
+  bottom: 24px;
+  left: 3px;
+  color: #24af50;
+}
+
+.confetti_11 {
+  top: 7px;
+  left: 50px;
+  color: #ef3e5c;
+}
+
+.confetti_12 {
+  bottom: 2px;
+  left: 48px;
+  color: #f2c000;
+}
+
+/* =========================================================
+   INSTRUCTION BOX
+========================================================= */
+
+.pronoun_instruction_box {
+  width: 175px;
+
+  min-height: 165px;
+
+  position: absolute;
+
+  left: 10px;
+
+  top: 150px;
+
+  z-index: 10;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #31bd67;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  font-size: 13px;
+
+  line-height: 1.35;
+}
+
+.pronoun_instruction_title,
+.pronoun_steps_title {
+  margin-bottom: 4px;
+
+  font-weight: bold;
+}
+
+.pronoun_need_row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-bottom: 10px;
+}
+
+.pronoun_bullet {
+  font-size: 18px;
+}
+
+.pronoun_step_line {
+  margin-bottom: 5px;
+}
+
+/* =========================================================
+   COIN
+========================================================= */
+
+.pronoun_coin_demo {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin: 5px 0 8px;
+}
+
+.pronoun_coin {
+  width: 48px;
+
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.pronoun_coin_side {
+  width: 25px;
+
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-right: -5px;
+
+  border: 1px solid #555;
+
+  border-radius: 50%;
+
+  background: #eee;
+
+  font-size: 10px;
+
+  font-weight: bold;
+}
+
+.pronoun_coin_labels {
+  display: flex;
+
+  gap: 8px;
+
+  font-size: 10px;
+
+  line-height: 1.15;
+}
+
+.pronoun_instruction_footer {
+  margin-top: 8px;
+}
+
+/* =========================================================
+   HIDE CHECK / RESET
+========================================================= */
+
+.func_ctrls {
+  display: none !important;
+}
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .options {
+    width: 96%;
+  }
+
+  .pronoun_board_page {
+    min-width: 760px;
+
+    padding: 6px 12px 15px;
+  }
+
+  .pronoun_board_title {
+    min-width: 190px;
+
+    font-size: 19px;
+  }
+
+  .pronoun_play_text {
+    font-size: 16px;
+  }
+
+  .pronoun_game_board {
+    width: 560px;
+
+    height: 520px;
+  }
+
+  .pronoun_board_cell {
+    width: 70px;
+
+    height: 70px;
+  }
+
+  .pronoun_cell_text {
+    font-size: 18px;
+  }
+
+  .pronoun_top_row {
+    left: 35px;
+  }
+
+  .pronoun_bottom_row {
+    left: 0;
+  }
+
+  /* stair path */
+
+  .pronoun_diagonal_path {
+    width: 100px;
+
+    top: 66px;
+
+    right: 48px;
+  }
+
+  .pronoun_path_cell {
+    width: 100px;
+
+    height: 50px;
+  }
+
+  .pronoun_path_cell:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .pronoun_path_cell:nth-child(2) {
+    margin-left: -38px;
+  }
+
+  .pronoun_path_cell:nth-child(3) {
+    margin-left: -76px;
+  }
+
+  .pronoun_path_cell:nth-child(4) {
+    margin-left: -114px;
+  }
+
+  .pronoun_path_cell:nth-child(5) {
+    margin-left: -152px;
+  }
+
+  .pronoun_path_cell:nth-child(6) {
+    margin-left: -190px;
+  }
+
+  .pronoun_path_cell:nth-child(7) {
+    margin-left: -228px;
+  }
+
+  .pronoun_path_cell:nth-child(8) {
+    margin-left: -266px;
+  }
+
+  .pronoun_path_cell .pronoun_cell_text {
+    font-size: 18px;
+  }
+
+  .pronoun_path_cell .pronoun_star {
+    width: 42px;
+
+    height: 42px;
+
+    margin-left: -21px;
+
+    margin-top: -21px;
+  }
+
+  .pronoun_turn_arrow {
+    right: 38px;
+
+    top: 48px;
+
+    font-size: 34px;
+  }
+
+  .pronoun_instruction_box {
+    width: 160px;
+
+    top: 130px;
+
+    font-size: 11px;
+  }
+
+  .pronoun_star {
+    width: 45px;
+
+    height: 45px;
+  }
+
+  .pronoun_start_text {
+    font-size: 20px;
+  }
+
+  .pronoun_finish_text {
+    font-size: 18px;
+  }
+}
+
+/* =========================================================
+   SMALL
+========================================================= */
+
+@media (max-width: 767.98px) {
+  .options {
+    overflow: auto;
+  }
+
+  .pronoun_board_page {
+    min-width: 760px;
+  }
+}
+/* =========================================================
+   INSTRUCTION BOX - X2
+========================================================= */
+
+.pronoun_instruction_box {
+  width: 300px;
+
+  min-height: 290px;
+
+  position: absolute;
+
+  left: 10px;
+  top: 150px;
+
+  z-index: 10;
+
+  padding: 16px 18px;
+
+  box-sizing: border-box;
+
+  border: 3px solid #2eae5d;
+
+  background: #eff9e8;
+
+  color: #222;
+
+  font-size: 20px;
+
+  line-height: 1.25;
+}
+
+
+/* =========================================================
+   TITLES
+========================================================= */
+
+.pronoun_instruction_title,
+.pronoun_instruction_steps_title {
+  margin-bottom: 6px;
+
+  font-size: 20px;
+
+  font-weight: normal;
+}
+
+
+.pronoun_instruction_steps_title {
+  margin-top: 20px;
+}
+
+
+/* =========================================================
+   NEED
+========================================================= */
+
+.pronoun_instruction_need {
+  padding-left: 16px;
+
+  margin-bottom: 6px;
+
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   STEPS ROW
+========================================================= */
+
+.pronoun_instruction_steps_row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    92px 60px 86px;
+
+  align-items: center;
+
+  margin-top: 4px;
+
+  box-sizing: border-box;
+}
+
+
+.pronoun_instruction_left_text {
+  font-size: 20px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   COIN / ARROWS
+========================================================= */
+
+.pronoun_coin_arrows {
+  width: 60px;
+
+  height: 76px;
+
+  position: relative;
+}
+
+
+.pronoun-coin-center {
+  width: 16px;
+
+  height: 16px;
+
+  position: absolute;
+
+  left: 22px;
+  top: 30px;
+
+  border: 2px solid #222;
+
+  border-radius: 50%;
+
+  background: #eee;
+}
+
+
+/* =========================================================
+   TOP ARROW
+========================================================= */
+
+.pronoun_coin-line-top {
+  width: 40px;
+
+  height: 2px;
+
+  position: absolute;
+
+  left: 16px;
+  top: 20px;
+
+  background: #222;
+
+  transform: rotate(-14deg);
+
+  transform-origin: left center;
+}
+
+
+.pronoun_coin-line-top::after {
+  content: "";
+
+  position: absolute;
+
+  right: -2px;
+  top: -6px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #222;
+}
+
+
+/* =========================================================
+   BOTTOM ARROW
+========================================================= */
+
+.pronoun_coin-line-bottom {
+  width: 40px;
+
+  height: 2px;
+
+  position: absolute;
+
+  left: 16px;
+  top: 54px;
+
+  background: #222;
+
+  transform: rotate(14deg);
+
+  transform-origin: left center;
+}
+
+
+.pronoun_coin-line-bottom::after {
+  content: "";
+
+  position: absolute;
+
+  right: -2px;
+  top: -6px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #222;
+}
+
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.pronoun_coin_result {
+  height: 84px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  font-size: 16px;
+
+  line-height: 1.05;
+
+  text-align: left;
+}
+
+
+.pronoun_coin_result b {
+  font-weight: normal;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.pronoun_instruction_footer {
+  margin-top: 16px;
+
+  font-size: 20px;
+
+  line-height: 1.25;
+}

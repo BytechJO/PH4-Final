@@ -1,0 +1,489 @@
+/* =========================================================
+   CIRCLE AND ANSWER
+========================================================= */
+
+.caa_all_cont {
+  width: 100%;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+.caa_activity {
+  width: 94%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 5px 20px 30px;
+
+  box-sizing: border-box;
+
+  color: #222;
+}
+
+/* =========================================================
+   CONVERSATION
+========================================================= */
+
+.caa_conversation_wrap {
+  width: 100%;
+
+  position: relative;
+
+  margin-bottom: 18px;
+
+  padding-right: 42px;
+
+  box-sizing: border-box;
+}
+
+.caa_conversation {
+  width: 100%;
+}
+
+/* =========================================================
+   CONVERSATION LINE
+========================================================= */
+
+.caa_conversation_line {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  margin-bottom: 2px;
+
+  line-height: 1.4;
+}
+
+.caa_speaker {
+  width: 145px;
+
+  min-width: 145px;
+
+  padding-right: 10px;
+
+  box-sizing: border-box;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  color: #111;
+}
+
+.caa_line_text {
+  flex: 1;
+
+  min-width: 0;
+
+  font-size: 20px;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   CIRCLE OPTIONS
+========================================================= */
+
+.caa_circle_option {
+  display: inline-block;
+
+  position: relative;
+
+  padding: 0 4px;
+
+  border: 2px solid transparent;
+
+  border-radius: 50%;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  user-select: none;
+}
+
+.caa_circle_option:hover {
+  background: rgba(0, 169, 232, 0.08);
+}
+
+.caa_circle_option.selected {
+  border: 2px solid #e1262f;
+
+  border-radius: 50%;
+
+  background: transparent;
+}
+
+/* =========================================================
+   CIRCLE VALIDATION
+========================================================= */
+
+.caa_circle_feedback {
+  position: absolute;
+
+  right: 3px;
+
+  top: 5px;
+
+  width: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.caa_circle_tick,
+.caa_circle_cross {
+  display: none;
+}
+
+.caa_circle_tick img,
+.caa_circle_cross img {
+  width: 28px;
+
+  height: auto;
+}
+
+/* =========================================================
+   QUESTIONS SECTION
+========================================================= */
+
+.caa_questions_section {
+  width: 100%;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+.caa_questions_content {
+  width: 100%;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.caa_question {
+  width: 100%;
+
+  position: relative;
+
+  margin-bottom: 14px;
+
+  padding-right: 38px;
+
+  box-sizing: border-box;
+}
+
+.caa_question_header {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  min-height: 30px;
+}
+
+.caa_question_number {
+  width: 30px;
+
+  min-width: 30px;
+
+  flex-shrink: 0;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  line-height: 1.4;
+}
+
+.caa_question_text {
+  font-size: 20px;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   QUESTION 1 + 2
+   INPUT NEXT TO QUESTION
+========================================================= */
+
+.caa_question_inline .caa_question_header {
+  display: flex;
+
+  align-items: center;
+}
+
+.caa_question_inline .caa_question_text {
+  flex-shrink: 0;
+}
+
+.caa_inline_input {
+  flex: 1;
+
+  min-width: 140px;
+
+  margin-left: 7px;
+}
+
+/* =========================================================
+   QUESTION 3 -> 7
+   INPUT BELOW
+========================================================= */
+
+.caa_under_input_wrap {
+  width: calc(100% - 30px);
+
+  margin-left: 30px;
+
+  margin-top: 3px;
+}
+
+.caa_under_input {
+  width: 100%;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.caa_answer_input {
+  height: 25px;
+
+  padding: 1px 4px;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  border-bottom: 1.3px solid #555;
+
+  border-radius: 0;
+
+  background: transparent;
+
+  outline: none;
+
+  color: #000;
+
+  font-size: 20px;
+}
+
+.caa_answer_input:focus {
+  border-bottom: 2px solid #0aa9e8;
+}
+
+/* =========================================================
+   QUESTION VALIDATION
+========================================================= */
+
+.caa_question_feedback {
+  position: absolute;
+
+  right: 3px;
+
+  top: 1px;
+
+  width: 28px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.caa_tick,
+.caa_cross {
+  display: none;
+}
+
+.caa_tick img,
+.caa_cross img {
+  width: 24px;
+
+  height: auto;
+}
+
+/* =========================================================
+   HOSPITAL IMAGE
+========================================================= */
+
+.caa_questions_image {
+  position: absolute;
+
+  right: 3%;
+
+  top: 40%;
+
+  width: 300px;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.caa_questions_image img {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   QUESTIONS NEXT TO IMAGE
+========================================================= */
+
+.caa_question:nth-child(4),
+.caa_question:nth-child(5),
+.caa_question:nth-child(6) {
+  padding-right: 215px;
+}
+
+.caa_question:nth-child(4) .caa_under_input_wrap,
+.caa_question:nth-child(5) .caa_under_input_wrap,
+.caa_question:nth-child(6) .caa_under_input_wrap {
+  width: calc(100% - 215px);
+}
+
+/* =========================================================
+   RESPONSIVE 1000
+========================================================= */
+
+@media (max-width: 1000px) {
+  .caa_activity {
+    width: 97%;
+  }
+
+  .caa_speaker {
+    width: 125px;
+
+    min-width: 125px;
+
+    font-size: 16px;
+  }
+
+  .caa_line_text {
+    font-size: 16px;
+  }
+
+  .caa_question_text {
+    font-size: 16px;
+  }
+
+  .caa_questions_image {
+    width: 160px;
+
+    right: 2%;
+  }
+
+  .caa_question:nth-child(4),
+  .caa_question:nth-child(5),
+  .caa_question:nth-child(6) {
+    padding-right: 180px;
+  }
+
+  .caa_question:nth-child(4) .caa_under_input_wrap,
+  .caa_question:nth-child(5) .caa_under_input_wrap,
+  .caa_question:nth-child(6) .caa_under_input_wrap {
+    width: calc(100% - 180px);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE 768
+========================================================= */
+
+@media (max-width: 768px) {
+  .caa_activity {
+    width: 100%;
+
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  /* conversation */
+
+  .caa_conversation_line {
+    flex-direction: column;
+
+    margin-bottom: 6px;
+  }
+
+  .caa_speaker {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  /* question 1 and 2 */
+
+  .caa_question_inline .caa_question_header {
+    flex-wrap: wrap;
+  }
+
+  .caa_question_inline .caa_question_text {
+    flex: 1;
+  }
+
+  .caa_inline_input {
+    width: calc(100% - 30px);
+
+    flex: none;
+
+    margin-left: 30px;
+
+    margin-top: 3px;
+  }
+
+  /* image */
+
+  .caa_questions_image {
+    position: relative;
+
+    top: auto;
+
+    right: auto;
+
+    width: 160px;
+
+    margin: 10px auto;
+  }
+
+  .caa_question:nth-child(4),
+  .caa_question:nth-child(5),
+  .caa_question:nth-child(6) {
+    padding-right: 38px;
+  }
+
+  .caa_question:nth-child(4) .caa_under_input_wrap,
+  .caa_question:nth-child(5) .caa_under_input_wrap,
+  .caa_question:nth-child(6) .caa_under_input_wrap {
+    width: calc(100% - 30px);
+  }
+}

@@ -5,7 +5,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='green_text'>2</span> Finish it! Complete the conversation by adding either ‘can’ / ‘can’t’ or ‘should’ / ‘shouldn’t’.",
+    "subTitleTextLeft"      : "<span class='green_text'>2</span> Finish it! <span class='green'>Complete the conversation by adding either ‘<span class='red'>can</span>’ / ‘<span class='red'>can’t</span>’ or ‘<span class='red'>should</span>’ / ‘<span class='red'>shouldn’t</span>’.</span>",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",
@@ -20,12 +20,12 @@ var fillin_data = {
      [
         {
           "singleword": false,
-          "text": "A: I [_] can’t walk very well on this foot.",
+          "text": "A: I [_]  walk very well on this foot.",
           "textaudios": ["../audios/under.mp3","../audios/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["can’t"],
+          "answer": ["can't"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no     
           "strictorder": "yes", // yes (or) no             

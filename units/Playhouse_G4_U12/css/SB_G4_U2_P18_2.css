@@ -1,0 +1,441 @@
+/* =========================================
+   Main Activity
+========================================= */
+
+.all_cont {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.screen_elements {
+  width: 96%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 0 auto;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+.group_elm {
+  width: 100%;
+  height: 650px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 0 auto;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   Options
+========================================= */
+
+.options {
+  width: 100%;
+  height: auto;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   Paper
+========================================= */
+
+.shopping_letter {
+  width: 950px;
+  height: 600px;
+
+  position: relative;
+
+  margin: 8px auto 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   Corner Hospital Image
+========================================= */
+
+.writing_corner_image {
+  width: 29%;
+  height: auto;
+
+  position: absolute;
+
+  top: 8%;
+  right: 5%;
+
+  object-fit: contain;
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   General Input Style
+========================================= */
+
+.letter_input {
+  position: absolute;
+
+  height: 30px;
+
+  margin: 0;
+  padding: 0 4px;
+
+  border: none !important;
+
+  outline: none !important;
+
+  background: transparent !important;
+
+  color: #222 !important;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+
+  line-height: 29px;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+
+  box-sizing: border-box;
+
+  z-index: 4;
+}
+
+
+.letter_input:focus {
+  border: none !important;
+  border-bottom: 1px solid #9aaeb8 !important;
+
+  outline: none !important;
+
+  background: transparent !important;
+
+  box-shadow: none !important;
+}
+/* =========================================
+   Setting
+========================================= */
+
+.address_section {
+  position: absolute;
+
+  top: 14%;
+  left: 16%;
+
+  width: 40%;
+  height: 32px;
+
+  z-index: 4;
+}
+
+
+.address_line {
+  position: absolute;
+
+  left: 0;
+
+  width: 100%;
+}
+
+
+.address_line_1 {
+  top: 0;
+
+  border-bottom: 1px solid #9aaeb8 !important;
+}
+
+
+.address_line_2 {
+  display: none !important;
+}
+
+
+.label_address {
+  position: absolute;
+
+  top: 15%;
+  left: 6%;
+
+  min-width: 0;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #e45750;
+
+  font-size: 16px;
+  font-weight: normal;
+
+  line-height: normal;
+
+  text-align: left;
+
+  z-index: 5;
+}
+
+
+/* =========================================
+   List of Characters
+========================================= */
+
+.letter_receiver {
+  top: 31%;
+  left: 21%;
+
+  width: 35%;
+
+  border-bottom: 1px solid #9aaeb8 !important;
+
+  z-index: 4;
+}
+
+
+.label_receiver {
+  position: absolute;
+
+  top: 32%;
+  left: 6%;
+
+  min-width: 0;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #e45750;
+
+  font-size: 16px;
+  font-weight: normal;
+
+  line-height: normal;
+
+  text-align: left;
+
+  z-index: 5;
+}
+
+
+/* =========================================
+   Play Label
+========================================= */
+
+.label_paragraph {
+  position: absolute;
+
+  top: 48%;
+  left: 6%;
+
+  min-width: 0;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #e45750;
+
+  font-size: 16px;
+  font-weight: normal;
+
+  line-height: normal;
+
+  text-align: left;
+
+  z-index: 5;
+}
+
+
+/* =========================================
+   Play Writing Lines
+========================================= */
+
+.letter_body_lines {
+  position: absolute;
+
+  top: 54%;
+  left: 6%;
+
+  width: 88%;
+  height: 40%;
+
+  z-index: 4;
+}
+
+
+.body_line {
+  position: absolute;
+
+  left: 0;
+
+  width: 100%;
+  height: 30px;
+
+  margin: 0;
+  padding: 0 4px;
+
+  background: transparent !important;
+
+  border: none !important;
+  border-bottom: 1px solid #9aaeb8 !important;
+
+  outline: none !important;
+
+  box-shadow: none !important;
+
+  box-sizing: border-box;
+}
+
+
+.body_line_1 {
+  top: 0;
+}
+
+
+.body_line_2 {
+  top: 36px;
+}
+
+
+.body_line_3 {
+  top: 72px;
+}
+
+
+.body_line_4 {
+  top: 108px;
+}
+
+
+.body_line_5 {
+  top: 144px;
+}
+
+
+.body_line_6 {
+  top: 180px;
+}
+
+
+.body_line_7 {
+  top: 216px;
+}
+
+
+/* =========================================
+   Hide Old Letter Elements
+========================================= */
+
+.address_brace,
+.letter_date,
+.dear_text,
+.receiver_comma,
+.paragraph_brace,
+.sincerely_text,
+.letter_closing,
+.letter_signature,
+.letter_print_name,
+
+.label_date,
+.label_closing,
+.label_signature,
+.label_print_name,
+
+.arrow_address,
+.arrow_date,
+.arrow_receiver,
+.arrow_paragraph,
+.arrow_closing,
+.arrow_signature,
+.arrow_print_name {
+  display: none !important;
+}
+
+
+/* =========================================
+   Hide Controls
+========================================= */
+
+.func_ctrls {
+  display: none !important;
+}
+
+
+/* =========================================
+   Hide Grammarly
+========================================= */
+
+.shopping_letter grammarly-extension,
+.shopping_letter grammarly-desktop-integration {
+  display: none !important;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media screen and (max-width: 1100px) {
+
+  .group_elm {
+    width: 100%;
+    height: 630px;
+  }
+
+  .shopping_letter {
+    width: 900px;
+    height: 568px;
+  }
+
+  .letter_input {
+    font-size: 15px;
+  }
+
+  .writing_corner_image {
+    width: 29%;
+  }
+}

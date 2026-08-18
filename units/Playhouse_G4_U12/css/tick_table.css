@@ -1,23 +1,24 @@
 .all_cont {
   width: 100%;
-  height: 100%;
   align-items: center;
 }
 
-.tick_fields{
+.tick_fields {
   box-shadow: 5px 5px 10px #a8a8a8;
   padding: 15px;
   border: none;
   border-radius: 20px;
   background: #c7eafb;
 }
-
+.func_ctrls {
+  display: none !important;
+}
 .tickContent {
   text-align: center;
   height: 40px;
 }
 
-.tick_field  {
+.tick_field {
   width: 250px;
 }
 
@@ -71,13 +72,15 @@ td {
 #pick_1_4 .tickContent,
 #pick_1_7 .tickContent,
 #pick_1_10 .tickContent,
-#pick_1_13 .tickContent{
+#pick_1_13 .tickContent {
   text-align: left;
   padding-left: 20px;
 }
 
-#pick_1_9,#pick_1_17,
-#pick_1_25,#pick_1_33,
+#pick_1_9,
+#pick_1_17,
+#pick_1_25,
+#pick_1_33,
 #pick_1_41 {
   /* width: 300px; */
 }

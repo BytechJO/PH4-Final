@@ -26,7 +26,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_61/GRAMMAR.mp3",
-    "subTitleTextLeft"      : "<span class='blue_text'>1</span> Write it! Write sentences of your own using  ‘<span class='black_text'>can</span>‘, ‘<span class='black_text'>can‘t</span>‘, ‘<span class='black_text'>should</span>‘ or ‘<span class='black_text'>shouldn‘t</span>‘ correctly.",
+    "subTitleTextLeft"      : "<span class='blue_text'>2</span> Write it! Write sentences of your own using  ‘<span class='black_text'>can</span>‘, ‘<span class='black_text'>can‘t</span>‘, ‘<span class='black_text'>should</span>‘ or ‘<span class='black_text'>shouldn‘t</span>‘ correctly.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/page_61/2_Write_it!_Write_sentences_of_your_own_using_can_cant_should_and_shouldnt_correctly.mp3",

@@ -73,7 +73,7 @@ var mcq_data = {
         {
             "question"              : "You ([_]) <br> skip rope to get in shape.",
             "options"               : [["can","can‘t","should","shouldn‘t"]],          
-            "answer"                : [1],
+            "answer"                : [3],
 			"inputbox"				:"yes",
 			"image"					: '',
             "audio"                 : "",

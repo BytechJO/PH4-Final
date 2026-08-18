@@ -22,7 +22,6 @@
     margin-top: -15px;
 }
 
-
 /* //  ActivitiesCSS - Version no: R-02
 /* // updated - July 10, 2020 
 /* //  ****************************************** // */
@@ -102,25 +101,6 @@
     src: url('./fonts/ZNuscriptHeavy.ttf');
 }
 
-/**************** Scrollbar ***************/
-
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #0cb14b;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0cb14b;
-}
 
 
 /**************** fonts end ***************/
@@ -177,12 +157,12 @@
 .red_text{
     color: red;
 }
-
-.orange_text{
-    color: #f26521;
+.black{
+    color: #000;
 }
-
-
+.bold{
+    font-weight: bold;
+}
 /**************** Unit Color code end***************/
 
 .activityTitle,

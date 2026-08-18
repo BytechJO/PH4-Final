@@ -1,0 +1,717 @@
+/* =========================================================
+   SUFFIX GROUP WRITE
+========================================================= */
+
+.sgw_all_cont {
+  width: 100%;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+
+.sgw_activity {
+  width: 96%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 5px 15px 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   GRID TABLE WRAPPER
+========================================================= */
+
+.sgw_table_wrap {
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 2px solid #555;
+
+  border-radius: 10px;
+
+  box-sizing: border-box;
+
+  background: #fff;
+}
+
+
+/* =========================================================
+   GRID TABLE
+========================================================= */
+
+.sgw_grid_table {
+  width: 100%;
+
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr)) !important;
+
+  box-sizing: border-box;
+
+  background: #fff;
+}
+
+
+/* =========================================================
+   GRID HEADER
+========================================================= */
+
+.sgw_grid_header {
+  width: 100%;
+
+  min-width: 0;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 3px 5px;
+
+  box-sizing: border-box;
+
+  border-right:
+    1px solid #555;
+
+  border-bottom:
+    1px solid #555;
+
+  font-size: 20px;
+
+  font-style: italic;
+
+  font-weight: bold;
+
+  color: #00a8e8;
+
+  background: #fff;
+}
+
+
+/* last header */
+.sgw_grid_header:nth-child(5) {
+  border-right: none;
+}
+
+
+/* =========================================================
+   GRID CELLS
+========================================================= */
+
+.sgw_cell {
+  width: 100% !important;
+
+  min-width: 0 !important;
+
+  max-width: 100% !important;
+
+  height: 48px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 3px 7px;
+
+  box-sizing: border-box;
+
+  border-right:
+    1px solid #555;
+
+  border-bottom:
+    1px solid #555;
+
+  background: #fff;
+}
+
+
+/* =========================================================
+   LAST COLUMN
+========================================================= */
+
+/*
+  Headers = first 5 children
+
+  Cells start from child 6.
+
+  Each 5th cell:
+  10,15,20,25,30,35
+*/
+
+.sgw_grid_table
+.sgw_cell:nth-child(5n) {
+  border-right: none;
+}
+
+
+/* =========================================================
+   LAST ROW
+========================================================= */
+
+/*
+  Last 5 cells:
+  final row
+*/
+
+.sgw_grid_table
+.sgw_cell:nth-last-child(-n + 5) {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   DEFAULT ANSWERS
+========================================================= */
+
+.sgw_default_answer {
+  width: 100%;
+
+  min-width: 0;
+
+  padding-left: 4px;
+
+  box-sizing: border-box;
+
+  font-size: 18px;
+
+  color: #00a8e8;
+
+  text-align: left;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.sgw_input {
+  display: block !important;
+
+  width: 100% !important;
+
+  min-width: 0 !important;
+
+  max-width: 100% !important;
+
+  height: 34px;
+
+  margin: 0 !important;
+
+  padding:
+    3px 28px
+    3px 4px;
+
+  box-sizing: border-box;
+
+  position: static !important;
+
+  border: none !important;
+
+  outline: none !important;
+
+  background: transparent !important;
+
+  font-size: 18px;
+
+  color: #000;
+}
+
+
+/* =========================================================
+   INPUT FEEDBACK
+========================================================= */
+
+.sgw_input_feedback {
+  position: absolute;
+
+  right: 4px;
+
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  width: 22px;
+
+  height: 22px;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+.sgw_input_tick,
+.sgw_input_cross {
+  display: none;
+}
+
+
+.sgw_input_tick img,
+.sgw_input_cross img {
+  width: 21px;
+
+  height: auto;
+
+  display: block;
+}
+
+
+/* =========================================================
+   BOTTOM AREA
+========================================================= */
+
+.sgw_bottom_area {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  margin-top: 15px;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WORD BANK
+========================================================= */
+
+.sgw_word_bank {
+  width: 72%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  grid-template-rows:
+    repeat(6, auto);
+
+  grid-auto-flow: column;
+
+  column-gap: 40px;
+
+  row-gap: 12px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WORD ITEM
+========================================================= */
+
+.sgw_word_item {
+  position: relative;
+
+  min-width: 0;
+
+  min-height: 27px;
+
+  padding-left: 23px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  font-size: 18px;
+
+  color: #333;
+}
+
+
+/* =========================================================
+   BLUE USED TICK
+========================================================= */
+
+.sgw_used_tick {
+  position: absolute;
+
+  left: 0;
+
+  top: 50%;
+
+  transform:
+    translateY(-53%)
+    rotate(-8deg);
+
+  display: none;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  font-weight: normal;
+
+  color: #00aeef;
+}
+
+
+.sgw_word_item.used
+.sgw_used_tick {
+  display: block;
+}
+
+
+.sgw_source_word {
+  display: inline-block;
+}
+
+
+/* =========================================================
+   SIDE IMAGE
+========================================================= */
+
+.sgw_side_image {
+  width: 25%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-end;
+
+  box-sizing: border-box;
+}
+
+
+.sgw_side_image img {
+  width: 100%;
+
+  max-width: 240px;
+
+  max-height: 245px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =========================================================
+   DESKTOP / SMALLER LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .sgw_activity {
+    width: 97%;
+  }
+
+
+  .sgw_grid_header {
+    font-size: 18px;
+  }
+
+
+  .sgw_input,
+  .sgw_default_answer {
+    font-size: 17px;
+  }
+
+
+  .sgw_word_item {
+    font-size: 17px;
+  }
+
+
+  .sgw_word_bank {
+    column-gap: 28px;
+  }
+}
+
+
+/* =========================================================
+   IPAD PRO / TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .sgw_activity {
+    width: 96%;
+
+    padding:
+      5px 10px
+      20px;
+  }
+
+
+  .sgw_grid_table {
+    grid-template-columns:
+      repeat(5, minmax(0, 1fr)) !important;
+  }
+
+
+  .sgw_grid_header {
+    height: 34px;
+
+    padding:
+      2px 3px;
+
+    font-size: 16px;
+  }
+
+
+  .sgw_cell {
+    height: 43px;
+
+    min-width: 0 !important;
+
+    padding:
+      2px 5px;
+  }
+
+
+  .sgw_input {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    max-width: 100% !important;
+
+    height: 32px;
+
+    padding:
+      2px 24px
+      2px 3px;
+
+    font-size: 15px;
+  }
+
+
+  .sgw_default_answer {
+    font-size: 15px;
+  }
+
+
+  .sgw_input_feedback {
+    right: 3px;
+
+    width: 19px;
+
+    height: 19px;
+  }
+
+
+  .sgw_input_tick img,
+  .sgw_input_cross img {
+    width: 19px;
+  }
+
+
+  .sgw_bottom_area {
+    margin-top: 12px;
+  }
+
+
+  .sgw_word_bank {
+    width: 72%;
+
+    column-gap: 20px;
+
+    row-gap: 8px;
+  }
+
+
+  .sgw_word_item {
+    min-height: 22px;
+
+    padding-left: 20px;
+
+    font-size: 15px;
+  }
+
+
+  .sgw_used_tick {
+    font-size: 22px;
+  }
+
+
+  .sgw_side_image {
+    width: 25%;
+  }
+
+
+  .sgw_side_image img {
+    max-width: 190px;
+
+    max-height: 210px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .sgw_activity {
+    width: 98%;
+  }
+
+
+  .sgw_grid_header {
+    font-size: 15px;
+  }
+
+
+  .sgw_input,
+  .sgw_default_answer {
+    font-size: 14px;
+  }
+
+
+  .sgw_word_bank {
+    width: 74%;
+
+    column-gap: 12px;
+  }
+
+
+  .sgw_word_item {
+    font-size: 14px;
+  }
+
+
+  .sgw_side_image {
+    width: 24%;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .sgw_activity {
+    width: 100%;
+
+    padding-left: 5px;
+
+    padding-right: 5px;
+  }
+
+
+  /*
+    نضل محافظين على الخمس أعمدة
+    بدل ما نكسر شكل النشاط
+  */
+
+  .sgw_grid_table {
+    grid-template-columns:
+      repeat(5, minmax(0, 1fr)) !important;
+  }
+
+
+  .sgw_grid_header {
+    height: 30px;
+
+    font-size: 13px;
+  }
+
+
+  .sgw_cell {
+    height: 39px;
+
+    padding:
+      1px 3px;
+  }
+
+
+  .sgw_input {
+    height: 29px;
+
+    padding:
+      1px 20px
+      1px 2px;
+
+    font-size: 12px;
+  }
+
+
+  .sgw_default_answer {
+    padding-left: 2px;
+
+    font-size: 12px;
+  }
+
+
+  .sgw_input_feedback {
+    right: 2px;
+
+    width: 16px;
+
+    height: 16px;
+  }
+
+
+  .sgw_input_tick img,
+  .sgw_input_cross img {
+    width: 16px;
+  }
+
+
+  .sgw_bottom_area {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  .sgw_word_bank {
+    width: 100%;
+
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    grid-template-rows:
+      repeat(6, auto);
+
+    grid-auto-flow: column;
+
+    column-gap: 10px;
+
+    row-gap: 7px;
+  }
+
+
+  .sgw_word_item {
+    font-size: 13px;
+  }
+
+
+  .sgw_side_image {
+    width: 160px;
+
+    align-self: flex-end;
+
+    margin-top: 10px;
+  }
+}
