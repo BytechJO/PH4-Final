@@ -118,9 +118,6 @@
     width: 35px;
 }
 
-.func_ctrls{
-    display: none !important;
-}
 
 .tick img,
 .cross img {
@@ -228,4 +225,41 @@
     /* .fill_in .que {
         width: 200px;
     } */
+}
+
+.fillin_set {
+    font-family: Arcon;
+    font-size: 25px;
+    color: black;
+    flex: 1;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+
+.icon_wrap_holder {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    flex-shrink: 0;
+}
+
+.icon_wrap {
+    position: static;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tick,
+.cross {
+    width: 35px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
 }

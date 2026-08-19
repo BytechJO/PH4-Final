@@ -24,7 +24,7 @@ var fillin_data = {
     "mainTitle"             : "../images/pages/sb-icons/gram_main_title.png",
     "mainTitleIcon"         : "../images/pages/sb-icons/gram_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "80px"},
-    "mainTitleAudio"        : "../audios/under.mp3",
+    "mainTitleAudio"        : "../audios/page_126/GRAMMAR.mp3",
     "subTitleTextLeft"      : '<span class="title-order">2</span> Write about it!',
     "subTitleTextRight"     : "Change the sentences from ‘<span class='red_text'>going to + verb</span>’ to ‘<span class='red_text'>will</span>’ or ‘<span class='red_text'>shall</span>’:",
     "subTitleIcons"         : [],
@@ -37,7 +37,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "",
-            "answer": ["I will cook some spaghetti for dinner tonight."],
+            "answer": ["I will cook some spaghetti for dinner tonight"],
             "strictcase": "no", // yes (or) no              
             "type": "text", // text (or) number
         },

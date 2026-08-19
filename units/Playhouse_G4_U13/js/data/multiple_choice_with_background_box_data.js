@@ -24,7 +24,7 @@ var mcq_data = {
   mainTitle: "../images/pages/sb-icons/reading.png",
   mainTitleIcon: "../images/pages/sb-icons/phonics_3_icon.png",
   mainTitleIconPos: { right: "80px" },
-  mainTitleAudio: "../audios/page_108/READING.mp3",
+  mainTitleAudio: "../audios/page_120/READING.mp3",
   subTitleTextLeft: "",
   subTitleTextRight: "",
   subTitleIcons: [""],

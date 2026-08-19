@@ -151,16 +151,16 @@ var _activityData = {
       //    'visited'            : 0,
       //    'score'              : 0,
       // },
-      // {
-      //    "file"               : "fillin_text_number.html",
-      //    'type'               : 'fillin',
-      //    'subtype'            : '',
-      //    'build'              : 'yes', // yes (or) no   
-      //    'activityCtrls'      : 'yes',
-      //    'layout'             : 2,
-      //    'visited'            : 0,
-      //    'score'              : 0,
-      // },
+      {
+         "file"               : "fillin_text.html",
+         'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       // {
       //    'file'               : 'tick_image.html',
       //    'type'               : 'mcq',

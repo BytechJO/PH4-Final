@@ -21,7 +21,7 @@ var stereo_data = {
 var reading_data = {
     "mainTitle": "../images/pages/sb-icons/writing.png",
     "mainTitleIcon": "../images/pages/sb-icons/adv_icon_1.png",
-    "mainTitleAudio": "../audios/under.mp3",
+    "mainTitleAudio": "../audios/page_130/WRITING.mp3",
     "mainTitleIconPos"      : {"right": "80px"},
     "subTitleTextLeft": "<span class='title-order'>2</span> Before you write!",
     "subTitleTextRight": "Study the example below of a news article. Write your own news article.",

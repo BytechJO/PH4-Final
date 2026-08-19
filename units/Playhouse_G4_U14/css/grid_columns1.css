@@ -1,0 +1,254 @@
+/* =========================================================
+   ACTIVITY SCHEDULE
+========================================================= */
+
+.activity_schedule_wrapper {
+  width: 92%;
+
+  max-width: 1100px;
+
+  margin: 5px auto 20px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TABLE TITLE
+========================================================= */
+
+.activity_schedule_title {
+  margin-bottom: 4px;
+
+  color: #18ad4c;
+
+  font-size: 27px;
+
+  font-weight: bold;
+
+  text-align: center;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.activity_schedule_table {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    130px
+    repeat(6, 1fr);
+
+  border: 2px solid #18ad4c;
+
+  border-radius: 20px 20px 0 0;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  background: #eef7ed;
+}
+
+/* =========================================================
+   ALL CELLS
+========================================================= */
+
+.schedule_corner_cell,
+.schedule_activity_header,
+.schedule_day_cell,
+.schedule_check_cell {
+  box-sizing: border-box;
+
+  border-right: 1.5px solid #18ad4c;
+
+  border-bottom: 1.5px solid #18ad4c;
+}
+
+/* =========================================================
+   CORNER
+========================================================= */
+
+.schedule_corner_cell {
+  min-height: 230px;
+
+  background: #edf6ec;
+}
+
+/* =========================================================
+   ACTIVITY HEADER
+========================================================= */
+
+.schedule_activity_header {
+  min-height: 230px;
+
+  padding: 10px 5px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background: #edf6ec;
+}
+
+/* =========================================================
+   ACTIVITY NAME
+========================================================= */
+
+.schedule_activity_name {
+  min-height: 55px;
+
+  color: #333;
+
+  font-size: 22px;
+
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+/* =========================================================
+   HEADER IMAGE
+========================================================= */
+
+.schedule_activity_image {
+  width: 100%;
+
+  height: 145px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+.schedule_activity_image img {
+  max-width: 95%;
+
+  max-height: 140px;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   DAY
+========================================================= */
+
+.schedule_day_cell {
+  min-height: 48px;
+
+  padding-left: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  background: #edf6ec;
+
+  color: #333;
+
+  font-size: 20px;
+
+  text-align: left;
+}
+
+/* =========================================================
+   CHECK CELL
+========================================================= */
+
+.schedule_check_cell {
+  min-height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #fff;
+}
+
+/* =========================================================
+   CHECK
+========================================================= */
+
+.schedule_checkmark {
+  color: #df202c;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 38px;
+
+  font-weight: normal;
+
+  line-height: 1;
+
+  transform: rotate(-6deg);
+}
+
+/* =========================================================
+   REMOVE LAST COLUMN BORDER
+========================================================= */
+
+.activity_schedule_table > :nth-child(7n) {
+  border-right: none;
+}
+
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+  .activity_schedule_wrapper {
+    width: 95%;
+  }
+
+  .activity_schedule_table {
+    grid-template-columns:
+      110px
+      repeat(6, 1fr);
+  }
+
+  .schedule_corner_cell,
+  .schedule_activity_header {
+    min-height: 190px;
+  }
+
+  .schedule_activity_name {
+    font-size: 17px;
+  }
+
+  .schedule_activity_image {
+    height: 115px;
+  }
+
+  .schedule_activity_image img {
+    max-height: 110px;
+  }
+
+  .schedule_day_cell {
+    min-height: 42px;
+
+    font-size: 16px;
+  }
+
+  .schedule_check_cell {
+    min-height: 42px;
+  }
+
+  .schedule_checkmark {
+    font-size: 31px;
+  }
+
+  .activity_schedule_title {
+    font-size: 22px;
+  }
+}

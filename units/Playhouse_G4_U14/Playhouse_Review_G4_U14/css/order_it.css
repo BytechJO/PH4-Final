@@ -1,0 +1,389 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.order_all_cont {
+    width: 100%;
+    height: 100%;
+}
+
+
+.order_screen_elements {
+    width: 80%;
+    height: 100%;
+
+    margin: auto;
+}
+
+
+.order_group_elm {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.order_page_sub_title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-align: left;
+}
+
+
+.order_page_sub_title p {
+    margin: 0;
+}
+
+
+.order_num {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #18b84e;
+
+    color: #111;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+
+.order_page_sub_title > p:first-child {
+    color: #222;
+
+    font-size: 22px;
+
+    font-style: italic;
+}
+
+
+.order_page_sub_title .subTitleTextRight {
+    color: #19b84e;
+
+    font-size: 21px;
+
+    font-style: normal;
+}
+
+
+/* =========================================================
+   IMAGE + QUESTIONS
+========================================================= */
+
+.order_people_wrapper {
+    width: 95%;
+
+    position: relative;
+
+    margin: 20px auto 0;
+
+    padding-top: 105px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FULL IMAGE
+========================================================= */
+
+.order_all_images {
+    width: 100%;
+
+    display: block !important;
+}
+
+
+.order_image_space {
+    width: 100%;
+
+    height: auto;
+
+    margin: 0 !important;
+}
+
+
+.order_image_space img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.order_q_box {
+    width: 16%;
+
+    position: absolute;
+
+    top: 15px;
+
+    transform: translateX(-50%);
+
+    z-index: 20;
+
+    padding: 0 !important;
+}
+
+
+.order_q_box .que {
+    width: 100%;
+
+    height: auto !important;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   TXT WRAP
+========================================================= */
+
+.order_txt_wrap {
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   TXT BOX
+========================================================= */
+
+.order_txtBox {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.order_txtBox input {
+    width: calc(100% - 25px);
+
+    height: 36px;
+
+    padding: 2px 4px;
+
+    border: none;
+
+    border-bottom: 2px solid #333;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* first */
+
+.order_q_box:first-of-type .order_txtBox input {
+    border-bottom: none;
+
+    color: #ef3340;
+
+    font-size: 23px;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.order_theIcons {
+    width: 24px;
+
+    position: absolute;
+
+    right: -2px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+.order_theIcons .icon_wrap {
+    width: 22px;
+    height: 22px;
+}
+
+
+.order_theIcons .tick,
+.order_theIcons .cross {
+    width: 22px;
+    height: 22px;
+}
+
+
+.order_theIcons img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.order_arrow {
+    width: 18px;
+    height: 74px;
+
+    position: relative;
+
+    margin: 6px auto 0;
+
+    pointer-events: none;
+}
+
+
+.order_arrow_line {
+    width: 2px;
+    height: 57px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+
+    background: #15bd60;
+}
+
+
+.order_arrow_head {
+    width: 0;
+    height: 0;
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 3px;
+
+    transform: translateX(-50%);
+
+    border-left: 6px solid transparent;
+
+    border-right: 6px solid transparent;
+
+    border-top: 11px solid #15bd60;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .order_people_wrapper {
+        width: 98%;
+
+        padding-top: 90px;
+    }
+
+
+    .order_txtBox input {
+        height: 31px;
+
+        font-size: 16px;
+    }
+
+
+    .order_q_box:first-of-type .order_txtBox input {
+        font-size: 19px;
+    }
+
+
+    .order_arrow {
+        height: 62px;
+    }
+
+
+    .order_arrow_line {
+        height: 47px;
+    }
+
+
+    .order_page_sub_title .subTitleTextRight {
+        font-size: 17px;
+    }
+
+}.order_txtBox {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.order_txtBox input {
+    width: 82%;
+}
+
+.order_arrow {
+    width: 18px;
+    height: 74px;
+
+    position: relative;
+
+    margin: 6px auto 0;
+
+    left: -9px;
+
+    pointer-events: none;
+}

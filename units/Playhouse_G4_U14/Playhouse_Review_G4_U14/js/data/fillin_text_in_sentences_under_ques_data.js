@@ -1,52 +1,90 @@
+var stereo_data = {
+  audio: "",
+  exist: true,
+  bgColor_rgb: "rgb(53, 130, 180)",
+  type: "text",
+
+  playListData: [
+    {
+      audiourl: "../audios/under.mp3",
+    },
+    {
+      url: "",
+    },
+    {
+      url: "",
+    },
+    {
+      url: "",
+    },
+  ],
+};
+
 var fillin_data = {
-    "layout"               : 1,
-    "numinrow"              : [[1], [1], [1], [1], [1]],
-    "mainTitle"             : "",
-    "mainTitleIcon"         : "",
-    "mainTitleIconPos"      : {"right": "-18px"},
-    "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='green_text'>2</span> Tell about it! What do you plan to do this week? Using the word ‘will’, tell about two activities you are going to do. Then use the word ‘won’t’ to name two things you aren’t going to do.",
-    "subTitleTextRight"     : "",
-    "subTitleIcons"         : [""],
-    "subTitleAudio"         : "../audios/under.mp3",
-    "image"                 : "",
-    "imageposition"         : "back",// "front" (or) "back"
-    "defaultAnswer"         : 1,
-    "numbering"             : "none", // "alphabet" (or) "number"
-    "numberstartfrom"       : 1,
-    "options"               : [],
-    "optionsAudios"         : ["","","","","","","","","","","","","",""],
-    "questions"             :
-     [
+  // =====================================================
+  // HEADER
+  // =====================================================
+  mainTitle: "",
+  mainTitleIcon: "",
+  mainTitleIconPos: { right: "-18px" },
+  mainTitleAudio: "../audios/under.mp3",
+  subTitleTextLeft:
+    "<span class='green_text'>1</span> Tell about it! <span class='green'> What do you plan to do this week? Using the word ‘<span class='red'>will</span>’, tell about two activities you are going to do. Then use the word ‘<span class='red'>won</span>’t’ to name two things you aren’t going to do.</span>",
+  subTitleTextRight: "",
+  subTitleIcons: [""],
+  subTitleAudio: "../audios/under.mp3",
+
+  // =====================================================
+  // SECTIONS
+  // =====================================================
+
+  sections: [
+    // =================================================
+    // POSITIVE
+    // =================================================
+
+    {
+      title: "Positive",
+
+      exampleLabel: "Example:",
+
+      example: "I will practise football after school.",
+
+      questions: [
         {
-          "singleword": false,
-          "topsent": "Positive <br> Example: I will practise football after school.",
-          "text": "1[_] 2[_]",
-          "textaudios": ["../audios/under.mp3"],
-          "audio": "",
-          "audioenable": "default", // correct (or) default
-          "image": "",
-          "answer": ["How many"],
-          "alternateanswer": [[]],
-          "strictcase": "no", // yes (or) no  
-          "strictorder": "yes", // yes (or) no              
-          "maxlength": 200,
-          "type": "", // text (or) number
+          number: "1",
+          maxlength: 200,
         },
+
         {
-          "singleword": false,
-          "topsent": "Negative <br> I won’t forget to do my homework.",
-          "text": "1[_] 2[_]",
-          "textaudios": ["../audios/under.mp3","../audios/under.mp3"],
-          "audio": "",
-          "audioenable": "default", // correct (or) default
-          "image": "",
-          "answer": ["How much"],
-          "alternateanswer": [[]],
-          "strictcase": "no", // yes (or) no     
-          "strictorder": "yes", // yes (or) no             
-          "maxlength": 200,
-          "type": "", // text (or) number
-        }
-      ]
-    }
+          number: "2",
+          maxlength: 200,
+        },
+      ],
+    },
+
+    // =================================================
+    // NEGATIVE
+    // =================================================
+
+    {
+      title: "Negative",
+
+      exampleLabel: "",
+
+      example: "I won’t forget to do my homework.",
+
+      questions: [
+        {
+          number: "1",
+          maxlength: 200,
+        },
+
+        {
+          number: "2",
+          maxlength: 200,
+        },
+      ],
+    },
+  ],
+};

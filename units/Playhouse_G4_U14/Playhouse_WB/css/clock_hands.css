@@ -1,0 +1,381 @@
+/* =========================================================
+   MAIN
+========================================================= */
+
+.clock_activity_container {
+  width: 96%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.clock_page_sub_title {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  text-align: left;
+}
+
+.clock_subtitle_left {
+  color: #00aeef;
+
+  font-size: 19px;
+
+  font-style: italic;
+
+  white-space: nowrap;
+}
+
+.clock_subtitle_left b {
+  font-weight: bold;
+}
+
+.clock_title_number {
+  font-weight: bold;
+}
+
+.clock_subtitle_right {
+  color: #00aeef;
+
+  font-size: 17px;
+
+  font-style: italic;
+}
+
+/* =========================================================
+   QUESTIONS
+========================================================= */
+
+.clock_questions_group {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  justify-items: center;
+  gap: 3%;
+  margin-top: 50px;
+}
+
+.clock_question {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+}
+
+/* =========================================================
+   CLOCK FACE
+========================================================= */
+
+.clock_face {
+  width: min(18vw, 185px);
+
+  aspect-ratio: 1 / 1;
+
+  position: relative;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  user-select: none;
+
+  touch-action: none;
+}
+
+/* =========================================================
+   TICKS
+========================================================= */
+
+.clock_ticks {
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.clock_tick {
+  width: 2px;
+  height: 100%;
+
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+
+  transform-origin: center center;
+}
+
+.clock_tick i {
+  width: 2px;
+  height: 6px;
+
+  position: absolute;
+
+  left: 0;
+  top: 2px;
+
+  display: block;
+
+  background: #222;
+}
+
+.clock_tick_hour i {
+  width: 4px;
+  height: 12px;
+
+  left: -1px;
+
+  background: #111;
+}
+
+/* =========================================================
+   NUMBERS
+========================================================= */
+
+.clock_number {
+  position: absolute;
+
+  z-index: 4;
+
+  transform: translate(-50%, -50%);
+
+  color: #111;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CLOCK HAND COMMON
+========================================================= */
+
+.clock_hand {
+  position: absolute;
+
+  left: 50%;
+  bottom: 50%;
+
+  z-index: 10;
+
+  transform-origin: 50% 100%;
+
+  transform: translateX(-50%) rotate(0deg);
+
+  border-radius: 10px 10px 3px 3px;
+
+  cursor: grab;
+
+  touch-action: none;
+}
+
+.clock_hand:active {
+  cursor: grabbing;
+}
+
+/* bigger invisible click/touch area */
+
+.clock_hand_drag_area {
+  position: absolute;
+
+  left: 50%;
+
+  top: 0;
+
+  width: 28px;
+  height: 100%;
+
+  transform: translateX(-50%);
+
+  background: transparent;
+}
+
+/* =========================================================
+   HOUR HAND
+========================================================= */
+
+.clock_hour_hand {
+  width: 7px;
+
+  height: 28%;
+
+  background: #222;
+
+  z-index: 11;
+}
+
+/* =========================================================
+   MINUTE HAND
+========================================================= */
+
+.clock_minute_hand {
+  width: 5px;
+
+  height: 39%;
+
+  background: #555;
+
+  z-index: 12;
+}
+
+/* =========================================================
+   CENTER
+========================================================= */
+
+.clock_center_dot {
+  width: 11px;
+  height: 11px;
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  z-index: 20;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: #111;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   TIME
+========================================================= */
+
+.clock_time_text {
+  margin-top: 10px;
+
+  color: #111;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  text-align: center;
+}
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.clock_feedback_icon {
+  width: 23px;
+  height: 23px;
+
+  position: absolute;
+
+  right: -3px;
+  top: -3px;
+
+  z-index: 50;
+
+  padding: 0 !important;
+
+  pointer-events: none;
+}
+
+.clock_feedback_icon .tick,
+.clock_feedback_icon .cross {
+  width: 23px;
+  height: 23px;
+
+  display: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.clock_feedback_icon .tick img,
+.clock_feedback_icon .cross img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   DRAGGING
+========================================================= */
+
+body.clock_dragging {
+  user-select: none;
+
+  cursor: grabbing;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .clock_questions_group {
+    gap: 2%;
+  }
+
+  .clock_face {
+    width: min(19vw, 165px);
+  }
+
+  .clock_number {
+    font-size: 11px;
+  }
+
+  .clock_time_text {
+    margin-top: 8px;
+
+    font-size: 16px;
+  }
+}
+
+/* =========================================================
+   SMALL
+========================================================= */
+
+@media (max-width: 800px) {
+  .clock_activity_container {
+    min-width: 720px;
+  }
+
+  .clock_questions_group {
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+  }
+
+  .clock_face {
+    width: 145px;
+  }
+}

@@ -322,4 +322,31 @@ table tr th{
     .img_fillin_gr {
         width: auto;
     }
+}/* =========================================
+   PLAY IT - BOTTOM TEXT
+========================================= */
+
+.fillin_bottom_text {
+    width: 80%;
+    margin: 18px auto 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.play_it_text {
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.25;
+    color: #222;
+    text-align: left;
+}
+
+.play_it_title {
+    color: #00aeef;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.exercise_link {
+    color: #00aeef;
 }

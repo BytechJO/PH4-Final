@@ -1,11 +1,11 @@
 var stereo_data = {
     "audio":"",
-    "exist":false,
+    "exist":true,
     "bgColor_rgb":"rgb(12, 177, 75)",
     "type":"flip_card",
     "playListData" : [
         {
-          'audiourl': '../audios/demoo.mp3',
+          'audiourl': '../audios/page_130/1.mp3',
         },
         {
           'url': '',
@@ -22,11 +22,11 @@ var reading_data = {
     "mainTitle": "../images/pages/sb-icons/writing.png",
     "mainTitleIcon": "../images/pages/sb-icons/adv_icon_1.png",
     "mainTitleIconPos": {"right": "80px"},
-    "mainTitleAudio": "../audios/under.mp3",
+    "mainTitleAudio": "../audios/page_130/WRITING.mp3",
     "subTitleTextLeft": "<span class='title-order'>1</span> Tell about it!",
     "subTitleTextRight": "Imagine you’re a newspaper reporter, and write about three track stars namely Hiroshi, William and Lebron. Explain what might happen in the race.",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/under.mp3",
+    "subTitleAudio": "../audios/page_130/1_Tell_about_it!.mp3",
     "slides": [
         {
            

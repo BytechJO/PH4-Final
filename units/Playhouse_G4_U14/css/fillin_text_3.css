@@ -1,0 +1,342 @@
+/* =========================================================
+   MAIN
+========================================================= */
+
+.calendar_all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.calendar_activity {
+  width: 88%;
+
+  max-width: 1080px;
+
+  margin: 5px auto 20px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MONTH TITLE
+========================================================= */
+
+.calendar_month_title {
+  width: 100%;
+
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 2px solid #20b45a;
+  border-bottom: none;
+
+  border-radius: 12px 12px 0 0;
+
+  background: #f4fff4;
+
+  color: #17ad4c;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   CALENDAR GRID
+========================================================= */
+
+.ordinal_calendar {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+
+  border-left: 2px solid #20b45a;
+  border-top: 2px solid #20b45a;
+
+  border-radius: 0 0 12px 12px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   DAY HEADER
+========================================================= */
+
+.calendar_day_header {
+  min-height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border-right: 2px solid #20b45a;
+  border-bottom: 2px solid #20b45a;
+
+  background: #f4fff4;
+
+  color: #19ad4d;
+
+  font-size: 16px;
+}
+
+/* =========================================================
+   DATE CELL
+========================================================= */
+
+.calendar_date_cell {
+  min-height: 82px;
+
+  position: relative;
+
+  padding: 5px 6px;
+
+  box-sizing: border-box;
+
+  border-right: 2px solid #20b45a;
+  border-bottom: 2px solid #20b45a;
+
+  background: #fff;
+
+  text-align: left;
+}
+
+/* =========================================================
+   ORDINAL NUMBER
+========================================================= */
+
+.calendar_ordinal {
+  margin-bottom: 2px;
+
+  color: #17ad4c;
+
+  font-size: 15px;
+
+  line-height: 1;
+}
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.calendar_que {
+  width: 100% !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  min-height: 30px;
+
+  display: block !important;
+}
+
+.calendar_fillin_set {
+  width: 100%;
+
+  min-height: 30px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   DEFAULT
+========================================================= */
+
+.calendar_default_input {
+  width: 100%;
+
+  padding: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #17ad4c;
+
+  font-size: 14px;
+
+  line-height: 1.2;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   STUDENT INPUT
+========================================================= */
+
+.calendar_input {
+  width: calc(100% - 22px);
+
+  height: 25px;
+
+  padding: 0 2px;
+
+  border: none;
+  border-bottom: 1px solid #555;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #000;
+
+  font-size: 14px;
+
+  line-height: 24px;
+}
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.calendar_icon_wrap {
+  width: 19px;
+  height: 19px;
+
+  position: absolute;
+
+  right: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  padding: 0 !important;
+}
+
+.calendar_icon_wrap .tick,
+.calendar_icon_wrap .cross {
+  width: 18px;
+  height: 18px;
+}
+
+.calendar_icon_wrap .tick img,
+.calendar_icon_wrap .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.calendar_default_icon {
+  display: none;
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.calendar_empty_cell {
+  background: #fff;
+}
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+  .calendar_activity {
+    width: 94%;
+  }
+
+  .calendar_month_title {
+    height: 31px;
+
+    font-size: 17px;
+  }
+
+  .calendar_day_header {
+    min-height: 31px;
+
+    font-size: 13px;
+  }
+
+  .calendar_date_cell {
+    min-height: 68px;
+
+    padding: 4px;
+  }
+
+  .calendar_ordinal {
+    font-size: 12px;
+  }
+
+  .calendar_default_input,
+  .calendar_input {
+    font-size: 11px;
+  }
+
+  .calendar_input {
+    width: calc(100% - 18px);
+  }
+
+  .calendar_icon_wrap {
+    width: 16px;
+    height: 16px;
+  }
+
+  .calendar_icon_wrap .tick,
+  .calendar_icon_wrap .cross {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* =========================================================
+   SMALL
+========================================================= */
+
+@media (max-width: 760px) {
+  .calendar_activity {
+    min-width: 720px;
+  }
+}
+.calendar_answer_line {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.calendar_help_text {
+  color: #17ad4c;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.calendar_input {
+  flex: 1;
+  min-width: 25px;
+  height: 24px;
+  border: none;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+}

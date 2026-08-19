@@ -24,7 +24,7 @@ var reading_data = {
     "mainTitleAudio": "../audios/page_129/PHONICS_AND_SPELLING.mp3",
     "mainTitleIconPos"      : {"right": "90px"},
     "subTitleTextLeft": "<span class='title-order'>1</span> Listen and read.",
-    "subTitleTextRight": "",
+    "subTitleTextRight": "<span class='black'> Say it!</span>",
     "subTitleIcons": [],
     "subTitleAudio": "../audios/page_129/1_Listen_and_read.mp3",
     "slides": [
@@ -43,7 +43,7 @@ var reading_data = {
             "We use ordinal numbers to describe dates on the calendar. All ordinal numbers carry",
             "a suffix ending in ‘<span class='green_text'>-st</span>’, ‘<span class='green_text'>-nd</span>’, ‘<span class='green_text'>-rd</span>’ or ‘<span class='green_text'>-th</span>’. ",
             "An ordinal number shows position or <span class='green_text'>order</span> in relation to other numbers.",
-            "<span class='orange_text'>Example:</span> He won <span class='green_text'>first</span> prize",
+            "<span class='red_text'>Example:</span> He won <span class='green_text'>first</span> prize",
             "My birthday is on the <span class='green_text'>1st</span> of November.",
             ],
         "imagePlacePos":[
