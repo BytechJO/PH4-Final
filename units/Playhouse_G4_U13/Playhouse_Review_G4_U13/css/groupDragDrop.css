@@ -1,0 +1,319 @@
+/* =========================================================
+   MAIN
+========================================================= */
+
+.gdd_all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gdd_activity {
+  width: 92%;
+  max-width: 1100px;
+
+  margin: 10px auto;
+
+  display: flex;
+
+  align-items: stretch;
+
+  justify-content: center;
+
+  gap: 16px;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.gdd_page_sub_title {
+  text-align: left;
+}
+
+.gdd_title {
+  margin: 0;
+
+  color: #222;
+
+  font-size: 22px;
+
+  font-style: italic;
+}
+
+.gdd_title b,
+.gdd_number {
+  font-weight: bold;
+}
+
+.gdd_number {
+  width: 25px;
+  height: 25px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 3px;
+
+  border-radius: 50%;
+
+  background: #18ad4c;
+
+  color: #fff;
+
+  font-style: normal;
+
+  font-size: 16px;
+}
+
+.gdd_instruction {
+  color: #18ad4c;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   WORD BANK
+========================================================= */
+
+.gdd_word_bank {
+  width: 145px;
+
+  min-width: 145px;
+
+  padding: 12px 18px;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #23ad55;
+
+  border-radius: 12px;
+
+  background: #fff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 9px;
+}
+
+.gdd_word {
+  position: relative;
+
+  width: fit-content;
+
+  color: #333;
+
+  font-size: 18px;
+
+  cursor: grab;
+
+  touch-action: none;
+
+  user-select: none;
+}
+
+.gdd_word:active {
+  cursor: grabbing;
+}
+
+/* =========================================================
+   USED WORD
+========================================================= */
+
+.gdd_word.gdd_used {
+  color: #555;
+
+  cursor: default;
+
+  pointer-events: none;
+}
+
+.gdd_word.gdd_used::after {
+  content: "";
+
+  position: absolute;
+
+  left: -5px;
+  right: -5px;
+
+  top: 50%;
+
+  height: 1.5px;
+
+  background: #e22;
+
+  transform: translateY(-50%);
+}
+
+/* =========================================================
+   GROUPS
+========================================================= */
+
+.gdd_groups {
+  flex: 1;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+/* =========================================================
+   DROP GROUP
+========================================================= */
+
+.gdd_drop_group {
+  min-height: 310px;
+
+  position: relative;
+
+  padding: 14px;
+
+  box-sizing: border-box;
+
+  border: 1.7px solid #22ad54;
+
+  border-radius: 12px;
+
+  background: #dcedd9;
+}
+
+.gdd_group_title {
+  margin-bottom: 12px;
+
+  color: #333;
+
+  font-size: 19px;
+
+  text-align: left;
+}
+
+/* =========================================================
+   DROP AREA
+========================================================= */
+
+.gdd_drop_area {
+  width: 100%;
+
+  min-height: 240px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+/* =========================================================
+   DROPPED WORD
+========================================================= */
+
+.gdd_dropped_word {
+  color: #ef3131;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.gdd_default_word {
+  cursor: default;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   DRAG CLONE
+========================================================= */
+
+.gdd_drag_clone {
+  position: fixed;
+
+  z-index: 99999;
+
+  pointer-events: none;
+
+  padding: 5px 10px;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+
+  color: #222;
+
+  font-size: 18px;
+}
+
+.gdd_dragging {
+  opacity: 0.35;
+}
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.gdd_group_feedback {
+  position: absolute;
+
+  right: 8px;
+  bottom: 8px;
+
+  width: 26px;
+  height: 26px;
+}
+
+.gdd_group_tick,
+.gdd_group_cross {
+  display: none;
+}
+
+.gdd_group_tick img,
+.gdd_group_cross img {
+  width: 25px;
+
+  height: auto;
+}
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+  .gdd_activity {
+    width: 95%;
+  }
+
+  .gdd_word_bank {
+    width: 125px;
+
+    min-width: 125px;
+  }
+
+  .gdd_word,
+  .gdd_dropped_word {
+    font-size: 16px;
+  }
+
+  .gdd_group_title {
+    font-size: 17px;
+  }
+
+  .gdd_drop_group {
+    min-height: 280px;
+  }
+}

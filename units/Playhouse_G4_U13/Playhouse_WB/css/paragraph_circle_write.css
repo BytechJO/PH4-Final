@@ -1,0 +1,302 @@
+/* =========================================================
+   MAIN
+========================================================= */
+
+.pcw_all_cont {
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+.pcw_activity {
+  width: 92%;
+
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  padding: 5px 15px 30px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pcw_page_sub_title {
+  text-align: left;
+}
+
+.pcw_title_line {
+  margin: 0 0 3px;
+
+  color: #00aeef;
+
+  font-size: 25px;
+
+  font-style: italic;
+}
+
+.pcw_title_line b {
+  font-weight: bold;
+}
+
+.pcw_title_number {
+  color: #00aeef;
+
+  font-weight: bold;
+}
+
+.pcw_instruction {
+  max-width: 1000px;
+
+  margin: 0;
+
+  color: #00aeef;
+
+  font-size: 22px;
+
+  line-height: 1.35;
+}
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.pcw_paragraph_wrapper {
+  width: 96%;
+
+  margin: 15px auto 30px;
+
+  position: relative;
+}
+
+.pcw_paragraph {
+  color: #333;
+
+  font-size: 24px;
+
+  line-height: 1.6;
+
+  text-align: left;
+}
+
+/* =========================================================
+   NORMAL PART
+========================================================= */
+
+.pcw_normal_part {
+  position: relative;
+}
+
+/* =========================================================
+   HIDDEN WORD PART
+========================================================= */
+
+.pcw_hidden_part {
+  position: relative;
+
+  display: inline;
+
+  cursor: pointer;
+
+  border-radius: 30px;
+
+  transition:
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+/* =========================================================
+   SELECTED
+========================================================= */
+
+.pcw_hidden_part.pcw_selected {
+  color: #333;
+
+  background: rgba(0, 174, 239, 0.07);
+
+  box-shadow: 0 0 0 2px #00aeef;
+}
+
+/* نخلي القطعتين كأنهم دائرة واحدة قدر الإمكان */
+.pcw_hidden_part.pcw_selected:first-child {
+  border-radius: 30px 0 0 30px;
+}
+
+/* =========================================================
+   PARAGRAPH FEEDBACK
+========================================================= */
+
+.pcw_paragraph_feedback {
+  position: absolute;
+
+  right: -35px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 28px;
+
+  height: 28px;
+}
+
+.pcw_paragraph_tick,
+.pcw_paragraph_cross {
+  display: none;
+}
+
+.pcw_paragraph_tick img,
+.pcw_paragraph_cross img {
+  width: 27px;
+
+  height: auto;
+}
+
+/* =========================================================
+   ANSWERS
+========================================================= */
+
+.pcw_answers_area {
+  width: 92%;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 130px;
+
+  row-gap: 70px;
+}
+
+/* =========================================================
+   ANSWER ITEM
+========================================================= */
+
+.pcw_answer_item {
+  width: 100%;
+
+  position: relative;
+
+  padding-right: 32px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.pcw_answer_input {
+  width: 100%;
+
+  height: 38px;
+
+  padding: 2px 10px;
+
+  border: none;
+
+  border-bottom: 2px solid #555;
+
+  outline: none;
+
+  background: transparent;
+
+  box-sizing: border-box;
+
+  color: #00aeef;
+
+  font-size: 23px;
+
+  text-align: center;
+}
+
+.pcw_default_answer {
+  color: #00aeef;
+
+  opacity: 1;
+}
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.pcw_answer_feedback {
+  position: absolute;
+
+  right: 0;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 26px;
+
+  height: 26px;
+}
+
+.pcw_answer_tick,
+.pcw_answer_cross {
+  display: none;
+}
+
+.pcw_answer_tick img,
+.pcw_answer_cross img {
+  width: 25px;
+
+  height: auto;
+}
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+  .pcw_activity {
+    width: 95%;
+  }
+
+  .pcw_title_line {
+    font-size: 21px;
+  }
+
+  .pcw_instruction {
+    font-size: 18px;
+  }
+
+  .pcw_paragraph {
+    font-size: 20px;
+
+    line-height: 1.55;
+  }
+
+  .pcw_answers_area {
+    column-gap: 90px;
+
+    row-gap: 55px;
+  }
+
+  .pcw_answer_input {
+    font-size: 20px;
+  }
+}
+
+/* =========================================================
+   SMALL
+========================================================= */
+
+@media (max-width: 760px) {
+  .pcw_activity {
+    min-width: 700px;
+  }
+}

@@ -1,353 +1,752 @@
+/* =========================================
+   Header / Main Title
+========================================= */
+
 .act_head_group .image_container {
-    height: 50px;
-    float: right;
+  height: 50px;
+  float: right;
 }
 
-.act_head_group .img_click_container img{
-    height: 50px;
-    transition: all 1.0s ease-in-out;
+.act_head_group .img_click_container img {
+  height: 50px;
+  transition: all 1s ease-in-out;
 }
 
-.group_elm,.group_white_border {
-    width: 75%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: double 20px transparent;
-    border-radius: 30px;
-    background-image: linear-gradient(#f6e5b6, #f6e5b6), 
-                      linear-gradient(to left, #373737, #838383, #585757);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+/* =========================================
+   Device Frame
+========================================= */
+
+.group_elm,
+.group_white_border {
+  width: 75%;
+  min-height: 0;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  border: double 20px transparent;
+  border-radius: 30px;
+
+  background-image:
+    linear-gradient(#f6e5b6, #f6e5b6),
+    linear-gradient(to left, #373737, #838383, #585757);
+
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  box-sizing: border-box;
 }
 
-.group_white_border{
-    width: 100%;
-    border: 20px solid #fff;
-    border-top: 40px solid #fff;
-    border-bottom: 40px solid #fff;
-    border-radius: 7px;
-    display: flex;
-    background-color: #f6e5b6;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    position: relative;
+.group_elm {
+  flex-direction: row;
 }
 
-.header_cam{
-    height: 10px;
-    width: 100px;
-    border: 6px solid #000;
-    border-radius: 20px;
-    position: absolute;
-    top: -24px;
+.group_white_border {
+  width: 100%;
+  min-height: 0;
+  height: auto;
+
+  padding: 45px 45px 35px;
+
+  flex-direction: column;
+  justify-content: flex-start;
+
+  position: relative;
+
+  border: 20px solid #fff;
+  border-top-width: 40px;
+  border-bottom-width: 40px;
+  border-radius: 7px;
+
+  background-color: #f6e5b6;
+  background-image: none;
+
+  box-sizing: border-box;
 }
 
-.header_bar{
-    width: 100%;
-    height: 25px;
-    background-color: #2b2c2b;
-    position: absolute;
-    top: 1px;
+/* =========================================
+   Device Camera
+========================================= */
+
+.header_cam {
+  width: 100px;
+  height: 10px;
+
+  position: absolute;
+  top: -24px;
+
+  border: 6px solid #000;
+  border-radius: 20px;
 }
 
-.header_bar .icons{
-    text-align: right;
-    font-size: 17px;
-    color: #e9ecef;
-    padding: 0px 7px;
-    display: flex;
-    justify-content: space-between;
+/* =========================================
+   Device Header Bar
+========================================= */
+
+.header_bar {
+  width: 100%;
+  height: 25px;
+
+  position: absolute;
+  top: 1px;
+
+  background-color: #2b2c2b;
 }
 
-.header_bar .icons .icon{
-    margin: 0px 5px;
+.header_bar .icons {
+  padding: 0 7px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #e9ecef;
+  font-size: 17px;
+  text-align: right;
+}
+
+.header_bar .icons .icon {
+  margin: 0 5px;
 }
 
 .header_bar .icons .icons_left .icon {
-    margin: 0px 10px;
-    margin-top: 5px;
-    font-size: 20px;
+  margin: 5px 10px 0;
+  font-size: 20px;
 }
 
 .header_bar .icons .battery {
-    color: #9dcd4e;
+  color: #9dcd4e;
 }
+
+/* =========================================
+   Device Home Button
+========================================= */
 
 .group_white_border .home_Btn {
-    position: absolute;
-    width: 90px;
-    height: 24px;
-    border: 3px solid #5d5c5c;
-    border-radius: 50px;
-    bottom: -31px;
-    cursor: pointer;
+  width: 90px;
+  height: 24px;
+
+  position: absolute;
+  bottom: -31px;
+
+  border: 3px solid #5d5c5c;
+  border-radius: 50px;
+
+  cursor: pointer;
 }
+
+/* =========================================
+   Gallery
+========================================= */
 
 .gallery {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
+  width: 100%;
+  height: auto;
+  min-height: 0;
 
-.gallery-container{
-    align-items: center;
-    display: flex;
-    height: 400px;
-    margin: 0 auto;
-    max-width: 1000px;
-    position: relative;
-}
-
-.gallery-item{
-    height: 200px;
-    opacity: 0;
-    position: absolute;
-    width: 330px;
-    z-index: 0;
-    border-radius: 15px;
-    background-size: contain;
-    font-size: 22px;
-}
-
-.gallery-item-1 {
-    height: 327px;
-    opacity: 1;
-    left: 50%;
-    top: -50px;
-    transform: translateX(-50%);
-    width: 722px;
-    z-index: 2;
+  display: flex;
+  align-items: flex-start;
 }
 
 .gallery-container {
-    display: flex;
-    justify-content: center;
-    margin: 25px auto;
-    height: 275px;
-    align-items: flex-start;
+  width: 100%;
+  max-width: 1100px;
+
+  height: auto;
+  min-height: 0;
+
+  margin: 25px auto;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+
+  opacity: 0;
+
+  font-size: 22px;
+  line-height: 1.6;
+
+  border-radius: 15px;
+
+  box-sizing: border-box;
+}
+
+.gallery-item-1 {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+
+  position: relative;
+  top: auto;
+  left: auto;
+
+  opacity: 1;
+  transform: none;
+
+  z-index: 2;
 }
 
 .gallery-container button {
-    background-color: #e8fe8f;
-    cursor: pointer;
-    font-size: 30px;
-    margin: 0 50px;
-    padding: 0 12px;
-    min-width: 100px !important;
-    text-transform: capitalize;
+  min-width: 100px !important;
+
+  margin: 0 50px;
+  padding: 0 12px;
+
+  background-color: #e8fe8f;
+
+  border: none;
+
+  font-size: 30px;
+  text-transform: capitalize;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   Gallery Controls
+========================================= */
+
+.gallery-controls {
+  padding: 0;
+
+  position: absolute;
+
+  bottom: 50%;
+  left: 36%;
+
+  display: flex;
+  justify-content: center;
+
+  transform: translateY(50%);
 }
 
 .gallery-controls-previous,
-.gallery-controls-next{
-    margin: 0px 27px;
-    min-width: 131px;
-    
+.gallery-controls-next {
+  min-width: 131px;
+  margin: 0 27px;
 }
 
-.gallery-controls-previous::before{
-    border: solid #000;
-    border-width: 0 5px 5px 0;
-    content: '';
-    display: inline-block;
-    height: 5px;
-    left: -30px;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    transform: rotate(135deg) translateY(-50%);
-    transition: left 0.15s ease-in-out;
-    width: 5px;
+.gallery-controls-previous::before,
+.gallery-controls-next::before {
+  width: 5px;
+  height: 5px;
+
+  content: "";
+
+  display: inline-block;
+
+  position: absolute;
+
+  padding: 10px;
+
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+
+  transition: 0.15s ease-in-out;
+}
+
+.gallery-controls-previous::before {
+  top: 0;
+  left: -30px;
+
+  transform: rotate(135deg) translateY(-50%);
+
+  transition-property: left;
 }
 
 .gallery-controls-previous:hover::before {
-    left: -40px;
+  left: -40px;
 }
 
 .gallery-controls-next::before {
-    border: solid #000;
-    border-width: 0 5px 5px 0;
-    content: '';
-    display: inline-block;
-    height: 5px;
-    padding: 10px;
-    position: absolute;
-    right: -30px;
-    bottom: -43px;
-    transform: rotate(-45deg) translateY(-50%);
-    transition: right 0.15s ease-in-out;
-    width: 5px;
+  right: -30px;
+  bottom: -43px;
+
+  transform: rotate(-45deg) translateY(-50%);
+
+  transition-property: right;
 }
 
 .gallery-controls-next:hover::before {
-    right: -40px;
-}
-
-
-.gallery-controls{
-    bottom: 167px;
-    left: 36%;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    position: absolute;
-    justify-content: center;
+  right: -40px;
 }
 
 .gallery-nav li {
-    border-radius: 50%;
-    height: 30px;
-    margin: 0 90px;
-    width: 10px;
+  width: 10px;
+  height: 30px;
+
+  margin: 0 90px;
+
+  border-radius: 50%;
 }
 
-.carousel{
-    position: static;
-    width: 88%;
-    height: 308px;
+/* =========================================
+   Carousel
+========================================= */
+
+.carousel {
+  width: 90%;
+
+  height: auto;
+  min-height: 0;
+
+  position: static;
+
+  box-sizing: border-box;
 }
+
+.carousel-inner {
+  width: 100%;
+
+  height: auto;
+  min-height: 0;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+.carousel-item {
+  width: 100%;
+
+  height: auto;
+  min-height: 0;
+
+  box-sizing: border-box;
+}
+
+.slide-container {
+  width: 100%;
+
+  height: auto;
+  min-height: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Carousel Controls
+========================================= */
+
 .carousel-control-prev,
-.carousel-control-next{
-    position: absolute;
-    top: unset;
-    right: 0;
-    bottom: 183px;
-    width: 40px;
-    height: 40px;
-    background-color: #000;
-    border: 1px solid #000;
-    border-radius: 50%;
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+
+  top: 50%;
+  bottom: auto;
+
+  transform: translateY(-50%);
+
+  background-color: #000;
+
+  border: 1px solid #000;
+  border-radius: 50%;
 }
 
-/* ====================================== */
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+/* =========================================
+   Reading Slide
+========================================= */
+
+.reading_slide {
+  width: 100%;
+
+  height: auto;
+  min-height: 0;
+
+  padding: 0 15px;
+
+  gap: 20px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: stretch;
+
+  margin-top: 20px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Reading Text
+========================================= */
+
+.reading_text {
+  width: 62%;
+
+  height: auto;
+  min-height: 0;
+
+  padding: 0 10px 0 0;
+
+  margin-top: 0;
+
+  overflow: visible;
+
+  color: #2f2f2f;
+
+  font-size: 19px;
+  line-height: 1.35;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+.reading_text p {
+  margin: 4px 0 9px;
+}
+
+/* =========================================
+   Reading Image
+========================================= */
+
+.reading_image {
+  width: 39%;
+
+  height: auto;
+  min-height: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+.reading_image .inner_img {
+  width: 100%;
+
+  height: auto;
+
+  max-height: none;
+
+  margin: 0;
+
+  object-fit: contain;
+
+  border-radius: 25px;
+}
+
+/* =========================================
+   Pulse Animation
+========================================= */
+
 .pulse {
-    animation: pulse 1s infinite ease-in-out alternate;
-  }
-  @keyframes pulse {
-    from { transform: scale(0.95); }
-    to { transform: scale(1.0); }
-  }
-/* ====================================== */
-
-.inner_img{
-    height: 350px;
-    border-radius: 22px;
+  animation: pulse 1s infinite ease-in-out alternate;
 }
 
-/* /////////////////////////////////////// */
-/* ////////////////////////////////////// */
+@keyframes pulse {
+  from {
+    transform: scale(0.95);
+  }
 
+  to {
+    transform: scale(1);
+  }
+}
+
+/* =========================================
+   Tick Activity
+========================================= */
 
 .tick_group {
-    background-image: url('../images/pages/activities/back.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 25px auto;
-    width: 680px;
-    height: 290px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-.title {
-    margin-top: 10px;
-    font-size: 29px;
-    font-weight: bold;
-    position: absolute;
-    top: 17px;
-    left: 73px;
-    color: #00a3df;
+  width: 680px;
+  height: 290px;
+
+  margin: 25px auto;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url("../images/pages/activities/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  text-align: center;
 }
 
+/* =========================================
+   Activity Title
+========================================= */
+
+.title {
+  position: absolute;
+
+  top: 28px;
+  left: 78px;
+
+  font-size: 30px;
+  font-weight: bold;
+
+  color: #00A3DF;
+}
+
+/* =========================================
+   Questions
+========================================= */
+
 .que {
-    width: 100%;
-    height: 70%;
-    margin: 2px 8px;
-    border-radius: 5px;
-    position: relative;
-    display: flex !important;
-    align-items: flex-end;
-    align-content: flex-end;
+  width: 100%;
+  height: 70%;
+
+  margin: 2px 8px;
+
+  position: relative;
+
+  display: flex !important;
+
+  align-items: flex-end;
+  align-content: flex-end;
+
+  border-radius: 5px;
 }
 
 .q_part {
-    width: 50px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 0px;
+  width: 50px;
+
+  margin-bottom: 0;
+
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .q_num_space {
-    width: 27px;
+  width: 27px;
 }
 
+/* =========================================
+   Question Images
+========================================= */
+
 .img_space {
-    width: 400px;
-    height: 500px;
+  width: 400px;
+  height: 500px;
 }
 
 .img_space img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
 
+/* =========================================
+   Pick Options
+========================================= */
+
 .pick {
-    width: fit-content;
-    margin: 0px 15px;
-    height: 55px;
-    text-align: center;
-    border: none;
-    font-size: 28px;
-    border: 2px solid #fff;
-    padding: 0px 12px;
+  width: fit-content;
+  height: 55px;
+
+  margin: 0 15px;
+  padding: 0 12px;
+
+  border: 2px solid #fff;
+
+  font-size: 28px;
+  text-align: center;
+
+  cursor: pointer;
 }
 
 .pick img {
-    width: 65% !important;
-    height: 100% !important;
-    padding: 0px 5px;
-    object-fit: contain;
+  width: 65% !important;
+  height: 100% !important;
+
+  padding: 0 5px;
+
+  object-fit: contain;
 }
 
-.left_text{
-    display: inline-block;
-    width: 464px;
-    text-align: left;
-    float: left;
-    font-size: 25px;
-    margin-top: 10px;
-}
-
-.inner_img_right{
-    /* height: 175px; */
-    width: 328px;
-    float: right;
-    margin-top: 40px;
-    border-radius: 20px;
-}
+/* =========================================
+   Validation Icons
+========================================= */
 
 .icon_wrap {
-    top: 20px;
-    right: 20px;
+  top: 20px;
+  right: 20px;
 }
 
 .tick,
 .cross {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
-@media(min-width: 576px){
-    .modal-width{
-        max-width: 820px !important;
-        min-width: 820px !important;
-    }
+/* =========================================
+   Modal
+========================================= */
+
+@media (min-width: 576px) {
+  .modal-width {
+    min-width: 820px !important;
+    max-width: 820px !important;
+  }
+}
+
+/* =========================================
+   Read 3
+========================================= */
+
+.read3 {
+  width: 100%;
+}
+/* =========================================================
+   READING CIRCLE / UNDERLINE TOOLBAR
+========================================================= */
+
+.reading_mark_toolbar {
+  width: 100%;
+
+  margin: 5px 0 0;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 10px;
+
+  position: relative;
+
+  z-index: 20;
+}
+
+.reading_mark_btn {
+  height: 34px;
+
+  padding: 3px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  background-color: #fff;
+
+  border: 2px solid #999;
+  border-radius: 7px;
+
+  color: #222;
+
+  font-family: Arcon, Arial, sans-serif;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.reading_mark_btn.active {
+  border-color: #23a755;
+
+  background-color: #ecfff1;
+}
+
+/* =========================================================
+   TOOL ICONS
+========================================================= */
+
+.reading_circle_icon {
+  padding: 0 5px;
+
+  border: 2px solid #e83232;
+  border-radius: 50%;
+
+  font-size: 12px;
+}
+
+.reading_underline_icon {
+  padding: 0 3px;
+
+  font-size: 12px;
+
+  text-decoration: underline;
+
+  text-decoration-color: #e83232;
+  text-decoration-thickness: 2px;
+
+  text-underline-offset: 4px;
+}
+
+/* =========================================================
+   CLICKABLE READING WORD
+========================================================= */
+
+.reading_word {
+  position: relative;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   CIRCLE
+========================================================= */
+
+.reading_word.reading_circle {
+  padding: 0 3px;
+
+  margin-left: -3px;
+  margin-right: -3px;
+
+  border: 2px solid #e83232;
+
+  border-radius: 50%;
+
+  line-height: 1.25;
+}
+
+/* =========================================================
+   UNDERLINE
+========================================================= */
+
+.reading_word.reading_underline {
+  text-decoration-line: underline;
+
+  text-decoration-color: #e83232;
+
+  text-decoration-thickness: 2px;
+
+  text-underline-offset: 3px;
+}
+.read2 {
+  width: 100%;
 }

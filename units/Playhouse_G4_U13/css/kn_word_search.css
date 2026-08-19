@@ -1,0 +1,325 @@
+/* =========================================================
+   KN WORD SEARCH
+========================================================= */
+
+.kn_word_search_all_cont {
+  width: 100%;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  background: transparent;
+}
+
+.kn_word_search_activity {
+  width: 94%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 5px 15px 25px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   PUZZLE
+========================================================= */
+
+.kn_puzzle_wrapper {
+  width: 66%;
+
+  margin: 5px auto 25px;
+
+  position: relative;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.kn_grid {
+  width: 100%;
+
+  aspect-ratio: 9 / 5.15;
+
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(var(--kn-cols), 1fr);
+
+  grid-template-rows: repeat(var(--kn-rows), 1fr);
+
+  align-items: center;
+
+  justify-items: center;
+
+  padding: 12px 15px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #25b15a;
+
+  border-radius: 6px;
+
+  background: #eff9ef;
+
+  touch-action: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   CELL
+========================================================= */
+
+.kn_letter_cell {
+  width: 38px;
+
+  height: 38px;
+
+  position: relative;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 1.7px solid #22ad54;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.55);
+
+  cursor: pointer;
+
+  touch-action: none;
+
+  transition: background 0.15s ease;
+}
+
+/* =========================================================
+   LETTER
+========================================================= */
+
+.kn_letter {
+  position: relative;
+
+  z-index: 10;
+
+  font-size: 19px;
+
+  font-weight: 500;
+
+  color: #111;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   SELECTED CELLS
+========================================================= */
+
+.kn_letter_cell.connected-1 {
+  background: rgba(39, 178, 89, 0.18);
+}
+
+.kn_letter_cell.connected-2 {
+  background: rgba(39, 178, 89, 0.34);
+}
+
+.kn_letter_cell.connected-3 {
+  background: rgba(39, 178, 89, 0.5);
+}
+
+.kn_letter_cell.connected-4 {
+  background: rgba(39, 178, 89, 0.66);
+}
+
+.kn_letter_cell.connected .kn_letter {
+  font-weight: 600;
+}
+
+/* =========================================================
+   SVG
+========================================================= */
+
+.kn_lines_svg {
+  width: 100%;
+
+  height: 100%;
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  z-index: 6;
+
+  pointer-events: none;
+
+  overflow: visible;
+}
+
+/* =========================================================
+   SAVED CAPSULE
+========================================================= */
+
+.kn_saved_line {
+  stroke: #24ae59;
+
+  stroke-width: 7;
+
+  stroke-linecap: round;
+
+  opacity: 0.24;
+}
+
+/* =========================================================
+   PREVIEW
+========================================================= */
+
+.kn_preview_line {
+  display: none;
+
+  stroke: #24ae59;
+
+  stroke-width: 1;
+
+  stroke-linecap: round;
+
+  stroke-dasharray: 2 1;
+
+  opacity: 0.55;
+}
+
+/* =========================================================
+   ANSWERS
+========================================================= */
+
+.kn_answers_area {
+  width: 92%;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 38px;
+
+  row-gap: 24px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   ANSWER ITEM
+========================================================= */
+
+.kn_answer_item {
+  width: 100%;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.kn_answer_input {
+  width: 100%;
+
+  height: 32px;
+
+  padding: 2px 4px;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  border-bottom: 1.5px solid #555;
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #000;
+
+  font-size: 18px;
+}
+
+.kn_answer_input[readonly] {
+  opacity: 1;
+
+  color: #000;
+
+  cursor: default;
+
+  background: transparent;
+}
+
+/* =========================================================
+   HIDE ACTIVITY CONTROLS
+========================================================= */
+
+.func_ctrls {
+  display: none !important;
+}
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+  .kn_word_search_activity {
+    width: 96%;
+  }
+
+  .kn_letter_cell {
+    width: 30px;
+
+    height: 30px;
+  }
+
+  .kn_letter {
+    font-size: 15px;
+  }
+
+  .kn_answer_input {
+    font-size: 16px;
+  }
+
+  .kn_answers_area {
+    column-gap: 25px;
+
+    row-gap: 18px;
+  }
+
+  .kn_saved_line {
+    stroke-width: 6;
+  }
+}
+
+/* =========================================================
+   SMALL
+========================================================= */
+
+@media (max-width: 760px) {
+  .kn_word_search_activity {
+    min-width: 700px;
+  }
+}

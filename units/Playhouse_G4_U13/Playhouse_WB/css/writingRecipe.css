@@ -1,0 +1,216 @@
+/* =========================================================
+   MAIN
+========================================================= */
+
+.recipe_all_cont {
+  width: 100%;
+
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.recipe_page_sub_title {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 10px;
+
+  text-align: left;
+}
+
+.recipe_title_line,
+.recipe_instruction {
+  margin: 0;
+
+  color: #00aeef;
+
+  font-size: 24px;
+
+
+  line-height: 1.25;
+}
+
+.recipe_title_line {
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+.recipe_instruction {
+  font-weight: normal;
+}
+
+.write_number {
+  font-weight: bold;
+
+  color: #00aeef;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.recipe_form {
+  width: 92%;
+
+  max-width: 1080px;
+
+  margin: 12px auto 0;
+
+  border: 2px solid #00aeef;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  background: white;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.recipe_section {
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.ingredients_section {
+  border-bottom: 2px solid #00aeef;
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.recipe_section_title {
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 18px;
+
+  box-sizing: border-box;
+
+  border-bottom: 1.5px solid #00aeef;
+
+  color: #111;
+
+  font-size: 25px;
+
+  font-weight: bold;
+
+
+  text-align: left;
+}
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.recipe_textarea {
+  width: 100%;
+
+  display: block;
+
+  padding: 8px 18px;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  outline: none;
+
+  resize: none;
+
+  color: #111;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 21px;
+
+  line-height: 42px;
+
+  background-color: white;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 40px,
+    #00aeef 41px,
+    #00aeef 42px
+  );
+
+  overflow-y: auto;
+}
+
+.ingredients_textarea {
+  height: 215px;
+}
+
+.directions_textarea {
+  height: 255px;
+}
+
+/* =========================================================
+   HIDE CHECK / RESET
+========================================================= */
+
+.func_ctrls {
+  display: none !important;
+}
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 1024px) {
+  .recipe_form {
+    width: 94%;
+  }
+
+  .recipe_title_line,
+  .recipe_instruction {
+    font-size: 20px;
+  }
+
+  .recipe_section_title {
+    font-size: 21px;
+  }
+
+  .recipe_textarea {
+    font-size: 18px;
+
+    line-height: 38px;
+
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 36px,
+      #00aeef 37px,
+      #00aeef 38px
+    );
+  }
+
+  .ingredients_textarea {
+    height: 195px;
+  }
+
+  .directions_textarea {
+    height: 230px;
+  }
+}

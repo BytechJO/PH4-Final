@@ -42,7 +42,7 @@ var reading_data = {
         "audio": ["../audios/page_67/Pg6_2.1_Stella.mp3","../audios/page_67/dough.mp3","../audios/page_67/sauce.mp3","../audios/page_67/sprinkle.mp3","../audios/page_67/cheese.mp3","../audios/page_67/add.mp3","../audios/page_67/pepperoni.mp3","../audios/page_67/slice.mp3"],
         "word": [
 
-            "<br><span class='blue_text'>Some words are spelt with ‘kn’ at the beginning of the word. If this happens, the k is usually silent.</span>",
+            "<br><span class='blue_text'>Some words are spelt with ‘<span class='black_text'>kn</span>’ at the beginning of the word. If this happens, the <span class='black_text'>k</span> is usually silent.</span>",
             "<span class='blue_text'>kn</span>ife",
             "<span class='blue_text'>kn</span>ow",
             "<span class='blue_text'>kn</span>ot",

@@ -24,7 +24,7 @@ var reading_data = {
     "mainTitleIcon": "",
     "mainTitleIconPos": {"right": "90px"},
     "mainTitleAudio": "../audios/page_65/CONVERSATION.mp3",
-    "subTitleTextLeft": "<span class='title-order'>1</span>  You do it! The next time someone in your family is cooking, help them in the kitchen and talk about what they are doing. <span class='dark_text'>You can use sentences like these:</span>",
+    "subTitleTextLeft": "<span class='title-order'>2</span>  You do it! The next time someone in your family is cooking, help them in the kitchen and talk about what they are doing. <span class='dark_text'>You can use sentences like these:</span>",
     "subTitleTextRight": "",
     "subTitleIcons": [],
     "subTitleAudio": "../audios/page_65/2_You_do_it!_The_next_time_someone_in_your_family_is_cooking_help_them_in_the_kitchen_and_talk.mp3",

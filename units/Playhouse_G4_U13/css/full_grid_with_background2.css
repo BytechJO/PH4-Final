@@ -1,0 +1,231 @@
+/* =========================================================
+   PAIR WORK CONVERSATION
+   ========================================================= */
+
+.pair_work_layout {
+  width: 88% !important;
+
+  margin: 20px auto 0 !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+
+  column-gap: 80px !important;
+
+  align-items: start !important;
+
+  box-sizing: border-box !important;
+}
+
+/* =========================================================
+   EACH CONVERSATION
+   ========================================================= */
+
+.pair_conversation {
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  position: relative !important;
+}
+
+/* =========================================================
+   TOP SPEECH BUBBLE
+   ========================================================= */
+
+.pair_top_bubble {
+  width: 100% !important;
+  height: 85px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-end !important;
+
+  position: relative !important;
+
+  z-index: 2 !important;
+}
+
+.pair_top_bubble .pair_bubble_img {
+  width: auto !important;
+  height: 75px !important;
+
+  max-width: 95% !important;
+
+  object-fit: contain !important;
+}
+
+/* =========================================================
+   PEOPLE ROW
+   ========================================================= */
+
+.pair_people {
+  width: 100% !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+
+  gap: 25px !important;
+
+  align-items: center !important;
+  justify-items: center !important;
+
+  margin-top: 0 !important;
+}
+
+/* =========================================================
+   PERSON
+   ========================================================= */
+
+.pair_person {
+  width: 100% !important;
+  height: 190px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* =========================================================
+   PERSON IMAGE
+   ========================================================= */
+
+.pair_person_img {
+  width: auto !important;
+  height: 175px !important;
+
+  max-width: 100% !important;
+  max-height: 100% !important;
+
+  object-fit: contain !important;
+
+  display: block !important;
+
+  margin: auto !important;
+}
+
+/* =========================================================
+   BOTTOM SPEECH BUBBLE
+   ========================================================= */
+
+.pair_bottom_bubble {
+  width: 100% !important;
+  height: 80px !important;
+
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+
+  padding-right: 25px !important;
+
+  box-sizing: border-box !important;
+
+  margin-top: -5px !important;
+}
+
+.pair_bottom_bubble .pair_bubble_img {
+  width: auto !important;
+  height: 70px !important;
+
+  max-width: 90% !important;
+
+  object-fit: contain !important;
+}
+
+/* =========================================================
+   LEFT CONVERSATION POSITION
+   ========================================================= */
+
+.pair_conversation_left .pair_top_bubble {
+  justify-content: flex-start !important;
+}
+
+.pair_conversation_left .pair_bottom_bubble {
+  justify-content: flex-end !important;
+}
+
+/* =========================================================
+   RIGHT CONVERSATION POSITION
+   ========================================================= */
+
+.pair_conversation_right .pair_top_bubble {
+  justify-content: flex-start !important;
+}
+
+.pair_conversation_right .pair_bottom_bubble {
+  justify-content: flex-end !important;
+}
+
+/* =========================================================
+   PULSE
+   ========================================================= */
+
+.pair_work_layout .pulse {
+  animation: pairWorkPulse 1s infinite ease-in-out alternate !important;
+}
+
+@keyframes pairWorkPulse {
+  from {
+    transform: scale(0.97);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1300px) {
+  .pair_work_layout {
+    width: 92% !important;
+    column-gap: 50px !important;
+  }
+
+  .pair_person {
+    height: 175px !important;
+  }
+
+  .pair_person_img {
+    height: 160px !important;
+  }
+
+  .pair_top_bubble .pair_bubble_img {
+    height: 68px !important;
+  }
+
+  .pair_bottom_bubble .pair_bubble_img {
+    height: 62px !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .pair_work_layout {
+    width: 95% !important;
+    column-gap: 30px !important;
+  }
+
+  .pair_people {
+    gap: 12px !important;
+  }
+
+  .pair_person {
+    height: 155px !important;
+  }
+
+  .pair_person_img {
+    height: 145px !important;
+  }
+
+  .pair_top_bubble .pair_bubble_img {
+    height: 58px !important;
+  }
+
+  .pair_bottom_bubble .pair_bubble_img {
+    height: 55px !important;
+  }
+}

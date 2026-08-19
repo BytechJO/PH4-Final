@@ -1,5 +1,5 @@
-.all_cont{
-    align-items: center
+.all_cont { 
+    align-items: flex-start !important;
 }
 
 .grid_columns_container {

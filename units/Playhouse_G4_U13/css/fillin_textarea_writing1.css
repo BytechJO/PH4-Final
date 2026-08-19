@@ -1,0 +1,147 @@
+.all_cont {
+  height: 100%;
+
+  text-align: center;
+
+  align-items: flex-start;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.screen_elements {
+  width: 90%;
+
+  height: 100%;
+}
+
+.group_elm {
+  width: 96%;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+/* =========================================================
+   WRITING AREA
+========================================================= */
+
+.area {
+  width: 90%;
+
+  max-width: 950px;
+
+  height: 360px;
+
+  margin: 20px auto 0;
+
+  position: relative;
+
+  background: #fff;
+
+  border: 2px solid #22ad54;
+
+  border-radius: 12px;
+
+  box-sizing: border-box;
+}
+
+.textarea-container {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+#paper-textarea {
+  width: 100%;
+
+  height: 100%;
+
+  box-sizing: border-box;
+
+  padding: 10px;
+
+  border: none;
+
+  outline: none;
+
+  resize: none;
+
+  background: transparent;
+
+  color: #000;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 23px;
+
+  line-height: 32px;
+
+  overflow-y: auto;
+}
+
+#paper-textarea::placeholder {
+  color: #999;
+
+  opacity: 1;
+}
+
+/* =========================================================
+   HIDE CONTROLS
+========================================================= */
+
+.func_ctrls {
+  display: none !important;
+}
+
+/* =========================================================
+   IPAD
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .subTitleTextRight {
+    font-size: 18px;
+  }
+
+  .area {
+    width: 92%;
+
+    height: 330px;
+  }
+
+  #paper-textarea {
+    font-size: 20px;
+
+    line-height: 29px;
+  }
+}
+
+/* =========================================================
+   SMALL
+========================================================= */
+
+@media (max-width: 575.98px) {
+  .subTitleTextRight {
+    font-size: 16px;
+  }
+
+  .area {
+    width: 95%;
+
+    height: 300px;
+  }
+
+  #paper-textarea {
+    font-size: 18px;
+
+    line-height: 27px;
+  }
+}

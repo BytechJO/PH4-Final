@@ -1,0 +1,330 @@
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.screen_elements {
+  width: 94%;
+  height: 100%;
+}
+
+.group_elm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.activityHeading {
+  width: 90%;
+}
+
+.page_sub_title {
+  text-align: left;
+}
+
+.page_sub_title p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #22a846;
+}
+
+.green_circle {
+  width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 7px;
+
+  border-radius: 50%;
+
+  background-color: #1bae4b;
+  color: #000;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   WORD OPTIONS
+========================================================= */
+
+.word_options {
+  width: 90%;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  row-gap: 3px;
+
+  padding: 5px 15px;
+
+  margin: 10px auto 15px;
+
+  background-color: #dcebb5;
+
+  border-radius: 7px;
+
+  box-sizing: border-box;
+}
+
+.option_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-left: 4px;
+
+  font-size: 19px;
+  line-height: 24px;
+
+  color: #333;
+}
+
+.option_item span {
+  display: block;
+}
+
+/* =========================================================
+   QUESTIONS
+========================================================= */
+
+.ques {
+  width: 92%;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  justify-content: center;
+
+  align-items: stretch;
+
+  gap: 5px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   EACH CARD
+========================================================= */
+
+.img_fillin_gr {
+  width: 20%;
+
+  flex: 1 1 20%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: stretch;
+
+  position: relative;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.image_space {
+  width: 100%;
+
+  height: 155px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: transparent;
+
+  /* الصورة نفسها تحتوي البوردر */
+  border: none;
+}
+
+.image_space img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  border: none;
+
+  border-radius: 0;
+}
+
+/* =========================================================
+   ANSWER AREA
+========================================================= */
+
+.answer_area {
+  width: 100%;
+
+  min-height: 62px;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  padding-top: 3px;
+
+  box-sizing: border-box;
+}
+
+/* vertical line between answer boxes */
+
+.img_fillin_gr:not(:last-child) .answer_area {
+  border-right: 1px solid #1bae4b;
+}
+
+/* bottom green line */
+
+.answer_area {
+  border-bottom: 1px solid #1bae4b;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.text_input_area {
+  width: 86%;
+
+  height: 52px;
+
+  resize: none;
+
+  overflow: hidden;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  text-align: center;
+
+  font-family: Arcon;
+
+  font-size: 18px;
+
+  line-height: 22px;
+
+  color: #e52929;
+
+  padding: 2px 4px;
+
+  box-sizing: border-box;
+}
+
+.text_input_area:focus {
+  outline: none;
+}
+
+/* =========================================================
+   VALIDATION ICONS
+========================================================= */
+
+.icon_wrap_holder {
+  position: absolute;
+
+  right: 3px;
+
+  bottom: 3px;
+}
+
+.icon_wrap {
+  display: flex;
+
+  align-items: center;
+}
+
+.tick,
+.cross {
+  width: 23px;
+
+  display: none;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+
+  display: block;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .word_options {
+    width: 94%;
+  }
+
+  .ques {
+    width: 96%;
+  }
+
+  .image_space {
+    height: 135px;
+  }
+
+  .option_item {
+    font-size: 17px;
+  }
+
+  .text_input_area {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .image_space {
+    height: 120px;
+  }
+
+  .page_sub_title p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .option_item {
+    font-size: 15px;
+  }
+
+  .text_input_area {
+    width: 92%;
+    font-size: 15px;
+  }
+}
