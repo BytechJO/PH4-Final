@@ -5,7 +5,7 @@ var fillin_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='green_text'>1</span> Hunt for it! Take out the words from each line of letters and the letters that are left will spell a Word Power Word. Write it on the blank beside the letters.",
+    "subTitleTextLeft"      : "<span class='green_text'>1</span> Hunt for it! <span class='green'>Take out the words from each line of letters and the letters that are left will spell a Word Power Word. Write it on the blank beside the letters.</span>",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
     "subTitleAudio"         : "../audios/under.mp3",

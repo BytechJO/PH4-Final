@@ -290,3 +290,22 @@ body {
 }
 @media (max-width: 332.98) {
 }
+.node {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* النقطة اللي الطالب ماسكها */
+.node.selected-node {
+  transform: scale(1.4);
+cursor: pointer;
+  border: 3px solid #0cff20 !important;
+
+  box-shadow:
+    0 0 0 4px rgba(22, 255, 138, 0),
+    0 0 12px rgba(9, 250, 21, 0.55);
+
+  z-index: 10;
+}

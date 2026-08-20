@@ -4,7 +4,7 @@ var linedraw_data = {
     "mainTitleIcon": "",
     "mainTitleIconPos": {"right": "-20px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='green_text'>2</span> Match it! Match statement with the question tag.",
+    "subTitleTextLeft"      : "<span class='green_text'>2</span> Match it! <span class='green'>Match statement with the question tag.</span>",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/under.mp3",

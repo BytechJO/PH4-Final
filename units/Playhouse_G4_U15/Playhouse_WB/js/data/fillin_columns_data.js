@@ -30,7 +30,7 @@ var fillin_data = {
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/page_75/2_Answer_it!.mp3",
-    "defaultAnswer"         : 1,
+    "defaultAnswer"         : 0,
     "leftList"              : '',
     "image"                 :"",
     "questions": [{

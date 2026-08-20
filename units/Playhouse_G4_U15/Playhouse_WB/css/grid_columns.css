@@ -1,160 +1,155 @@
 .grid_columns_container {
-    position: relative;
-}
-
-.audioIcon:hover {
-    transform: scale(1.06);
+  position: relative;
 }
 
 .snap_group_all {
-    position: relative;
-    text-align: left;
-    line-height: 45px;
-    /* border: 2px solid #08b0ef; */
-    border-radius: 20px;
-    padding: 34px;
-    /* background-color: #e1f4fd; */
-    /* margin-bottom: 80px; */
+  position: relative;
+  text-align: left;
+  line-height: 38px;
+  /* border: 2px solid #08b0ef; */
+  border-radius: 20px;
+  padding: 34px;
+  /* background-color: #e1f4fd; */
+  /* margin-bottom: 80px; */
 }
 
 .grid_main_title_container {
-    position: absolute;
-    top: -17px;
-    left: -5px;
+  position: absolute;
+  top: -17px;
+  left: -5px;
 }
 
 .grid_main_title_img {
-    height: 40px;
-
+  height: 40px;
 }
 
 .remember .grid_main_title_img {
-    height: 90px;
+  height: 90px;
 }
 
 .remember .snap_group_all {
-    position: relative;
-    text-align: left;
-    line-height: 45px;
-    border: 2px solid #08b0ef;
-    border-radius: 20px;
-    padding: 34px;
-    background-color: #e1f4fd;
-    margin-bottom: 80px;
+  position: relative;
+  text-align: left;
+  line-height: 45px;
+  border: 2px solid #08b0ef;
+  border-radius: 20px;
+  padding: 34px;
+  background-color: #e1f4fd;
+  margin-bottom: 80px;
 }
 
 .grid_main_title_text {
-    position: absolute;
-    top: 0px;
-    left: 74px;
+  position: absolute;
+  top: 0px;
+  left: 74px;
 }
 
 .red_text {
-    color: red;
+  color: red;
 }
 
 .grid_columns_container {
-    width: 100%;
+  width: 100%;
 }
 
 .col_grid_container {
-    width: 85%;
+  width: 90%;
+  margin-bottom: 30px;
 }
 
-.remember .col_grid_container{
-    width: 80%;
+.remember .col_grid_container {
+  width: 80%;
 }
 
 .img_card {
-    max-height: 150px;
-    display: block;
+  max-height: 150px;
+  display: block;
 }
 
 .img_card_text {
-    max-height: 50px;
+  max-height: 50px;
 }
 
 .song_text {
-    font-size: 60px;
-    font-weight: bold;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .ss_text {
-    font-size: 24px;
-    /* font-weight: bold; */
+  font-size: 24px;
+  /* font-weight: bold; */
 }
 
 .top_right_image {
-    position: absolute;
-    height: 200px;
-    right: 0;
-    top: 0;
+  position: absolute;
+  height: 200px;
+  right: 0;
+  top: -42px;
 }
 
 .red_text {
-    color: red
+  color: red;
 }
 
 .read_grammer {
-    margin-bottom: 300px;
+  margin-bottom: 300px;
 }
 
 .image_audio {
-    position: absolute;
-    transform: scale(0.5);
+  position: absolute;
+  transform: scale(0.5);
 }
 
 .main_image {
-    height: 600px;
+  height: 600px;
 }
 
 .main_image img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .read_grammer .grammer_container {
-    transform: scale(0.8);
-    display: inline-block;
-    align-self: center;
-    position: relative;
+  transform: scale(0.8);
+  display: inline-block;
+  align-self: center;
+  position: relative;
 }
 
 .read_grammer .grammer_container img {
-    /* transform: scale(0.5); */
-    width: 100%;
+  /* transform: scale(0.5); */
+  width: 100%;
 }
 
 .words_container {
-    position: absolute;
-    font-weight: bold;
-    width: 100%;
-    /* center */
-    left: 20%;
-    top: 40%;
-    transform: translate(-20%, -50%);
-    color: red;
-    font-size: 40px;
+  position: absolute;
+  font-weight: bold;
+  width: 100%;
+  /* center */
+  left: 20%;
+  top: 40%;
+  transform: translate(-20%, -50%);
+  color: red;
+  font-size: 40px;
 }
 
 .grid_with_border .snap_group_all {
-    width: 100%;
-    position: relative;
-    /* margin-top: 150px; */
-    text-align: left;
-    /* border: solid 5px deepskyblue; */
-    border-radius: 24px;
-    padding: 0 25px;
-    line-height: 26px;
+  width: 100%;
+  position: relative;
+  /* margin-top: 150px; */
+  text-align: left;
+  /* border: solid 5px deepskyblue; */
+  border-radius: 24px;
+  padding: 0 25px;
 }
 
-.grid_without_border .snap_group_all{
-    background-color: transparent;
-    border: none;
+.grid_without_border .snap_group_all {
+  background-color: transparent;
+  border: none;
 }
 
-.dark_text{
-    font-weight: bolder;
+.dark_text {
+  font-weight: bolder;
 }
 
 /* .grid_with_background_image .snap_group_all {
@@ -167,79 +162,530 @@
 } */
 
 .grid_with_center_images {
-    width: 80%;
-    background-color: rgb(251,244,175);
-    border-radius: 25px;
-    position: absolute;
-    top: 179px;
-    padding: 30px;
+  width: 80%;
+  background-color: rgb(251, 244, 175);
+  border-radius: 25px;
+  position: absolute;
+  top: 179px;
+  padding: 30px;
 }
 
 .grid_with_center_images .snap_group_all {
-    width: auto;
-    position: static;
+  width: auto;
+  position: static;
 }
 
 .grid_with_center_images .audioIcon {
-    margin: auto;
+  margin: auto;
 }
 
 .grid_with_center_images .row {
-    min-height: 200px !important;
+  min-height: 200px !important;
 }
 
 .grid_with_center_images .col_grid_container {
-    width: 100%;
+  width: 100%;
 }
 
 .top_image_text {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .top_image {
-    height: 90px;
-    margin-right: 25px;
+  height: 90px;
+  margin-right: 25px;
 }
 
 .snap_group_all .row {
-    text-align: left;
-    min-height: 36px;
+  text-align: left;
+  min-height: 36px;
 }
 
 .display-block {
-    display: block !important;
+  display: block !important;
 }
 
 .back_bottom_image {
-    width: 100%;
-    position: absolute;
-    top: -25px;
-    left: 0;
+  width: 100%;
+  position: absolute;
+  top: -25px;
+  left: 0;
 }
 
 .middle_image {
-    width: 250px;
-    position: absolute;
-    top: 250px;
-    left: 590px;
+  width: 250px;
+  position: absolute;
+  top: 250px;
+  left: 590px;
 }
 
 .snap_group_bottom {
-    height: 141px;
-    position: relative;
-    padding: 30px;
-    width: 100%;
+  height: 141px;
+  position: relative;
+  padding: 30px;
+  width: 100%;
 }
 
-.slide_2 .snap_group_all  {
-    padding: 50px 25px;
+.slide_2 .snap_group_all {
+  padding: 50px 25px;
 }
 
-.slide_3 .snap_group_all  {
-    border: none;
-    margin-top: 50px;
+.slide_3 .snap_group_all {
+  border: none;
+  margin-top: 50px;
 }
 
 .slide_3 .snap_group_6 {
-    height: 50px;
+  height: 50px;
+}
+/* =========================================
+   IDEAS FOR RECIPES
+========================================= */
+
+.writing_text .snap_group_6 {
+  margin-top: 18px;
+  width: 100%;
+}
+
+.writing_text .snap_group_6 .col-12 {
+  padding: 0;
+}
+
+.writing_text .ideas_recipes_box {
+  width: 100%;
+  border: 2px dotted #555;
+  border-radius: 28px;
+  padding: 8px 25px 10px;
+  box-sizing: border-box;
+}
+
+.writing_text .ideas_recipes_title {
+  color: #08aeee;
+  font-size: 27px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 32px;
+  margin-bottom: 2px;
+}
+
+.writing_text .ideas_recipes_grid {
+  width: 88%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 45px;
+  row-gap: 2px;
+
+  text-align: center;
+}
+
+.writing_text .ideas_recipes_grid span {
+  color: #111;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 34px;
+} /* =========================================
+   READING CALENDAR
+========================================= */
+
+.reading_calendar {
+  width: 88%;
+  margin: 15px auto 30px;
+  border-left: 1.5px solid #333;
+  border-top: 1.5px solid #333;
+  box-sizing: border-box;
+}
+
+.calendar_days,
+.calendar_week {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar_day {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-right: 1.5px solid #333;
+  border-bottom: 1.5px solid #333;
+
+  font-size: 14px;
+  color: #111;
+
+  background: #E1F4FC;
+}
+
+.calendar_cell {
+  position: relative;
+
+  height: 60px;
+
+  border-right: 1.5px solid #333;
+  border-bottom: 1.5px solid #333;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.calendar_date {
+  position: absolute;
+
+  top: 4px;
+  left: 6px;
+
+  z-index: 2;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #111;
+}
+
+.calendar_input {
+  position: absolute;
+
+  left: 4px;
+  right: 4px;
+  top: 21px;
+  bottom: 3px;
+
+  width: calc(100% - 8px);
+  height: calc(100% - 24px);
+
+  padding: 2px 4px;
+
+  border: none;
+  outline: none;
+  resize: none;
+
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 15px;
+
+  box-sizing: border-box;
+}
+
+.calendar_input:focus {
+  background-color: rgba(8, 176, 239, 0.06);
+}
+/* =========================================
+   THINK ABOUT IT
+========================================= */
+
+.think_about_it_grid {
+  width: 100%;
+  position: relative;
+}
+
+
+/* =========================================
+   MAIN GRID CONTAINER
+========================================= */
+
+.think_about_it_grid .col_grid_container {
+  width: 92%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CONTENT GROUP
+========================================= */
+
+.think_about_it_grid .snap_group_all {
+  width: 68%;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   ROWS
+========================================= */
+
+.think_about_it_grid .snap_group_1,
+.think_about_it_grid .snap_group_2,
+.think_about_it_grid .snap_group_3,
+.think_about_it_grid .snap_group_4,
+.think_about_it_grid .snap_group_5 {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.think_about_it_grid .col_card {
+  width: 100%;
+
+  padding: 0;
+
+  display: block;
+
+  box-sizing: border-box;
+}
+
+
+.think_about_it_grid .snap_card {
+  width: 100%;
+
+  margin: 0 !important;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN ITEM
+========================================= */
+
+.think_item {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-bottom: 12px;
+
+  color: #222;
+
+  font-size: 24px;
+
+  line-height: 1.3;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   DIAMOND BULLET
+========================================= */
+
+.diamond_bullet {
+  min-width: 20px;
+
+  color: #00a7e5;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  line-height: 1;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   MAIN TEXT
+========================================= */
+
+.think_text {
+  flex: 1;
+
+  color: #222;
+
+  font-size: 24px;
+
+  line-height: 1.3;
+
+  text-align: left;
+}
+
+
+/* =========================================
+   SUB LIST
+========================================= */
+
+.think_sub_list {
+  width: 100%;
+
+  padding-left: 55px;
+
+  margin-top: -4px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   SUB ITEM
+========================================= */
+
+.think_sub_item {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin-bottom: 8px;
+
+  color: #222;
+
+  font-size: 22px;
+
+  line-height: 1.3;
+
+  text-align: left;
+}
+
+
+/* =========================================
+   BLUE DOT
+========================================= */
+
+.blue_dot {
+  min-width: 12px;
+
+  color: #00a7e5;
+
+  font-size: 26px;
+
+  line-height: 1;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.think_about_it_grid .top_right_image {
+  width: 31%;
+
+  max-width: 390px;
+
+  height: auto;
+
+  position: absolute;
+
+  top: 30px;
+
+  right: -33%;
+
+  object-fit: contain;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   AUDIO HOVER
+========================================= */
+
+.think_about_it_grid .audioIcon:hover {
+  transform: scale(1) !important;
+}
+
+
+/* =========================================
+   REMOVE UNNEEDED FLEX CENTERING
+========================================= */
+
+.think_about_it_grid .snap_group_all,
+.think_about_it_grid .col_card,
+.think_about_it_grid .snap_card {
+  justify-content: flex-start !important;
+
+  align-items: flex-start !important;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .think_about_it_grid .col_grid_container {
+    width: 95%;
+  }
+
+  .think_about_it_grid .snap_group_all {
+    width: 66%;
+  }
+
+  .think_about_it_grid .top_right_image {
+    width: 30%;
+
+    right: 1%;
+  }
+
+  .think_item,
+  .think_text {
+    font-size: 21px;
+  }
+
+  .think_sub_item {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .think_about_it_grid .snap_group_all {
+    width: 100%;
+  }
+
+  .think_about_it_grid .top_right_image {
+    width: 45%;
+
+    max-width: 300px;
+
+    margin: 15px auto 20px;
+
+    position: relative;
+
+    top: auto;
+
+    right: auto;
+
+    display: block;
+  }
+
+  .think_item,
+  .think_text {
+    font-size: 19px;
+  }
+
+  .think_sub_item {
+    font-size: 18px;
+  }
+
+  .think_sub_list {
+    padding-left: 35px;
+  }
 }

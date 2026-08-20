@@ -1,0 +1,363 @@
+/* ========================================================= */
+/* PAGE LAYOUT */
+/* ========================================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.screen_elements {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.group_elm {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.func_ctrls {
+  display: none !important;
+}
+/* ========================================================= */
+/* ACTIVITY */
+/* ========================================================= */
+
+.riddles_activity {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========================================================= */
+/* QUESTIONS HOLDER */
+/* ========================================================= */
+
+.riddles_ques {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 8px;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+}
+
+/* ========================================================= */
+/* EACH CARD */
+/* ========================================================= */
+
+.riddle_card {
+  width: 19%;
+  height: 390px;
+
+  background-color: #ffffff;
+
+  border: 2px solid #22b64b;
+  border-radius: 18px;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* لو في ستايل عام على img_fillin_gr */
+.riddles_activity .img_fillin_gr {
+  width: 19% !important;
+  height: 390px !important;
+
+  background-color: #ffffff !important;
+
+  border: 2px solid #22b64b !important;
+  border-radius: 18px !important;
+
+  padding: 10px !important;
+
+  box-sizing: border-box;
+}
+
+/* ========================================================= */
+/* QUESTION TEXT */
+/* ========================================================= */
+
+.riddle_question {
+  width: 100%;
+
+  min-height: 105px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  text-align: left;
+
+  font-family: Arcon;
+  font-size: 21px;
+  line-height: 1.25;
+
+  color: #222222;
+
+  padding: 0;
+  margin: 0 0 5px 0;
+
+  box-sizing: border-box;
+}
+
+/* إذا audioIcon عندك بغير الـ layout */
+.riddle_question.audioIcon {
+  display: flex;
+}
+
+/* ========================================================= */
+/* IMAGE */
+/* ========================================================= */
+
+.riddle_image {
+  width: 100%;
+  height: 175px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px 0 10px 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.riddle_image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  border: none;
+}
+
+/* ========================================================= */
+/* ANSWER HOLDER */
+/* ========================================================= */
+
+.riddle_answer {
+  width: 100%;
+
+  margin-top: auto;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px 0 0 0;
+
+  box-sizing: border-box;
+}
+
+/* ========================================================= */
+/* INPUT */
+/* ========================================================= */
+
+.riddle_input,
+.riddles_activity .text_input_area {
+  width: 100% !important;
+  height: 42px !important;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #777777 !important;
+  border-radius: 7px !important;
+
+  background-color: #ffffff !important;
+
+  padding: 5px 8px !important;
+
+  margin: 0 !important;
+
+  font-family: Arcon;
+  font-size: 18px;
+
+  line-height: normal;
+
+  color: #000000 !important;
+
+  text-align: left;
+
+  cursor: text;
+
+  caret-color: #000000;
+
+  outline: none;
+
+  box-shadow: none;
+}
+
+/* ========================================================= */
+/* INPUT FOCUS */
+/* ========================================================= */
+
+.riddle_input:focus,
+.riddles_activity .text_input_area:focus {
+  outline: none !important;
+
+  border: 2px solid #36a0c7 !important;
+
+  background-color: #f2fbff !important;
+}
+
+/* ========================================================= */
+/* HIDE VALIDATION */
+/* ========================================================= */
+
+.riddles_activity .icon_wrap_holder,
+.riddles_activity .icon_wrap,
+.riddles_activity .tick,
+.riddles_activity .cross {
+  display: none !important;
+}
+
+/* ========================================================= */
+/* HIDE NORMAL FILLIN ELEMENTS IF THEY EXIST */
+/* ========================================================= */
+
+.riddles_activity .q_num_space {
+  display: none !important;
+}
+
+.riddles_activity .fillin_gr,
+.riddles_activity .q_space,
+.riddles_activity .fillin_set {
+  width: 100%;
+}
+
+/* ========================================================= */
+/* OPTIONAL - HIDE CHECK BUTTON */
+/* ========================================================= */
+
+/*
+.checkBtn {
+    display: none !important;
+}
+*/
+
+/* ========================================================= */
+/* OPTIONAL - HIDE RESET BUTTON */
+/* ========================================================= */
+
+/*
+.resetBtn {
+    display: none !important;
+}
+*/
+
+/* ========================================================= */
+/* TITLE */
+/* ========================================================= */
+
+.activityHeading b {
+  color: #000000;
+}
+
+.page_sub_title {
+  width: 100%;
+}
+
+.page_sub_title p {
+  margin: 0;
+}
+
+/* ========================================================= */
+/* RESPONSIVE */
+/* ========================================================= */
+
+@media (max-width: 991.98px) {
+  .riddles_ques {
+    flex-wrap: wrap;
+  }
+
+  .riddle_card,
+  .riddles_activity .img_fillin_gr {
+    width: 31% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .riddle_card,
+  .riddles_activity .img_fillin_gr {
+    width: 47% !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .riddle_card,
+  .riddles_activity .img_fillin_gr {
+    width: 95% !important;
+  }
+}
+.q-type-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitleText {
+  width: 365px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #20b34b;
+
+  border-radius: 18px;
+
+  color: white;
+
+  font-family: Arcon;
+  font-size: 27px;
+  font-weight: bold;
+
+  text-align: center;
+  margin-bottom: 10px;
+}

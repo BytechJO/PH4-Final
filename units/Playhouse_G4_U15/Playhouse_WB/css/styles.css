@@ -6,8 +6,8 @@
 /* // for grade 4, 5, 6
 /* //  ****************************************** // */
 @font-face {
-    font-family: "Font Awesome 5 Free";
-    src: url('./fonts/FontAwesome_0.otf');
+  font-family: "Font Awesome 5 Free";
+  src: url("./fonts/FontAwesome_0.otf");
 }
 
 /**************** body ***************/
@@ -23,25 +23,25 @@ body {
     overflow:hidden;
 } */
 html {
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    font-family: Arcon;
-    position: relative;
-    overflow: hidden;
-    /*  -webkit-overflow-scrolling: touch;*/
-    background-attachment: fixed !important;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: Arcon;
+  position: relative;
+  overflow: hidden;
+  /*  -webkit-overflow-scrolling: touch;*/
+  background-attachment: fixed !important;
 }
 
 /********* Grade below 4*************/
 body {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 /* ========[[[[[[ Grade 4 and above ]]]]]]========*/
@@ -51,156 +51,273 @@ body {
 /* ========[[[[[[ Grade 4 and above end ]]]]]]========*/
 .mask_right,
 .mask_left {
-    background-color: rgb(41, 41, 41);
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 1px;
-    z-index: 50000;
+  background-color: rgb(41, 41, 41);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 1px;
+  z-index: 50000;
 }
 
 .mask_left {
-    left: 0;
+  left: 0;
 }
 
 .mask_right {
-    right: 0;
+  right: 0;
 }
 
 /**************** loading ***************/
 .loading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    height: 100vh;
-    height: calc(var(--vh, 1vh)*100);
-    z-index: 2000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  z-index: 2000;
 }
 
 .loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 90px;
-    height: 90px;
-    margin: -45px 0 0 -45px;
-    border: 10px solid rgba(82, 86, 89, 1);
-    border-radius: 50%;
-    border-top: 10px solid rgba(253, 185, 77, 1);
-    width: 60px;
-    height: 60px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+  border: 10px solid rgb(0 100 175);
+  border-radius: 50%;
+  border-top: 10px solid rgb(77, 203, 253);
+  border-bottom: 10px solid rgb(77, 203, 253);
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.workBookPagesToggle {
+  cursor: pointer;
+}
+
+.workBookPagesSidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: left 0.4s ease;
+  z-index: 999999;
+  overflow-y: auto;
+  direction: ltr;
+}
+
+.workBookPagesSidebar.open {
+  left: 0;
+}
+
+.workBookPagesSidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #cccccc;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.workBookPagesSidebarClose {
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.workBookPagesSidebarList {
+  display: flex;
+  flex-direction: column;
+}
+
+.workBookPagesSidebarItem {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.hamburgerBtn {
+  width: 50px;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+  background: #29b6e8;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburgerBtn span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+.hamburgerBtn:hover {
+  filter: brightness(1.05);
+}
+
+.hamburgerBtn:active {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(2px);
+}
+
+.workBookPagesSidebarItem:hover {
+  background: #f0f0f0;
+}
+
+.workBookPagesSidebarItem.active {
+  background: #00aeef;
+  color: #fff;
+  font-weight: bold;
+}
+
+.workBookPagesSidebarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9998;
+  display: none;
+}
+
+.workBookPagesSidebarOverlay.show {
+  display: block;
 }
 
 /**************** header ***************/
 header {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
+}
 
+.page_sub_title img {
+  height: 40px;
+  margin: 0 5px;
+}
+
+.page_sub_title p {
+  margin: auto;
+}
+
+.page_sub_title {
+  gap: 10px;
+  /* margin-left: 121px; */
+  font-weight: bold;
+}
+
+.page_sub_title * {
+  display: inline-block;
 }
 
 .unitIcon {
-    /* padding-top: 10px;
+  /* padding-top: 10px;
     margin-left: 70px; */
-    width: 188px;
-    height: 80px;
-    /* min-width: 59px; */
+  width: 188px;
+  height: 80px;
+  /* min-width: 59px; */
 }
 
 .fixed-top .container {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .unitTitleText {
-    /* width:100%;     */
-    line-height: 1.3;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: rgb(0, 185, 242);
-    font-weight: bold;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(0, 185, 242);
+  font-weight: bold;
 }
 
 .unitTitle {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .full_screen {
-    width: 59px;
-    height: 59px;
-    min-width: 59px;
-    cursor: pointer;
+  width: 59px;
+  height: 59px;
+  min-width: 59px;
+  cursor: pointer;
+}
+
+.footer_wrap img {
+  height: 58px;
 }
 
 .unitIcon img,
 .full_screen img,
 .homeBtn img {
-    width: 100%;
+  width: 100%;
 }
 
 /**************** footer ***************/
 footer {
-    width: 100%;
-    /* height:89px;    */
+  width: 100%;
+  /* height:89px;    */
 }
 
 .footer_wrap {
-    margin-bottom: 10px;
-}
-
-.footer_wrap img{
-    height: 58px;
-}
-footer {
-    width: 100%;
-    /* height:89px;    */
-}
-
-.footer_wrap {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer .footer_nav_btn {
-    height: 75px;
-    width: auto;
-    margin: 0 1vw;
+  height: 75px;
+  width: auto;
+  margin: 0 1vw;
 }
 
 footer .small_nav {
-    margin: auto 10px;
+  margin: auto 10px;
 }
 
 footer .mini_nav img {
-    padding: 3px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px #00000096;
-
+  padding: 3px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #00000096;
 }
 
 footer .footer_nav_btn a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 footer .homeBtn {
-    width: 57px;
-    height: auto;
-    min-width: 57px;
-    cursor: pointer;
+  width: 57px;
+  height: auto;
+  min-width: 57px;
+  cursor: pointer;
 }
 
 /* footer .emt_space{
@@ -208,90 +325,90 @@ footer .homeBtn {
     min-width: 57px;   
 } */
 footer .emt_space.btnWidth {
-    width: 57px;
-    min-width: 57px;
+  width: 57px;
+  min-width: 57px;
 }
 
 footer .emt_space.noWidth {
-    width: 0;
-    min-width: 0;
+  width: 0;
+  min-width: 0;
 }
 
 .sub_footer {
-    position: fixed;
-    right: 0;
-    bottom: 57px;
-    left: 0;
-    z-index: 1065;
-    padding: 1px 0px 1px;
+  position: fixed;
+  right: 0;
+  bottom: 57px;
+  left: 0;
+  z-index: 1065;
+  padding: 1px 0px 1px;
 }
 
 .subFooterNav,
 .ctrlIcon img {
-    width: 90px;
-    height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
 .subFooterNav {
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    z-index: 50000;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  z-index: 50000;
 }
 
 .sub_footer_icon_left {
-    left: 0;
+  left: 0;
 }
 
 .sub_footer_icon_right {
-    right: 0;
+  right: 0;
 }
 
 .subFooterNav.disabled {
-    opacity: 0.5;
-    pointer-events: none;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /**************** General ***************/
 /**************** Modal popups ***************/
 .pop_launcher {
-    background-color: transparent;
-    cursor: pointer;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .pop_launcher,
 .highlightsIcon {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .modal-content,
 .modal-header {
-    border: none;
+  border: none;
 }
 
 .modal-header button:focus,
 .modal-content button:focus {
-    outline: none;
+  outline: none;
 }
 
 /**************** Audio ***************/
 .audioIcon {
-    /* min-width: 47px;
+  /* min-width: 47px;
     height: 45px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); */
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    width: fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
 }
 
 .audioIcon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .unitTitle .audioIcon {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* .audioIcon.off { */
@@ -308,75 +425,75 @@ footer .emt_space.noWidth {
     cursor: default; */
 /* } */
 .disabled {
-    opacity: 0.5;
-    pointer-events: none;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .audioSpace {
-    border-bottom: 2px solid #25459d;
-    cursor: pointer;
+  border-bottom: 2px solid #25459d;
+  cursor: pointer;
 }
 
 .audioTile {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*************** content *****************/
 .content_wrap {
-    position: relative;
-    overflow-y: auto;
+  position: relative;
+  overflow-y: auto;
 }
 
 /*************** positions *****************/
 .left_top {
-    float: left;
+  float: left;
 }
 
 .right_top {
-    float: right;
+  float: right;
 }
 
 .left_bottom {
-    position: absolute;
-    left: 0;
-    bottom: 8px;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
 }
 
 .right_bottom {
-    position: absolute;
-    right: 0;
-    bottom: 8px;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
 }
 
 /*************** positions *****************/
 .ht_100 {
-    height: 100%;
+  height: 100%;
 }
 
 .ht_fit {
-    height: intrinsic;
-    height: -moz-max-content;
-    height: -webkit-max-content;
-    height: max-content;
+  height: intrinsic;
+  height: -moz-max-content;
+  height: -webkit-max-content;
+  height: max-content;
 }
 
 .hideInSmall {
-    margin-left: -40px;
-    visibility: hidden;
+  margin-left: -40px;
+  visibility: hidden;
 }
 
 /**** popup window ***/
 .modal-header .close {
-    background-color: white;
-    opacity: 1;
-    padding: 9px;
-    padding-top: 3px;
-    padding-bottom: 7px;
-    margin-right: 1px;
-    margin-top: 0px;
-    border-radius: 2px;
-    /* width: 34px; */
-    height: 34px;
+  background-color: white;
+  opacity: 1;
+  padding: 9px;
+  padding-top: 3px;
+  padding-bottom: 7px;
+  margin-right: 1px;
+  margin-top: 0px;
+  border-radius: 2px;
+  /* width: 34px; */
+  height: 34px;
 }
 
 /**** popup window ***/
@@ -384,7 +501,7 @@ footer .emt_space.noWidth {
 /* ====================================================== */
 /*              Media Queries Start                       */
 /* ====================================================== */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
 
     .container,
     .container-sm,
@@ -394,77 +511,74 @@ footer .emt_space.noWidth {
         max-width: 1360px;
 
     }
-}
+} */
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1799.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1800px) */
 @media (max-width: 1000.98px) {
-    header {
-        height: 90px;
-    }
+  header {
+    height: 90px;
+  }
 
-    .unitTitle {
-        font-size: 40px;
-    }
-
+  .unitTitle {
+    font-size: 40px;
+  }
 }
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1399.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+}
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 1199.98px */
 /* ------------------------------------------------*/
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  footer {
+    height: 80px;
+  }
 
-    footer {
-        height: 80px;
-    }
-
-    footer .footer_nav_btn {
-        height: 47px;
-        width: auto;
-    }
-
+  footer .footer_nav_btn {
+    height: 47px;
+    width: auto;
+  }
 }
 
 /* ------------------------------------------------ */
 /*              M Q max-width: 991.98px */
 /* ------------------------------------------------*/
 /* // Medium devices (tablets, less than 992px) 768 to 991.98 */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+}
 
 /* ------------------------------------------------ */
 /* M Q max-width: 767.98px */
 /* ------------------------------------------------*/
 /* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
 @media (max-width: 767.98px) {
+  .header_wrap {
+    height: 70px;
+  }
 
-    .header_wrap {
-        height: 70px;
-    }
+  footer .small_nav {
+    margin: auto 3px;
+  }
 
-    footer .small_nav {
-        margin: auto 3px;
-    }
+  .unitTitle {
+    font-size: 32px;
+  }
 
-    .unitTitle {
-        font-size: 32px;
-    }
-
-    /* ========[[[[[[ Grade 4 and above ]]]]]]========*/
-    /* body {   
+  /* ========[[[[[[ Grade 4 and above ]]]]]]========*/
+  /* body {   
         font-size: 21px;   
     }  */
 
-    /* ========[[[[[[ //Grade 4 and above end]]]]]]========*/
-
+  /* ========[[[[[[ //Grade 4 and above end]]]]]]========*/
 }
 
 /* ------------------------------------------------ */
@@ -472,34 +586,32 @@ footer .emt_space.noWidth {
 /* ------------------------------------------------*/
 /* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
 @media (max-width: 575.98px) {
-    .unitTitle {
-        font-size: 26px;
-    }
+  .unitTitle {
+    font-size: 26px;
+  }
 
-    footer .small_nav {
-        margin: auto 0;
-    }
+  footer .small_nav {
+    margin: auto 0;
+  }
 
-    .unitIcon {
-        width: 49px;
-        height: 48px;
-        min-width: 49px;
-    }
+  .unitIcon {
+    width: 49px;
+    height: 48px;
+    min-width: 49px;
+  }
 
-    .header_wrap {
-        height: 53px;
-    }
+  .header_wrap {
+    height: 53px;
+  }
 
-    header {
-        height: 70px;
-    }
+  header {
+    height: 70px;
+  }
 
-    /********* Grade below 4*************/
-    body {
-        font-size: 24px;
-    }
-
-
+  /********* Grade below 4*************/
+  body {
+    font-size: 24px;
+  }
 }
 
 /* ------------------------------------------------ */
@@ -507,40 +619,39 @@ footer .emt_space.noWidth {
 /* ------------------------------------------------*/
 /* body working fine 320 to 475 */
 @media (max-width: 475.98px) {
-    .unitTitle .audioIcon {
-        padding: 14px;
-    }
+  .unitTitle .audioIcon {
+    padding: 14px;
+  }
 
-    .unitTitle {
-        width: 74vw;
-    }
+  .unitTitle {
+    width: 74vw;
+  }
 
-    .audioIcon {
-        min-width: 36px;
-        height: 34px;
-    }
+  .audioIcon {
+    min-width: 36px;
+    height: 34px;
+  }
 
-    .unitTitle {
-        font-size: 24px;
-    }
+  .unitTitle {
+    font-size: 24px;
+  }
 
-    .unitIcon {
-        width: 38px;
-        height: 37px;
-        min-width: 28px;
-    }
+  .unitIcon {
+    width: 38px;
+    height: 37px;
+    min-width: 28px;
+  }
 
-    /********* Grade below 4*************/
-    body {
-        font-size: 22px;
-    }
+  /********* Grade below 4*************/
+  body {
+    font-size: 22px;
+  }
 
-    /* ========[[[[[[ Grade 4 and above ]]]]]]========*/
-    /* body {   
+  /* ========[[[[[[ Grade 4 and above ]]]]]]========*/
+  /* body {   
         font-size: 20px;   
     } */
-    /* ========[[[[[[ //Grade 4 and above end]]]]]]========*/
-
+  /* ========[[[[[[ //Grade 4 and above end]]]]]]========*/
 }
 
 /* ------------------------------------------------ */
@@ -548,13 +659,13 @@ footer .emt_space.noWidth {
 /* ------------------------------------------------*/
 /* body working fine upto 320 */
 @media (max-width: 320px) {
-    .unitTitle {
-        width: 63vw;
-    }
+  .unitTitle {
+    width: 63vw;
+  }
 
-    .unitIcon {
-        width: 29px;
-        height: 32px;
-        min-width: 29px;
-    }
+  .unitIcon {
+    width: 29px;
+    height: 32px;
+    min-width: 29px;
+  }
 }

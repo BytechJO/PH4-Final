@@ -1,0 +1,310 @@
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.all_cont {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   SCREEN ELEMENTS
+========================================================= */
+
+.screen_elements {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   WORD POWER ACTIVITY
+========================================================= */
+
+.word_power_activity {
+  width: 70%;
+  height: 88%;
+
+  min-height: 500px;
+
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+
+  border: 1px solid #555;
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   EACH COLUMN
+========================================================= */
+
+.word_power_activity .word_power_column {
+  width: 100%;
+  height: 100%;
+
+  min-height: 500px;
+
+  border-right: 1px solid #555;
+
+  box-sizing: border-box;
+}
+
+.word_power_activity .word_power_column:last-child {
+  border-right: none;
+}
+
+/* =========================================================
+   FILLIN GROUP
+========================================================= */
+
+.word_power_activity .fillin_gr {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: stretch !important;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   QUESTION SPACE
+========================================================= */
+
+.word_power_activity .q_space {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   FILLIN SET
+========================================================= */
+
+.word_power_activity .fillin_set {
+  width: 100%;
+  height: 100%;
+
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+
+  align-items: center !important;
+
+  gap: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   COLUMN TITLE
+   detective / investigate / guilty / innocent
+========================================================= */
+
+.word_power_activity .word_power_title {
+  width: 100%;
+  height: 45px;
+
+  min-height: 45px;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid #555;
+
+  color: #00aeef;
+
+  font-size: 3.1vh;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.word_power_activity .word_power_input {
+  width: 72%;
+
+  height: 42px;
+
+  margin-top: 42px;
+
+  padding: 2px 5px;
+
+  border: none;
+  border-bottom: 1px solid #666;
+
+  outline: none;
+
+  background: transparent;
+
+  font-size: 2vh;
+
+  color: #000;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* focus */
+.word_power_activity .word_power_input:focus {
+  border-bottom: 2px solid #00aeef;
+}
+
+/* browser autofill */
+.word_power_activity .word_power_input:-webkit-autofill {
+  -webkit-text-fill-color: #000;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* =========================================================
+   REMOVE OLD INPUT STYLE IF EXISTS
+========================================================= */
+
+.word_power_activity .text_input_area {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* =========================================================
+   HIDE NUMBERING
+========================================================= */
+
+.word_power_activity .q_num_space {
+  display: none !important;
+}
+
+/* =========================================================
+   HIDE CHECK / CROSS
+========================================================= */
+
+.word_power_activity .icon_wrap_holder,
+.word_power_activity .icon_wrap,
+.word_power_activity .tick,
+.word_power_activity .cross {
+  display: none !important;
+}
+
+/* =========================================================
+   OPTIONS CONTAINER
+========================================================= */
+
+.options {
+  width: 100%;
+  height: 100%;
+}
+
+.cont_ht_sf {
+  height: 100%;
+}
+
+/* =========================================================
+   REMOVE EXTRA MARGINS FROM OLD FILLIN
+========================================================= */
+
+.word_power_activity .img_fillin_gr {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.word_power_activity .que {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 1000px) {
+  .word_power_activity {
+    width: 92%;
+    height: 85%;
+
+    min-height: 450px;
+  }
+
+  .word_power_activity .word_power_column {
+    min-height: 450px;
+  }
+
+  .word_power_activity .word_power_title {
+    font-size: 1.9vh;
+  }
+
+  .word_power_activity .word_power_input {
+    width: 75%;
+    height: 38px;
+
+    margin-top: 35px;
+
+    font-size: 1.8vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .word_power_activity {
+    width: 96%;
+    min-height: 400px;
+  }
+
+  .word_power_activity .word_power_column {
+    min-height: 400px;
+  }
+
+  .word_power_activity .word_power_title {
+    font-size: 1.7vh;
+  }
+
+  .word_power_activity .word_power_input {
+    width: 78%;
+
+    margin-top: 30px;
+
+    font-size: 1.7vh;
+  }
+}
+.image-container {
+  position: absolute;
+  left: 3%;
+  bottom: -14%;
+
+  width: 16%;
+  height: auto;
+
+  z-index: 2;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+.checkBtn {
+  display: none !important;
+}
