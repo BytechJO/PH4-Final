@@ -21,7 +21,7 @@ var stereo_data = {
 };
 
 var reading_data = {
-  mainTitle: "../images/pages/sb-icons/writing.jpg",
+  mainTitle: "../images/pages/sb-icons/WRITING.jpg",
   mainTitleIcon: "",
   mainTitleIconPos: { right: "90px" },
   mainTitleAudio: "../audios/page_78/WRITING.mp3",
