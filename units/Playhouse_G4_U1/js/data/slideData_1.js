@@ -55,9 +55,9 @@ var reading_data = {
       images: [],
 
       word: [
-        "<img src='../images/pages/activities/img1.png' class='limg'/>",
-        "<img src='../images/pages/activities/img3.png' class='limg'/>",
-        "<img src='../images/pages/activities/img2.png' class='limg'/>",
+        "<img src='../images/pages/activities/img1.PNG' class='limg'/>",
+        "<img src='../images/pages/activities/img3.PNG' class='limg'/>",
+        "<img src='../images/pages/activities/img2.PNG' class='limg'/>",
       ],
 
       imagePlacePos: [

@@ -37,7 +37,7 @@ var reading_data = {
         "subTitleIcons": ["../images/pages/page-2/1-title-icon.png"],
         "subTitleAudio": "../audios/under.mp3",
 
-        "mainImage": ["../images/pages/activities/img1.png"],
+        "mainImage": ["../images/pages/activities/img1.PNG"],
         "convImage": []
     },
     ]

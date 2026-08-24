@@ -503,7 +503,8 @@ LineDraw.prototype = {
         ob.resultArr[dp1] = 0;
       }
     }
-    self.resetNodes("all", false);
+    self.resetNodes("draw", true);
+    $area.find(".node").css("cursor", "pointer");
     self.showIcons(true, ob.resultArr);
     var allCorrect = ob.correctCount == numOfDrops && ob.wrongCount == 0;
     showFeedback(true, allCorrect);
