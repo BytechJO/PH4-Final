@@ -42,7 +42,7 @@ var mcq_data = {
     "questions"             : [
         {
             "question"              : "",
-            "image"                 : "../images/pages/activities/P9_2_1.png",
+            "image"                 : "../images/pages/activities/p9_2_1.png",
             "answer"                : [2],
             "audio"                 : "no",
             "audioenable"           : "default", // correct (or) default
@@ -63,7 +63,7 @@ var mcq_data = {
         },
         {
             "question"              : "",
-            "image"                 : "../images/pages/activities/P9_2_2.png",
+            "image"                 : "../images/pages/activities/p9_2_2.png",
             "answer"                : [1],
             "audio"                 : "no",
             "audioenable"           : "default", // correct (or) default
@@ -84,7 +84,7 @@ var mcq_data = {
         },
         {
             "question"              : "",
-            "image"                 : "../images/pages/activities/P9_2_3.png",
+            "image"                 : "../images/pages/activities/p9_2_3.png",
             "answer"                : [2],
             "audio"                 : "no",
             "audioenable"           : "default", // correct (or) default

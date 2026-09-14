@@ -97,7 +97,7 @@ function buildFillInBody(aObj) {
     // OPTIONS
     // =====================================================
 
-    htmlStmt += '<div class="options cont_ht_sf mx-auto">';
+    htmlStmt += '<div class="options  mx-auto">';
 
     htmlStmt += '<div class="all_cont">';
 

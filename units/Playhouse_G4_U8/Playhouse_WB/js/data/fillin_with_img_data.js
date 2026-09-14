@@ -51,7 +51,7 @@ var fillin_data = {
       textend: "",
       audio: "../audios/page_39/under.mp3",
       audioenable: "default", // correct (or) default
-      image: "../images/pages/activities/1-img-2.png",
+      image: "../images/pages/activities/1-img-3.png",
       answer: ["fawn"],
       strictcase: "no", // yes (or) no
       type: "text", // text (or) number
@@ -61,7 +61,7 @@ var fillin_data = {
       textend: "",
       audio: "../audios/page_39/under.mp3",
       audioenable: "default", // correct (or) default
-      image: "../images/pages/activities/1-img-3.png",
+      image: "../images/pages/activities/1-img-2.png",
       answer: ["colt"],
       strictcase: "no", // yes (or) no
       type: "text", // text (or) number

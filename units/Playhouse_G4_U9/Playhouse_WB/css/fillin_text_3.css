@@ -15,15 +15,16 @@
   align-items: flex-start;
 }
 
-
 .screen_elements {
-  width:80%;
+  width: 80%;
 
   height: auto;
 
   margin: 0 auto;
 }
-
+.checkBtn {
+  display: none !important;
+}
 
 .group_elm {
   width: 100%;
@@ -41,7 +42,6 @@
   align-items: center;
 }
 
-
 /* =========================================
    ACTIVITY HEADING
 ========================================= */
@@ -50,13 +50,11 @@
   color: #000;
 }
 
-
 .page_sub_title {
   width: 100%;
 
   text-align: left;
 }
-
 
 .page_sub_title p {
   margin-bottom: 0;
@@ -64,13 +62,11 @@
   line-height: 1.3;
 }
 
-
 .blue_text {
   color: rgb(0, 185, 242);
 
   font-weight: bold;
 }
-
 
 /* =========================================
    TOP CONTENT
@@ -97,7 +93,6 @@
   box-sizing: border-box;
 }
 
-
 /* =========================================
    STORY TEXT
 ========================================= */
@@ -110,13 +105,11 @@
   text-align: left;
 }
 
-
 .story-text-audio {
   width: 100%;
 
   display: block;
 }
-
 
 .story-text {
   width: 100%;
@@ -133,7 +126,6 @@
 
   box-sizing: border-box;
 }
-
 
 /* =========================================
    STORY IMAGE
@@ -153,7 +145,6 @@
   align-self: flex-start;
 }
 
-
 .story-image {
   display: block;
 
@@ -165,7 +156,6 @@
 
   object-fit: contain;
 }
-
 
 /* =========================================
    QUESTIONS GRID
@@ -187,7 +177,6 @@
   box-sizing: border-box;
 }
 
-
 /* =========================================
    QUESTION
 ========================================= */
@@ -204,7 +193,6 @@
   padding: 0;
 }
 
-
 .ques {
   width: 100%;
 
@@ -215,13 +203,11 @@
   text-align: center;
 }
 
-
 .q_box {
   width: 100%;
 
   height: 70px;
 }
-
 
 /* =========================================
    QUESTION NUMBER
@@ -235,13 +221,11 @@
   font-weight: bold;
 }
 
-
 .q_order {
   width: 50px;
 
   font-weight: bolder;
 }
-
 
 /* =========================================
    FILL IN
@@ -251,7 +235,6 @@
   width: 100%;
 }
 
-
 .fillin_gr .q_space {
   width: 100%;
 
@@ -259,7 +242,6 @@
 
   align-items: center;
 }
-
 
 .fillin_set {
   width: 100%;
@@ -276,7 +258,6 @@
 
   color: black;
 }
-
 
 /* =========================================
    INPUT
@@ -312,13 +293,11 @@
   box-sizing: border-box;
 }
 
-
 .fillin_set input:focus {
   outline: none;
 
   border-bottom-color: #595a5a;
 }
-
 
 /* =========================================
    QUESTION TEXT / AUDIO
@@ -330,11 +309,9 @@
   font-size: 27px;
 }
 
-
 .min_w_fit_contant {
   flex: 0 0 auto;
 }
-
 
 /* =========================================
    CHECK / CROSS
@@ -356,7 +333,6 @@
   margin-left: 6px;
 }
 
-
 .icon_wrap {
   width: 32px;
 
@@ -369,14 +345,12 @@
   align-items: center;
 }
 
-
 .tick,
 .cross {
   width: 30px;
 
   height: 30px;
 }
-
 
 .tick img,
 .cross img {
@@ -388,7 +362,6 @@
 
   object-fit: contain;
 }
-
 
 /* =========================================
    QUESTION IMAGE
@@ -402,7 +375,6 @@
   margin: 0 auto;
 }
 
-
 .image_space img {
   width: 100%;
 
@@ -410,7 +382,6 @@
 
   object-fit: contain;
 }
-
 
 /* =========================================
    WORD OPTIONS
@@ -422,7 +393,6 @@
   font-size: 22px;
 }
 
-
 .word_options {
   width: 100%;
 
@@ -430,7 +400,6 @@
 
   background-color: #c3f4ff8c;
 }
-
 
 .word_opt_sticky {
   width: 100%;
@@ -447,7 +416,6 @@
 
   border-radius: 10px;
 }
-
 
 /* =========================================
    OTHER EXISTING STYLES
@@ -469,13 +437,11 @@
   justify-content: center;
 }
 
-
 .right-content .p-0 {
   height: 110px;
 
   border: 1px solid black;
 }
-
 
 .tips_content img {
   height: 30px;
@@ -485,7 +451,6 @@
   margin-top: 10px;
 }
 
-
 /* =========================================
    IMPORTANT
    REMOVE OLD ABSOLUTE IMAGE
@@ -494,7 +459,6 @@
 .image-container {
   display: none !important;
 }
-
 
 /* =========================================
    TEXTAREA
@@ -512,7 +476,6 @@
   background-position: center;
 }
 
-
 #paper-textarea {
   width: 100%;
 
@@ -521,22 +484,18 @@
   box-sizing: border-box;
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 991.98px) {
-
   .screen_elements {
     width: 95%;
   }
 
-
   .story-text {
     font-size: 18px;
   }
-
 
   .story-image-wrap {
     width: 105px;
@@ -544,11 +503,9 @@
     flex-basis: 105px;
   }
 
-
   .story-image {
     max-width: 105px;
   }
-
 
   .questions-grid {
     column-gap: 30px;
@@ -556,24 +513,19 @@
     row-gap: 16px;
   }
 
-
   .fill_in .que {
     width: 100%;
   }
-
 }
-
 
 /* =========================================
    SMALL TABLET
 ========================================= */
 
 @media (max-width: 767.98px) {
-
   .top-content-row {
     gap: 12px;
   }
-
 
   .story-text {
     font-size: 17px;
@@ -581,41 +533,33 @@
     line-height: 1.4;
   }
 
-
   .story-image-wrap {
     width: 90px;
 
     flex-basis: 90px;
   }
 
-
   .story-image {
     max-width: 90px;
   }
-
 
   .questions-grid {
     column-gap: 20px;
   }
 
-
   .fillin_set input {
     font-size: 18px;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 575.98px) {
-
   .screen_elements {
     width: 94%;
   }
-
 
   .top-content-row {
     flex-direction: column;
@@ -625,11 +569,9 @@
     margin-bottom: 20px;
   }
 
-
   .story-text-wrap {
     width: 100%;
   }
-
 
   .story-image-wrap {
     width: 100%;
@@ -639,13 +581,11 @@
     justify-content: center;
   }
 
-
   .story-image {
     width: auto;
 
     max-width: 120px;
   }
-
 
   .questions-grid {
     grid-template-columns: 1fr;
@@ -653,14 +593,11 @@
     row-gap: 15px;
   }
 
-
   .fill_in .que {
     width: 100%;
   }
 
-
   .fillin_set input {
     font-size: 17px;
   }
-
 }

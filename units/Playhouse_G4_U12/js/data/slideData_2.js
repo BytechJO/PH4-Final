@@ -47,8 +47,8 @@ var reading_data = {
         "../audios/page_105/slice.mp3",
       ],
       word: [
-        "<img src='../images/pages/activities/img1.png' style='width:90%'/>",
-        "<img src='../images/pages/activities/img1.png' style='width:90%'/>",
+        "<img src='../images/pages/activities/img1.PNG' style='width:90%'/>",
+        "<img src='../images/pages/activities/img2.PNG' style='width:90%'/>",
       ],
 
       imagePlacePos: [{ colWidth: [6, 6], colData: [1, 1] }],

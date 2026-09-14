@@ -21,7 +21,7 @@ var stereo_data = {
 };
 
 var writing_recipe_data = {
-  mainTitle: "../images/pages/sb-icons/writing.jpg",
+  mainTitle: "../images/pages/sb-icons/WRITING.jpg",
   mainTitleIcon: "",
   mainTitleIconPos: { right: "90px" },
   mainTitleAudio: "../audios/page_68/WRITING.mp3",

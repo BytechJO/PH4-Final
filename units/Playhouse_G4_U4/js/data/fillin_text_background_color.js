@@ -6,7 +6,7 @@ var stereo_data = {
 
   playListData: [
     {
-      audiourl: "../audios/page_x/2.mp3",
+      audiourl: "../audios/page_37/2.mp3",
     },
     {
       url: "",

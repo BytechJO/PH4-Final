@@ -47,9 +47,9 @@ var mcq_data = {
     "questions"             : [
         {
             "question"              : "",
-            "options"               : ["<img src='../images/pages/activities/img1.png' style='width: 100%'/>",
-                                       "<img src='../images/pages/activities/img2.png' style='width: 100%'/>",
-                                       "<img src='../images/pages/activities/img3.png' style='width: 100%'/>"],
+            "options"               : ["<img src='../images/pages/activities/img1.PNG' style='width: 100%'/>",
+                                       "<img src='../images/pages/activities/img2.PNG' style='width: 100%'/>",
+                                       "<img src='../images/pages/activities/img3.PNG' style='width: 100%'/>"],
             "answer"                : [1],
             "audio"                 : "../audios/under.mp3",
             "audioenable"           : "default", // correct (or) default 

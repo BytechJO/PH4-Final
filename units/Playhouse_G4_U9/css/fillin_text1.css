@@ -15,14 +15,12 @@
 
 .screen_elements {
   width: 90%;
-  height: 100%;
 
   margin: 0 auto;
 }
 
 .group_elm.shopping_bags_activity {
   width: 100%;
-  height: 100%;
 
   display: flex;
 
@@ -39,7 +37,7 @@
 ========================================= */
 
 .shopping_person {
-  width: 360px;
+  width: 540px;
 
   position: relative;
 
@@ -132,7 +130,7 @@
   position: absolute;
 
   top: 42%;
-  left: 13.5%;
+  left: 16.5%;
 
   z-index: 10;
 
@@ -179,7 +177,7 @@
 
   color: #111;
 
-  font-size: 22px;
+  font-size: 25px;
 
   line-height: 33px;
 

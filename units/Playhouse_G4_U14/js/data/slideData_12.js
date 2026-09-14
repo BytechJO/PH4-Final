@@ -55,7 +55,7 @@ var reading_data = {
             "Finally, the article must have a conclusion. A conclusion summarises the main idea of" +
             "the article and lets the reader know that it is the end of the article.<br/>",
 
-            "<img src='../images/pages/activities/img1.png' style='width: 100%;'/>",
+            "<img src='../images/pages/activities/img1.PNG' style='width: 100%;'/>",
             ],
         "imagePlacePos":[
             {"colWidth": [8,4], "colData": [1,1] },

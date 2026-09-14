@@ -29,7 +29,9 @@
     font-size: 24.8px;
     overflow: hidden;
 }
-
+.checkBtn {
+  display: none !important;
+}
 
 textarea {
   border: none;

@@ -49,9 +49,9 @@ var reading_data = {
       ],
       word: [
         "<div style='text-align: center;'>" +
-          "<img src='../images/pages/activities/img1.png' style='width:30%'/>" +
-          "<img src='../images/pages/activities/img2.png' style='width:30%'/>" +
-          "<img src='../images/pages/activities/img3.png' style='width:30%'/>" +
+          "<img src='../images/pages/activities/img1.PNG' style='width:30%'/>" +
+          "<img src='../images/pages/activities/img2.PNG' style='width:30%'/>" +
+          "<img src='../images/pages/activities/img3.PNG' style='width:30%'/>" +
           "</div>",
       ],
       imagePlacePos: [

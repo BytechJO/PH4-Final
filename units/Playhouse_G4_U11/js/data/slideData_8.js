@@ -51,11 +51,11 @@ var reading_data = {
         "<span class='bold'><span class='green_text'>I</span> before <span class='green_text'>E</span> except after <span class='green_text'>C</span></span> ",
         "<span class='bold'>Or when sounding like <span class='green_text'>A</span> as in <span class='green_text'>neighbour</span> and <span class='green_text'>weigh</span></span>  ",
         "<div style='text-align: center;'>" +
-          "<img src='../images/pages/activities/img1.png' style='width:40%'/>" +
-          "<img src='../images/pages/activities/img2.png' style='width:40%'/>" +
-          "<img src='../images/pages/activities/img3.png' style='width:40%'/>" +
+          "<img src='../images/pages/activities/img1.PNG' style='width:40%'/>" +
+          "<img src='../images/pages/activities/img2.PNG' style='width:40%'/>" +
+          "<img src='../images/pages/activities/img3.PNG' style='width:40%'/>" +
           "</div>",
-        "<img src='../images/pages/activities/img4.png' style='width:90%'/>",
+        "<img src='../images/pages/activities/img4.PNG' style='width:90%'/>",
       ],
       imagePlacePos: [
         { colWidth: [12], colData: [1] },

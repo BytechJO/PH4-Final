@@ -32,7 +32,7 @@ var reading_data = {
       parent_class_name: "",
 
       mainImage: "../images/pages/news-letter/1-news-title.png",
-      mainImage2: "../images/pages/news-letter/1-news2-title.png",
+      mainImage2: "../images/pages/news-letter/1-news2-title.PNG",
       questionImage: "../images/pages/news-letter/1-conv-img.png",
       starImage: "../images/pages/news-letter/2-img-2-title.png",
       convImage: "../images/pages/news-letter/3-img-title.png",
