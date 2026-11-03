@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> Listen and read.",
     "subTitleTextRight": "<span class='black'> Say it!</span>",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/page_129/1_Listen_and_read.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p129_q1.mp3",
     "slides": [
     {
        

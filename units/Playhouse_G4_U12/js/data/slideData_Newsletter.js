@@ -4,7 +4,7 @@ var stereo_data = {
   bgColor_rgb: "rgb(12, 177, 75)",
   playListData: [
     {
-      audiourl: "../audios/demoo.mp3",
+      audiourl: "../audios/page_111/PLAYHOUSE_4_SCHOOLBOOK_UNIT_12_TRACK_07_01.mp3",
     },
     {
       url: "",
@@ -25,7 +25,7 @@ var reading_data = {
   subTitleTextLeft: "PLAYHOUSE NEWSLETTER",
   subTitleTextRight: "",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/page_111/PLAYHOUSE_NEWSLETTER.mp3",
+  subTitleAudio: "../audios/qa_instructions/p111_q1.mp3",
   slides: [
     {
       // "layout": "adventure_images_with_text",

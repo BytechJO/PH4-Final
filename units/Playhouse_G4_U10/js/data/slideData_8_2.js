@@ -32,7 +32,7 @@ var reading_data = {
 
   subTitleIcons: [],
 
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/qa_instructions/p094_q1.mp3",
 
   slides: [
     {

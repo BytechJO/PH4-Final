@@ -27,7 +27,7 @@ var fillin_data = {
   "subTitleTextLeft"      : "<span class='title-order'>1</span> Read.",
   "subTitleTextRight"     : "Read the paragraphs in the box. Choose the correct adjectives. Match the pictures to the paragraphs.",
   "subTitleIcons"         : [""],
-  "subTitleAudio"         : "../audios/page_43/1_Read.mp3",
+  "subTitleAudio"         : "../audios/qa_instructions/p043_q1.mp3",
   "image"                 : "",
   "imageposition"         : "back",// "front" (or) "back"
   "numbering"             : "alphabet", // "alphabet" (or) "number"

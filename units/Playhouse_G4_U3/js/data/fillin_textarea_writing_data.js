@@ -13,7 +13,7 @@ var fillin_data = {
     "Write a personal narrative about when you were at a carnival, circus or amusement park. Use time expressions (while, during, all day long, after the ...).",
 
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/qa_instructions/p026_q1.mp3",
 
   activityheading: "",
   activityheading_audio: "../audios/under.mp3",

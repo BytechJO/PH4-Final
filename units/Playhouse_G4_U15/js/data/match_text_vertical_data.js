@@ -27,7 +27,7 @@ var linedraw_data = {
     "subTitleTextLeft"      : "<span class='title-order'>1</span> Match it!",
     "subTitleTextRight"     : "Match the <span class='red_text'> question tag </span> with its statement.",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../audios/qa_instructions/p135_q1.mp3",
     "image"                 : "../images/pages/activities/6-img-1.png",
     "rightImage"            : "",
     "rightText"             : [],

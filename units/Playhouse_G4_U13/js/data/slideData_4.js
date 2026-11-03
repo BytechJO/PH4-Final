@@ -26,7 +26,7 @@ var reading_data = {
   "subTitleTextLeft": "<span class='title-order'>1</span> Look and say.",
   "subTitleTextRight": "",
   "subTitleIcons": [],
-  "subTitleAudio": "../audios/page_118/1_Look_and_say.mp3",
+  "subTitleAudio": "../audios/qa_instructions/p118_q1.mp3",
   "slides": [
   {
       
@@ -37,7 +37,7 @@ var reading_data = {
       "gram_title":"<span class='green_text'>Agreeing -- So, Too, Neither and Either</span>",
       "slide_1_title": "Rule",
       "slide_2_title": "Example",
-      "letters":["G","R","A","M","M","E","R"],
+      "letters":["G","R","A","M","M","A","R"],
       "audio": ["../audios/page_118/Pg6_2.1_Stella.mp3","../audios/page_118/dough.mp3","../audios/page_118/sauce.mp3","../audios/page_118/sprinkle.mp3","../audios/page_118/cheese.mp3","../audios/page_118/add.mp3","../audios/page_118/pepperoni.mp3","../audios/page_118/slice.mp3"],
       "word": [
        

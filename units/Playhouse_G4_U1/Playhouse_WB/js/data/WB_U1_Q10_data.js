@@ -115,3 +115,7 @@ var fillin_data = {
     },
   ],
 };
+
+// WB8: written comprehension; remove test/a placeholder keys
+fillin_data.manualReview = true;
+fillin_data.questions.forEach(q => { q.answer = []; });

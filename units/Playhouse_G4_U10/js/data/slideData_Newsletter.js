@@ -4,7 +4,7 @@ var stereo_data = {
   bgColor_rgb: "rgb(12, 177, 75)",
   playListData: [
     {
-      audiourl: "../audios/demoo.mp3",
+      audiourl: "../audios/page_95/Does_Your_Garden_Grow.mp3",
     },
     {
       url: "",
@@ -25,7 +25,7 @@ var reading_data = {
   subTitleTextLeft: "PLAYHOUSE NEWSLETTER",
   subTitleTextRight: "",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/page_95/PLAYHOUSE_NEWSLETTER.mp3",
+  subTitleAudio: "../audios/qa_instructions/p095_q1.mp3",
   slides: [
     {
       // "layout": "adventure_images_with_text",

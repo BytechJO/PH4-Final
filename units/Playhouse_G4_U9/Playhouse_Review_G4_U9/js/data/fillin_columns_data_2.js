@@ -70,3 +70,6 @@ var fillin_data = {
         }
     ]
 }
+// SB86: compose sentences using supplied phrases
+fillin_data.manualReview = true;
+fillin_data.questions.forEach(q => { q.answer = []; });

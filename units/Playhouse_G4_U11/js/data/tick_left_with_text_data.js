@@ -28,7 +28,7 @@ var mcq_tick_data = {
     "subTitleTextLeft"      : "<span class='title-order'>1</span> You do it!",
     "subTitleTextRight"     : "For each of the pictures below, tick <b>✓</b> the sentence that uses the correct subject and object pronoun.",
     "subTitleIcons"         : [""],
-    "subTitleAudio"         : "../audios/under.mp3",   
+    "subTitleAudio"         : "../audios/qa_instructions/p099_q1.mp3",
     "select"                : "single", // single (or) multiple
     "shape"                 : "tickbox", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) tickbox
     "bgcolor"               : "none",

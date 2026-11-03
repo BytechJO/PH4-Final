@@ -27,7 +27,7 @@ var reading_data = {
   subTitleTextRight: "<span class='black'>Say it!</span>  ",
 
   subTitleIcons: [],
-  subTitleAudio: "../audios/page_109/1_Listen_and_read_along.mp3",
+  subTitleAudio: "../audios/qa_instructions/p109_q1.mp3",
   slides: [
     {
       layout: "grid_columns",

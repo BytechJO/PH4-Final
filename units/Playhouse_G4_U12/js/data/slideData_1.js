@@ -28,7 +28,7 @@ var reading_data = {
   subTitleTextRight: "",
   subTitleIcons: [""],
   subTitleAudio:
-    "../audios/page_105/1_Listen_and_read_Then_act_it_out_with_a_friend.mp3",
+    "../audios/qa_instructions/p105_q1.mp3",
   slides: [
     {
       layout: "grid_columns",

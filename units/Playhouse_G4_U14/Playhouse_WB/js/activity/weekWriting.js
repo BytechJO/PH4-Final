@@ -117,6 +117,7 @@ WeekWriting.prototype = {
 
       reader.onload = function (loadEvent) {
         image.attr("src", loadEvent.target.result).addClass("visible");
+        $(".resetBtn").removeClass("disabled");
 
         cell.find(".ww_empty_hint").hide();
       };
@@ -182,6 +183,7 @@ WeekWriting.prototype = {
       self.activeContext = canvas.getContext("2d");
 
       self.isDrawing = true;
+      $(".resetBtn").removeClass("disabled");
 
       var point = self.getCanvasPoint(event, canvas);
 
@@ -363,6 +365,7 @@ WeekWriting.prototype = {
   // =====================================================
 
   initialSettings: function () {
+    $(".resetBtn").addClass("disabled");
     initialSettingsDone(1);
   },
 };

@@ -53,3 +53,6 @@ var fillin_data = {
         }
     ]
 }
+// SB85: compose sentences using quantities
+fillin_data.manualReview = true;
+fillin_data.questions.forEach(q => { q.answer = []; });

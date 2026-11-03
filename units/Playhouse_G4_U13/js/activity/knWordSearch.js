@@ -18,7 +18,7 @@ window.KnWordSearch = function (obj, dataObj) {
     parent_holder: obj[0],
   };
 
-  this.selectedLines = [];
+  this.selectedLines = []; document.querySelector(".resetBtn")?.classList.add("disabled");
 
   this.dragStart = null;
 
@@ -522,7 +522,7 @@ KnWordSearch.prototype = {
     // DRAW CAPSULE
     // =====================================================
 
-    this.renderSelections();
+    this.renderSelections(); document.querySelector(".resetBtn")?.classList.remove("disabled");
 
     // =====================================================
     // AUTO WRITE
@@ -767,7 +767,7 @@ KnWordSearch.prototype = {
   reset: function () {
     var e = this.ob.activity_area;
 
-    this.selectedLines = [];
+    this.selectedLines = []; document.querySelector(".resetBtn")?.classList.add("disabled");
 
     this.dragStart = null;
 
@@ -796,3 +796,4 @@ KnWordSearch.prototype = {
     initialSettingsDone(1);
   },
 };
+

@@ -61,7 +61,7 @@ function getStrArray(str, pos) {
   var arr = [];
   var arrIndx = 0;
   if (str != null) {
-    str = str.toString().split(",");
+    str = Array.isArray(str) ? str : str.toString().split(",");
     for (var i = 0; i < str.length; i++) {
       arr[arrIndx] = $.trim(str[i]);
       arrIndx++;
@@ -461,6 +461,11 @@ function changeFullScreenIcon(aCondition) {
 var _loadingObj = [];
 var _loadingStatus = "no";
 function setLoadedStatus(val) {
+    // Template media may finish while later activity scripts are still parsing.
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", function () { setLoadedStatus(val); }, { once: true });
+        return;
+    }
   _loadingObj.push(val);
   var _currFile = getCurrFileOrDirectory("file");
   var _currDir = getCurrFileOrDirectory("directory");

@@ -237,3 +237,12 @@ var circle_underline_data = {
     },
   ],
 };
+
+// Book review: SB98. Include all noun subjects/objects and all verbs.
+circle_underline_data.questions[1].circleAnswer = ['q2_w1','q2_w5','q2_w6','q2_w9'];
+circle_underline_data.questions[1].underlineAnswer = ['q2_w2','q2_w4','q2_w7'];
+circle_underline_data.questions[1].rewriteAnswer = 'She likes to eat it. It is for her.';
+circle_underline_data.questions[2].circleAnswer = ['q3_w1','q3_w3','q3_w4','q3_w6','q3_w7'];
+circle_underline_data.questions[2].rewriteAnswer = 'We have it. He bought them for us.';
+circle_underline_data.questions[2].alternateRewrite = ['We have it. He bought us them.'];
+circle_underline_data.questions[3].underlineAnswer = ['q4_w2','q4_w5','q4_w8'];

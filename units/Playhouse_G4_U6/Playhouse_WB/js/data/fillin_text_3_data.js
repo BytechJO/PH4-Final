@@ -125,3 +125,7 @@ var fillin_data = {
         },             
       ]
     }
+// Open response: reviewed by the teacher; no single fixed answer.
+fillin_data.manualReview = true;
+fillin_data.defaultAnswer = 0;
+fillin_data.questions.forEach(function(q) { q.answer = []; q.fillinanswer = ''; });

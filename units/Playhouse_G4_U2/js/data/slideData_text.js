@@ -33,7 +33,7 @@ var reading_data = {
   subTitleTextRight:
     "<span class='green_text'>Read about how Hannah spends her time at the weekend.</span>",
   subTitleIcons: [],
-  subTitleAudio: "../audios/page_16/1_Read_about_it!.mp3",
+  subTitleAudio: "../audios/qa_instructions/p016_q1.mp3",
   slides: [
     {
       parent_class_name: "",

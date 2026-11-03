@@ -599,7 +599,7 @@ FillIn.prototype = {
         )[0];
 
       if (resetBtn) {
-        resetBtn.classList.add(
+        resetBtn.classList.remove(
           "disabled"
         );
       }

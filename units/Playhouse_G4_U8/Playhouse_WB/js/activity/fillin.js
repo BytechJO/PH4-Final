@@ -406,7 +406,7 @@ FillIn.prototype = {
   if (allCorrect) {
     document
       .getElementsByClassName("resetBtn")[0]
-      .classList.add("disabled");
+      .classList.remove("disabled");
   }
 },
   reset: function () {

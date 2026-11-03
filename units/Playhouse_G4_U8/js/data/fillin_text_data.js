@@ -29,7 +29,7 @@ var fillin_data = {
   subTitleTextRight:
     "Complete the sentences with the correct adverbs of quantity and the words in brackets.",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/qa_instructions/p071_q1.mp3",
   image: "",
   imageposition: "back", // "front" (or) "back"
   numbering: "number", // "alphabet" (or) "number"

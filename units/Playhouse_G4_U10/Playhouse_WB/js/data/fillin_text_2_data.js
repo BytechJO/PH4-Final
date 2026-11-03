@@ -22,7 +22,7 @@ var stereo_data = {
 var fillin_data = {
   layout: 1,
   numinrow: [[1], [1], [1], [1], [1]],
-  mainTitle: "../images/pages/sb-icons/phonics-sent-build.png",
+  mainTitle: "../images/pages/sb-icons/spilling.jpg",
   mainTitleIcon: "",
   mainTitleIconPos: { right: "-18px" },
   mainTitleAudio: "../audios/page_52/PHONICS_AND_SPELLING.mp3",

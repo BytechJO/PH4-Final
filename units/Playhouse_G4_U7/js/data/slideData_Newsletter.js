@@ -26,7 +26,7 @@ var reading_data = {
   subTitleTextLeft: "PLAYHOUSE NEWSLETTER",
   subTitleTextRight: "",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/page_67/PLAYHOUSE_NEWSLETTER.mp3",
+  subTitleAudio: "../audios/qa_instructions/p067_q1.mp3",
   slides: [
     {
       // "layout": "adventure_images_with_text",

@@ -27,7 +27,7 @@ var reading_data = {
   subTitleTextRight:
     "Pick an object or a place. Tell your friend the details, but don’t name what you’re describing. See if your friend can guess what it is.",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/qa_instructions/p138_q1.mp3",
   slides: [
     {
       layout: "grid_columns",

@@ -31,7 +31,7 @@ var fillin_data = {
 
   mainTitleAudio: "../audios/page_6/GRAMMAR.mp3",
   subTitleTextLeft:
-    "<span class='title-order'>1</span> <b>Finish it!</b> Fill in the blanks using class <span class='black_text'>‘was‘</span> or <span class='black_text'>‘were‘</span>.",
+    "<span class='title-order'>1</span> <b>Finish it!</b> Fill in the blanks using <span class='black_text'>‘was‘</span> or <span class='black_text'>‘were‘</span>.",
   subTitleTextRight: "",
 
   subTitleIcons: [],

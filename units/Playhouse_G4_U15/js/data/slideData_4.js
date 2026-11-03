@@ -26,7 +26,7 @@ var reading_data = {
   "subTitleTextLeft": "<span class='title-order'>1</span> Look and say.",
   "subTitleTextRight": "",
   "subTitleIcons": [],
-  "subTitleAudio": "../audios/page_134/1_Look_and_say.mp3",
+  "subTitleAudio": "../audios/qa_instructions/p134_q1.mp3",
   "slides": [
   {
       
@@ -35,7 +35,7 @@ var reading_data = {
       "parentClassName": "grammar_slide",
       "group_styles": "",
       "title":"<span class='green_text'>Question Tags</span>",
-      "letters":["G","R","A","M","M","E","R"],
+      "letters":["G","R","A","M","M","A","R"],
       "audio": ["../audios/page_134/Pg6_2.1_Stella.mp3","../audios/page_134/dough.mp3","../audios/page_134/sauce.mp3","../audios/page_134/sprinkle.mp3","../audios/page_134/cheese.mp3","../audios/page_134/add.mp3","../audios/page_134/pepperoni.mp3","../audios/page_134/slice.mp3"],
       "word": [
        

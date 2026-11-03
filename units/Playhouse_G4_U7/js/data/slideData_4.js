@@ -26,7 +26,7 @@ var reading_data = {
   "subTitleTextLeft": "<span class='title-order'>1</span> Look and say.",
   "subTitleTextRight": "",
   "subTitleIcons": [],
-  "subTitleAudio": "../audios/page_62/1_Look_and_say.mp3",
+  "subTitleAudio": "../audios/qa_instructions/p062_q1.mp3",
   "slides": [
   {
       
@@ -34,15 +34,15 @@ var reading_data = {
       "welcomeImage":"../images/pages/page-3/welcome-img.png",
       "parentClassName": "grammar_slide",
       "group_styles": "",
-      "letters":["G","R","A","M","M","E","R"],
+      "letters":["G","R","A","M","M","A","R"],
       "slide_1_title":"Rule",
       "slide_2_title":"Example",
       "audio": ["../audios/page_62/Pg6_2.1_Stella.mp3","../audios/page_62/dough.mp3","../audios/page_62/sauce.mp3","../audios/page_62/sprinkle.mp3","../audios/page_62/cheese.mp3","../audios/page_62/add.mp3","../audios/page_62/pepperoni.mp3","../audios/page_62/slice.mp3"],
       "word": [
           "<span class='green_text'>Comparative and Superlative Adjectives of More Than One Syllable</span>",
 
-          "When an adjective has more than one syllable, use <span class='green_text'>most + adjective</span> to compare two nouns: Angel Falls is <span class='green_text'>more amazing</span> than Niagara Falls.",
-          "When an adjective has more than one syllable, use <span class='green_text'>most + adjective</span> to compare three or more nouns: Victoria Falls is the <span class='green_text'>more amazing</span> of all.",
+          "When an adjective has more than one syllable, use <span class='green_text'>more + adjective</span> to compare two nouns: Angel Falls is <span class='green_text'>more amazing</span> than Niagara Falls.",
+          "When an adjective has more than one syllable, use <span class='green_text'>most + adjective</span> to compare three or more nouns: Victoria Falls is the <span class='green_text'>most amazing</span> of all.",
 
       ],
       "imagePlacePos":[

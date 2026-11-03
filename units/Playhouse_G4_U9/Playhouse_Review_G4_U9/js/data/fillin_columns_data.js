@@ -44,3 +44,6 @@ var fillin_data = {
         }
     ]
 }
+// SB86: multiple valid suffix forms; remove unrelated directions keys
+fillin_data.manualReview = true;
+fillin_data.questions.forEach(q => { q.answer = []; });

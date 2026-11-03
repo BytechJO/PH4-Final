@@ -433,3 +433,6 @@
     margin-bottom: 12px;
   }
 }
+
+/* Fit the writing panels above the fixed activity toolbar on laptops. */
+@media (min-width: 768px) { .writing_box { height: clamp(180px, 38vh, 350px); } }

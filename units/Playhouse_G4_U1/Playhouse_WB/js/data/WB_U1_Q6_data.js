@@ -145,3 +145,7 @@ var fillin_data = {
     },
   ],
 };
+
+// WB6: freely compose sentences using was/were
+fillin_data.manualReview = true;
+fillin_data.questions.forEach(q => { q.answer = []; });

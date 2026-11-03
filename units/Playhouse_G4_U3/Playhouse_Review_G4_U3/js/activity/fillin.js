@@ -508,7 +508,7 @@ FillIn.prototype = {
         document.querySelector(".resetBtn");
 
       if (resetBtn) {
-        resetBtn.classList.add("disabled");
+        resetBtn.classList.remove("disabled");
       }
     }
   },

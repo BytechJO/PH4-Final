@@ -97,7 +97,7 @@ DrawImageActivity.prototype = {
       .on("change.drawImageFile", ".draw_image_file", function (event) {
         var file = event.target.files[0];
 
-        if (!file) {
+        if (!file || !file.type.startsWith("image/")) {
           return;
         }
 

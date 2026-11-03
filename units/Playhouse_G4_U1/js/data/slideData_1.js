@@ -27,7 +27,7 @@ var reading_data = {
   subTitleTextLeft: "<span class='title-order'>1</span> <b>Ask it.</b>",
   subTitleTextRight: "We can also use <span class='red'>‘was</span>’ and ‘<span class='red'>were</span>’ in questions.",
   subTitleIcons: [],
-  subTitleAudio: "../audios/page_11/under.mp3",
+  subTitleAudio: "../audios/qa_instructions/p007_q1.mp3",
 
   slides: [
     {

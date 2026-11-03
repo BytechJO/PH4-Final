@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> Look and say.",
     "subTitleTextRight": "",
     "subTitleIcons": [""],
-    "subTitleAudio": "../audios/page_42/1_Look_and_say.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p042_q1.mp3",
     "slides": [
     {
       "layout": "grammar_slide",
@@ -34,7 +34,7 @@ var reading_data = {
       "parentClassName": "grammar_slide",
       "group_styles": "",
       "title":"<span class='green_text'>Information Questions – How</span>",
-      "letters":["G","R","A","M","M","E","R"],
+      "letters":["G","R","A","M","M","A","R"],
       "audio": ["../audios/page_42/Pg6_2.1_Stella.mp3","../audios/page_42/dough.mp3","../audios/page_42/sauce.mp3","../audios/page_42/sprinkle.mp3","../audios/page_42/cheese.mp3","../audios/page_42/add.mp3","../audios/page_42/pepperoni.mp3","../audios/page_42/slice.mp3"],
       "word": [
             "<span class='green_text'>How</span>",

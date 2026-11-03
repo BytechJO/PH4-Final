@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> Read about it!",
     "subTitleTextRight": "Read the <span class='red'>Descriptive paragraph</span>. It includes detailed descriptions of people, places and events. ",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/page_66/1_Read_about_it!.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p066_q1.mp3",
     "slides": [
     {
        

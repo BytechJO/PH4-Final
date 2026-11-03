@@ -25,7 +25,7 @@ var reading_data = {
     "mainTitleAudio": "../audios/page_41/CONVERSATION.mp3",
     "subTitleTextLeft": "<span class='title-order'>1</span> Listen and read. Then act it out with a friend.",
     "subTitleTextRight": "",
-    "subTitleAudio": "../audios/page_41/1_Listen_and_read_Then_act_it_out_with_a_friend.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p041_q1.mp3",
     "subTitleIcons": [""],
     "haveAudio"                  : true,
     "slides": [

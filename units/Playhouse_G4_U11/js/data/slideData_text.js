@@ -28,7 +28,7 @@ var reading_data = {
     "Read the fable about Peter Rabbit and <span class='red_text'>circle</span> the food that Mr. McGregor had in his garden. " +
     "<span class='red_text'>Underline</span> the clothes that Peter lost during his adventure.",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/page_100/1_Read_about_it!.mp3",
+  subTitleAudio: "../audios/qa_instructions/p100_q1.mp3",
   numberofcolumns: 1,
   slides: [
     {

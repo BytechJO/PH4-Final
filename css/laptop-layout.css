@@ -1,0 +1,13 @@
+/* Keep lesson scrolling above the fixed navigation and assessment controls. */
+:root{--lesson-header:100px;--lesson-footer:76px;--lesson-controls:65px}
+.content_wrap{max-height:calc(100dvh - var(--lesson-header) - var(--lesson-footer) - var(--lesson-controls) - 8px)!important;overflow:auto!important;overscroll-behavior:contain;padding-bottom:24px!important}
+.sub_footer{bottom:var(--lesson-footer)!important}
+.sub_footer .func_ctrls{margin:0 auto!important}
+.options img{max-width:100%}
+@media(max-width:1440px){
+ body{font-size:clamp(18px,1.8vw,26px)}
+ .subFooterNav{width:clamp(48px,5.4vw,76px)!important;height:clamp(48px,5.4vw,76px)!important}
+ .unitTitle{font-size:clamp(28px,3.7vw,54px)!important}
+ .act_head_group{margin-bottom:16px!important}
+ .content_wrap{scroll-padding:20px}
+}

@@ -38,9 +38,8 @@
   color: #00aeef;
   font-size: 23px;
 }
-.func_ctrls {
-  display: none !important;
-}
+.func_ctrls{display:flex!important}
+.func_ctrls .checkBtn{display:none!important}
 .ww_instruction_title b {
   font-weight: bold;
 }

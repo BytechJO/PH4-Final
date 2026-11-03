@@ -258,3 +258,7 @@ var fillin_data = {
     },
   ],
 };
+
+// WB4: choose a phrase to complete each sentence
+fillin_data.manualReview = true;
+fillin_data.questions.forEach(q => { q.answer = []; });

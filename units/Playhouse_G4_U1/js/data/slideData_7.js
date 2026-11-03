@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft"      : "<span class='title-order'>1</span> Listen and read along",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
-    "subTitleAudio"         : "../audios/page_11/1_Listen_and_read_along.mp3",
+    "subTitleAudio"         : "../audios/qa_instructions/p011_q1.mp3",
     "slides": [
         {
             "mainTitle": "",
@@ -58,7 +58,7 @@ var reading_data = {
                 "<span class='green_text'>Jenny:</span>",//new lines under img 1
                 "My dad works at home sometimes for his business. Maybe he would let us use his photocopier and scanner. ",
                 "<span class='green_text'>Lilly:</span>",
-                "es, we can make our parts of the newspaper at home, but we’ll need a place where we can all work on it together.",
+                "Yes, we can make our parts of the newspaper at home, but we’ll need a place where we can all work on it together.",
                 "<span class='green_text'>Jenny:</span>",
                 "We can use the playhouse.",
                 "<span class='green_text'>Lilly:</span>",

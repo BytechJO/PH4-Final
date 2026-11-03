@@ -253,7 +253,7 @@ WordBreak.prototype = {
     if (allCorrect) {
       $(".checkBtn").addClass("disabled");
 
-      $(".resetBtn").addClass("disabled");
+      $(".resetBtn").removeClass("disabled");
     } else {
       $(".resetBtn").removeClass("disabled");
     }

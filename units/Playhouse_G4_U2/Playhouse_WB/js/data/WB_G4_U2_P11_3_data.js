@@ -60,7 +60,7 @@ var fillin_data = {
     },
     {
       singleword: false,
-      text: "<span class='text'>5 </span>We <b>(have)</b>[_]a tour of the",
+      text: "<span class='text'>5 </span>We <b>(have)</b>[_]a tour of the museum.",
       textaudios: ["../audios/page_11/under.mp3"],
       textEndAudio: "",
       audio: "",

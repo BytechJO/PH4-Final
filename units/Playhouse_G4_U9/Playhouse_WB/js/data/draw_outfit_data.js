@@ -28,7 +28,7 @@ var draw_outfit_data = {
   mainTitleIconPos: { right: "-18px" },
   mainTitleAudio: "../audios/page_44/WORD_POWER.mp3",
   subTitleTextLeft:
-    '<span class="red_text">1</span> Draw it! Draw your favourite outfit and name the parts of the clothes and what materials they are.',
+    '<span class="red_text">2</span> Draw it! Draw your favourite outfit and name the parts of the clothes and what materials they are.',
   subTitleTextRight: "",
   subTitleIcons: [],
   subTitleAudio:

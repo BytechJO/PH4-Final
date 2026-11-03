@@ -52,15 +52,6 @@ var _activityData = {
       visited: 0,
     },
     {
-      file: "multiple_choice_with_fillin.html",
-      type: "mcq",
-      build: "yes",
-      activityCtrls: "yes",
-      layout: 1,
-      visited: 0,
-      score: 0,
-    },
-    {
       file: "circle_underline_rewrite.html",
       type: "circleunderline",
       subtype: "none",

@@ -25,7 +25,7 @@ var reading_data = {
     "Take turns saying a statement to your partner about a food you like and have them respond.",
 
   subTitleIcons: [""],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/qa_instructions/p119_q1.mp3",
 
   slides: [
     {

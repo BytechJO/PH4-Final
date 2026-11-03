@@ -30,7 +30,7 @@ var reading_data = {
   subTitleTextLeft: "<span class='title-order'>1</span> Read about it!",
   subTitleTextRight: "Read the story below.",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/page_71/1_Read_about_it!.mp3",
+  subTitleAudio: "../audios/qa_instructions/p072_q1.mp3",
   numberofcolumns: 1,
   slides: [
     {

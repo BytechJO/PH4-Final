@@ -64,7 +64,7 @@ var conversation_board_data = {
     {
       title: "Step One:",
       color: "green",
-      text: "Turn the bag to folded ‘bottom’ is now the top, for the animal head. Pick the colour of paper that your animal is. Cut out the shape of the head and top of the mouth. Glue this onto the part of the bag that folds over. When you put your hand in the bag, it will look like the mouth is ‘talking’.",
+      text: "Turn the bag so the folded ‘bottom’ is now the top, for the animal head. Pick the colour of paper that your animal is. Cut out the shape of the head and top of the mouth. Glue this onto the part of the bag that folds over. When you put your hand in the bag, it will look like the mouth is ‘talking’.",
     },
 
     {

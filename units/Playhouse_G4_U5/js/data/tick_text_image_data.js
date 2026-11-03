@@ -56,7 +56,7 @@ var mcq_tick_data = {
           audioenable: "default", // correct (or) default
         },
         {
-          text: "<span class='red_text'>Q:</span> How wide is the Nile? &nbsp; <span class='blue_text'>A:</span> IIt is eight kilometers wide in some places.",
+          text: "<span class='red_text'>Q:</span> How wide is the Nile? &nbsp; <span class='blue_text'>A:</span> It is eight kilometers wide in some places.",
           image: "no",
           audio: "no",
           audioenable: "default", // correct (or) default

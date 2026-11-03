@@ -44,7 +44,7 @@ var mcq_data = {
     {
       question: "",
       image: "We",
-      answer: [8],
+      answer: [], allowEmptyAnswer: true,
       audio: "no",
       audioenable: "default", // correct (or) default
       options: [
@@ -71,7 +71,7 @@ var mcq_data = {
     {
       question: "",
       image: "no",
-      answer: [6],
+      answer: [], allowEmptyAnswer: true,
       audio: "no",
       audioenable: "default", // correct (or) default
       options: [
@@ -104,7 +104,7 @@ var mcq_data = {
     {
       question: "",
       image: "no",
-      answer: [5],
+      answer: [4, 5],
       audio: "no",
       audioenable: "default", // correct (or) default
       options: [

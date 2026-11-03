@@ -26,7 +26,7 @@ var reading_data = {
   subTitleTextLeft: "<span class='title-order'>1</span> Read and solve it!",
   subTitleTextRight: "Adapted from: Detective Nose Two Minute Mysteries",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/page_135/1_Read_and_solve_it!.mp3",
+  subTitleAudio: "../audios/qa_instructions/p136_q1.mp3",
   numberofcolumns: 1,
   slides: [
     {

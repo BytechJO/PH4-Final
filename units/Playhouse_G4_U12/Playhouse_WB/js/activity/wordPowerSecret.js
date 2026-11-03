@@ -229,7 +229,7 @@ WordPowerSecret.prototype = {
     if (allCorrect) {
       $(".checkBtn").addClass("disabled");
 
-      $(".resetBtn").addClass("disabled");
+      $(".resetBtn").removeClass("disabled");
     }
   },
 

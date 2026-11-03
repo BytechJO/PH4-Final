@@ -65,7 +65,7 @@ var reading_data = {
             "<b>ours</b>",
            
             "<span class='blue_text'>That is</span>  my <span class='blue_text'>book</span>.",
-            "<span class='blue_text'>That book is</span> main.",
+            "<span class='blue_text'>That book is</span> mine.",
 
             "Their <span class='blue_text'>clock showed it was 4:30.</span>",
             "<span class='blue_text'>The clock is </span>theirs.",

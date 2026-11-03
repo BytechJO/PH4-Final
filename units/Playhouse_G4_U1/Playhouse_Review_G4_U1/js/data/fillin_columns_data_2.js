@@ -63,3 +63,6 @@ var fillin_data = {
         }
     ]
 }
+// SB28: write about each day; varied complete responses
+fillin_data.manualReview = true;
+fillin_data.questions.forEach(q => { q.answer = []; });

@@ -124,7 +124,7 @@ MCQ.prototype = {
             var fDataObj = ((ob.data_obj).questions[fIndx-1]);
             (elsQue[i].querySelector('.tick')).style.display = 'none';
             (elsQue[i].querySelector('.cross')).style.display = 'none';            
-            var _cAns = getIntArray(fDataObj.answer);           
+            var _cAns = fDataObj.allowEmptyAnswer === true ? [] : getIntArray(fDataObj.answer);           
             var _uAns = [];
            
             var picks = elsQue[i].querySelectorAll('.pick');            
@@ -181,7 +181,7 @@ MCQ.prototype = {
                     }                   
                 }
             } 
-            if((_uAns.length>0) && (_cAns.length == _uAns.length)){
+            if((_uAns.length>0 || fDataObj.allowEmptyAnswer === true) && (_cAns.length == _uAns.length)){
                 resultArr[i] = (compareArrays(_uAns, _cAns))? 1:0;                
                  
                 if((fDataObj).audio != ''){ 
@@ -198,7 +198,7 @@ MCQ.prototype = {
         showFeedback(true,allCorrect);
        
         if(allCorrect){
-            document.getElementsByClassName('resetBtn')[0].classList.add("disabled"); 
+            document.getElementsByClassName('resetBtn')[0].classList.remove("disabled"); 
         }        
     },
     showIcons:function(aBoo, aVal, aResult){
@@ -344,3 +344,4 @@ MCQ.prototype = {
         initialSettingsDone(1);  
     }
 }
+

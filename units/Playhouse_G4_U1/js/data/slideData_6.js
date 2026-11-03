@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> Look and say.",
     "subTitleTextRight": "",
     "subTitleIcons": [""],
-    "subTitleAudio": "../audios/page_6/1_Look_and_say.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p006_q1.mp3",
     "slides": [
     // {
     //     "mainTitle": "../images/pages/page-2/1-title_1.png",
@@ -81,7 +81,7 @@ var reading_data = {
       "parentClassName": "grammar_slide",
       "group_styles": "",
       "title":"<span class='green_text'>The Past Tense of Be</span>",
-      "letters":["G","R","A","M","M","E","R"],
+      "letters":["G","R","A","M","M","A","R"],
       "audio": ["../audios/page_6/Pg6_2.1_Stella.mp3","../audios/page_6/dough.mp3","../audios/page_6/sauce.mp3","../audios/page_6/sprinkle.mp3","../audios/page_6/cheese.mp3","../audios/page_6/add.mp3","../audios/page_6/pepperoni.mp3","../audios/page_6/slice.mp3"],
       "word": [
             // "Some prepositions that are used to talk about a time relationship are the following:",

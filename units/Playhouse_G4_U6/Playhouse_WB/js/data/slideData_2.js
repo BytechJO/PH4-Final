@@ -46,7 +46,7 @@ var reading_data = {
                 "<span class='dark_text'>The first two lines rhyme.</span>",
 
                 "But my teacher Mr. Brown, <br>"+
-                "Lives to live in a small town.",
+                "Likes to live in a small town.",
 
                 "<span class='dark_text'>Then the next two lines rhyme.</span>",
 

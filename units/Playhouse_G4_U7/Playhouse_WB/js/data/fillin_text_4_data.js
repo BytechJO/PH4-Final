@@ -87,7 +87,7 @@ var fillin_data = {
         "audio": "",
         "audioenable": "default", // correct (or) default
         "image": "",
-        "answer": ["edge"],
+        "answer": ["bridge"],
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no    
         "strictorder": "yes", // yes (or) no              

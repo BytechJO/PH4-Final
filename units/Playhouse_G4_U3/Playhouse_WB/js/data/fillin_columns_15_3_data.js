@@ -84,3 +84,7 @@ var fillin_data = {
         },
     ]
 }
+// WB15 Q5 is an opinion, not a single fixed answer.
+fillin_data.questions[4].skipValidation = true;
+fillin_data.questions[4].answer = [];
+fillin_data.questions[4].textfront += "<br><small>Your opinion — discuss your answer with your teacher. Check marks questions 1–4 only.</small>";

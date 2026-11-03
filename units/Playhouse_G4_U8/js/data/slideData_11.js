@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> Read about it!",
     "subTitleTextRight": "Peter and his family went to an animal park! Peter wrote a story about it. Every story has a beginning, a middle and an end. Read Peter’s story below.",
     "subTitleIcons": [""],
-    "subTitleAudio": "../audios/page_74/1_Read_about_it!.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p074_q1.mp3",
     "slides": [
         {
             "mainTitle": "../images/pages/page-2/1-title_1.png",

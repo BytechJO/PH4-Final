@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> Tell about it!",
     "subTitleTextRight": "Imagine you’re a newspaper reporter, and write about three track stars namely Hiroshi, William and Lebron. Explain what might happen in the race.",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/page_130/1_Tell_about_it!.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p130_q1.mp3",
     "slides": [
         {
            

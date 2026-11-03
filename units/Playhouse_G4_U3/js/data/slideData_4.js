@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> Look and say.",
     "subTitleTextRight": "",
     "subTitleIcons": [""],
-    "subTitleAudio": "../audios/page_22/1_Look_and_say.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p022_q1.mp3",
     "slides": [
     // {
     //     "mainTitle": "../images/pages/page-2/1-title_1.png",
@@ -82,7 +82,7 @@ var reading_data = {
       "parentClassName": "grammar_slide",
       "group_styles": "",
       "title":"<span class='green_text'>Past Continuous</span>",
-      "letters":["G","R","A","M","M","E","R"],
+      "letters":["G","R","A","M","M","A","R"],
       "audio": ["../audios/page_22/Pg6_2.1_Stella.mp3","../audios/page_22/dough.mp3","../audios/page_22/sauce.mp3","../audios/page_22/sprinkle.mp3","../audios/page_22/cheese.mp3","../audios/page_22/add.mp3","../audios/page_22/pepperoni.mp3","../audios/page_22/slice.mp3"],
       "word": [
             "We use the past continuous to talk about actions",

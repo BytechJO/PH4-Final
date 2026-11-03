@@ -27,7 +27,7 @@ var reading_data = {
   subTitleTextRight:
     "<span class='black'>There is a helpful poem for spelling ‘<span class='green_text'>ie</span>’ and ‘<span class='green_text'>ei</span>’ words in English. Next, listen and read along. Then practise.</span>  ",
   subTitleIcons: [],
-  subTitleAudio: "../audios/page_101/1_Listen_to_it!.mp3",
+  subTitleAudio: "../audios/qa_instructions/p101_q1.mp3",
   slides: [
     {
       layout: "grid_columns",

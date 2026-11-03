@@ -307,7 +307,7 @@ FillIn.prototype = {
       var resetButton = document.querySelector(".resetBtn");
 
       if (resetButton) {
-        resetButton.classList.add("disabled");
+        resetButton.classList.remove("disabled");
       }
     }
   },
@@ -457,7 +457,7 @@ FillIn.prototype = {
       var resetButton = document.querySelector(".resetBtn");
 
       if (resetButton) {
-        resetButton.classList.add("disabled");
+        resetButton.classList.remove("disabled");
       }
     }
   },

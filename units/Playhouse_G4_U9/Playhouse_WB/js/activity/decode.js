@@ -326,7 +326,7 @@ Decode.prototype = {
       if (document.getElementsByClassName("resetBtn").length > 0) {
         document
           .getElementsByClassName("resetBtn")[0]
-          .classList.add("disabled");
+          .classList.remove("disabled");
       }
     }
   },

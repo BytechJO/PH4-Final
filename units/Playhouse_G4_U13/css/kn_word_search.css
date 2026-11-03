@@ -276,7 +276,7 @@
    HIDE ACTIVITY CONTROLS
 ========================================================= */
 
-.func_ctrls {
+.func_ctrls .checkBtn {
   display: none !important;
 }
 
@@ -323,3 +323,4 @@
     min-width: 700px;
   }
 }
+

@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> You do it.",
     "subTitleTextRight": "<span class='green_text'>Use irregular verbs with questions. See how they are used in positive and negative answers. Examples:</span>",
     "subTitleIcons": [""],
-    "subTitleAudio": "../audios/under.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p015_q1.mp3",
     "slides": [ {
        "layout": "text_on_image",
         

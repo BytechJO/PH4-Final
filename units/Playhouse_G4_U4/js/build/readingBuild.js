@@ -144,7 +144,7 @@ function buildReadingHTML(aObj) {
         slideHtml += "</div>";
 
         slideHtml += "<div class='col_grid_container'>";
-        slideHtml += '<div class="title">' + slide.title + "</div>";
+        slideHtml += '<div class="title">' + (slide.title || slide.gram_title || '') + "</div>";
         slideHtml += "<div class='buttons_container d-flex flex-wrap'>";
         slideHtml +=
           "<div class='gram_btn rule pulse rule_toggle_btn'>Rule</div>";

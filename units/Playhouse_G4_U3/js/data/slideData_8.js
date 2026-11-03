@@ -29,7 +29,7 @@ var reading_data = {
     "../images/pages/sb-icons/2.jpg",
     "../images/pages/sb-icons/3.jpg",
   ],
-  subTitleAudio: "../audios/page_25/1_Listen_and_read_along.mp3",
+  subTitleAudio: "../audios/qa_instructions/p025_q1.mp3",
   slides: [
     {
       layout: "grid_columns",

@@ -45,7 +45,7 @@ var reading_data = {
             "We use <b>use to</b> / <b>used to</b> for something that happened regularly in the past but doesn’t happen now.",
 
             "Did you <b>use to</b> live in a village?",
-            "No, we <b>use to</b> live in the city",
+            "No, we <b>used to</b> live in the city",
 
             "Where did you use to play football?",
             "We used to play football at school",

@@ -210,7 +210,7 @@ WordPuzzle.prototype = {
         
         if(horzCorrect && vertCorrect){
             showFeedback(true, true);                  
-            document.getElementsByClassName('resetBtn')[0].classList.add("disabled");        
+            document.getElementsByClassName('resetBtn')[0].classList.remove("disabled");        
         }else{
             showFeedback(true, false);      
         }

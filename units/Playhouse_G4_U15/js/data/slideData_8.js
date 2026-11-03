@@ -63,7 +63,7 @@ var reading_data = {
             // "",
             "<span class='green_text'>my</span>",
             // "",
-            "<span class='green_text'>main</span>",
+            "<span class='green_text'>mine</span>",
             "<b>you</b>",
             // "",
             "<span class='green_text'>your</span>",
@@ -106,7 +106,7 @@ var reading_data = {
             "<span class='green_text'>yours</span>",
 
             "That is <span class='green_text'>my</span> book.",
-            "That book is <span class='green_text'>main</span>.",
+            "That book is <span class='green_text'>mine</span>.",
 
             "<span class='green_text'>Their</span> clock is big.",
             "The big clock is <span class='green_text'>theirs</span>.",

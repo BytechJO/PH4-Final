@@ -1,0 +1,12 @@
+.intro-paged-popup [hidden]{display:none!important}.intro-paged-popup .modal-content{max-height:90vh;overflow:hidden}.intro-paged-popup .modal-body{overflow-y:auto;min-height:0}.intro-listen-page{border:8px solid #d3e322;border-radius:16px;padding:clamp(16px,3vw,38px);background:#fff;text-align:left}.intro-word-power{color:#20ad49;font-size:clamp(22px,2.2vw,34px);margin:0 0 24px;font-weight:700}.intro-listen-play{font:inherit;font-size:clamp(18px,1.7vw,28px);background:transparent;border:0;color:#222;padding:4px 0;cursor:pointer;text-align:left}.intro-order{color:#20ad49}.intro-listen-prompt{color:#20ad49;font-size:clamp(18px,1.6vw,26px);line-height:1.65;margin:14px 0 0}.intro-popup-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;background:#fff;border-top:1px solid #dce7d7}.intro-popup-nav button{font:inherit;font-size:18px;border:2px solid #20ad49;border-radius:12px;background:#fff;color:#147c32;padding:7px 20px;cursor:pointer}.intro-popup-nav button:disabled{opacity:.35;cursor:default}.intro-popup-nav button:focus-visible,.intro-listen-play:focus-visible{outline:3px solid #12682d;outline-offset:3px}.intro-paged-popup{z-index:100000000!important}.intro-paged-popup .modal-dialog{width:calc(100% - 48px);max-width:1050px!important;margin-left:auto;margin-right:auto}.intro-paged-popup .modal-content{top:0!important;background:#fff}.intro-paged-popup .intro-read-page .readHilightsPanel_container{width:100%;margin:0}.intro-paged-popup .modal-body{padding:16px}
+
+/* Original book headings supplied by the editor. */
+.intro-word-power img{display:block;width:310px;max-width:100%;height:auto}
+.intro-listen-play img{display:block;width:245px;max-width:100%;height:auto}
+.intro-listen-play{max-width:100%}
+
+/* Match the existing audio-heading hover enlargement. */
+.intro-listen-play{transition:transform .25s ease;transform-origin:left center}
+.intro-listen-play:hover,.intro-listen-play:focus-visible{transform:scale(1.15)}
+.intro-listen-play:active{transform:scale(1.06)}
+@media(prefers-reduced-motion:reduce){.intro-listen-play{transition:none}}

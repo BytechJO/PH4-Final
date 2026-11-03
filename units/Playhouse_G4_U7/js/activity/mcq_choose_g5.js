@@ -744,7 +744,7 @@ MCQ.prototype = {
 
         resetBtn
           .classList
-          .add(
+          .remove(
             "disabled"
           );
       }

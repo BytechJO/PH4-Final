@@ -24,9 +24,9 @@ var reading_data = {
     "mainTitleAudio": "../audios/page_102/WRITING.mp3",
     "mainTitleIconPos"      : {"right": "90px"},
     "subTitleTextLeft": "<span class='title-order'>1</span> Read about it!",
-    "subTitleTextRight": "Read bout predictions.",
+    "subTitleTextRight": "Read about predictions.",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/page_102/1_Read_about_it!.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p102_q1.mp3",
     "slides": [
     {
        

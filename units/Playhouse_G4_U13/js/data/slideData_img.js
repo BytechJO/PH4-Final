@@ -27,7 +27,7 @@ var reading_data = {
   subTitleTextRight:
     "We use sequence adverbs when we want to explain how to do something in steps. Some sequence adverbs are <span class='red_text'>first</span>, <span class='red_text'>second</span>, <span class='red_text'>third</span>, <span class='red_text'>then</span>, <span class='red_text'>next</span>, <span class='red_text'>after that</span> and <span class='red_text'>finally</span>.",
   subTitleIcons: [""],
-  subTitleAudio: "../audios/page_122/1_Read_about_it!.mp3",
+  subTitleAudio: "../audios/qa_instructions/p122_q1.mp3",
   slides: [
     {
       layout: "grid_columns",

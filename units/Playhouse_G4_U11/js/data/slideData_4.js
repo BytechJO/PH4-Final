@@ -26,7 +26,7 @@ var reading_data = {
   "subTitleTextLeft": "<span class='title-order'>1</span> Look and say.",
   "subTitleTextRight": "",
   "subTitleIcons": [],
-  "subTitleAudio": "../audios/page_98/1_Look_and_say.mp3",
+  "subTitleAudio": "../audios/qa_instructions/p098_q1.mp3",
   "slides": [
   {
       
@@ -35,7 +35,7 @@ var reading_data = {
       "parentClassName": "grammar_slide",
       "group_styles": "",
       "title":"<span class='green_text'>Subject and Object Pronouns</span>",
-      "letters":["G","R","A","M","M","E","R"],
+      "letters":["G","R","A","M","M","A","R"],
       "audio": ["../audios/page_98/Pg6_2.1_Stella.mp3","../audios/page_98/dough.mp3","../audios/page_98/sauce.mp3","../audios/page_98/sprinkle.mp3","../audios/page_98/cheese.mp3","../audios/page_98/add.mp3","../audios/page_98/pepperoni.mp3","../audios/page_98/slice.mp3"],
       "word": [
           

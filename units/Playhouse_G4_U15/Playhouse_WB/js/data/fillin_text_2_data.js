@@ -68,7 +68,7 @@ var fillin_data = {
         },
         {
           "singleword": false,
-          "text": "main[_]",
+          "text": "mine[_]",
           "textaudios": ["../audios/page_77/under.mp3","../audios/page_77/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default

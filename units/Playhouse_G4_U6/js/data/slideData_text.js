@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='title-order'>1</span> Read about it!",
     "subTitleTextRight": "Read the article below and then talk about how things used to be and how they are now.",
     "subTitleIcons": [""],
-    "subTitleAudio": "../audios/page_52/1_Read_about_it!.mp3",
+    "subTitleAudio": "../audios/qa_instructions/p052_q1.mp3",
     "numberofcolumns":  1,
     "slides": [
         {

@@ -28,7 +28,7 @@ var mcq_data = {
     "subTitleTextLeft"      : "<span class='title-order'>1</span> Circle it!",
     "subTitleTextRight"     : "Look at each set of picture and circle your favorite one. Use words from the word box to describe it with more/most.",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../audios/qa_instructions/p063_q1.mp3",
     "select"                : "multiple", // single (or) multiple
     "shape"                 : "roundrect", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) checkbox
     "bgcolor"               : "none",
@@ -132,3 +132,7 @@ var mcq_data = {
         }      
     ]
 }
+// Open response: reviewed by the teacher; no single fixed answer.
+mcq_data.manualReview = true;
+mcq_data.defaultAnswer = 0;
+mcq_data.questions.forEach(function(q) { q.answer = []; q.fillinanswer = ''; });

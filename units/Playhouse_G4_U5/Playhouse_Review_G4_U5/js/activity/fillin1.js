@@ -402,7 +402,7 @@ FillIn.prototype = {
       var resetBtn = document.querySelector(".resetBtn");
 
       if (resetBtn) {
-        resetBtn.classList.add("disabled");
+        resetBtn.classList.remove("disabled");
       }
     }
   },

@@ -5,7 +5,7 @@ var stereo_data = {
   type: "toggle_slide",
   playListData: [
     {
-      audiourl: "../audios/page_34/PLAYHOUSE_1_SB_UNIT_4_TRACK_03_01.mp3",
+      audiourl: "../audios/page_23/1.mp3",
     },
     {
       url: "",
@@ -26,7 +26,7 @@ var reading_data = {
   subTitleTextLeft: "<span class='title-order'>1</span> Talk about it!",
   subTitleTextRight: "Look at the picture below. Ask and answer with a friend.",
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/qa_instructions/p023_q1.mp3",
   slides: [
     {
       layout: "adventure_images_with_text",

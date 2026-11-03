@@ -28,7 +28,7 @@ var fillin_data = {
   "subTitleTextLeft"      : "<span class='title-order'>1</span> Listen to it!",
   "subTitleTextRight"     : "Listen to Neil and Waqne's conversation. Finish the sentences with what they plan to do. Be sure to use ‘<span class='red_text'>will</span>’, ‘<span class='red_text'>will not</span>’, ‘<span class='red_text'>won</span>’t</span>’, ‘<span class='red_text'>shall</span>’ or ‘<span class='red_text'>shall not</span>’.",
   "subTitleIcons"         : [],
-  "subTitleAudio"         : "../audios/page_127/1_Listen_to_it!.mp3",
+  "subTitleAudio"         : "../audios/qa_instructions/p127_q1.mp3",
   "ontextaudioplay"       : '',
   "onimgaudioplay"        : '',
   "numbering"             : "alphabet", // "alphabet" (or) "number"

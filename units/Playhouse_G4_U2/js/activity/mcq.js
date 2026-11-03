@@ -410,7 +410,7 @@ MCQ.prototype = {
       .getElementsByClassName(
         "resetBtn"
       )[0]
-      .classList.add("disabled");
+      .classList.remove("disabled");
   }
 },
   showIcons: function (aBoo, aVal, aResult) {

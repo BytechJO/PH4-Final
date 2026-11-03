@@ -96,7 +96,7 @@ var mcq_data = {
                     "audioenable"   : "default", // correct (or) default
                 },
                 {
-                    "text"          : "Samuel: It’s nice to meet you. Thank you for your invitation today.",
+                    "text"          : "Samuel: You have such a small family.",
                     "image"         : "",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default

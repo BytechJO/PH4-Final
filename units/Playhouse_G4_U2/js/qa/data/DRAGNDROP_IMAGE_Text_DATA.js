@@ -7,7 +7,7 @@ var _activity_json =
     "subTitleTextLeft"      : "<span class='title-order'>1</span> Class writing.",
     "subTitleTextRight"     : "Look at the pictures and write what they did last weekend.",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../audios/qa_instructions/p018_q1.mp3",
     "image"                 : "new_drag_drop.png",
     "activityheading"       : "",
     "activityheading_audio" : "../audios/under.mp3",

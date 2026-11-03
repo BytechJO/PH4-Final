@@ -25,7 +25,7 @@ var reading_data = {
   "subTitleTextLeft": "PLAYHOUSE NEWSLETTER",
   "subTitleTextRight": "",
   "subTitleIcons": [""],
-  "subTitleAudio": "../audios/under.mp3",
+  "subTitleAudio": "../audios/qa_instructions/p131_q1.mp3",
   "slides": [
       {
           // "layout": "adventure_images_with_text",

@@ -26,7 +26,7 @@ var reading_data = {
   subTitleTextRight:
     "Use the words from the grammar box on page 78 and some of the suggested phrases below to compare and evaluate the following items.",
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/qa_instructions/p079_q1.mp3",
 
   slides: [
     {

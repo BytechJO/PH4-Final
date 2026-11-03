@@ -107,9 +107,7 @@
     width: 35px;
 }
 
-.func_ctrls{
-    display: none !important;
-}
+/* Fixed-answer dialogue uses the standard Check and Reset controls. */
 
 .tick img,
 .cross img {

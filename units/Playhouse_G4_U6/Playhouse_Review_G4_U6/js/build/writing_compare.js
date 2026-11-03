@@ -1,4 +1,4 @@
-function buildConversationBoardBody(aObj) {
+function buildWritingCompareBody(aObj) {
   var htmlStmt = "";
 
   if (typeof aObj === "undefined" || aObj == null) {
@@ -46,7 +46,7 @@ function buildConversationBoardBody(aObj) {
 
   htmlStmt += '<div class="q-type-img-container">';
 
-  htmlStmt += '<img class="mainTitle" src="' + aObj.mainTitle + '">';
+  if (aObj.mainTitle) htmlStmt += '<img class="mainTitle" src="' + aObj.mainTitle + '">';
 
   if (aObj.mainTitleIcon != undefined && aObj.mainTitleIcon != "") {
     htmlStmt +=
@@ -106,85 +106,17 @@ function buildConversationBoardBody(aObj) {
 
   htmlStmt += "</div>";
 
-  /* =====================================================
-     ACTIVITY
-  ===================================================== */
-
-  htmlStmt += '<div class="options cont_ht_sf mx-auto">';
-
-  htmlStmt += '<div class="all_cont">';
-
-  htmlStmt += '<div class="conversation_board_content">';
-
-  /* =====================================================
-     BOARD
-  ===================================================== */
-
-  htmlStmt += '<div class="conversation_board_grid">';
-
-  for (var i = 0; i < aObj.cells.length; i++) {
-    var cell = aObj.cells[i];
-
-    /* =================================================
-       EMPTY
-    ================================================= */
-
-    if (cell.type === "empty") {
-      htmlStmt += '<div class="board_cell board_empty"></div>';
-
-      continue;
-    }
-
-    /* =================================================
-       RULES
-    ================================================= */
-
-    if (cell.type === "rules") {
-      htmlStmt += '<div class="board_rules">';
-
-      for (var r = 0; r < aObj.rules.length; r++) {
-        htmlStmt += '<div class="rule_line">' + aObj.rules[r] + "</div>";
-      }
-
-      htmlStmt += "</div>";
-
-      continue;
-    }
-
-    /* =================================================
-       NORMAL CELL
-    ================================================= */
-
-    htmlStmt += '<div class="board_cell board_' + cell.type + '">';
-
-    /* IMAGE */
-
-    if (cell.image && aObj.images && aObj.images[cell.image]) {
-      htmlStmt += '<div class="board_cell_image">';
-
-      htmlStmt += '<img src="' + aObj.images[cell.image] + '">';
-
-      htmlStmt += "</div>";
-    }
-
-    /* TEXT */
-
-    if (cell.text != undefined && cell.text != "") {
-      htmlStmt += '<div class="board_cell_text">' + cell.text + "</div>";
-    }
-
-    htmlStmt += "</div>";
-  }
-
-  htmlStmt += "</div>";
-
-  htmlStmt += "</div>";
-
-  htmlStmt += "</div>";
-
-  htmlStmt += "</div>";
-
-  $(".activity_area").append(htmlStmt);
-
-  setLoadedStatus(getCurrFileOrDirectory("file"));
+  htmlStmt += '<div class="options cont_ht_sf mx-auto"><div class="writing_compare_all_cont"><div class="writing_compare_content">';
+  htmlStmt += '<div class="writing_words_box">';
+  aObj.words.forEach(function(word) {
+    htmlStmt += '<span class="writing_word">' + word + '</span>';
+  });
+  htmlStmt += '</div><div class="writing_boxes">';
+  aObj.sections.forEach(function(section, index) {
+    htmlStmt += '<div class="writing_box"><label class="writing_box_title" for="writing-' + index + '">' + section.title + '</label>';
+    htmlStmt += '<textarea id="writing-' + index + '" class="writing_textarea"></textarea></div>';
+  });
+  htmlStmt += '</div></div></div></div>';
+  $('.activity_area').append(htmlStmt);
+  setLoadedStatus(getCurrFileOrDirectory('file'));
 }

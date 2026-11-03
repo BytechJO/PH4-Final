@@ -42,7 +42,7 @@ var circle_sentence_data = {
 
   subTitleIcons: [],
 
-  subTitleAudio: "../audios/page_107/1_Listen_to_it!.mp3",
+  subTitleAudio: "../audios/qa_instructions/p107_q1.mp3",
 
   sideImages: [
     "../images/pages/activities/7.jpg",

@@ -32,7 +32,7 @@ var reading_data = {
   subTitleTextRight:
     "<span class='green_text'>Read the non-fiction story below.</span>",
   subTitleIcons: [],
-  subTitleAudio: "../audios/page_8/1_Read_about_it!.mp3",
+  subTitleAudio: "../audios/qa_instructions/p008_q1.mp3",
   slides: [
     {
       parent_class_name: "",

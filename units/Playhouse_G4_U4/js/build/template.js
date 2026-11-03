@@ -76,6 +76,7 @@ function buildHeader(aObj) {
                 "' class='menu-content-item'>";
 
             fStmt += "</a>";
+            if (aObj.vocabulary_link && !aObj.vocabulary_link.endsWith("slide_11.html")) {
 
             fStmt +=
                 "<a href='" +
@@ -90,6 +91,7 @@ function buildHeader(aObj) {
                 "' class='menu-content-item'>";
 
             fStmt += "</a>";
+            }
 
             fStmt +=
                 "<a href='" +

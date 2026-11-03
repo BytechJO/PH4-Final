@@ -156,7 +156,7 @@ Coloring.prototype = {
     if (allAnswered && allCorrect) {
       $(".checkBtn").addClass("disabled");
 
-      $(".resetBtn").addClass("disabled");
+      $(".resetBtn").removeClass("disabled");
     } else {
       $(".checkBtn").removeClass("disabled");
 

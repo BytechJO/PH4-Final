@@ -23,7 +23,7 @@ var reading_data = {
   mainTitleIconPos: { right: "90px" },
   mainTitleAudio: "../audios/page_28/WRITING.mp3",
   subTitleTextLeft:
-    "<span class='title-order'>1</span> Learn about it! Pick a place that you have been before. It could be a place in your hometown or a place you have visited. Find out as much as you can about the place. An important part of writing is using plenty of details. In your notebook, write a paragraph about the  place you chose. Use at least fiv  details to develop your main idea.",
+    "<span class='title-order'>1</span> Learn about it! Pick a place that you have been before. It could be a place in your hometown or a place you have visited. Find out as much as you can about the place. An important part of writing is using plenty of details. In your notebook, write a paragraph about the  place you chose. Use at least five details to develop your main idea.",
   subTitleTextRight: "",
   subTitleIcons: [""],
   subTitleAudio:
